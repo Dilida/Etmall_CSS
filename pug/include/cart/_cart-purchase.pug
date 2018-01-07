@@ -1,0 +1,39 @@
+section.n-cart--purchase
+	.n-title__wrap
+		h2.n-title--18 加價購專區
+	.n-l-bgw-md.n-purchase__wrap#purchaseWrap
+		ul.n-purchase__list.n-hover--img(style="width: 19000px; position: relative; overflow: hidden;")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/PgBSo8', name: '【lingling】鑲珍珠扭結肩帶配色洋裝(夢幻藍綠)A714-01', imgSrc: 'https://goo.gl/Gd8UOd', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/C4ca65', name: 'lingling】蕾絲紗裙飾蝶結平口小禮服洋裝(浪漫白)A2029-01', imgSrc: 'https://goo.gl/0DrBNi', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/3ZXbLe', name: 'CANDY小舖 大圓領雙層蕾絲襯內裡圓裙洋裝', imgSrc: 'https://goo.gl/2fMmVf', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/ycVtF8', name: '【Jisen】淑女條紋七分袖收腰洋裝', imgSrc: 'https://goo.gl/77Sh0Y', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/guXRD9', name: '連身裙 條紋拼接開叉吊帶洋裝LZ6836-創翊韓都', imgSrc: 'https://goo.gl/H8UFwW', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/gtoA6Q', name: '【A1 Darin】韓版時尚修身顯瘦短袖棉麻洋裝', imgSrc: 'https://goo.gl/F5FQ1M', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/QB7fPR', name: 'Candy小舖 貼身中腰合成皮革短裙 - 灰色', imgSrc: 'https://goo.gl/wTYjDQ', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/Ca6qsP', name: 'Candy小舖 復古鄉村小碎花收臀窄裙-灰色', imgSrc: 'https://goo.gl/npKOik', normalPrice: '$ 1,113,000', price: '1,113,000'}]
+			each pordItem in pordItems
+				li
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							img(src= pordItem.imgSrc title= pordItem.name width="193" height="193")
+					p.n-name= pordItem.name
+					p.n-price__wrap 
+						span.n-price--normal= pordItem.normalPrice
+						span.n-price--16 $ 
+							span= pordItem.price
+					a.n-btn.n-btn--black(href="" title="選購") 選購
+					.n-select__spec
+						ul.n-form-aligned
+							li
+								label.n-caption 顏色：
+								select.n-form--control(name="")
+									option(value="1") 共同
+									option(value="2") 共同1
+							li
+								label.n-caption 樣式：
+								select.n-form--control(name="")
+									option(value="1") 64G
+							li
+								label.n-caption 數量：
+								select.n-form--control(name="")
+									option(value="1") 1
+						button.n-btn.n-btn--primary(type="submit") 確定
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom

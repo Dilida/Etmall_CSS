@@ -1,0 +1,72 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 如何搜尋商品 -- 購物流程小幫手 -- 會員中心 -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_help-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="幫助中心">幫助中心</a>&gt;</li>
+						<li><a href="#" title="購物流程小幫手">購物流程小幫手</a>&gt;</li>
+						<li class="current"><a href="#" title="如何搜尋商品">如何搜尋商品</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						include include/member/_help-process-page-nav
+						<h2 class="n-title--18 n-mem--title">如何搜尋商品</h2>
+						.n-l-colmb20
+							p.n-l-colmb15 好好利用關鍵字來搜尋商品，可以讓您更有效率的找到屬意的商品喔！
+							ul.n-l-colmb15.n-help__step
+								li
+									.n-title--13 步驟一：基本搜尋說明
+									p 您可以直接在搜尋框中輸入商品的名稱（ 品名 ）、關鍵字、或商品編號（ 品號 ）來搜尋相關商品。
+									img(src="Resource/img201703/member/help/how_to_search01.png", width="920", alt="步驟一：基本搜尋說明")
+								li
+									.n-title--13 步驟二：縮小搜尋結果的範圍
+									p 點選「確認」後即可加入追蹤清單。
+									img(src="Resource/img201703/member/help/how_to_search02.png", width="920", alt="步驟二：縮小搜尋結果的範圍")
+								li
+									.n-title--13 步驟三：依分類選擇
+									p 在搜尋出來的商品清單中，您可以直接挑選商品；也可以點選「 依分類選擇 」中的商品分類，來縮小搜尋商品的範圍。
+									img(src="Resource/img201703/member/help/how_to_search03.png", width="920", alt="步驟二：依分類選擇")
+								li
+									.n-title--13 步驟四：選擇瀏覽商品方式
+									p 透過選擇瀏覽商品的方式或依您的需求將商品重新排序，可以更方便您挑選商品。
+									img(src="Resource/img201703/member/help/how_to_search04.png", width="920", alt="步驟二：依分類選擇")
+							.n-title--13 進階運用
+							ol.n-list--ml20.n-list--decimal
+								li 您可以運用空格（交集）、半形逗號（聯集）、空格 &amp; 減號（差集），來組合關鍵字讓您更快速、準確的找到需要的 <br /> 例如：
+									ol.n-list--ml20.n-list--leading-zero
+										li 要找同時符合兩種關鍵字條件的商品時，您可以利用空格符號，如：「 SONY 數位相機 」。您便可以搜尋到所有 SONY 這個品牌的數位相機了。
+
+										li 要找符合第一種關鍵字的條件，但排除第二種關鍵字條件的商品時，您可以利用空格 &amp; 減號，如：「 數位相機 - SONY 」。您便可以搜尋到所有不是 SONY 的數位相機了。
+
+										li 當您要找多組條件的商品時，您可以利用逗號，如：「 數位相機,攝影機 」您便可以搜尋到所有有關的產品了。
+
+								li 在進階搜尋的網頁中，可以選擇館別 / 分類、其他條件，讓您的搜尋結果更精確。
+
+						include include/member/_help-common-link
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

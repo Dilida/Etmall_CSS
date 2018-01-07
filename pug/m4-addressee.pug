@@ -1,0 +1,190 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 收件人管理 -- 帳戶管理 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_account-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="帳戶管理">帳戶管理</a>&gt;</li>
+						<li class="current"><a href="#" title="收件人管理">收件人管理</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">收件人管理</h2>
+						form#addAddressee(action="")
+							.n-l-colmb20
+								<a href="#" class="n-btn n-btn--primary" title="新增收件人">新增收件人</a>
+								<div class="n-add__wrap col-7 n-add__addressee n-is--hide">
+									.n-l-colmb15.n-form__box.col-12
+										<label class="n-title--13" for="addresseeName"><span class="n-pr--medium">&#42;</span> 收件人姓名</label>
+										<input class="n-form--control" type="text" name="addresseeName" id="addresseeName" required>
+									<div class="n-l-colmb15 n-form--inline n-form--address">
+										<div class="n-title--13"><span class="n-pr--medium">&#42;</span>地址</div>
+										<div class="n-form__box"> 
+											<select title="請選擇地區" id="country" name="country" class="n-form--control" required>
+												<option value="" selected="selected">請選擇地區</option>
+												<option value="Taiwan,臺灣地區">臺灣地區</option>
+												<option value="China,中國大陸地區" disabled="">中國大陸地區</option>
+												<option value="HK,港澳地區" disabled="">港澳地區</option>
+											</select>
+										</div>
+										<div class="n-form__box">
+											<select title="請選擇縣／市" id="city" name="city" class="n-form--control" required>
+												<option value="" selected="selected">請選擇縣／市</option>
+											</select>
+										</div>
+										<div class="n-form__box">
+											<select title="請選擇鄉鎮市區" id="canton" name="canton" class="n-form--control" required>
+												<option value="" selected="selected">請選擇鄉鎮市區</option>
+											</select>
+										</div>
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="address" id="address" required>
+										</div>
+									</div>
+									<div class="n-l-colmb15 n-form__box col-12">
+										<label class="n-title--13" for="mobile"><span class="n-pr--medium">&#42;</span> 行動電話</label>
+										<input class="n-form--control" type="text" name="mobile" id="mobile" value="0958234567" maxlength="10" required>
+									</div>
+									<div class="n-l-colmb15 n-form--inline n-form--phone">
+										<div class="n-title--13">室內電話</div>
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="areaCode" id="areaCode" placeholder="區碼" maxlength="4">
+										</div>
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="telNum" id="telNum" placeholder="請輸入完整電話號碼" maxlength="8">
+										</div>
+									</div>
+									<div class="n-form__foot">
+										<input type="reset" class="n-btn n-btn--normal" value="取消">
+										<input type="submit" class="n-btn n-btn--primary" value="新增">
+									</div>
+								</div>	
+							.n-l-colmb20
+								<table class="table table--bordered">
+									<tr class="table--caption">
+										<th class="col-2">收件人姓名</th>
+										<th class="col-4">地址</th>
+										<th class="col-2">手機號碼</th>
+										<th class="col-2">編輯</th>
+									</tr>
+									<tr>
+										<td>王小明大計算機科學家</td>
+										<td>台灣省台中市北屯區大鵬路陳平 里12之3巷5之1弄3之2鄰58號 6樓之3</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>王小明</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>0911234567</td>
+										<td>
+											<a class="n-edit__text" href="m4-addressee-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+								</table>
+								
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/jquery.validate.js')
+		script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

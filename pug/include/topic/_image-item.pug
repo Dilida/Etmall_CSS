@@ -1,0 +1,29 @@
+.n-topics__block
+	.n-topics__images-with-six-item
+		.n-topics__top
+			figure.n-left.n-topics__image
+				a(href="#" title="居家用品好物推薦" target="_blank")
+					img(src="Resource/img201703/topic/topic-img.png" alt="居家用品好物推薦")
+			ul.n-left
+				- var twoItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', subName: '深V集中爆乳買到賺到', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', subName: '京都限定版賣完不補', price: '1,111,580'}]
+				each twoItem in twoItems
+					li
+						a(href= twoItem.hotUrl title= twoItem.name target="_blank")
+							.n-pic
+								img(src= twoItem.imgSrc alt= twoItem.name)
+							p.n-sub-name= twoItem.subName
+							p.n-name= twoItem.name
+							.n-price--16 $
+								span= twoItem.price
+
+		ul.n-topics__bottom.n-hover--img
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', subName: '深V集中爆乳買到賺到', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', subName: '京都限定版賣完不補', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', subName: '黃金大底防水輕量', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', subName: '隱形內衣 完美包覆', price: '1,111,980'}]
+			each pordItem in pordItems
+				li
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-sub-name= pordItem.subName
+						p.n-name= pordItem.name
+						.n-price--16 $
+							span= pordItem.price 

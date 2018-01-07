@@ -1,0 +1,80 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Add Wrap
+// ==========================================================================
+
+// Member add wrap
+// ==========================================================================
+.n-add {
+	&__wrap {
+		position: relative;
+		z-index: map-get($zindex, zero);
+		background-color: $gr2-lightest;
+		border: 1px solid $gr-lightest;
+		padding: 15px;
+		margin-top: 10px;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: map-get($zindex, base);
+			top: -10px;
+		}
+		&:before {
+			left: 9px;
+			top: -11px;
+			@include arrow-top(11, 11, 10, $gr-lightest, 1);
+		}
+		&:after {
+			left: 10px;
+			@include arrow-top(10, 10, 10, $gr2-lightest, 1);
+		}
+		.n-title--13 {
+			margin-bottom: 5px;
+		}
+		.n-form__box {
+			margin-right: 10px;
+		}
+	}
+		
+	&__caption {
+		margin-bottom: 5px;
+	}
+	&__credit {
+		.n-form__box{
+			width: 120px;
+		}
+	}
+	&__date {
+		.n-form__box {
+			width: 252px;
+		}
+	}
+	&--auth {
+		width: 252px;
+	}
+	&__addressee {
+		.n-form--address .n-form__box {
+			width: 171px;
+			margin-bottom: 10px;
+		}
+		.n-form--address .n-form__box:nth-child(4) {
+			margin-right: 0;
+		}
+		.n-form--address .n-form__box:nth-child(5) {
+			width: 100%;
+		}
+		.n-form--phone .n-form__box:nth-child(2) {
+			width: 144px;
+		}
+		.n-form--phone .n-form__box:nth-child(3) {
+			width: 384px;
+			margin-right: 0;
+		}
+	}
+}
+	

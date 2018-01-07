@@ -1,0 +1,41 @@
+.n-l-colmb30.n-bannerad__wrap
+	section.n-left.n-layout--half
+		.n-title__wrap
+			.n-title--18.n-left 頻道推薦
+			ul.n-tab__nav.n-right#channelTab
+				li.current 
+					a(href='#bnCh1' title='200點加購超值好物') 200點加購超值好物
+				- var tabNavs = [{tabUrl: '#bnCh2', tabName: '電腦椅電腦椅'}, {tabUrl: '#bnCh3', tabName: '好好禮雙重送'}]
+					each tabNav in tabNavs
+						li
+							a(href= tabNav.tabUrl title= tabNav.tabName)= tabNav.tabName
+		#bnChannel.n-banner__body
+			.n-bannerad__box
+				a(href="#" title="200點加購超值好物" target="_blank")
+					img(src="https://goo.gl/X7gQia" alt="200點加購超值好物" width="600" height="262")
+			.n-bannerad__box
+				a(href="#" title="旅遊博覽會 全面下殺" target="_blank")
+					img(src="https://goo.gl/Uy3xCv" alt="旅遊博覽會 全面下殺" width="600" height="262")
+			.n-bannerad__box
+				a(href="#" title="超低價 內著6折up" target="_blank")
+					img(src="https://goo.gl/p2kPDY" alt="超低價 內著6折up" width="600" height="262")
+	section.n-right.n-layout--half
+		.n-title__wrap
+			.n-title--18.n-left 館內活動
+			ul.n-tab__nav.n-right#eventTab
+				li.current 
+					a(href='#bnEvent1' title='APP首購送85度C午茶招待組') APP首購送85度C午茶招待組
+				- var tabNavs = [ {tabUrl: '#bnEvent2', tabName: '電腦椅電腦椅'}, {tabUrl: '#bnEvent3', tabName: '好好禮雙重送'}]
+					each tabNav in tabNavs
+						li
+							a(href= tabNav.tabUrl title= tabNav.tabName)= tabNav.tabName
+		#bnEvent.n-banner__body
+			.n-bannerad__box
+				a(href="#" title="APP首購送85度C午茶招待組" target="_blank" width="600" height="262")
+					img(src="https://goo.gl/xPa379" alt="APP首購送85度C午茶招待組")
+			.n-bannerad__box
+				a(href="#" title="APP首購送85度C午茶招待組" target="_blank" width="600" height="262")
+					img(src="https://goo.gl/p2kPDY" alt="APP首購送85度C午茶招待組")
+			.n-bannerad__box
+				a(href="#" title="APP首購送85度C午茶招待組" target="_blank" width="600" height="262")
+					img(src="https://goo.gl/Uy3xCv" alt="APP首購送85度C午茶招待組")

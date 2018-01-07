@@ -1,0 +1,198 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// overlay 
+// ==========================================================================
+
+.n-overlay
+	position: fixed
+	z-index: map-get($zindex, overlay)
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	padding-top: 5%
+
+// alert
+// ==========================================================================
+.n-alert
+	&__wrap
+		background-color: $gr2-dp-light
+		+layout-center(400)
+		margin-top: 10%
+	&__body,
+	&__foot
+		padding: 15px
+	&__body
+		line-height: 1.8
+	&__foot
+		background-color: $gr2-lighter
+		.n-btn
+			margin-left: 5px
+			margin-right: 5px
+
+.n-alert--small
+	width: 300px
+
+// overlay quick view common style
+// ==========================================================================
+.n-prod--overlay,
+.n-prod--overlay .n-prod__body,
+.n-prod--notice .n-prod__body
+	position: relative
+	z-index: map-get($zindex, base)
+
+.n-prod--overlay .mfp-close,
+.n-prod--overlay .n-prod__body .mfp-close,
+.n-prod--notice .n-prod__body .mfp-close
+	top: -5px
+	right: -5px
+
+// overlay quick view product page
+// ==========================================================================
+.n-prod--overlay
+	+layout-center(960)
+	.n-prod__body
+		+layout-center(960)
+	.n-l-bgw-md 
+		padding: 25px
+		+layout-center(960)
+	.n-prod__left
+		width: 440px
+	.n-prod__content 
+		video,
+		img
+			width: 440px
+		img 
+			height: 440px
+	.n-prod__pager
+		li img
+			width: 40px
+			height: 40px
+	.n-prod__right
+		width: 450px
+	.n-price__block
+		position: relative
+		z-index: map-get($zindex, third)
+	.n-prod__intro
+		margin-bottom: 15px
+		margin-left: 5px
+		li 
+			padding-left: 10px
+			margin-bottom: 5px
+			+txt-ellipsis(540)
+			position: relative
+			z-index: map-get($zindex, zero)
+		li:after
+			content: '\2022'
+			position: absolute
+			z-index: map-get($zindex, base)
+			display: inline-block
+			width: 10px
+			height: 10px
+			left: 0
+			top: 0
+		.n-word--count
+			+txt-ellipsis(540)
+	.n-price__bottom
+		.n-blue--link
+			position: absolute
+			z-index: map-get($zindex, base)
+			margin-right: 0
+			top: 0
+			right: 15px
+			&:nth-child(2)
+				top: 60px
+			&:nth-child(3)
+				top: 10px
+		.n-prod__pop
+			right: -40px
+			top: 90px
+
+// overlay quick view of arrival notice me
+// ==========================================================================
+.n-prod--notice
+	.n-prod__body
+		+layout-center(510)
+	.n-prod__wrap
+		.n-pic
+			width: 215px
+			height: 215px 
+			margin-right: 15px
+		.n-prod__right
+			width: 230px
+			.n-title--15,
+			.n-choose__spec li 
+				margin-bottom: 15px
+
+// overlay satisfaction
+// ==========================================================================
+%overlay-common 
+	+layout-center(570)
+	position: relative
+	z-index: map-get($zindex, zero)
+
+.n-overlay--satisfaction
+	.n-satisfaction--box
+		@extend %overlay-common 
+		.n-comment__field .note--box-lv3
+			top: 79px
+			
+// overlay immediate post
+// ==========================================================================		
+.n-overlay--post
+	.n-post--wrap
+		@extend %overlay-common
+		width: 600px
+		.n-title--18
+			+txt-ellipsis(560)
+		.n-post__box 
+			line-height: 1.8
+			margin-bottom: 50px
+		.n-form__foot
+			position: relative
+			z-index: map-get($zindex, zero)
+			margin-top: 0
+			.n-btn
+				margin-right: 0
+		.n-form__foot:after
+			background-color: $gr-dp-light
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, under)
+			width: 600px
+			height: 73px
+			margin: auto
+			left: -20px
+			top: -10px
+
+// overlay flagship 
+// ==========================================================================	
+.n-overlay--flagship
+	.n-overlay__box
+		position: relative
+		z-index: map-get($zindex, zero)
+		+layout-center(660)
+	.n-overlay__head 
+		border-bottom: 1px solid $gr-medium
+		padding-bottom: 20px
+	.n-overlay__head img 
+		display: inline-block
+	.n-overlay--flagship-about
+		height: 300px
+		overflow-y: scroll
+		.n-title--15,
+		.n-flagship__note-title
+			margin-bottom: 5px
+		p,
+		img
+			margin-bottom: 10px
+		.table .n-list--disc
+			margin-left: 20px
+		.n-flagship__note
+			background-color: $gr-dp-light
+			.n-list--disc
+				margin-left: 20px

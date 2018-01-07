@@ -1,0 +1,48 @@
+.n-l-colmb20.n-cart--prod-detail
+	.n-title__wrap
+		h2.n-title--18 一般宅配付款明細
+	table.table.table--bordered.table--gr2-dp-light
+		tr.table--caption.n-is--hide
+			each thTitle, i in ['商品名稱', '數量及規格','東森價','會員獨享','小計']
+				th(class="title-" + (i + 1))= thTitle
+		- for (var i = 0; i < 3; ++i)
+			tr.n-is--hide
+				td
+					.n-left.n-pic
+						a(href="", target="_blank", title="【伊黛爾】夏日涼感冰礦咖啡紗機能性爆乳內衣套組 B-D罩(淡雅綠)")
+							img(src="Resource/img201703/cart/5718879-1_XXL.jpg", alt="【伊黛爾】夏日涼感冰礦咖啡紗機能性爆乳內衣套組 B-D罩(淡雅綠)", width="120", height="120")
+					.n-left.n-desc
+						p 905796279
+						p.n-name 【伊黛爾】夏日涼感冰礦咖啡紗機能性爆乳內衣套組 B-D罩(淡雅綠)
+				td
+					ul
+						li
+							span 顏色：
+							span 銀色
+						li
+							span 樣式：
+							span 1
+						li
+							span 數量：
+							span 1
+				td
+					span.n-price--normal-16 $ 1,113,000
+				td
+				td.n-align-r
+					span.n-price--16 $ 
+						span 1,113,000
+		tr
+			td.n-cart--detail-total(colspan="5") 
+				a.n-left(href="#", title="展開購物明細")
+					.n-icon--switch
+						span
+						span
+					span 展開購物明細
+				.n-right.n-price__total 購物車內合計有 
+					span.n-pr--medium.n-font--bold 9
+					|  項商品，商品總金額，使用折抵
+					span.n-price--22 $
+						span 20
+					|  ， 應付金額 
+					span.n-price--22 $
+						span 5,934

@@ -1,0 +1,725 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// import sprite 
+// ==========================================================================
+@import "_theme/_sprite.scss"
+
+// ==========================================================================
+// Member Page Style
+// ==========================================================================
+
+.n-mem
+	margin-top: 20px
+	+clearfix
+	&__wrap
+		line-height: 1.8
+		.n-mem--title
+			margin-bottom: 20px
+		.n-mem__caption
+			+clearfix
+		.n-mem__ad
+			display: block
+			position: relative
+			z-index: map-get($zindex, zero)
+			&:after
+				content: ""
+				position: absolute
+				z-index: map-get($zindex, zero)
+				width: 100%
+				height: 100%
+				border: 1px solid $gr-lightest
+				top: 0
+				left: 0
+		.n-card--num
+			span 
+				margin-right: 12px
+
+.n-mem-search
+	+clearfix
+
+.n-mem-breadcrumb
+	li 
+		display: inline-block
+	margin-bottom: 10px
+	a 
+		color: $gr-medium
+	.current a 
+		color: $gr-dark
+
+// Member immediate post
+// ==========================================================================
+.n-immediate__wrap
+	background-color: $gr2-dp-light
+	border: 1px solid $gr-lightest
+	width: 230px
+	max-height: 141px 
+	overflow: hidden
+	.n-title--15
+		background-color: $gr-lightest
+		padding: 10px
+		[class^="n-icon--"]
+			margin-top: 2px
+			margin-right: 8px
+			vertical-align: top
+	a 
+		color: $gr-dark
+		display: block
+		width: 208px
+		height: 36px
+		overflow: hidden
+		&:hover
+			color: $pr-medium
+	ul 
+		padding: 10px
+		li
+			border-bottom: 1px solid $gr-lightest
+			padding-bottom: 5px
+			margin-bottom: 5px
+		li:last-child
+			border-bottom: none
+			padding-bottom: 0
+			margin-bottom: 0
+
+
+// Member Center Nav
+// ==========================================================================
+.n-mem
+	&__nav
+		background-color: $gr2-dp-light
+		width: inherit
+		[class^="n-icon--"]
+			vertical-align: top
+			margin-right: 5px
+			margin-top: 2px
+		a 
+			display: block
+		> li > a
+			color: $gr-dark
+			+font-size($fz-15)
+			padding: 10px
+			display: block
+		> li > a:hover,
+		> li >.current
+			background-color: $pr-medium
+			color: $gr2-dp-light
+		> li 
+			border: 1px solid $gr-lightest
+			border-bottom: none
+		> li:last-child
+			border-bottom: 1px solid $gr-lightest
+		.n-mem--order:hover .n-icon--order,
+		.n-mem--order .current .n-icon--order
+			+sprite($icon-order-white)
+		.n-mem--offer:hover .n-icon--offer,
+		.n-mem--offer .current .n-icon--offer
+			+sprite($icon-offer-white)
+		.n-mem--favorite:hover .n-icon--favorite,
+		.n-mem--favorite .current .n-icon--favorite
+			+sprite($icon-favorite-white)
+		.n-mem--info:hover .n-icon--info,
+		.n-mem--info .current .n-icon--info
+			+sprite($icon-info-white)
+		.n-mem--help:hover .n-icon--help,
+		.n-mem--help .current .n-icon--help
+			+sprite($icon-help-white)
+
+// Member Center Nav's sub nav
+// ==========================================================================
+.n-mem
+	&__nav
+		> .current
+			border: 1px solid $pr-medium
+		> li:last-child.current
+			border-bottom: 1px solid $pr-medium
+		ul 
+			padding-left: 10px
+			padding-right: 10px
+		ul a 
+			padding-top: 10px
+			padding-bottom: 10px
+			border-bottom: 1px solid $gr-lighter
+			color: $gr-dark
+		ul a:hover,
+		ul > li.current a
+			color: $pr-medium
+		ul > li:last-child a 
+			border-bottom: none
+		ul > li:before
+			content: '.'
+			line-height: 2.1
+			vertical-align: middle
+			float: left
+			padding-left: 10px
+			padding-right: 10px
+
+// Member Center pages's sub nav
+// ==========================================================================
+.n-mem__sub
+	background-color: $gr2-lightest
+	border: 5px solid $gr-lightest
+	padding: 10px
+	+font-size($fz-15)
+	+clearfix
+	a 
+		color: $gr-dark
+		line-height: 2.4
+	a:hover,
+	.current a
+		color: $pr-medium
+	.current a 
+		padding-bottom: 5px
+		border-bottom: 2px solid $pr-medium
+	li 
+		margin-right: 5%
+		float: left
+	
+
+// Member Center common search
+// ==========================================================================
+.n-mem--field
+	+clearfix
+	.n-form--control,
+	.n-btn
+		float: left
+	width: 100%
+	background-color: $pr-medium
+	padding: 2px
+	height: 42px
+	vertical-align: top
+	.n-form--control
+		width: 892px
+		padding: 8px
+		margin-right: 2px
+	.n-btn
+		padding: 8px 12px
+
+// Member Center tool bar
+// ==========================================================================
+.n-mem__tool-bar
+	+clearfix
+	.n-tab__swtich
+		a:hover
+			color: $gr-darkest
+		.current 
+			a
+				color: $gr-darkest
+			.n-icon--square
+				+sprite($icon-square-red)
+			.n-icon--list
+				+sprite($icon-list-red)
+// Member Center's order page search
+// ==========================================================================
+.n-order
+	&__search
+		.n-title--13
+			padding-top: 10px
+			margin-right: 10px
+		.n-order--select
+			margin-right: 20px
+		.n-mem--field
+			width: 852px
+			.n-form--control
+				width: 790px
+				margin-right: 2px
+
+// Order's page style
+// ==========================================================================
+.order--info-bg
+	background-color: $ye-dp-light
+.n-order
+	&__head
+		span 
+			margin-right: 50px
+		span:last-child
+			margin-right: 0
+		a
+			color: $gr-dark	
+			&:hover
+				text-decoration: underline
+		.n-icon--more,
+		.n-icon--back
+			vertical-align: top
+			margin-right: 5px	
+		.n-icon--more
+			margin-top: 10px
+		.n-icon--back
+			margin-top: 5px
+.n-order
+	&__info
+		+clearfix
+.n-order
+	&__table
+		td 
+			position: relative
+			z-index: map-get($zindex, zero)
+		.n-edit
+			vertical-align: middle
+			text-align: center
+		.n-btn
+			padding: 10px 8px
+			margin-bottom: 10px
+		.n-order__pay-info
+			padding-top: 23px
+		.n-deliver__info
+			background-color: $gr2-lightest
+			border: 1px solid $gr-lightest
+			position: relative
+			z-index: map-get($zindex, base)
+			width: 180px
+			padding: 6px
+			color: $gr-dark
+			text-align: center
+			left: 584px
+			margin-left: -50px
+			a 
+				color: $gr-dark
+			a:hover
+				text-decoration: underline
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+				z-index: map-get($zindex, base)
+				left: 85px
+			&:before
+				bottom: -6px
+				+arrow-down(6, 6, 6, $gr-lightest, 1) 
+			&:after
+				bottom: -5px
+				+arrow-down(6, 6, 6, $gr2-lightest, 1) 
+		.n-deliver--four-steps
+			left: 513px
+		.n-process
+			+layout-center(826)
+		.n-order__spec
+			margin-bottom: 10px
+			a 
+				color: $gr-dark
+			a:hover
+				text-decoration: underline
+			a [class^="n-icon--"]
+				vertical-align: top
+				margin-top: 3px
+				margin-right: 5px
+			.n-title--13 
+				margin-bottom: 5px
+
+.n-order
+	&__status
+		position: absolute
+		z-index: map-get($zindex, base)
+		width: 127px
+		height: 58px
+		text-align: center
+		top: 0
+		right: 0
+		p 
+			font-weight: bold
+			padding-top: 16px
+.n-order__list
+	> li
+		border-bottom: 1px dotted $gr-light
+		padding-bottom: 10px
+		margin-bottom: 10px 
+		+clearfix
+	> li:last-child
+		border-bottom: none
+	.n-title--15
+		margin-bottom: 5px
+	.n-order__confirm 
+		.n-btn
+			padding: 10px 20px
+			margin-right: 10px
+
+.n-order__prove .n-form--control
+	margin-bottom: 5px
+.n-order__terms
+	margin-left: 20px
+	li 
+		margin-bottom: 5px
+
+.n-order__check-box
+	.n-form--control
+		width: auto
+		margin-right: 5px
+	li
+		display: inline-block
+		margin-right: 30px
+		margin-bottom: 10px	
+	.current
+		position: relative
+		z-index: map-get($zindex, zero)
+	.current .n-btn--normal:after
+		+border-radius(2px)
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, base)
+		left: 0
+		top: 0
+		width: 100%
+		height: 43px
+		border: 2px solid $pr-medium
+	.n-textarea--other
+		width: 100%
+		height: 75px
+	.n-is--hide
+		display: none
+	.n-title--13
+		margin-bottom: 5px
+.n-order__return-info
+	.n-title--13
+		margin-bottom: 5px
+	.n-form--phone
+		.n-form__box:nth-child(2)
+			margin-right: 10px
+		.n-form__box:nth-child(3)
+			width: 616px
+	.n-form--address
+		.n-form__box
+			margin-right: 36px
+			margin-bottom: 10px
+.n-order__refund
+	.n-list--decimal
+		margin-left: 20px
+	.n-form--control
+		width: auto
+		margin-right: 10px
+	.n-form--refund
+		background-color: $gr-dp-light
+		cursor: pointer
+		display: block
+		padding: 10px
+		margin-bottom: 15px
+		input[type="checkbox"]
+			margin-right: 8px
+	.n-has--error
+		border-color: $pr-medium
+		box-shadow: 0 0 4px $pr-lighter
+		p 
+			padding-left: 24px
+
+
+// activation card page 
+// ==========================================================================
+.n-mem__activation
+	+clearfix
+
+// Ticket of Discount's page 
+// ==========================================================================
+.n-ticket
+	&__wrap
+		+clearfix
+		li 
+			width: auto
+	&__box
+		background-color: $gr2-lightest
+		border: 1px solid $gr-dp-light
+		position: relative
+		z-index: map-get($zindex, zero)
+		margin-bottom: 20px
+		.n-icon--coupontag	
+			position: absolute
+			z-index: map-get($zindex, base)
+			top: 0
+			left: 10px
+	&__num
+		background-color: $gr2-dp-light
+		border-bottom: 1px solid $gr-dp-light
+		padding-left: 55px
+		padding-bottom: 0
+	&__txt 
+		padding: 10px
+		p 
+			margin-bottom: 5px
+	&--square 
+		li 
+			float: left
+			width: (100 / 3) + %
+			padding-left: 8px
+			padding-right: 8px
+		.n-ticket__box
+			height: 156px
+
+// Ponta list of Discount's page 
+// ==========================================================================
+.n-ponta__box 
+	position: relative
+	z-index: map-get($zindex, zero)
+	.n-title--13 
+		margin-bottom: 5px
+.n-ponta__info 
+	position: absolute
+	z-index: map-get($zindex, base)
+	display: none
+	.n-ponta__txt
+		border: 1px solid $gr-lightest
+		background-color: $gr2-dp-light
+		color: $gr-dark
+		padding: 10px
+	.n-ponta__txt:before,
+	.n-ponta__txt:after
+		content: ''
+		position: absolute
+	.n-ponta__txt:before
+		+arrow-top(6, 6, 6, $gr-lightest, 1)
+		top: -6px
+		left: 10px
+	.n-ponta__txt:after
+		+arrow-top(6, 6, 6, $gr2-dp-light, 1)
+		top: -5px
+		left: 10px
+.n-ponta--link
+	margin-top: 10px
+	margin-left: 10px
+
+// Track list of collect page 
+// ==========================================================================
+.n-collect__body
+	.n-card__list
+		> li 
+			width: 238px
+			margin-right: 10px
+			margin-bottom: 15px
+		> li:nth-child(4n)
+			margin-right: 0
+		// > li:nth-last-child(-n+4)
+		// 	margin-bottom: 0
+		.n-name a
+			height: 44px
+		.n-soldout
+			top: 170px
+	.n-card__btn
+		.n-btn--card-icon
+			span
+				display: none
+		.n-btn--normal,
+		.n-btn--card-red
+			width: 100%
+.n-track__brand
+	+clearfix
+	&-logo
+		border: 1px solid $gr-lightest
+		width: 180px
+		text-align: center
+		position: relative
+		z-index: map-get($zindex, zero)
+		margin-right: 15px
+		.n-edit__box
+			top: 10px
+			right: 10px
+			+transition(all 0.3s ease-in-out)
+			visibility: hidden
+			opacity: 0
+		&:hover .n-edit__box
+			visibility: visible
+			opacity: 1
+		.n-pic
+			margin-top: 20px
+			margin-bottom: 20px
+		.n-name
+			margin-bottom: 20px
+			+layout-center(140)
+			+txt-ellipsis(140)
+		.n-btn--card-red
+			border-right: none
+			width: 100%
+.n-track__brand
+	a 
+		color: $gr-dark
+	&-prod
+		position: relative
+		z-index: map-get($zindex, zero)
+		border: 4px solid $gr-lightest
+		width: 790px
+		padding: 10px
+		overflow: hidden
+		.n-l-arrow__wrap,
+		.n-r-arrow__wrap
+			top: 35%
+	&-list
+		+clearfix
+		overflow: hidden
+		> li 
+			float: left
+			width: 140px
+			margin-right: 15px
+		.n-pic,
+		.n-name
+			margin-bottom: 10px
+		.n-pic
+			+img-loading
+			+width-height(140)
+		.n-name
+			+text-fool(46)
+
+// Product of goods of collect page 
+// ==========================================================================
+.n-prod
+	&__list
+		> li 
+			+clearfix
+			border-bottom: 1px solid $gr-lightest
+			margin-bottom: 20px
+			padding-bottom: 20px
+			position: relative
+			z-index: map-get($zindex, zero)
+		> li:last-child
+			border-bottom: none
+			margin-bottom: 0
+			padding-bottom: 0
+		.n-pic
+			margin-right: 15px
+			+img-loading
+			+width-height(160)
+		.n-form__multi
+			width: 100%
+			li 
+				display: inline-block
+				margin-right: 15px
+		.n-btn
+			position: absolute
+			z-index: map-get($zindex, base)
+			bottom: 20px
+			left: 50%
+		.n-btn--lv2
+			padding-left: 10px
+			padding-right: 10px
+		.n-btn--lv2 .n-icon--cart-red
+			vertical-align: top
+			margin-top: 2px
+		.n-edit__box
+			top: 0
+			right: 0
+	&__list-box
+		width: 780px
+		.n-name
+			margin-bottom: 10px
+			+text-fool(46)
+		.n-name a 
+			color: $gr-dark
+
+// Account Manage commmon style
+// ==========================================================================
+.n-mem__profile
+	.n-form--verification
+		.n-form__box:first-child
+			margin-right: 10px
+			width: 728px
+	.n-btn--lv2
+		padding-left: 8px
+		padding-right: 8px
+	.n-form--phone
+		.n-form__box:nth-child(2)
+			margin-right: 10px
+		.n-form__box:nth-child(3)
+			width: 638px
+	.n-form--birth
+		.n-form__box
+			margin-right: 36px
+		.n-form__box:nth-child(4)
+			margin-right: 0
+	.n-form--address
+		.n-form__box
+			margin-right: 36px
+			margin-bottom: 10px
+		.note--box-lv2 
+			margin-top: 5px
+			padding: 10px
+		.n-is--hide
+			display: none
+	.n-form--china
+		.col-3
+			width: 30%
+			margin-bottom: 0
+		.col-7
+			margin-right: 0
+			margin-bottom: 0
+			width: 65%
+
+.n-form__foot
+	margin-top: 30px
+	.n-btn
+		margin-right: 10px
+
+
+
+.n-edit__text
+	color: $gr-dark
+	[class^="n-icon--"]
+		vertical-align: top
+		margin-top: 3px
+		margin-right: 5px
+.n-edit__text:hover 
+	color: $pr-medium
+	.n-icon--del-gray
+		@include sprite($icon-del-red);
+	.n-icon--edit
+		@include sprite($icon-edit-red);
+
+// Help Center style
+// ==========================================================================
+.n-help__step
+	.n-title--13,
+	p
+		margin-bottom: 5px
+	p,
+	img
+		margin-left: 50px
+	ol 
+		margin-left: 70px
+		margin-bottom: 10px
+	> li 
+		margin-bottom: 15px
+.n-comment__field
+	position: relative
+	z-index: map-get($zindex, zero)
+	.col-2
+		margin-bottom: 5px
+	textarea 
+		height: 100px
+	.note--box-lv3
+		position: absolute
+		z-index: map-get($zindex, base)
+		width: 120px
+		right: 1px
+		top: 126px
+	.n-form__foot
+		margin-top: 10px
+
+.n-list__phone
+	margin-left: 20px
+.n-qa
+	&__title
+		border-bottom: 2px solid $gr-lightest
+		padding-bottom: 10px
+	&__box
+		border-left: 1px solid $gr-lightest
+		border-right: 1px solid $gr-lightest
+	&__caption,
+	&__body
+		padding: 10px
+	&__caption
+		border-bottom: 1px solid $gr-lightest
+		cursor: pointer
+		[class^="n-icon--"]
+			vertical-align: top
+			margin-top: 4px
+			margin-right: 5px
+	&__caption:hover,
+	&--active
+		background-color: $gr2-lightest
+	&--active .n-icon--plus
+		+sprite($icon-minus)
+	&__body
+		display: none
+		padding-left: 34px
+		border-bottom: 1px solid $gr-lightest
+
+.n-subscription__wrap
+	.n-form__box.n-title--15
+		font-weight: normal
+		

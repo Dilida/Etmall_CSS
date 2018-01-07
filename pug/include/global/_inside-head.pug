@@ -1,0 +1,104 @@
+header.n-header.n-inside--head
+    .n-header__top
+        .n-layout--lg
+            #ShortcutLeftData
+                ul.n-left
+                    mixin leftNavs(leftUrl, leftTxt, taVal)
+                        li 
+                            a(href= leftUrl title= leftTxt target= taVal)= leftTxt
+                    +leftNavs('Home.aspx', '首頁', '_self')
+                    +leftNavs('http://www.etmall.com.tw/Pages/greenpointsp.aspx', '環保集點', '_blank')
+                    +leftNavs('http://www.etmall.com.tw/Pages/Go_Home.aspx?StoreID=22223', '直配大陸', '_blank')
+            #logon
+                ul.n-right#rightTopNavs
+                    mixin rightNavs(rightUrl, rightTxt, taVal)
+                        li 
+                            a(href= rightUrl title= rightTxt target= taVal)= rightTxt
+                    +rightNavs('#', '超級福利社', '_blank')
+                    +rightNavs('https://www.etmall.com.tw/Pages/PH_login.aspx', '登入', '_self')
+                    +rightNavs('https://www.etmall.com.tw/Pages/EPH_register.aspx', '註冊', '_self')
+                    //- +rightNavs('http://www.etmall.com.tw/Pages/OneCardSP.aspx', '得易Ponta', '_blank')
+                    //- +rightNavs('http://www.etmall.com.tw/Pages/SProductList.aspx?StoreID=90554&CategoryID=91069', '禮物卡', '_blank')
+                    li.n-has--drop
+                        a(href="#" title="得易Ponta") 得易Ponta
+                        ul
+                            - var pontaInfos = [{pontaUrl: '#', pontaTxt: '加入得易Ponta'}, {pontaUrl: '#', pontaTxt: '得易Ponta公告'}, {pontaUrl: '#', pontaTxt: '兌點專區'}, {pontaUrl: '#', pontaTxt: '點數明細'}, {pontaUrl: '#', pontaTxt: '常見問題'}]
+                            each pontaInfo in pontaInfos
+                                li
+                                    a(href= pontaInfo.pontaUrl title= pontaInfo.pontaTxt, target="_blank")= pontaInfo.pontaTxt
+                    li.n-has--drop
+                        a(href="#" title="禮物卡") 禮物卡
+                        ul
+                            - var giftInfos = [{giftUrl: '#', giftTxt: '禮物卡購買'}, {giftUrl: '#', giftTxt: '明細查詢'}, {giftUrl: '#', giftTxt: '常見問題'}, {giftUrl: '#', giftTxt: '禮物卡介紹'}]
+                            each giftInfo in giftInfos
+                                li
+                                    a(href= giftInfo.giftUrl title= giftInfo.giftTxt, target="_blank")= giftInfo.giftTxt
+                    li.n-has--drop
+                        a(href="#" title="會員服務") 會員服務
+                        ul
+                            - var memInfos = [{memUrl: '#', memTxt: '訂單查詢'}, {memUrl: '#', memTxt: '開卡專區'}, {memUrl: '#', memTxt: '折價券 (0)'}, {memUrl: '#', memTxt: '折扣金 (10000)'}, {memUrl: '#', memTxt: '帳號管理'}, {memUrl: '#', memTxt: '常見問題'}, {memUrl: '#', memTxt: '聯絡我們'}]
+                            each memInfo in memInfos
+                                li
+                                    a(href= memInfo.memUrl title= memInfo.memTxt, target="_blank")= memInfo.memTxt
+                    li
+                        a(href="#" title="蒐藏")
+                            <i class="n-icon--collect"></i>
+                            |蒐藏 
+                            span (0)
+                    li.n-has--drop.n-header__cart
+                        a(href="#" title="購物車(0)") 
+                            <i class="n-icon--cart"></i>
+                            span.count--round
+                                span 99
+                            |購物車 
+                            span (0)
+                        ul
+                            li
+                                .n-left.n-header__name 一般宅配 
+                                    span (1)
+                                .n-right.n-header__price
+                                    span.n-price--16 $
+                                        span 950,000
+                            li
+                                .n-left.n-header__name 快速到貨 
+                                    span (0)
+                                .n-right.n-header__price
+                                    span.n-price--16 $
+                                        span 5,000
+                            li
+                                .n-left.n-header__name 超商取貨 
+                                    span (100)
+                                .n-right.n-header__price
+                                    span.n-price--16 $
+                                        span 800
+                            li
+                                .n-left.n-header__name 海外直配 
+                                    span (0)
+                                .n-right.n-header__price
+                                    span.n-price--16 $
+                                        span 950,000
+                            li.n-header__btn
+                                a.n-btn.n-btn--primary(href="#" title="結帳") 結帳
+    
+    .n-header__body
+        .n-layout--lg
+            .n-left
+                a.n-ehs--logo(href="index.htm" title="東森嚴選－ET Mall東森購物網") 東森嚴選－ET Mall東森購物網
+            #SearchBar
+                .n-left.n-search
+                    .n-search__wrap#globalSearch
+                        form(action="")
+                            input(class="n-form--control" type="text" placeholder="請輸入商品關鍵字")
+                            button(class="n-btn n-btn--search" type="submit") 搜尋
+                            button(class="n-btn n-btn--search24" type="submit") 搜 24H
+                    ul.n-search__hotkey
+                        li 熱搜：
+                        - var hotKeys = [{hotUrl:'#', hotTxt: '曾拌麵'}, {hotUrl:'#', hotTxt: '行李'}, {hotUrl:'#', hotTxt: '好神拖'}, {hotUrl:'#', hotTxt: '家而適'}, {hotUrl:'#', hotTxt: '鍋寶'}, {hotUrl:'#', hotTxt: '滿意寶寶'}, {hotUrl:'#', hotTxt: '葉黃素'}, {hotUrl:'#', hotTxt: '雨靴'}, {hotUrl:'#', hotTxt: '連衣裙'}, {hotUrl:'#', hotTxt: 'iphone6'}]
+                        each hotKey in hotKeys
+                            li
+                                a(href= hotKey.hotUrl title= hotKey.hotTxt  target="_blank")= hotKey.hotTxt
+
+    .n-nav__wrap
+        .n-layout--lg
+            include _nav-hide
+            include _nav-feature

@@ -1,0 +1,141 @@
+// ==========================================================================
+// theme
+// ==========================================================================
+
+// ==========================================================================
+// import sprite 
+// ==========================================================================
+// @import "_theme/_sprite.scss";
+
+// Index bg
+// ==========================================================================
+.n-newyaer--visual {
+	background: url('../img201703/index/newyear-visual.png') 234px 5px no-repeat;
+}
+
+.n-bg--gr-lighter {
+	background-color: $gr-lighter; // #DDDDDD
+}
+
+.n-theme--gr2-lighter,
+.n-bg--gr2-lighter {
+	background-color: $gr2-lighter; // #F7F7F7
+}
+
+.n-theme--gr2-dp-light,
+.n-bg--gr2-dp-light {
+	background-color: $gr2-dp-light; // #FFFFFF
+}
+
+
+
+// Index title color
+// ==========================================================================
+.n-theme--pr-medium,
+.n-category--clothes,
+.n-category--shoes,
+.n-category--underwear {
+	color: $pr-lightest; // #FF836F
+}
+
+.n-theme--se-dark,
+.n-category--jewelry,
+.n-category--watch {
+	color: $se-dark; // #BD164F
+}
+
+
+.n-theme--se-lighter,
+.n-category--makeups,
+.n-category--health {
+	color: $se-lighter; // #FF6291
+}
+
+.n-theme--pr-lighter,
+.n-category--food,
+.n-category--bed,
+.n-category--use {
+	color: $pr-lighter; // #FF4E30
+}
+
+.n-theme--fo-medium,
+.n-category--computer,
+.n-category--fine,
+.n-category--sport,
+.n-category--travel {
+	color: $fo-medium; // #00AAE9
+}
+
+// aside title bg
+// ==========================================================================
+
+.n-bg--gr2-light {
+	background-color: $gr2-light; // #F3F3F3
+}
+
+.n-bg--pr-medium,
+.n-bg--se-dark, 
+.n-bg--se-lighter,
+.n-bg--pr-lighter,
+.n-bg--fo-medium {
+	color: $gr2-dp-light  // #FFFFFF
+}
+.n-bg--pr-medium {
+	background-color: $pr-lightest; // #FF836F
+}
+
+.n-bg--se-dark {
+	background-color: $se-dark; // #BD164F;
+}
+
+.n-bg--se-lighter {
+	background-color: $se-lighter; // #FF6291
+}
+
+.n-bg--pr-lighter {
+	background-color: $pr-lighter; // #FF4E30
+}
+
+.n-bg--fo-medium {
+	background-color: $fo-medium; // #00AAE9
+}
+
+.n-bg--gr-darkest {
+	background-color: $gr-darkest; // #323232
+}
+
+// labels color
+// ==========================================================================
+.n-bg--ye-dark {
+	background-color: $ye-dark; // #C1B200
+}
+
+.n-bg--se-lighter {
+	background-color: $se-lighter; // #FF6291
+}
+
+// yellow color
+// ==========================================================================
+.n-bg--ye-dp-light {
+	background-color: $ye-dp-light; // #FFFDE8
+}
+
+
+// Topic four banner
+// ==========================================================================
+
+.pri-medium--50 {
+	background-color: rgba($pr-medium, .5);
+}
+
+.sec-medium--50 {
+	background-color: rgba($se-medium, .5);
+}
+
+.fou-medium--50 {
+	background-color: rgba($fo-medium, .5);
+}
+
+.yel-darket--50 {
+	background-color: rgba($ye-medium, .5);
+}

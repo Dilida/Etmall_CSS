@@ -1,0 +1,306 @@
+doctype html
+html(lang='zh-Hant-TW')
+    head
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+        <![endif]-->
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=1260')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Facebook登入 -- 東森嚴選－ET Mall東森購物網
+        include include/global/_meta
+        link(href='Resource/css201703/n-base.css', rel='stylesheet')
+        link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+        link(href='Resource/css201703/n-common.css', rel='stylesheet')
+        link(href='Resource/css201703/n-reg.css', rel='stylesheet')
+    body.n-theme--gr2-lighter
+        main.n-wrapper
+            include include/global/_inside-head
+            .n-l-960.n-l-colmt20.n-l-colmb50
+                form#loginFbMember(action="")
+                    .n-l-bgw-lg.n-l-bgw-border.n-reg__wrap
+                        .n-title__wrap.n-text--center 
+                            .n-title--18 Facebook登入
+                        .n-l-bgw-lg.n-reg__body.n-reg--fb-login
+                            .n-process.n-l-colmb20.n-process--three-steps.n-process--start
+                                .n-process__box
+                                    .n-process--dot
+                                    p 選擇認證方式
+                                .n-process__box
+                                    .n-process--dot
+                                    p 手機驗證
+                                .n-process__box
+                                    .n-process--dot
+                                    p 登入完成
+                            ul.n-l-bgw-lg.n-login__fb-desc#fbLoginSelect
+                                li.col-4.n-text--center
+                                    p.n-title--16 東森購物網會員
+                                    p 使用網站會員帳號進行 Facebook 綁定，日後可以使用 Facebook 登入東森購物網
+                                    a.n-btn.n-btn--black(href="", title="我是網站會員") 我是網站會員
+                                li.col-4.n-text--center
+                                    p.n-title--16 東森電視購物會員
+                                    p 請輸入身分證字號設定網站帳號成為東森購物網會員，日後可以使用 Facebook 登入東森購物
+                                    a.n-btn.n-btn--black(href="", title="我是電視購物會員") 我是電視購物會員
+                                li.col-4.n-text--center
+                                    p.n-title--16 尚未成為東森購物網會員
+                                    p 請輸入 Facebook 帳號，並同時註冊為東森購物網會員，日後可以使用 Facebook 登入東森購物網
+                                    a.n-btn.n-btn--black(href="", title="註冊東森網會員") 註冊東森網會員
+                            
+                            
+                            .n-l-bgw-lg.n-reg__login-box1.n-is--hide
+                                ul.n-reg__fields.n-reg__login-fb.n-form-aligned
+                                    li.n-form__box
+                                        label.n-form--title(for="userName") 帳號
+                                        input.n-form--control#userName(type="text", name="userName", placeholder="請輸入帳號")
+                                    li.n-form__box
+                                        label.n-form--title(for="password") 密碼
+                                        input.n-form--control#password(type="text", name="password")
+                                    li.n-form__multiple.n-form__box
+                                        label.n-form--title(for="CheckPwd") 驗證碼
+                                        input.n-form--control#CheckPwd(type="text", name="CheckPwd")
+                                        img#CheckPWDIMG(src="Resource/img201703/member/reg/VCode.jpg", alt="驗證碼")
+                                        a.n-normal--link#changeCodeImg(href="", title="更新驗證碼") 更新驗證碼
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary#LoginSubmit(type="submit") 確認
+
+                            .n-l-bgw-lg.n-reg__login-box2.n-is--hide
+                                ul.n-reg__fields.n-reg__login-fb.n-form-aligned
+                                    li.n-form__box
+                                        label.n-form--title(for="CITI_NO") 身分證號碼
+                                        input.n-form--control#CITI_NO(type="text", name="CITI_NO", placeholder="請輸入身分證號碼")
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary#IDConfirm(type="submit") 我同意以下條款，確定註冊
+                                    li 
+                                        ul.n-list--disc
+                                            li 小叮嚀 
+                                                p 提醒您，當您填妥資料並點擊「我同意以下條款，確定註冊」送出後，系統將自動傳驗證碼簡訊到您手機中。 若您的會員資料有誤，請撥打免費服務專線<span class="n-pr--medium">0800-057-999</span>，將由專人為您服務，謝謝!
+                                
+                                    
+
+                            .n-l-bgw-lg.n-reg__login-box3.n-is--hide
+                                ul.n-reg__fields.n-reg__login-fb.n-form-aligned
+                                    li.n-form__box
+                                        label.n-form--title(for="Email") 電子信箱
+                                        input.n-form--control#Email(type="text", name="Email", placeholder="請輸入電子信箱")
+                                    li.n-form__box
+                                        label.n-form--title(for="Mobile") 手機號碼
+                                        input.n-form--control#Mobile(type="text", name="Mobile", placeholder="僅限輸入台灣地區手機號碼")
+                                    li.n-form__box
+                                        label.n-form--title(for="Password") 密碼
+                                        input.n-form--control#Password(type="text", name="Password", placeholder="請輸入7~12位英數字混合")
+                                    li.n-form__box
+                                        label.n-form--title(for="PasswordConfirm") 確認密碼
+                                        input.n-form--control#PasswordConfirm(type="text", name="Mobile", placeholder="請輸入7~12位英數字混合")
+                                    li.n-form__multiple.n-form__box
+                                        label.n-form--title(for="vcode") 驗證碼
+                                        input.n-form--control#vcode(type="text", name="vcode")
+                                        img#CheckPWDIMG2(src="Resource/img201703/member/reg/VCode.jpg", alt="驗證碼")
+                                        a.n-normal--link#changeCodeImg(href="", title="更新驗證碼") 更新驗證碼
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary#FBRegister(type="submit") 我同意以下條款，確定註冊
+                        
+                            .n-l-bgw-lg.n-reg__terms.n-is--hide
+                                .n-title--13 東森購物網會員權益條款、個資權益宣告
+                                .n-form--radio.n-label--inline
+                                    input#webagreeYes(type="radio", name="webagree", value="Y", checked)
+                                    label(for="webagreeYes") 同意
+                                .n-form--radio.n-label--inline
+                                    input#webagreeNo(type="radio", name="webagree", value="N")
+                                    label(for="webagreeNo") 不同意
+                                .n-l-bgw-md.n-l-bgw-border.n-reg__terms-box
+                                    p 歡迎您加入成為東森購物會員（包含東森電視購物、東森型錄、MOD、手機購物及東森網路商城），東森購物會員服務(以下稱會員服務)係由『東森得易購股份有限公司』(以下稱本公司)所建置提供，請詳細閱讀以下權益條款，本條款訂立的目的，是為了保護本公司以及會員的利益，並作為本公司與會員間會員服務提供權利義務關係之依據，當您完成相關基本資料(含姓名、身分證字號、電子郵件地址、聯絡電話、地址、出生日期、性別等資料)之提供進行消費，或於ET Mall東森購物網路商城(以下簡稱ET Mall)完成註冊手續，即正式成為本公司會員，並於開始使用本公司(含ET Mall)所提供之會員服務時，即視為已知悉及完全同意本條款的所有約定：
+                                    p.n-title--13 會員服務及權利義務
+                                    ol.n-list--decimal
+                                        li 本公司於完成並確認您的會員資格後，本公司將提供『一般』會員服務內容有：七天送貨到府、十天商品鑑賞期(此鑑賞內只提供商品或服務之鑑賞參考，而非商品或服務的使用)、到府收送退換貨、信用卡分期免息、個人消費記錄查詢、電子報訂閱服務，或其他未來可能新增之一般會員服務。為充分服務會員，會員同意本公司以信函、寄交之型錄或透過郵件、通信網路等，不定期告知本公司及關係企業各項活動資訊及郵購商品。若不想收到ET Mall會員電子報者，請至下列網址取消訂閱 <a class="n-blue--link" href="http://www.etmall.com.tw/Pages/EDMSubscribe.aspx">http://www.etmall.com.tw</a>
+                                        li 本公司提供之會員服務、功能以及其他一切因會員身分得享有之權益，均仍屬本公司或其他合法權利人所有，會員除僅得於服務期間內依本條款之約定為使用外，均不得以任何方式將其轉讓、移轉、出租或出借予其他任何第三人，會員就會員服務所為之任何轉讓、移轉、出租或出借予其他任何第三人之行為，對本公司不生效力。
+                                        li 本公司提供會員服務之期間，係指您完成基本資料提供建檔或於ET Mall完成註冊程序後，本公司於完成相關系統設定、使會員服務達於可供使用之日起，至會員向本公司請求刪除其全部個人資料而經本公司同意終止服務之日止，或本公司因會員有違反本權益條款而為主動終止服務之日止。
+                                        li 會員服務及ET Mall會員服務系統僅依當時所提供之相關權益、功能及狀態提供服務；本公司保留新增、修改、取消會員服務及ET Mall會員服務系統內相關會員權益或系統功能之全部或一部之權利，其新修正內容將適時公布於本網站，不另外個別通知會員。會員並同意遵守新修正之條款及依該條款使用ET Mall會員服務系統。
+                                        li 會員為取得會員資格需經完整正確之資料提供及註冊手續，並提供或填入完整、而且正確的資料。如拒絕提供基本資料或未完成註冊，將無法享有會員服務。如會員提供或註冊之資料有不完整、不正確或資料有所更改而怠於通知本公司更正者，其相關責任應由會員自行負擔，概與本公司無涉，如因此致本公司受有損害者，會員並應負損害賠償責任。
+                                        li 於ET Mall註冊會員資料時，可申請一組個人使用者帳號及專屬密碼，而使用會員服務的過程中，會員必須為經由該帳號和密碼進行所有購物行為；另所有使用其帳號和密碼進入ET Mall之行為，均視為該帳號及密碼持有人之行為，會員應對該等行為負責。
+                                        li 會員應嚴防其個人資料、付款資料（包含信用卡資料）、使用者帳號和密碼外洩。倘有外洩而遭他人留用、冒用者，會員應自負法律責任。會員使用各項專屬權益時，請清楚告知會員帳號及相關資料，若資料錯誤，本公司於會員之個人資料有受冒用而產生損失之風險時，為維護會員權益，得停止會員服務。會員若有包括但不限於大量訂購惡意銷退，拒收、濫用本公司回饋機制、拒絕償還、進線主張非消費性問題，或違反會員服務之精神或本條款者，本公司均有權力終止及拒絕提供會員服務，您承認並同意本公司依本條款任何規定對會員提供之服務，無需進行事先通知即得終止，且會員服務之終止，本公司對會員或任何第三人均不承擔任何責任。
+                                        li 會員同意並瞭解本公司於各通路所刊播之任何廣告及促銷資訊，其性質屬「要約之引誘」，本公司有權拒絕會員之要約。且會員同意並瞭解，本公司於各通路所刊播之任何廣告及促銷資訊有所錯誤者，本公司將以適當方式為更正之通告，如會員要求本公司履行更正前之資訊內容者，本公司有權拒絕之，會員不得向本公司為任何之請求。
+                                        li 本公司會保護每一位會員的隱私，對於會員所登錄或留存之個人資料、消費資料，本公司將於法律許可之範圍內蒐集、處理、保存、傳遞及使用該等資料並善盡保密責任，除了為完成該筆交易或提供會員相關資訊或優惠等服務而提供給相關商品或服務之廠商(如協助配送之物流廠商)外，絕不販售或任意提供給第三者。
+                                        li 會員就本公司蒐集之其個人資料，得依本公司網頁 <a class="n-blue--link" href="http://www.etmall.com.tw/Pages/R6MemCenterCustomer_sub.aspx?Page=2_3_aftersale_chTel">http://www.etmall.com.tw</a> 中所提供之服務電話，來電向本公司查詢、請求閱覽或製給複製本(本公司得酌收必要成本費用每件NT60元。)，或請求補充、更正其個人資料，或請求本公司停止蒐集、處理、利用其個人資料或為刪除，本公司將儘速回覆及處理。
+                                    p.n-title--13 ET Mall會員服務系統暫停或中斷
+                                        ol.n-list--decimal
+                                            li 在下列情形，本公司將暫停或中斷會員服務系統之全部或一部，且對使用者任何直接或間接之損害，均不負任何責任： 
+                                                ol.n-list--leading-zero
+                                                    li 對本服務系統相關軟硬體設備進行搬遷、更換、升級、保養或維修時；
+                                                    li 使用者有任何違反政府法令或本使用條款情形；
+                                                    li 天災或其他不可抗力所致之服務系統停止或中斷；
+                                                    li 其他不可歸責於本公司之事由所致之服務停止或中斷。
+                                            li ET Mall會員服務系統或功能『例行性』之維護、改置或變動所發生之服務暫停或中斷，本公司將於該暫停或中斷前以電子郵件、公告或其他適當之方式告知會員。
+                                    p.n-title--13 付款相關權益
+                                        ol.n-list--decimal
+                                            li 如會員於消費時選擇分期付款之付款方式，為確保權益，請務必按時繳納，如有一期以上延滯繳款，本公司將視該筆貨款為全部到期
+                                            li 若因帳款有延滯情形，會員同意本公司有權限制或保留會員包括但不限於消費付款方式、分期優惠、調整會員等級之權利，會員不得因此向本公司有任何請求。
+
+                                    p.n-title--13 終止會員服務
+                                        ol.n-list--decimal
+                                            li 如會員於消費時選擇分期付款之付款方式，為確保權益，請務必按時繳納，如有一期以上延滯繳款，本公司將視該筆貨款為全部到期
+                                            li 若因帳款有延滯情形，會員同意本公司有權限制或保留會員包括但不限於消費付款方式、分期優惠、調整會員等級之權利，會員不得因此向本公司有任何請求。
+
+                                    p.n-title--13 準據法
+                                        ol.n-list--decimal
+                                            li 非經本公司事先書面同意，會員不得將本公司各通路（包含東森電視購物、東森型錄及ET Mall）之任何資料進行重複製、移轉、散布、改作、租用或出售等行為。同時會員必須遵守商標法、著作權法、電信法、個人資料保護法及其他相關法令之規定，如有違反，本公司得依法請求賠償。
+
+                                    p
+                                        <a class="n-blue--link" href="http://www.etmall.com.tw/Pages/R6MemCenterNoticec_sub.aspx?Page=7_2_notice_private">隱私權保護政策</a>
+
+                                    p.n-title--13 個資權益宣告
+                                    p 依個資法§8規定，向會員蒐集個人資料時，應明確告知以下事項：
+                                    ol.n-list--decimal
+                                        li 資料之蒐集：
+                                            ul
+                                                li 本公司依照您主動提供，或經合法或經您同意由第三人提供有關您之個人資料。
+                                        li 蒐集之目的： 
+                                            ul
+                                                li 基於商品配送、消費者客戶管理與服務（包括但不限於會員相關權益通知、服務滿意度調查、為提供更適合會員之商品或優惠所作之統計分析等）、行銷資料、其他合於營業登記項目或章程所定之業務。
+                                        li 蒐集之個人資料類別：
+                                            ul
+                                                li C○○一 識別個人者：如姓名、住居所、聯絡電話、電子郵件或其他可辨識資料本人者等。 
+                                                li C○○二 識別財務者：如銀行帳戶之號碼與姓名、信用卡或簽帳卡之號碼等。 
+                                                li C○○三 政府資料中之辨識者：如身分證統一編號、護照號碼等。 
+                                                li C○一一 個人描述：如年齡、性別、出生年月日、國籍等。
+                                                li C○九三 財務資料：如支付方式、往來記錄等。
+                                                li C一○二 契約或約定：如關於交易、法律或契約等。 
+                                                li C○五一 學校紀錄：如學歷。 
+                                                li C○二一 家庭情形：如婚姻有無、子女人數等。
+                                        li 個人資料利用之期間、地區、對象及方式： 
+                                            ul
+                                                li 本公司於本國為提供會員服務（包括但不限於交易之查詢、退換貨及售後服務等）將於營運期間蒐集使用會員個人資料，且為基於服務目的，本公司會委任處理營運相關事務之必要第三人（如：合作廠商、物流廠商）或由本公司之關係企業基於寄發行銷優惠訊息者，均將使用您的個人資料；惟當會員要求刪除個人資料時，本公司將先凍結該會員資料與其歷史訂單記錄，並禁止員工對該會員資料進行因行銷目的之蒐集、處理、利用，並於法令規定之保存期間屆滿後進行刪除。
+                                        li 您可以向本公司行使以下權利：
+                                            ol.n-list--leading-zero
+                                                li 查詢或請求閱覽。
+                                                li 請求製給複製本。
+                                                li 請求停止蒐集、處理或利用。
+                                                li 請求刪除。
+                                            p 但查詢或請求閱覽個人資料或製給複製本者，本公司得酌收必要成本費用每件NT60元。
+                                        li 您可以自由選擇提供您之個人資料予本公司，惟若無法提供身分證字號，則無法參與本公司相關之行銷活動；若您無法提供生日，將無法寄發生日禮給您。
+
+                            .n-l-bgw-lg.n-reg__terms.n-is--hide
+                                .n-title--13 行銷資訊通知
+                                .n-form--radio.n-label--inline
+                                    input#marketagreeYes(type="radio", name="marketagree", value="Y", checked)
+                                    label(for="marketagreeYes") 同意
+                                .n-form--radio.n-label--inline
+                                    input#marketagreeNo(type="radio", name="marketagree", value="N")
+                                    label(for="marketagreeNo") 不同意
+                                .n-l-bgw-md.n-l-bgw-border.n-reg__terms-box
+                                    p 東森購物得不定期：
+                                    ol.n-list--decimal
+                                        li 以簡訊、電話、傳真、電子報、型錄、郵件等方式通知相關商品、活動或服務之資訊(日後如不願接受，可撥打客戶專線0800-057-999通知東森購物)。
+                                        li 撥打電話關懷會員、詢問東森購物之服務滿意度及前項資訊接收率調查。
+
+                            //- include include/register/_ponta-terms-1
+                            .n-l-bgw-lg.n-reg__terms.n-is--hide
+                                .n-title--13 得易Ponta聯名暨個資宣告條款
+                                .n-form--radio.n-label--inline
+                                    input#pontapersonalagreeYes(type="radio", name="pontapersonalagree", value="Y", checked)
+                                    label(for="pontapersonalagreeYes") 同意
+                                .n-form--radio.n-label--inline
+                                    input#pontapersonalagreeNo(type="radio", name="pontapersonalagree", value="N")
+                                    label(for="pontapersonalagreeNo") 不同意
+                                .n-l-bgw-md.n-l-bgw-border.n-reg__terms-box
+                                    p 申請得易Ponta聯名卡視為同時申請成為森森百貨股份有限公司及東森得易購股份有限公司之會員（網站消費購物仍須先上網註冊完成，完整會員條款請詳閱森森百貨www.u-mall.com.tw及東森得易購www.etmall.com.tw網站所載。
+                                    p 聯名機構（森森百貨股份有限公司及東森得易購股份有限公司，下同）之個人資料使用同意條款：勾選同意者，即同意聯名機構於聯名卡契約有效期間內得分別或共同蒐集、處理、利用申請人於本申請書所提供之個人資料、於聯名機構之消費交易記錄及累兌點資料，作為聯名卡提供優惠、服務或行銷等之用。如未勾選同意，將無法核發聯名卡。申請人如日後表示不同意，視為申請停用該聯名卡。
+                                    p 東森購物將本人之個人資料(姓名、行動電話、出生年月日、電子郵件、性別、身分證號、住址等) 、於聯名機構之消費交易記錄及累兌點資料提供予東森整合行銷股份有限公司及森森百貨股份有限公司，作為聯名卡之申辦、提供優惠、服務或行銷等使用。
+                                    p 聯名機構（森森百貨股份有限公司及東森得易購股份有限公司，下同）之重要會員條款摘露如下，完整會員條款請詳閱森森百貨及東森得易購網站所載：
+                                    ol.n-list--decimal
+                                        li 依個人資料保護法宣告如下：
+                                            ul
+                                                li 資料之蒐集：聯名機構依照您主動提供，或經合法或經您同意由第三人提供有關您之個人資料。
+                                                li 蒐集之目的：基於商品配送、消費者客戶管理與服務（包括但不限於會員相關權益通知、服務滿意度調查、為提供更適合會員之商品或優惠所作之統計分析等）、行銷資料、其他合於營業登記項目或章程所定之業務。
+                                                li 蒐集之個人資料類別：C○○一 識別個人者：如姓名、住居所、聯絡電話、電子郵件或其他可辨識資料本人者等。
+                                                li C○○二 識別財務者：如銀行帳戶之號碼與姓名、信用卡或簽帳卡之號碼等。
+                                                li C○○三 政府資料中之辨識者：如身分證統一編號、護照號碼等。
+                                                li C○一一 個人描述：如年齡、性別、出生年月日、國籍等。
+                                                li C○九三 財務資料：如支付方式、往來記錄等。
+                                                li C一○二 契約或約定：如關於交易、法律或契約等。
+                                                li C○五一 學校紀錄：如學歷。
+                                                li C○二一 家庭情形：如婚姻有無、子女人數等。
+                                                li 個人資料利用之期間、地區、對象及方式：聯名機構於本國為提供會員服務（包括但不限於交易之查詢、退換貨及售後服務等）將於營運期間蒐集使用會員個人資料，且為基於服務目的，聯名機構會委任處理營運相關事務之必要第三人（如：合作廠商、物流廠商）或由聯名機構之關係企業基於寄發行銷優惠訊息者，均將使用您的個人資料；惟當會員要求刪除個人資料時，聯名機構將先凍結該會員資料與其歷史訂單記錄，並禁止員工對該會員資料進行因行銷目的之蒐集、處理、利用，並於法令規定之保存期間屆滿後進行刪除。
+                                        li 聯名機構得不定期：
+                                            ul
+                                                li 寄發電子報、型錄、發送簡訊、郵件等相關商品或服務之資訊（日後如不願接受，請撥打客戶專線0800-609-609通知森森百貨、0800-057-999通知東森購物）。聯名機構之關係企業得寄送相關行銷優惠訊息。
+
+                            //- include include/register/_ponta-terms-2
+                            .n-l-bgw-lg.n-reg__terms.n-is--hide
+                                .n-title--13 得易Ponta聯名卡會員服務使用辦法
+                                .n-form--radio.n-label--inline
+                                    input#pontaaccountagreeYes(type="radio", name="pontaaccountagree", value="Y", checked)
+                                    label(for="pontaaccountagreeYes") 同意
+                                .n-form--radio.n-label--inline
+                                    input#pontaaccountagreeNo(type="radio", name="pontaaccountagree", value="N")
+                                    label(for="pontaaccountagreeNo") 不同意
+                                .n-l-bgw-md.n-l-bgw-border.n-reg__terms-box
+                                    p 歡迎您，在您申請得易Ponta聯名卡前，請詳閱會員服務使用辦法：
+                                    ol.n-list--decimal
+                                        li 當您完成相關申請註冊，並使用得易Ponta卡服務(包括各相關特約商、網站、APP等，以下皆同)時，即表示您或(及)您的父母、監護人(如您未滿二十歲)已經閱讀、瞭解、並同意本使用辦法之各項約定條款。
+                                        li 申請作業
+                                            ol.n-list--leading-zero
+                                                li 申請人須填寫個人資料提出申請，經東森整合行銷股份有限公司(下稱得易Ponta卡)或指定之發卡特約商依程序完成會員發卡作業後，始成為得易Ponta卡會員（以下簡稱會員）。
+                                                li 申請人應填寫正確之個人資料，若有變更應盡速更新，並提供相關身分證件以供查驗，以確保權益。
+                                                li 申請人同意得易Ponta卡得依申請人所提供之個人資料，不定期發送各項行銷獎勵活動或優惠資訊。
+                                                li 如有冒用他人身分、個人資料填寫不正確或不完整者(含嗣後變動未更新者等)，須自負相關法律責任及會員權益受損之風險(例如：無法享受完整之會員服務、無法累兌點數、停卡或加入會員失敗…等等)。會員填寫之電話號碼，得易Ponta卡可能會提供警政署進行555165反詐騙平台執行密碼驗證之用。
+                                                li 會員須經啟動得易Ponta卡網站www.ponta.com.tw會員服務驗證，始能進行兌點作業。
+                                        li 凡成功加入得易Ponta卡會員者，即得享有得易Ponta卡及各合作特約商(將不定期於得易Ponta卡網站www.ponta.com.tw或得易Ponta卡手機APP公告更新)贈送之得易Ponta卡會員點數(下稱點數)，並可累積點數以兌換得易Ponta卡各合作特約商提供之優惠服務或贈獎。
+                                        li 得易Ponta卡及其指定之委外合作廠商或合作銀行得於得易Ponta卡業務營運期間，於得易Ponta卡營運地區內，依「個人資料保護法之特定目的及個人資料之類別」之規定，蒐集、處理、利用及保有會員個人資料之特定目的：「○二四民意調查」、「○四○行銷」、「○八一個人資料之合法交易業務」、「○九○消費者、客戶管理與服務」、「一三六資訊與資料庫管理」、「一四八網路購物及其他電子商務服務」、「一七九其他財政服務」、「一八一其他經營合於營業登記項目或組織章程所定之業務」「一八二其他諮詢與顧問服務」等合理相關聯之特定目的範圍內，以各項資訊分析工具、資料交叉比對、手機簡訊及活動訊息推播、紙本或電子之郵件或問卷、電話行銷或服務、電子APP程式等方式蒐集、國際傳輸、處理及利用包括但不限於會員姓名、年齡、生日、身分證字號、職業、電話、地址、電子郵件、消費時間、消費明細(金額及商品等)、特約商、發票號碼、卡號，得易Ponta卡點數等各式相關資料，以執行本使用辦法並提供會員各種行銷優惠服務及訊息。會員得隨時向得易Ponta卡公司要求停止上述行為，得易Ponta卡及其指定之委外合作廠商於接到會員之通知後，將立即停止。
+                                        li 會員所提供之各項資料，除依個人資料保護法規定方式處理外，原則上將於得易Ponta卡停止營運後刪除之。
+                                        li 得易Ponta卡得將會員之個人資料提供予各相關特約商，以利累點及兌點作業、點數通知、各式統計分析、商品及服務行銷或其他服務之用，但得易Ponta卡應僅提供必要範圍之資料，且應要求特約商應依法保護會員之個人資料。又若得易Ponta卡擬將會員個人資料提供予非特約商進行電話、紙本或電子郵件等行銷時，將會取得會員以電話、手機簡訊及活動訊息推播、紙本、電子郵件或其他方式回覆同意後，始將會員之個人資料提供予特約商進行各式行銷。
+                                        li 得易Ponta卡僅與經政府合法立案成立之團體合作點數兌換現金之捐款活動，會員如表示同意以點數兌換現金以捐贈予該團體者，得易Ponta卡會一併將會員之姓名、地址、捐贈點數、兌換金額提供予受捐贈之合作團體，俾供其開立並寄發收據；但如會員同意無需開立收據或該次捐款活動公告無需開立收據及匿名捐贈者，得易Ponta卡則將依約定不提供會員地址或會員姓名予該受捐贈之團體。
+                                        li 依個人資料保護法之規定，會員本人得就所提供之個人資料向得易Ponta卡查詢、請求閱覽、請求製給複製本、請求補充或更正、請求停止蒐集處理或利用及刪除的權利；其中如係查詢或請求閱覽個人資料或製給複製本者，得易Ponta卡將酌收必要成本費用。
+                                        li 會員於得易Ponta卡網站(www.ponta.com.tw) 或得易Ponta卡手機APP之會員帳號為身分證號，且必須提供一組個人辨識密碼，請務必詳實填寫，不可重複申請註冊。若會員持有多張得易Ponta卡者，累兌之點數將不重複計算，每張卡片所累兌之點數，均將歸戶計算於同一身分證帳號。
+                                        li 會員如因遺失或毀損得易Ponta卡而申請補發時，得易Ponta卡將以800點兌換折抵工本費或酌收工本費每卡50元。
+                                        li 請會員務必妥善保管會員帳號及密碼，且勿將帳號或密碼洩露或提供予第三人知悉，以防止他人盜用。以同一個會員資料登錄使用會員服務的所有行為，都將被得易Ponta卡視為是這位會員本人的行為，應由會員本人自負完全的責任。
+                                        li 會員於行使會員所屬各相關權利或服務時，應出示會員卡或完成相關認證作業，得易Ponta卡或各特約商並得要求出示會員本人身分證明文件。
+                                        li 若發生資訊系統故障或點數登錄異常…等情形者，得易Ponta卡將暫停資訊系統服務或異常情形之點數累兌功能；待異常狀況排除後，將盡速恢復各項會員服務功能、調整發生異常情形之會員卡點數或以更換會員卡片之方式處理。
+                                        li 會員如欲辦理退貨者，得易Ponta卡或特約商將扣回原來該商品或服務所贈送之點數，如會員之點數不夠扣回者，會員需先繳交該不足扣回點數之處理成本費用(即不足之點數*NT$ 0.06)後，若會員未先繳交點數處理成本費用者，會員同意得易Ponta卡或特約商得逕自應退還之款項中扣抵該點數處理成本費用後，再將餘額退還會員。
+                                        li 會員申請點數移轉每次需額外收取移轉手續費點數50點，點數移轉作業將於申請後48小時內完成入帳，受讓人取得點數之有效期間，以點數移轉日期起算。點數移轉一經申請作業成功，無法要求取消。
+                                        li 會員不得要求將點數兌換現金或其他非得易Ponta卡所公告且有效之商品、服務或優惠等。
+                                        li 會員於成功完成啟用得易Ponta卡所寄發之確認電子郵件程序後，可使用得易Ponta卡網站(www.ponta.com.tw) 或得易Ponta卡手機APP之相關會員服務功能。
+                                        li 會員點數之累兌作業辦法、可兌換之優惠或贈品將隨時更新，會員得隨時透過得易Ponta卡網站(www.ponta.com.tw) 或得易Ponta卡手機APP查詢。
+                                        li 得易Ponta卡公司與各特約商或其他合作廠商間並無僱傭、委任、合夥、經銷、代理或保證等法律關係，會員與店家間之交易或兌換贈品，均由各店家負責提供予會員，亦由各店家自行對會員擔負相關之法律交易責任，概與得易Ponta卡無關。得易Ponta卡所提供之各項行銷活動悉依得易Ponta卡網站(www.ponta.com.tw) 或得易Ponta卡手機APP之公告為準。
+                                        li 除特約商另有公告外，會員新增累積之點數將於特約商確認交易後48小時內轉入會員帳戶內，且於兌換贈品時，將優先扣除獲贈日在前者之所需點數；會員當年度所累積之點數，可使用至次年12月31日止，惟點數到期之當年度，會員使用得易Ponta卡累積點數達當年度公告之標準者，則當年度將到期之點數使用效期將自動展延一年（如當年度未公告者，則延用前一年度之公告），且展延以一次為限。嗣後得易Ponta卡公司如另有調整點數展延效期規定之公告（詳官網）者，則優先適用該公告之說明。
+                                        li 得易Ponta卡保留修改或終止有關得易Ponta卡之申請或各項會員權益服務之權利。有關得易Ponta卡之各項服務辦法及會員相關權益等(包括但不限於特約商、行銷優惠等)均以得易Ponta卡網站之公告(www.ponta.com.tw) 為準。如有問題者，並得電話向得易Ponta卡詢問。
+                                        li 因使用得易Ponta卡網站(www.ponta.com.tw) 及得易Ponta卡手機APP或加入得易Ponta卡會員所生之爭議，如致生訴訟者，會員及得易Ponta卡同意以台灣台北地方法院為第一審管轄法院。
+                                        li 如有得易Ponta卡會員服務使用辦法或得易Ponta卡網站(www.ponta.com.tw)未公告規定之事項或公告規定之事項有爭議者，得易Ponta卡享有最終之解釋權；但如任一規定與法律之強行規定有相衝突者，則以法律之強行規定為準。
+                                    p 得易Ponta網站及得易Ponta手機APP使用及啟用約定條款：
+                                    ol
+                                        li 請確認一切以任何方式提供至得易Ponta卡網站( <a class="n-blue--link" href="https://www.ponta.com.tw/"> www.ponta.com.tw </a> ) 或得易Ponta卡手機APP之資料，都符合法令規定或權利人之同意授權，並皆視為會員有權並同意授權得易Ponta卡有權為重製、改作、公開播送、傳輸、散佈、發行或公開發表等(下稱使用授權)，且保證得易Ponta卡取得之授權使用內容，絕無侵害第三人之智慧財產權或違反法令。
+                                        li 會員在使用得易Ponta卡網站( <a class="n-blue--link" href="https://www.ponta.com.tw/"> www.ponta.com.tw </a> ) 或得易Ponta卡手機APP過程中所有之檔案資料紀錄均將留存，作為得易Ponta卡各式資訊分析之用；且會員人應填寫本人正確資料，如有冒用他人身分、個人資料填寫不正確或不完整者(含嗣後變動未更新者等)，須自負相關法律責任及會員權益受損之風險(例如：無法享受完整之會員服務、無法累兌點數、停卡或加入會員失敗…等等)。
+                                        li 會員一切之權利義務依據，悉以得易Ponta卡網站( <a class="n-blue--link" href="https://www.ponta.com.tw/"> www.ponta.com.tw </a> ) 及得易Ponta卡手機APP資料庫依正常程序所記錄之電子資料為準，會員不得有任何異議。
+                                        li 得易Ponta卡將以目前合理之方式及技術維持得易Ponta卡網站( <a class="n-blue--link" href="https://www.ponta.com.tw/"> www.ponta.com.tw </a> ) 、得易Ponta卡手機APP及得易Ponta卡會員之各項系統或功能之正常運作，並維護會員之權益。但於以下情形，將可能暫停或中斷上述各項運作之全部或一部，且對會員任何直接或間接之損害均不負任何賠償或補償責任：
+                                            ol.n-list--lower-alpha
+                                                li 資訊系統之維護、升級、更換、搬遷或除錯時；
+                                                li 會員有任何違反法令或本使用約定條款之情形者；
+                                                li 會員有任何違反法令或本使用約定條款之情形者；
+                                                li 非得易Ponta卡所得控制事由而致會員之服務資訊顯示錯誤、或遭偽造、變造、刪改或竊取、或致系統中斷或不能正常運作者。
+                                        li 得易Ponta卡網站( <a class="n-blue--link" href="https://www.ponta.com.tw/"> www.ponta.com.tw </a> ) 或得易Ponta卡手機APP 與其他網站間之連結，並不代表得易Ponta卡與此連結網站間有任何僱傭、委任、合夥、經銷、代理或保證等法律關係，會員與其他連結網站間所發生之權利義務關係，均由各該連結網站自行負責，概與得易Ponta卡無關；且得易Ponta卡公司對所有的外部連結網站，絕不擔保其合法性、有效性、即時性或其他一切任何擔保及責任。
+                                        li 使用得易Ponta卡網站( <a class="n-blue--link" href="https://www.ponta.com.tw/"> www.ponta.com.tw </a> ) 或得易Ponta卡手機APP時，請注意以下事項：
+                                            ol.n-list--lower-alpha
+                                                li 請會員務必妥善保管會員帳號及密碼，且勿將帳號或密碼洩露或提供予第三人知悉，以防止他人盜用。
+                                                li 會員在使用、瀏覽或查詢得易Ponta卡網站(www.ponta.com.tw) 或得易Ponta卡手機APP過程中所有之檔案資料紀錄(包括但不限於IP位址、使用時間、使用的裝置、使用的瀏覽器、瀏覽及點選資料紀錄等)均將留存。
+                                                li 為了精進技術並提供更好的服務，得易Ponta卡網站(www.ponta.com.tw) 或得易Ponta卡手機APP可能會使用一切相關之電子資訊技術或方式，進行網站資料的搜集工作或統計分析等，並可能以綜合數據形式(例如人數統計和使用情況等資料)提供特約商或其他合作對象參考；除非得到會員的同意，將不會提供包括可以識別個人身分的資料。如果會員不想參與以上的資料搜集工作，可隨時通知得易Ponta卡。
+                                                li 得易Ponta卡將會依情況適時增刪修改得易Ponta卡網站(www.ponta.com.tw)之內容，請會員能隨時注意網站上之公告或變動。
+                        
+                            .n-l-bgw-lg(style="padding-bottom: 0")
+                                .n-reg__hints.note--box-lv3
+                                    ul.n-list--disc
+                                        li 請選擇您可以認證的方式，完成帳號設定後，未來您可使用Facebook帳號登入，也可使用東森購物網帳號登入。                        
+                        
+
+
+            include include/global/_footer
+            include include/global/_go-top
+        script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+        script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+        script(src = 'Resource/js201703/vendor/jquery.validate.js')
+        script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+        script(src = 'Resource/js201703/common/global.effect.js')
+        script(src = 'Resource/js201703/pages/registered.js')
+        script(src = 'Resource/js201703/prototyping.js')
+                

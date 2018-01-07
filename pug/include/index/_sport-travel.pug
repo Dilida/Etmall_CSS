@@ -1,0 +1,72 @@
+section.n-left.n-layout--half.n-l-colmb30.n-category--sport
+	.n-title__wrap.n-theme--fo-medium
+		.n-title--18.n-left 運動館
+		ul.n-category__keyword.n-right
+			- var keyWords = [{kekyUrl: 'https://goo.gl/0peLJX', keyName: '均一8999元'}, {kekyUrl: 'https://goo.gl/7YCMt1', keyName: '好禮雙重送'}, {kekyUrl: 'https://goo.gl/xOicIy', keyName: '買就送手鍊'}]
+				each keyWord in keyWords
+					li
+						a(href= keyWord.kekyUrl title= keyWord.keyName target="_blank")= keyWord.keyName
+	.n-category__body
+		mixin categoryPic(picUrl, picTitle, picImg, picDesc)
+			a(href= picUrl title= picTitle target="_blank")
+				.n-pic
+					img(src= picImg alt= picTitle)
+				figcaption.n-category__text
+					p.n-category__caption= picTitle
+					p.n-category__desc= picDesc
+		figure.n-category__pic.n-left
+			+categoryPic('#', '隔音牆壁', 'Resource/img201703/index/bn/144X436-0603-3.jpg', '針織推薦單品')
+		ul.n-category__list.n-left
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}]
+			each pordItem in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		ul.n-category__brand
+			- var brandLogos = [{brandUrl: '#', brandName: 'logo1', brandImg: 'Resource/img201703/index/logo-90x50-1.jpg'}, {brandUrl: '#', brandName: 'logo2', brandImg: 'Resource/img201703/index/logo-90x50-2.jpg'}, {brandUrl: '#', brandName: 'logo3', brandImg: 'Resource/img201703/index/logo-90x50-3.jpg'}, {brandUrl: '#', brandName: 'logo4', brandImg: 'Resource/img201703/index/logo-90x50-4.jpg'}, {brandUrl: '#', brandName: 'logo5', brandImg: 'Resource/img201703/index/logo-90x50-5.jpg'}, {brandUrl: '#', brandName: 'logo6', brandImg: 'Resource/img201703/index/logo-90x50-6.jpg'}]
+			each brandLogo in brandLogos
+				li
+					a(href= brandLogo.brandUrl title= brandLogo.brandName  target="_blank")
+						img(src= brandLogo.brandImg  alt= brandLogo.brandName width="90" height="50")
+section.n-right.n-layout--half.n-l-colmb30.n-category--travel
+	.n-title__wrap.n-theme--fo-medium
+		.n-title--18.n-left 旅遊館
+		ul.n-category__keyword.n-right
+			- var keyWords = [{kekyUrl: 'https://goo.gl/0peLJX', keyName: '均一8999元'}, {kekyUrl: 'https://goo.gl/7YCMt1', keyName: '好禮雙重送'}, {kekyUrl: 'https://goo.gl/xOicIy', keyName: '買就送手鍊'}]
+				each keyWord in keyWords
+					li
+						a(href= keyWord.kekyUrl title= keyWord.keyName target="_blank")= keyWord.keyName
+	.n-category__body
+		mixin categoryPic(picUrl, picTitle, picImg, picDesc)
+			a(href= picUrl title= picTitle target="_blank")
+				.n-pic
+					img(src= picImg alt= picTitle)
+				figcaption.n-category__text
+					p.n-category__caption= picTitle
+					p.n-category__desc= picDesc
+		figure.n-category__pic.n-left
+			+categoryPic('#', '與歐美同步', 'Resource/img201703/index/bn/144X436-0603-4.jpg', '限量販售中')
+		ul.n-category__list.n-left
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}]
+			each pordItem in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		ul.n-category__brand
+			- var brandLogos = [{brandUrl: '#', brandName: 'logo1', brandImg: 'Resource/img201703/index/tv/90x50_2px_1.jpg'}, {brandUrl: '#', brandName: 'logo2', brandImg: 'Resource/img201703/index/tv/90x50_2px_2.jpg'}, {brandUrl: '#', brandName: 'logo3', brandImg: 'Resource/img201703/index/tv/90x50_2px_3.jpg'}, {brandUrl: '#', brandName: 'logo4', brandImg: 'Resource/img201703/index/tv/90x50_2px_4.jpg'}, {brandUrl: '#', brandName: 'logo5', brandImg: 'Resource/img201703/index/tv/90x50_2px_5.jpg'}, {brandUrl: '#', brandName: 'logo6', brandImg: 'Resource/img201703/index/tv/90x50_2px_6.jpg'}]
+			each brandLogo in brandLogos
+				li
+					a(href= brandLogo.brandUrl title= brandLogo.brandName  target="_blank")
+						img(src= brandLogo.brandImg  alt= brandLogo.brandName width="90" height="50")

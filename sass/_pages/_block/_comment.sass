@@ -1,0 +1,39 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// comment style
+// ==========================================================================
+
+.n-comment
+	&__wrap
+		background-color: $gr2-lightest
+		padding: 20px
+	&__head
+		margin-bottom: 10px
+		+clearfix
+	&__info 
+		color: $gr-medium
+		.n-comment__number
+			margin-right: 10px
+		.n-comment__time
+			margin-left: 10px
+			span 
+				margin-left: 5px
+	&__txt 
+		p 
+			margin-bottom: 10px
+		.n-comment__question
+			margin-bottom: 0
+	&__user
+		border-bottom: 1px solid $gr-lightest
+		margin-bottom: 20px
+		padding-bottom: 10px
+	&__replies
+		margin-left: 40px
+		border-left: 4px solid $pr-medium
+		padding-left: 15px
+	
+

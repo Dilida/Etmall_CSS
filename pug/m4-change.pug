@@ -1,0 +1,59 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 修改密碼 -- 帳戶管理 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_account-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="帳戶管理">帳戶管理</a>&gt;</li>
+						<li class="current"><a href="#" title="修改密碼">修改密碼</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">修改密碼</h2>
+						form(action="")#memChangePw
+							.n-l-colmb20
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="password"><span class="n-pr--medium">&#42;</span> 目前密碼</label>
+									<input class="n-form--control" type="password" name="password" id="password" required>
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<p class="n-l-colmb15 n-title--15">密碼設定規則7~12碼之英文字母及數字，切勿用全形，英文有大小寫之分。</p>	
+									<label class="n-title--13" for="newPassword"><span class="n-pr--medium">&#42;</span> 新密碼</label>
+									<input class="n-form--control" type="password" name="newPassword" id="newPassword" required>
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="RePassword"><span class="n-pr--medium">&#42;</span> 再次輸入新密碼</label>
+									<input class="n-form--control" type="password" name="RePassword" id="RePassword" required>
+								</div>
+								.n-l-colmb15.n-form__foot
+									<input type="reset" class="n-btn n-btn--normal" value="取消">
+									<input id="btnConfirm" type="submit" class="n-btn n-btn--primary" value="儲存">
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/jquery.validate.js')
+		script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

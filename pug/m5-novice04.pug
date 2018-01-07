@@ -1,0 +1,129 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 得易 Ponta 卡常見問題 -- 幫助中心 -- 會員中心 -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_help-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="幫助中心">幫助中心</a>&gt;</li>
+						<li><a href="#" title="新手上路">新手上路</a>&gt;</li>
+						<li class="current"><a href="#" title="得易 Ponta 卡常見問題">得易 Ponta 卡常見問題</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						include include/member/_help-novice-page-nav
+						<h2 class="n-title--18 n-mem--title">得易 Ponta 卡常見問題</h2>
+						.n-l-colmb20#pontaQaList
+							h3.n-title--16.n-qa__title 我要申辦得易Ponta卡
+							mixin pontaQa(className, title, text)
+								.n-qa__box(class= className)
+									.n-qa__caption.n-title--15
+										i.n-icon--plus
+										span= title
+									.n-qa__body
+										p= text
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 什麼是得易Ponta卡？有什麼優惠？
+								.n-qa__body
+									p 得易Ponta卡是東森購物、森森百貨與得易Ponta發行的聯合集點卡，您可持得易Ponta卡至東森購物享有點數倍送與兌換專區商品兌換服務，並且享有得易Ponta特約商累積點數、憑卡優惠之服務，詳見活動內容依 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 及東森購物網公告。
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 如何申請得易Ponta卡？
+								.n-qa__body
+									p 您可透過得易 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> /APP線上申辦得易Ponta卡，或致電得易Ponta客服中心(02)7703-7688由專人協助您申請。
+							+pontaQa('','透過東森購物申辦得易Ponta卡後多久會收到貼紙卡片？', '若您使用紙本申請書，或於線上申辦時選擇索取卡片，在您填寫完整的資料後，大約十五個工作天會收到卡片，卡片將郵寄到您登記的地址。')
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 我想要推薦親朋好友申請得易Ponta卡，要如何申辦？
+								.n-qa__body
+									p 請您的親朋好友至得易 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 首頁，，點選加入會員並輸入您的專屬推薦碼。
+							+pontaQa('','收到得易Ponta卡實體/虛擬卡片後，至東森購物消費時如何出示使用？', '若您於網路購物消費時請先於東森購物網進行綁定卡號作業，若您透過客服人員訂購，請告知客服人員您持有得易Ponta卡，客服人員將協助您進行卡號綁定，綁定後即可享有得易Ponta卡之會員權益及於東森購物消費自動累點服務。')
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 透過東森購物、森森百貨客服或網站申請取得得易Ponta卡實體/虛擬卡片後還需要做什麼嗎？
+								.n-qa__body
+									p 若您已取得實體/虛擬卡請至 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 進行開啟網路服務，即可使用兌換功能。
+							.n-qa__box.n-l-colmb15
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 透過東森購物客服申請得易Ponta取得卡號會員綁定後還需要做什麼嗎？
+								.n-qa__body
+									p 當您透過東森購物客服申請得易Ponta卡後，即可在東森購物開始消費累點，為提供您更完整的服務，仍需至 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> /APP啟用網路服務。
+							h3.n-title--16.n-qa__title 我要累積點數
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 在東森購物消費累積點數加給時間？
+								.n-qa__body
+									p 商品點數之加給，由消費者訂單狀態「配送確認」後10天鑑賞期過後，系統自動加給點數，消費者可由 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 查詢點數交易明細。
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 如何查詢得易Ponta卡累積點數？
+								.n-qa__body
+									p 您可透過 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> ，會員專區查詢累積之點數。
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 得易Ponta卡已有累積點數為何不能使用在兌點專區？
+								.n-qa__body
+									p 您可至 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 確認您的會員資料是否完整，並且啟用網路服務功能，若您使用紙本申請書加入會員，您可電洽得易Ponta客服中心 <a class="n-normal--link" href="tel:02-7703-7688" title="Ponta客服中心">(02)7703-7688</a>，確認資料是否已鍵檔完成。
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 消費使用得易Ponta卡，會馬上知道目前累積點數嗎？
+								.n-qa__body
+									p 若您已於 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> /APP啟用網路服務，即可利用 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 或專屬APP登入，立即查詢點數累兌紀錄，點數入帳時間可能依 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 及東森購物網站公告辦法有所差異，您可參考得易Ponta官網及東森購物網相關資訊。
+							+pontaQa('','得易Ponta卡點數累積、點數兌換計算方式為何？', '凡持得易Ponta卡至東森購物消費，每筆消費滿10元即累積1點點數，每25點可以折抵1元，金額未滿10元即不計算點數，亦無法累積到下次消費時合併計算點數；實際累兌計算方式依東森購物網公告辦法為主。')
+							+pontaQa('n-l-colmb15','使用得易Ponta卡點數累點時，購買商品類型有限制嗎？', '目前得易Ponta點數累積皆排除保險商品、旅遊票券相關商品，其他若有新增之排除商品將於東森購物網公告之。')
+							h3.n-title--16.n-qa__title 我要兌換點數
+							+pontaQa('','使用得易Ponta卡點數全額兌點或點數部分折抵訂單金額時，訂單可辦理取消或退貨嗎？是否有限制？點數何時可歸還？', '若商品因各種因素造成取消或退貨，消費者所使用之點數，將於訂單退貨完成後全數返還。')
+							+pontaQa('n-l-colmb15','使用得易Ponta卡點數兌點時，購買商品類型有限制嗎？', '得易Ponta卡點數無法適用於保險商品及專案商品，不適用Ponta點數兌換商品，將以東森購物網於商品置入購物車結帳為主。')
+							h3.n-title--16.n-qa__title 其它問題
+							+pontaQa('','點數使用或消化的方式有哪些？', '您可至東森購物網之兌換專區，兌換超值商品，或可選擇點數折抵現金等方式，請您留意東森購物不定期推出的優惠活動訊息')
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 點數交易明細資料有誤或有疑慮，要如何查詢？
+								.n-qa__body
+									p 您可致電得易Ponta客服專線 <a class="n-normal--link" href="tel:02-7703-7688" title="Ponta客服中心">(02)7703-7688</a> ，由得易Ponta客服專員為您查詢服務。
+							+pontaQa('','得易Ponta卡點數有效期限是怎麼計算的？', '每次所消費累積的點數將於該筆入帳日的隔年年底到期，例如：2014/11/1-12/31累積之點數，將於2015/12/31到期。')
+							.n-qa__box
+								.n-qa__caption.n-title--15
+									i.n-icon--plus
+									span 得易Ponta卡累積點數可轉贈給他人合併使用嗎？
+								.n-qa__body
+									p 您可透過 <a href="https://www.ponta.com.tw/" class="n-blue--link" title="得易 Ponta 官網" target="_blank">得易 Ponta 官網</a> 或得易Ponta APP【點數移轉】功能，將點數轉贈給您的親友，或致電得易Ponta客服由專人為您服務，提醒您每次移轉點數需扣除手續費50點。
+
+
+						include include/member/_help-common-link
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

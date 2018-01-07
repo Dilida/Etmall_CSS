@@ -1,0 +1,17 @@
+aside.n-topics__aside.n-left
+	.n-topics__nav
+		.n-topics__aside-title
+			h2.n-title--18 專屬推薦
+		ul.n-topics__menu
+			each topicsNavs in [ '服飾商品推薦', '鞋包商品推薦', '內著塑衣商品推薦', '珠寶商品推薦', '精品商品推薦', '手錶商品推薦', '美妝保養商品推薦', '窈窕保健焦點商品推薦' , '美妝保養商品推薦', '窈窕保健焦點商品推薦' ]
+				li 
+					a(href="#" title= topicsNavs)
+						span= topicsNavs
+	.n-topics__keyword
+		.n-topics__aside-title
+			h2.n-title--18 熱門關鍵字
+		ul.n-topics__keys
+			each keywords in [ '鍋具大團購', '藍芽耳機', '滴雞精', '反向傘', '正韓空運', '電腦週邊', '機能服飾', '無線吸塵器' ]
+				li
+					a(href="#" title= keywords target="_blank")= keywords
+		

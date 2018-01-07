@@ -1,0 +1,20 @@
+section.n-l-colmb50
+	.n-title__wrap
+		.n-title--18 熱門主題 
+	.n-topic__wrap
+		mixin topicLinks(title, imgSrc)
+			.n-topic__box.n-left
+				h3.n-title--18= title
+				.n-topic__body
+					.n-pic.n-left
+						img(src= imgSrc alt= title)
+					ul.n-left.n-topic__item
+						each topicItems in ['智慧手環','旅行','香水','金飾','收納','迪士尼','手錶','零嘴','外套','手機','茶葉',' 韓劇','指甲油']
+							li 
+								a(href="#" title= topicItems)= topicItems
+		+topicLinks('超夯主題-全部靈感', 'https://goo.gl/Nj3TbA')
+		+topicLinks('超夯主題-風格穿著', 'https://goo.gl/N5yQku')
+		+topicLinks('超夯主題-享受生活', 'https://goo.gl/fYsv5h')
+		+topicLinks('超夯主題-熱門話題', 'https://goo.gl/N5yQku')
+		+topicLinks('超夯主題-獨愛品牌', 'https://goo.gl/6lNn64')
+		+topicLinks('超夯主題-過節送禮', 'https://goo.gl/BCfnvI')

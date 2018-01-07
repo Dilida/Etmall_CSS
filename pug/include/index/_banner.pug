@@ -1,0 +1,62 @@
+.n-banner#mainBanner
+	.fun-fun-fiveBanner-cycle#funBn
+		mixin bnBoxs(bnName, bnImg, bnColor)
+			.n-banner__wrap
+				.n-layout--lg
+					.n-banner__box
+						a(href="#" title= bnName target="_blank")
+							img(src= bnImg alt= bnName)
+					.n-banner--theme(style= bnColor)
+		.n-banner__wrap
+			.n-layout--lg
+				.n-banner__box
+					a(href="#" title='瘋媽祖制霸破盤殺' target="_blank")
+						img.n-banner--logo(src="Resource/img201703/index/promo-logo-150x110.png")
+						img(src='https://goo.gl/H8F8xL' alt='瘋媽祖制霸破盤殺')
+				.n-banner--theme(style='background-color: #69dbff')
+		+bnBoxs('童學福利社5折up', 'https://goo.gl/EmWTav', 'background-color:')
+		+bnBoxs('SuperCut 纖體驗', 'https://goo.gl/pcVijc', 'background-color: #79dbff')
+		+bnBoxs('花樣閨蜜派對 6折up', 'https://goo.gl/uOtDXQ', 'background-color: #69dbff')
+		+bnBoxs('家電全面制霸破盤殺', 'https://goo.gl/H8F8xL', 'background-color: #69dbff')
+		.n-layout--lg
+			ul.n-banner__nav#bnNav
+	.n-layout--lg
+		aside.n-layout--aside.n-mem-info
+			.n-mem-info__wrap
+				.n-mem-info__login#memInfoBox 
+					.n-mem-info__box
+						.n-mem-info__title Hi 您好！ <br /> 立即享受優惠購物
+						.n-mem-info__btns
+							a.n-btn.n-btn--primary(href="https://www.etmall.com.tw/Pages/PH_login.aspx" title="登入") 登入
+							a.n-btn.n-btn--normal(href="https://www.etmall.com.tw/Pages/PH_login.aspx" title="註冊") 註冊
+					.n-mem-info__signed.n-is--hide
+						.n-mem-info__title Hi 您好！
+						ul.n-mem-info__desc
+							li
+								i.n-icon--coupon
+								span 折價券：
+								span.n-pr--medium 2
+								| 張
+							li
+								i.n-icon--discount
+								span 折扣金：
+								span.n-pr--medium 0 
+								| 元
+							li
+								i.n-icon--discount
+								span 禮券：
+								span.n-pr--medium 0 
+								| 元
+							li
+								i.n-icon--ponta
+								span 得意Ponta:
+								a(href="#" title="立即加入享優惠" target="_blank") 立即加入享優惠
+								a(href="m1-order.html" title="訂單查詢" target="_blank") 訂單查詢
+								a(href="m1-order.html" title="滿意度調查" target="_blank") 滿意度調查
+		
+				.n-mem-info__ad
+					a(href="#" title="banner name" target="_blank")
+						p.n-caption 原裝進口
+						p.n-desc 飛利浦薄型顯示器
+						.n-pic
+							img(src="https://goo.gl/fgGqTC" alt="banner name" width="180" height="180")

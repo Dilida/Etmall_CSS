@@ -1,0 +1,542 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 我的訂單 -- 會員中心 -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_order-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li class="current"><a href="#" title="我的訂單">我的訂單</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">我的訂單</h2>
+						a.n-l-colmb20.n-mem__ad(href="", title="banner words")
+							img(src="Resource/img201703/member/bn-1015x65.png", width="985", height="63" alt="banner words")
+						form(action="")#orderList
+							<div class="n-mem-search n-order__search n-l-colmb20">		
+								<div class="n-left n-title--13">請選擇月份</div>
+								<div class="n-left n-order--select col-2">
+									<select name="birthMonth" class="n-form--control">
+										<option value="01" selected="">前六個月內</option>
+										<option value="02">前12個月內</option>
+										<option value="02">一年以上</option>
+									</select>
+								</div>
+							</div>
+							.n-l-colmb20.n-mem-box
+								<table class="table table--bordered n-order__table">
+									<tr class="table--caption">
+										<th colspan="6" class="n-order__head">
+											<span>訂單日期：2015/06/04</span>
+											<span>訂單編號：8888888888</span>
+											<span>配送方式：快速到貨</span>
+											<span>付款方式：已付款 / ATM (未付款)</span>
+											<a href="m1-order-detail.html" class="n-right" title="查看明細"><i class="n-icon--more"></i>查看明細</a>
+										</th>
+									</tr>
+									<tr class="order--info-bg">
+										<td colspan="6">
+											<div class="n-order__info">
+												<div class="n-title--13">ATM 付款資訊</div>
+												ul.n-left
+													li 付款金額：<span class="n-price--16">$<span> 1,111,780</span></span>
+													li 轉帳期限：
+														span.n-pr--medium 2015/12/30 23:59
+													li 銀行：中國信託商業銀行 822 -- 可用 <a class="n-blue--link" href="#" title="WebATM" target="_blank">WebATM /</a> <a class="n-blue--link" href="#" title="中國信託網路銀行" target="_blank">中國信託網路銀行</a> 付款
+													li 帳號：81793085751587
+											</div>
+										</td>
+									</tr>
+									<tr class="table--caption">
+										<td class="col-1">圖片</td>
+										<td class="col-4">商品名稱</td>
+										<td class="col-2">規格</td>
+										<td class="col-1">數量</td>
+										<td class="col-1">價格</td>
+										<td class="col-1">編輯</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="https://goo.gl/DlLkcg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td><p>夏朵小香風羊毛軟呢現省千元組(外套*1+褲子*1)</p></td>
+										<td>
+											ul.n-order__spec
+												li 此為組合商品，詳細規格請點選查看明細。
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="m1-order-cancel.html" class="n-btn n-btn--normal"  title="我要取消">我要取消</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-process.n-process--start.n-process--four-steps
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+											.n-process.n-process--start
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/5718879-1_XXL.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td><p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p></td>
+										<td>
+											ul.n-order__spec
+												li
+													span 顏色：
+													span 老虎圖騰：水藍
+												li
+													span 尺寸：
+													span L 22~27cm
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="m1-order-cancel.html" class="n-btn n-btn--disabled"  title="商品已取消">商品已取消</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-process.n-process--start
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/5791390-1_XXL.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td><p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p></td>
+										<td>
+											ul.n-order__spec
+												li
+													span 顏色：
+													span 老虎圖騰：水藍
+												li
+													span 尺寸：
+													span L 22~27cm
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="m1-order-cancel.html" class="n-btn n-btn--normal"  title="我要取消">我要取消</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-process.n-process--second.n-process--four-steps.n-process--four-steps--second
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+											.n-process.n-process--second
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/1502041_LM.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td>
+											<p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+											p 加價購
+										</td>
+										<td>
+											ul.n-order__spec
+												li
+													span 顏色：
+													span 老虎圖騰：水藍
+												li
+													span 尺寸：
+													span L 22~27cm
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="m1-order-cancel.html" class="n-btn n-btn--normal"  title="我要取消">我要取消</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-process.n-process--second
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+								</table>
+							.n-l-colmb20.n-mem-box
+								<table class="table table--bordered n-order__table">
+									<tr class="table--caption">
+										<th colspan="6" class="n-order__head">
+											<span>訂單日期：2015/06/04</span>
+											<span>訂單編號：8888888888</span>
+											<span>配送方式：快速到貨</span>
+											<span>付款方式：已付款 / 未付款</span>
+											<a href="order-detail.html" class="n-right" title="查看明細"><i class="n-icon--more"></i>查看明細</a>
+										</th>
+									</tr>
+									<tr class="order--info-bg">
+										<td colspan="6">
+											<div class="n-order__info">
+												<div class="n-title--13">ATM 付款資訊</div>
+												ul.n-left
+													li 付款金額：<span class="n-price--16">$<span> 1,111,780</span></span>
+													li 轉帳期限：
+														span.n-pr--medium 2015/12/30 23:59
+													li 銀行：中國信託商業銀行 822 -- 可用 <a class="n-blue--link" href="#" title="WebATM" target="_blank">WebATM /</a> <a class="n-blue--link" href="#" title="中國信託網路銀行" target="_blank">中國信託網路銀行</a> 付款
+													li 帳號：81793085751587
+											</div>
+										</td>
+									</tr>
+									<tr class="table--caption">
+										<td class="col-1">圖片</td>
+										<td class="col-4">商品名稱</td>
+										<td class="col-2">規格</td>
+										<td class="col-1">數量</td>
+										<td class="col-1">價格</td>
+										<td class="col-1">編輯</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/5718879-1_XXL.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td><p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p></td>
+										<td>
+											ul.n-order__spec
+												li
+													span 顏色：
+													span 老虎圖騰：水藍
+												li
+													span 尺寸：
+													span L 22~27cm
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="m1-order-return.html" class="n-btn n-btn--normal"  title="我要退貨">我要退貨</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-deliver__info.n-deliver--four-steps
+												a(href="#", title="查詢配送進度", target="_blank")
+													p 查詢配送進度：
+													p 黑貓宅急便 - 111133335555
+											.n-process.n-process--third.n-process--four-steps.n-process--four-steps--third
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+											.n-deliver__info
+												a(href="#", title="查詢配送進度", target="_blank")
+													p 查詢配送進度：
+													p 黑貓宅急便 - 111133335555
+											.n-process.n-process--third
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/5791390-1_XXL.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td>
+											<p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+										</td>
+										<td>
+											ul.n-order__spec
+												li
+													span 顏色：
+													span 老虎圖騰：水藍
+												li
+													span 尺寸：
+													span L 22~27cm
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="m1-order-return.html" class="n-btn n-btn--disabled"  title="商品已退貨">商品已退貨</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-deliver__info
+												p 貨運公司：台灣宅配通
+											.n-process.n-process--fourth 
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+									<tr>
+										<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/1502041_LM.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+										<td>
+											<p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+											p 加價購
+										</td>
+										<td>
+											ul.n-order__spec
+												li
+													span 顏色：
+													span 老虎圖騰：水藍
+												li
+													span 尺寸：
+													span L 22~27cm
+										</td>
+										<td>1</td>
+										<td><p class="n-pr--medium n-font--bold">300</p></td>
+										<td rowspan="2" class="n-edit">
+											<a href="#" class="n-btn n-btn--normal"  title="滿意度調查表">滿意度調查表</a>
+											<a href="m1-order-ask.html" class="n-btn n-btn--normal"  title="我要詢問">我要詢問</a>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="5">
+											.n-deliver__info.n-deliver--four-steps
+												p 貨運公司：台灣宅配通
+											.n-process.n-process--finish.n-process--four-steps.n-process--four-steps--finish
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+											.n-deliver__info
+												p 貨運公司：台灣宅配通
+											.n-process.n-process--finish
+												.n-process__box
+													.n-process--dot
+													p 收到訂單
+												.n-process__box
+													.n-process--dot
+													p 付款完成
+												.n-process__box
+													.n-process--dot
+													p 理貨中
+												.n-process__box
+													.n-process--dot
+													p 已出貨
+												.n-process__box
+													.n-process--dot
+													p 已送達
+										</td>
+									</tr>
+								</table>
+			include include/global/_footer
+			include include/global/_go-top
+			.n-overlay.n-overlay--satisfaction.mfp-hide#ovearlaySatisfaction
+				.n-overlay__box.n-satisfaction--box
+					<button title="關閉" type="button" class="mfp-close">&#215;</button>
+					.n-l-bgw-lg
+						.n-l-colmb10.n-title--18 填寫評論
+						p.n-l-colmb30 感謝您的訂購，您此次購買商品的滿意度將做為提升服務品質的重要依據，謝謝您的協助！
+						ul.n-l-colmb20.n-rating__wrap
+							li
+								.n-left 商品價格
+								.n-left.n-rating__star
+									input.n-rating--input#ratingInput-1-5(type="radio", name="ratingInput-1-5")
+									label.n-rating--star(for="ratingInput-1-5")
+									input.n-rating--input#ratingInput-1-4(type="radio", name="ratingInput-1-4")
+									label.n-rating--star(for="ratingInput-1-4")
+									input.n-rating--input#ratingInput-1-3(type="radio", name="ratingInput-1-3")
+									label.n-rating--star(for="ratingInput-1-3")
+									input.n-rating--input#ratingInput-1-2(type="radio", name="ratingInput-1-2")
+									label.n-rating--star(for="ratingInput-1-2")
+									input.n-rating--input#ratingInput-1-1(type="radio", name="ratingInput-1-1")
+									label.n-rating--star(for="ratingInput-1-1")
+							li
+								.n-left 商品說明
+								.n-left.n-rating__star
+									input.n-rating--input#ratingInput-2-5(type="radio", name="ratingInput-2-5")
+									label.n-rating--star(for="ratingInput-2-5")
+									input.n-rating--input#ratingInput-2-4(type="radio", name="ratingInput-2-4")
+									label.n-rating--star(for="ratingInput-2-4")
+									input.n-rating--input#ratingInput-2-3(type="radio", name="ratingInput-2-3")
+									label.n-rating--star(for="ratingInput-2-3")
+									input.n-rating--input#ratingInput-2-2(type="radio", name="ratingInput-2-2")
+									label.n-rating--star(for="ratingInput-2-2")
+									input.n-rating--input#ratingInput-2-1(type="radio", name="ratingInput-2-1")
+									label.n-rating--star(for="ratingInput-2-1")
+							li
+								.n-left 到貨速度
+								.n-left.n-rating__star
+									input.n-rating--input#ratingInput-3-5(type="radio", name="ratingInput-3-5")
+									label.n-rating--star(for="ratingInput-3-5")
+									input.n-rating--input#ratingInput-3-4(type="radio", name="ratingInput-3-4")
+									label.n-rating--star(for="ratingInput-3-4")
+									input.n-rating--input#ratingInput-3-3(type="radio", name="ratingInput-3-3")
+									label.n-rating--star(for="ratingInput-3-3")
+									input.n-rating--input#ratingInput-3-2(type="radio", name="ratingInput-3-2")
+									label.n-rating--star(for="ratingInput-3-2")
+									input.n-rating--input#ratingInput-3-1(type="radio", name="ratingInput-3-1")
+									label.n-rating--star(for="ratingInput-3-1")
+							li
+								.n-left 商品包裝
+								.n-left.n-rating__star
+									input.n-rating--input#ratingInput-4-5(type="radio", name="ratingInput-4-5")
+									label.n-rating--star(for="ratingInput-4-5")
+									input.n-rating--input#ratingInput-4-4(type="radio", name="ratingInput-4-4")
+									label.n-rating--star(for="ratingInput-4-4")
+									input.n-rating--input#ratingInput-4-3(type="radio", name="ratingInput-4-3")
+									label.n-rating--star(for="ratingInput-4-3")
+									input.n-rating--input#ratingInput-4-2(type="radio", name="ratingInput-4-2")
+									label.n-rating--star(for="ratingInput-4-2")
+									input.n-rating--input#ratingInput-4-1(type="radio", name="ratingInput-4-1")
+									label.n-rating--star(for="ratingInput-4-1")
+							li
+								.n-left 商品品質
+								.n-left.n-rating__star
+									input.n-rating--input#ratingInput-5-5(type="radio", name="ratingInput-5-5")
+									label.n-rating--star(for="ratingInput-5-5")
+									input.n-rating--input#ratingInput-5-4(type="radio", name="ratingInput-5-4")
+									label.n-rating--star(for="ratingInput-5-4")
+									input.n-rating--input#ratingInput-5-3(type="radio", name="ratingInput-5-3")
+									label.n-rating--star(for="ratingInput-5-3")
+									input.n-rating--input#ratingInput-5-2(type="radio", name="ratingInput-5-2")
+									label.n-rating--star(for="ratingInput-5-2")
+									input.n-rating--input#ratingInput-5-1(type="radio", name="ratingInput-5-1")
+									label.n-rating--star(for="ratingInput-5-1")
+							
+						.n-comment__field
+							.n-is--hide
+								<label for="userTypeFields"> 對此商品的評價</label>
+								<textarea class="n-form--control" name="userTypeFields" id="userTypeFields" maxlength="200"></textarea>
+								<div id="countTxt" class="note--box-lv3"></div>
+							.n-form__foot
+								<input type="reset" class="n-btn n-btn--normal" value="取消">
+								<input type="submit" class="n-btn n-btn--primary" value="確定送出">
+			include include/member/_immediate-post
+
+
+
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

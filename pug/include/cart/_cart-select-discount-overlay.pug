@@ -1,0 +1,45 @@
+.n-overlay.n-select__wrap.mfp-hide#selectDiscountOverlay
+	.n-overlay__box.n-select__body
+		.n-title__wrap
+			h2.n-title--18 折價券
+			<button title="關閉" type="button" class="mfp-close">&#215;</button>
+		ul.n-tab.n-tab--lv2#selectDiscountTab
+			li.current
+				a(href="#selectList1") 點選欲使用的折價券
+			li
+				a(href="#selectList2") 輸入取得的通關密語
+		.n-select__box#selectList1
+			table.table.table--bordered.table--gr2-dp-light.n-l-colmb20.n-select__table
+				tr.table--caption
+					th.n-title-1 選擇
+					th.n-title-2 折抵（％ / 元）
+					th.n-title-3 有效期限
+					th.n-title-4 說明
+				tr
+					td
+						input(type="radio", name="selectDiscountName")
+					td
+						span 500
+						| 全通路
+					td 2017/04/23 23:59
+					td [全]  一起春遊購0327-0331買就500( 4/2止)一起春遊購0327-0331買就500( 4/2止)
+				tr
+					td
+						input(type="radio", name="selectDiscountName")
+					td
+						span 500
+						| 全通路
+					td 2017/04/23 23:59
+					td [全]  一起春遊購0327-0331買就500( 4/2止)一起春遊購0327-0331買就500( 4/2止)
+			include include/../../block/_only-pager
+			p.n-l-colmb20.n-pr--medium 折價券使用於商品後  若取消或退貨將無法重複使用
+			.n-select__foot.n-align-c
+				<input type="submit" class="n-btn n-btn--primary" value="確定">
+		.n-select__box#selectList2.n-is--hide
+			.n-l-colmb15.n-form--stacked.n-select--enter 
+				<label class="n-title--13" for="discountPw">請輸入通關密語</label>
+				<input class="n-form--control" type="text" name="" id="discountPw">
+				<p class="n-form--error">欄位資訊錯誤 ，請輸入正確資訊</p>
+			p.n-l-colmb20.n-pr--medium 折價券使用於商品後  若取消或退貨將無法重複使用
+			.n-select__foot.n-align-c
+				<input type="submit" class="n-btn n-btn--primary" value="確定">

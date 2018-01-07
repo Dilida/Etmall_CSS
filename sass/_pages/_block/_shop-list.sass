@@ -1,0 +1,79 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+
+// hall, big category shop list style 
+// ==========================================================================
+.n-shop
+	+clearfix
+	height: 372px
+	overflow: hidden
+	.n-pic 
+		overflow: hidden
+
+// shop pic style 
+// ==========================================================================
+.n-shop
+	&__pic
+		width: 240px
+		position: relative
+		z-index: map-get($zindex, zero)
+		.n-pic img 
+			width: 240px
+			height: 240px
+	&__txt 
+		padding: 10px
+		.n-title--22 
+			+layout-center(180)
+			height: 40px
+			overflow: hidden
+			border: 1px solid $gr2-dp-light
+			padding: 6px
+			margin-bottom: 10px
+		.n-name
+			+txt-ellipsis(180)
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 5px
+
+// shop list style 
+// ==========================================================================
+.n-shop
+	&__body
+		background-color: $gr2-dp-light
+		width: (1015 - 240) + px
+	&__list
+		padding: 15px
+		+clearfix 
+		a 
+			color: $gr-dark
+		li 
+			width: 175px
+			float: left
+			margin-right: 15px
+		li:last-child
+			margin-right: 0
+		.n-pic
+			+img-loading
+			+width-height(175)
+			margin-bottom: 13px
+		.n-name
+			+text-fool(36)
+			margin-bottom: 15px
+
+// shop list style 
+// ==========================================================================
+.n-shop
+	&__brand
+		+clearfix
+		border-top: 1px solid $gr-lightest
+		padding-top: 15px
+		padding-bottom: 15px
+		padding-left: 4px
+		li 
+			float: left
+			width: 90px
+			margin: 0 19px
+			overflow: hidden

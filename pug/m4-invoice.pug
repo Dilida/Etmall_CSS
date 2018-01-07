@@ -1,0 +1,129 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 統編資訊管理 -- 帳戶管理 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_account-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="帳戶管理">帳戶管理</a>&gt;</li>
+						<li class="current"><a href="#" title="統編資訊管理">統編資訊管理</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">統編資訊管理</h2>
+						form(action="")
+							.n-l-colmb20
+								<a href="#" class="n-btn n-btn--primary" title="新增統編資訊">新增統編資訊</a>
+								<div class="n-add__wrap">
+									<div class="n-add__body">
+										.n-l-colmb15.n-form__box.col-7
+											<label class="n-title--13" for="invoiceNum">統一編號</label>
+											<input class="n-form--control" type="text" name="" id="invoiceNum" placeholder="請輸入統一編號">
+											<p class="n-form--error">欄位資訊錯誤</p>
+										.n-l-colmb15.n-form__box.col-7
+											<label class="n-title--13" for="invoiceTitle">發票抬頭</label>
+											<input class="n-form--control" type="text" name="" id="invoiceTitle" placeholder="請輸入發票抬頭">
+											<p class="n-form--error">欄位資訊錯誤</p>
+										<div class="n-l-colmb15 n-form--inline">
+											<div class="n-title--13">地址</div>
+											<div class="n-form__box col-2"> 
+												<select title="請選擇地區" id="country" name="" class="n-form--control">
+													<option value="" selected="selected">請選擇地區</option>
+													<option value="Taiwan,臺灣地區">臺灣地區</option>
+													<option value="China,中國大陸地區" disabled="">中國大陸地區</option>
+													<option value="HK,港澳地區" disabled="">港澳地區</option>
+												</select>
+											</div>
+											<div class="n-form__box col-2">
+												<select title="請選擇縣／市" id="city" name="city" class="n-form--control">
+													<option value="" selected="selected">請選擇縣／市</option>
+												</select>
+											</div>
+											<div class="n-form__box col-2">
+												<select title="請選擇鄉鎮市區" id="canton" name="canton" class="n-form--control">
+													<option value="" selected="selected">請選擇鄉鎮市區</option>
+												</select>
+											</div>
+											<div class="n-form__box col-7">
+												<input class="n-form--control" type="text" name="" id="address" >
+												<p class="n-form--error">欄位資訊錯誤 ，請輸入正確資訊</p>
+											</div>
+										</div>
+									</div>
+									<div class="n-add__foot">
+										<input type="reset" class="n-btn n-btn--normal" value="取消">
+										<input type="submit" class="n-btn n-btn--primary" value="確定">
+									</div>
+								</div>	
+							.n-l-colmb20
+								<table class="table table--bordered">
+									<tr class="table--caption">
+										<th class="col-1">統一編號</th>
+										<th class="col-3">發票抬頭</th>
+										<th class="col-4">地址</th>
+										<th class="col-2">編輯</th>
+									</tr>
+									<tr>
+										<td>22456427</td>
+										<td>英屬開曼群島商愛德曼 公關顧問股份有限公司 台灣分公司</td>
+										<td>台灣省台中市北屯區大鵬路陳平 里12之3巷5之1弄3之2鄰58號 6樓之3</td>
+										<td>
+											<a class="n-edit__text" href="m4-invoice-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>22456427</td>
+										<td>東森得易購股份有限 公司</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>
+											<a class="n-edit__text" href="m4-invoice-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>22456427</td>
+										<td>東森得易購股份有限 公司</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>
+											<a class="n-edit__text" href="m4-invoice-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>22456427</td>
+										<td>東森得易購股份有限 公司</td>
+										<td>新北市235中和區景平路258號</td>
+										<td>
+											<a class="n-edit__text" href="m4-invoice-edit.html" title="編輯"><i class="n-icon--edit"></i>編輯</a>
+											<a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a>
+										</td>
+									</tr>
+								</table>
+								
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

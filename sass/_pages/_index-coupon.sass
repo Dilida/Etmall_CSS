@@ -1,0 +1,106 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Index Coupon Style
+// ==========================================================================
+
+//  Index Coupon normal style
+// ==========================================================================
+
+.n-coupon--box
+    +clearfix
+    +layout-center(720)
+    background-color: $gr2-dp-light
+    position: relative
+    z-index: map-get($zindex, zero)
+    box-shadow: 3px 2px 8px rgba($gr-darkest, 0.8)
+
+.n-coupon__notice
+    position: relative
+    z-index: map-get($zindex, zero)
+    width: (72 + 80) + px
+    padding-left: 40px
+    padding-right: 40px
+    .n-coupon__icon
+        width: 72px
+        height: (72 + 25) + px
+        position: absolute
+        z-index: map-get($zindex, base)
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+    .n-icon-index--coupon
+        display: block
+    
+.n-coupon
+    &__body
+        width: 560px
+        padding: 20px 30px
+        padding-right: 40px
+    &__title
+        +clearfix
+        margin-bottom: 10px
+    &__list 
+        height: 116px
+        li 
+            +clearfix
+            margin-bottom: 8px
+            &:last-child
+                margin-bottom: 0
+        .n-labels 
+            width: 36px
+            margin-right: 10px
+        .n-coupon__desc
+            +txt-ellipsis(280)
+            width: 280px
+            padding-top: 4px
+            margin-right: 10px
+        .n-text--right
+            margin-top: 4px
+        .n-coupon__price,
+        .n-coupon__date
+            width: 70px
+        .n-coupon__price
+            margin-right: 10px
+
+.n-coupon--box-1
+    .n-coupon__notice
+        height: 196px
+        &:after
+            content: ''
+            position: absolute
+            z-index: map-get($zindex, second)
+            top: 80px
+            right: -24px
+            +arrow-right(16, 16, 16, $gr2-dp-light, 1)
+
+.n-coupon--box-2
+    .n-coupon__notice
+        height: 380px
+        &:after
+            content: ''
+            position: absolute
+            z-index: map-get($zindex, second)
+            top: 180px
+            right: -24px
+            +arrow-right(16, 16, 16, $gr2-dp-light, 1)
+    .n-coupon__body
+        &:after
+            content: ''
+            position: absolute
+            z-index: map-get($zindex, second)
+            background-color: $gr2-dp-light
+            width: 560px
+            height: 1px
+            right: 0
+            top: 196px
+        .n-coupon__title:nth-child(3)
+            margin-top: 30px
+
+.n-disable--bg-color
+    background: none

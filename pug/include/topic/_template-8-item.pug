@@ -1,0 +1,15 @@
+.n-topics__block
+	h2.n-topics__title.n-title--18
+		i.n-up-down--title
+		span 好康特報
+	.n-topics__box.n-topics__eight-box.n-hover--img
+		-var eightLists = [ { link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/u0z7R4', price: '6,888' }, { link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/oepZZU', price: '2,888' },{ link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/PqvE94', price: '2,888' },{ link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/UhFZD8', price: '2,888' },{ link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/MHhDGE', price: '2,888' },{ link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/f1SciM', price: '2,888' },{ link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/v9fDA5', price: '2,888' },{ link: 'https://goo.gl/ktTeIv', name:'COACH 71842 經典LOGO烙印撞色皮革中性斜背包.黑/藍', imgSrc:'https://goo.gl/bv3KlG', price: '2,888' } ];
+		ul.n-topics__eight-list
+			each eightList in eightLists
+				li
+					a(href= eightList.link title= eightList.name target="_blank")
+						.n-pic
+							img(src= eightList.imgSrc alt= eightList.name )
+						.n-name= eightList.name
+						span.n-price--16 $
+							span= eightList.price

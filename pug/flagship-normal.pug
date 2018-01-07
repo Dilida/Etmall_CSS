@@ -1,0 +1,425 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 普通版旗艦館 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-flagship-normal.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			form(action="")#flagshipNormal
+			
+					article.n-l-colmb30.n-flagship
+						.n-l-colmb30.n-flagship__visual
+							.n-layout--lg
+								.n-l--aside.n-flagship__intro
+									h1
+										img(src="Resource/img201703/flagship/bn230x90.jpg", alt="logo")
+									.n-l-bgw-md.n-flagship__intro-box
+										ul.n-operating.n-l-colmb15
+											li
+												a(href="#", title="加入蒐藏")#addFlagshipCollection
+													i.n-icon--collect
+													span 加入蒐藏
+											li
+												a(href="#", title="品牌介紹")#brandInfo
+													i.n-icon--home
+													span 品牌介紹
+										.n-flagship__intro-text#flagshipText
+											p 本館會員招募中! <br /> 單次消費金額滿 <span class="n-pr--medium n-title--16"> 5,000 </span> 元,即可成為會員享受VIP專屬優惠! <br /> 單筆購物滿1000元，打 <span class="n-pr--medium n-title--16"> 9 </span> 折 
+											a.n-blue--link(href="", title="詳細內容") 詳細內容
+
+									a.n-flagship__intro-bn(href="#", title="bn")#flagshipIntroBn
+										img(src="Resource/img201703/flagship/bn230x100.jpg", alt="bn")
+							.n-flagship__visual-body#flagshipBn
+								a(href="http://www.etmall.com.tw/XML/content/DMSetting/Final/201709/SP_1101490/index.html?PHRef=Web_Home_BN_Pic_SuperBN_%E5%B0%81%E9%A4%A888%E6%8A%98%20%E9%88%94%E5%A5%BD%E8%B2%B7", title="詳細內容", style="background-image: url('Resource/img201703/flagship/bn2000x500.jpg'); height: 500px").n-flagship__visual-box
+								a(href="http://www.etmall.com.tw/XML/content/DMSetting/Final/201709/SP_1101455/index.html?PHRef=Web_Home_BN_Pic_SuperBN_%E6%B6%88%E8%B2%BB%E6%BB%BF7500%E9%80%811100%E6%8A%98%E6%89%A3%E9%87%91", title="詳細內容", style="background-image: url('Resource/img201703/flagship/bn2000x500-2.png'); height: 500px").n-flagship__visual-box
+								.flag__bn-nav#flagshipBnNav
+
+					.n-layout--lg.n-l-colmt20.n-l-colmb50.n-flagship__wrap
+						aside.n-left.n-l--aside
+							-for(var i = 0; i < 8; i++)
+								.n-aside__caption.n-aside__title.n-aside--flagship.n-bg--gr-darkest
+									h2.n-title--16 館長推薦
+								.n-aside__category.n-bg--gr2-dp-light
+									ul.n-aside__nav
+										each categoryNav in ['最多人搶～TOP 100','新品上市','【A1 Darin】 春特賣8折','【HeHa】初夏NEW IN 72折up','春日繽紛衣服大賞↘5折UP','春日休閒系新品全館↘530UP','質感棉麻輕美學↘530元UP','【Bubble coco】新品發表＄299 up','【Moriya】春夏棉麻 399up','【SCL】牛仔時尚  45折up']
+											li 
+												a(href="#", title=categoryNav )
+													h3.n-word--count= categoryNav
+									a.n-right.n-aside__more(href="", title="更多") 
+										.n-icon--more-btn
+											span
+											span
+										span 更多
+
+						section.n-left.n-l-1015.n-flagship__wrap
+
+							ul.n-l-colmb30.n-flagship__bn-col-2
+								li.n-left
+									a(href="", title="基礎保養系列")
+										img(src="Resource/img201703/flagship/bn500x300.jpg", alt="基礎保養系列")
+								li.n-left
+									<iframe width="500" height="300" src="https://www.youtube.com/embed/v3JCA4lCMGw" frameborder="0" allowfullscreen></iframe>
+
+							ul.n-l-colmb30.n-flagship__bn-col-3
+								li.n-left.n-text--center
+									a.n-pic(href="", title="")
+										img(src="Resource/img201703/flagship/bn330x220.jpg", alt="基礎保養系列")
+									.n-desc
+										.n-title--16 基礎保養系列
+										p 天然萃取物PITERA 有效鎖肌膚的年輕活力
+								li.n-left.n-text--center
+									a.n-pic(href="", title="")
+										img(src="Resource/img201703/flagship/bn330x220.jpg", alt="")
+									.n-desc
+										.n-title--16 基礎保養系列
+										p 天然萃取物PITERA 有效鎖肌膚的年輕活力
+								li.n-left.n-text--center
+									a.n-pic(href="", title="")
+										img(src="Resource/img201703/flagship/bn330x220.jpg", alt="")
+									.n-desc
+										.n-title--16 基礎保養系列
+										p 天然萃取物PITERA 有效鎖肌膚的年輕活力
+
+							.n-l-colmb30.n-flagship__bn-triple
+								.n-left
+									a(href="", title="熱門瀏覽排行")
+										img(src="Resource/img201703/flagship/bn205x230.jpg", alt="熱門瀏覽排行")
+									a(href="", title="")
+										img(src="Resource/img201703/flagship/bn205x230.jpg", alt="熱門瀏覽排行")
+								.n-left
+									a(href="", title="熱門瀏覽排行")
+										img(src="Resource/img201703/flagship/bn580x280.jpg", alt="熱門瀏覽排行")
+
+							a.n-l-colmb30.n-flagship__bn-col-1(href="#", title="熱門瀏覽排行")
+								img(src="Resource/img201703/flagship/bn1015x300.jpg", alt="熱門瀏覽排行")
+
+							section.n-l-colmb30.n-rank__wrap.n-flagship--rank.n-hover--img
+								.n-title__wrap
+									.n-title--18.n-left 熱門瀏覽排行
+								.n-rank__box#rank1(style="width: 1015px; position: relative; overflow: hidden")
+									ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+										- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+										each pordItem, i in pordItems
+											li 
+												a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+													.n-pic
+														.n-flag__wrap
+															span.n-flag__num= (i + 1)
+														img(src= pordItem.imgSrc alt= pordItem.name)
+													p.n-name= pordItem.name 
+													p.n-price__wrap
+														span.n-price--normal= pordItem.normalPrice
+														span.n-price--16 $
+															span= pordItem.price
+									a.n-l-arrow__wrap(href="#" title="Prev")
+										span.n-arrow--top
+										span.n-arrow--bottom
+									a.n-r-arrow__wrap(href="#" title="Next")
+										span.n-arrow--top
+										span.n-arrow--bottom
+
+							section.n-l-colmb30.n-flagship__group
+								a(href="", title="我的明星商品")
+									img(src="Resource/img201703/flagship/bn1015x300.jpg", alt="我的明星商品")
+								.n-flagship__product
+									.n-left.n-flagship__product-nav(style="background-color: #FF6291")
+										figcaption.n-flagship__product-caption
+											p.n-title--22 明星商品 <br />經典保養系列
+											img(src="Resource/img201703/flagship/icon_flagship_demo.png", alt="明星商品經典保養系列")
+										ul
+											each navText in ['Pitera™精華系列', '抗老修護', '美白系列', '奢華的Pitera™尊寵系列']
+												li
+													a(href="#", title= navText)= navText
+
+
+									.n-left.n-l-bgw-md.n-flagship--product-list
+										ul.n-hover--img.n-card__list
+											li
+												.n-card__box
+													a.n-pic(href="#", title="鍋寶304不銹鋼電鍋超值熱銷組")
+														.n-soldout
+															p.n-title--15 銷售一空
+														img(src="https://goo.gl/RLvNVt", alt="鍋寶304不銹鋼電鍋超值熱銷組")
+													p.n-sale--subtitle
+													p.n-name
+														a(href="#", title="鍋寶304不銹鋼電鍋超值熱銷組") 鍋寶304不銹鋼電鍋超值
+													ul.n-desc__list
+														li 搭配專用真皮鑰匙圈，經典時尚配件
+														li Microban葉語傾城抗菌兩用被床罩組
+														li 磁吸式帽蓋設計，避免掉蓋問題
+													p.n-price__wrap
+														span.n-price--normal $ 113,000
+														span.n-price--16 $ 
+															span 113,000
+													.n-card__btn
+														a.n-btn.n-btn--card-icon
+															i.n-icon--collect
+															span 加入蒐藏
+														a.n-btn.n-btn--normal
+															i.n-icon--mail
+															span 貨到通知我
+											li
+												.n-card__box
+													a.n-pic(href="https://goo.gl/UyIC5s", title="Microban葉語傾城抗菌兩用被床罩組-雙")
+														.n-icon--play
+															.n-icon--arrow-left
+														img(src="https://goo.gl/QVMjuc", alt="Microban葉語傾城抗菌兩用被床罩組-雙")
+													p.n-sale--subtitle
+													p.n-name
+														a(href="https://goo.gl/UyIC5s", title="Microban葉語傾城抗菌兩用被床罩組-雙") 鍋寶304不銹鋼電鍋超值
+													ul.n-desc__list
+														li 搭配專用真皮鑰匙圈，經典時尚配件
+														li Microban葉語傾城抗菌兩用被床罩組
+														li 磁吸式帽蓋設計，避免掉蓋問題
+													p.n-price__wrap
+														span.n-price--normal $ 113,000
+														span.n-price--16 $ 
+															span 113,000
+													.n-card__btn
+														a.n-btn.n-btn--card-icon
+															i.n-icon--collect
+															span 加入蒐藏
+														a.n-btn.n-btn--normal
+															i.n-icon--mail
+															span 貨到通知我
+											- var pordItems = [ {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚', imgSrc: 'https://goo.gl/lhucKm', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}]
+											each pordItem in pordItems
+												li
+													.n-card__box
+														a.n-pic(href= pordItem.hotUrl, title= pordItem.name)
+															img(src= pordItem.imgSrc, alt= pordItem.name)
+														p.n-sale--subtitle 銷售副標
+														p.n-name
+															a(href= pordItem.hotUrl, title= pordItem.name)= pordItem.name
+														ul.n-desc__list
+															li=pordItem.desc1
+															li=pordItem.desc2
+															li=pordItem.desc3
+														p.n-price__wrap
+															span.n-price--normal= pordItem.normalPrice
+															span.n-price--16 $ 
+																span= pordItem.price	
+														.n-card__btn
+															a.n-btn.n-btn--card-icon
+																i.n-icon--collect
+																span 加入蒐藏
+															a.n-btn.n-btn--card-red 
+																i.n-icon--cart
+																span 加入購物車
+
+
+							section.n-l-colmb30.n-kit__wrap
+								.n-title__wrap.n-text--center
+									.n-title--18 超值組合 排隊必搶明星商品
+								.n-l-bgw-md.n-kit__body
+									ul.n-hover--img.n-card__list
+										li
+											.n-card__box
+												a.n-pic(href="#", title="鍋寶304不銹鋼電鍋超值熱銷組")
+													.n-soldout
+														p.n-title--15 銷售一空
+													img(src="https://goo.gl/RLvNVt", alt="鍋寶304不銹鋼電鍋超值熱銷組")
+												p.n-sale--subtitle
+												p.n-name
+													a(href="#", title="鍋寶304不銹鋼電鍋超值熱銷組") 鍋寶304不銹鋼電鍋超值
+												ul.n-desc__list
+													li 搭配專用真皮鑰匙圈，經典時尚配件
+													li Microban葉語傾城抗菌兩用被床罩組
+													li 磁吸式帽蓋設計，避免掉蓋問題
+												p.n-price__wrap
+													span.n-price--normal $ 113,000
+													span.n-price--16 $ 
+														span 113,000
+												.n-card__btn
+													a.n-btn.n-btn--card-icon
+														i.n-icon--collect
+														span 加入蒐藏
+													a.n-btn.n-btn--normal
+														i.n-icon--mail
+														span 貨到通知我
+										li
+											.n-card__box
+												a.n-pic(href="https://goo.gl/UyIC5s", title="Microban葉語傾城抗菌兩用被床罩組-雙")
+													.n-icon--play
+														.n-icon--arrow-left
+													img(src="https://goo.gl/QVMjuc", alt="Microban葉語傾城抗菌兩用被床罩組-雙")
+												p.n-sale--subtitle
+												p.n-name
+													a(href="https://goo.gl/UyIC5s", title="Microban葉語傾城抗菌兩用被床罩組-雙") 鍋寶304不銹鋼電鍋超值
+												ul.n-desc__list
+													li 搭配專用真皮鑰匙圈，經典時尚配件
+													li Microban葉語傾城抗菌兩用被床罩組
+													li 磁吸式帽蓋設計，避免掉蓋問題
+												p.n-price__wrap
+													span.n-price--normal $ 113,000
+													span.n-price--16 $ 
+														span 113,000
+												.n-card__btn
+													a.n-btn.n-btn--card-icon
+														i.n-icon--collect
+														span 加入蒐藏
+													a.n-btn.n-btn--normal
+														i.n-icon--mail
+														span 貨到通知我
+										- var pordItems = [ {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚', imgSrc: 'https://goo.gl/lhucKm', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}]
+										each pordItem in pordItems
+											li
+												.n-card__box
+													a.n-pic(href= pordItem.hotUrl, title= pordItem.name)
+														img(src= pordItem.imgSrc, alt= pordItem.name)
+													p.n-sale--subtitle 銷售副標
+													p.n-name
+														a(href= pordItem.hotUrl, title= pordItem.name)= pordItem.name
+													ul.n-desc__list
+														li=pordItem.desc1
+														li=pordItem.desc2
+														li=pordItem.desc3
+													p.n-price__wrap
+														span.n-price--normal= pordItem.normalPrice
+														span.n-price--16 $ 
+															span= pordItem.price	
+													.n-card__btn
+														a.n-btn.n-btn--card-icon
+															i.n-icon--collect
+															span 加入蒐藏
+														a.n-btn.n-btn--card-red 
+															i.n-icon--cart
+															span 加入購物車
+
+							section.n-l-colmb30.n-kit__wrap
+								.n-title__wrap.n-text--center
+									.n-title--18 超值組合 排隊必搶明星商品
+								.n-l-bgw-md.n-kit__body
+									ul.n-hover--img.n-card__list
+										li
+											.n-card__box
+												a.n-pic(href="#", title="鍋寶304不銹鋼電鍋超值熱銷組")
+													.n-soldout
+														p.n-title--15 銷售一空
+													img(src="https://goo.gl/RLvNVt", alt="鍋寶304不銹鋼電鍋超值熱銷組")
+												p.n-name
+													a(href="#", title="鍋寶304不銹鋼電鍋超值熱銷組") 鍋寶304不銹鋼電鍋超值
+												ul.n-desc__list
+													li 搭配專用真皮鑰匙圈，經典時尚配件
+													li Microban葉語傾城抗菌兩用被床罩組
+													li 磁吸式帽蓋設計，避免掉蓋問題
+												p.n-price__wrap
+													span.n-price--normal $ 113,000
+													span.n-price--16 $ 
+														span 113,000
+												.n-card__btn
+													a.n-btn.n-btn--card-icon
+														i.n-icon--collect
+														span 加入蒐藏
+													a.n-btn.n-btn--normal
+														i.n-icon--mail
+														span 貨到通知我
+										li
+											.n-card__box
+												a.n-pic(href="https://goo.gl/UyIC5s", title="Microban葉語傾城抗菌兩用被床罩組-雙")
+													.n-icon--play
+														.n-icon--arrow-left
+													img(src="https://goo.gl/QVMjuc", alt="Microban葉語傾城抗菌兩用被床罩組-雙")
+												p.n-name
+													a(href="https://goo.gl/UyIC5s", title="Microban葉語傾城抗菌兩用被床罩組-雙") 鍋寶304不銹鋼電鍋超值
+												ul.n-desc__list
+													li 搭配專用真皮鑰匙圈，經典時尚配件
+													li Microban葉語傾城抗菌兩用被床罩組
+													li 磁吸式帽蓋設計，避免掉蓋問題
+												p.n-price__wrap
+													span.n-price--normal $ 113,000
+													span.n-price--16 $ 
+														span 113,000
+												.n-card__btn
+													a.n-btn.n-btn--card-icon
+														i.n-icon--collect
+														span 加入蒐藏
+													a.n-btn.n-btn--normal
+														i.n-icon--mail
+														span 貨到通知我
+										- var pordItems = [ {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚', imgSrc: 'https://goo.gl/lhucKm', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}]
+										each pordItem in pordItems
+											li
+												.n-card__box
+													a.n-pic(href= pordItem.hotUrl, title= pordItem.name)
+														img(src= pordItem.imgSrc, alt= pordItem.name)
+													p.n-name
+														a(href= pordItem.hotUrl, title= pordItem.name)= pordItem.name
+													ul.n-desc__list
+														li=pordItem.desc1
+														li=pordItem.desc2
+														li=pordItem.desc3
+													p.n-price__wrap
+														span.n-price--normal= pordItem.normalPrice
+														span.n-price--16 $ 
+															span= pordItem.price	
+													.n-card__btn
+														a.n-btn.n-btn--card-icon
+															i.n-icon--collect
+															span 加入蒐藏
+														a.n-btn.n-btn--card-red 
+															i.n-icon--cart
+															span 加入購物車
+
+
+						include include/block/_history
+
+			include include/global/_footer
+			include include/global/_go-top
+			include include/block/_product-quick-view
+			include include/block/_product-notice-me
+			include include/flagship/_about-flagship.pug
+			.n-overlay.n-overlay--flagship.mfp-hide#ovearlayFlagshipMember
+				.n-overlay__box
+					<button title="關閉" type="button" class="mfp-close">&#215;</button>
+					.n-l-bgw-lg
+						.n-overlay__head.n-l-colmb20.n-text--center 
+							img(src="Resource/img201703/flagship/bn230x90.jpg", alt="logo")
+						.n-overlay__body.n-overlay--flagship-about
+							table.n-l-colmb20.table.table--bordered
+								tbody
+									tr.table--caption
+										th 會員等級
+										th 入會方法
+										th 會員優惠活動
+									tr
+										td VIP會員
+										td 12個月內單次消費金額滿 <span class="n-title--16 n-pr--medium"> 5,000 </span> 元 <br />或累計消費金額滿 <span class="n-title--16 n-pr--medium"> 5,000元 </span> 元
+										td
+											ul.n-list--disc
+												li 購物滿1元，打 <span class="n-title--16 n-pr--medium"> 95 </span> 折
+												li 單筆購物滿 <span class="n-title--16 n-pr--medium"> 5,000 </span> 元，再 <span class="n-title--16 n-pr--medium"> 9 </span> 折
+									tr
+										td VIP會員
+										td 12個月內單次消費金額滿 <span class="n-title--16 n-pr--medium"> 5,000 </span> 元 <br />或累計消費金額滿 <span class="n-title--16 n-pr--medium"> 5,000元 </span> 元
+										td
+											ul.n-list--disc
+												li 購物滿1元，打 <span class="n-title--16 n-pr--medium"> 95 </span> 折
+												li 單筆購物滿 <span class="n-title--16 n-pr--medium"> 5,000 </span> 元，再 <span class="n-title--16 n-pr--medium"> 9 </span> 折
+							.n-l-bgw-md.n-flagship__note
+								.n-flagship__note-title 注意事項
+								ul.n-list--disc
+									li 消費日期落在統計區間，統計當日已付款且尚未取消訂單或退貨，則視為有效訂單。
+									li 消費日期落在統計區間，統計當日已付款且尚未取消訂單或退貨，則視為有效訂單。
+									li 折扣金額以購物車結帳時實際金額為準。
+									li 本店保有隨時修改入會辦法 / 續會辦法 / 優惠之權利。
+			
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/flagship.normal.js')
+		script(src = 'Resource/js201703/prototyping.js')

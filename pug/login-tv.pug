@@ -1,0 +1,71 @@
+doctype html
+html(lang='zh-Hant-TW')
+    head
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+        <![endif]-->
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=1260')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title 電視跨轉會員 -- 東森嚴選－ET Mall東森購物網
+        include include/global/_meta
+        link(href='Resource/css201703/n-base.css', rel='stylesheet')
+        link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+        link(href='Resource/css201703/n-common.css', rel='stylesheet')
+        link(href='Resource/css201703/n-reg.css', rel='stylesheet')
+    body.n-theme--gr2-lighter
+        main.n-wrapper
+            include include/global/_inside-head
+            .n-l-960.n-l-colmt20.n-l-colmb50
+                form#loginTvMember(action="login-tv-2.html")
+                    .n-l-bgw-lg.n-l-bgw-border.n-reg__wrap
+                        .n-title__wrap.n-text--center 
+                            .n-title--18 電視跨轉會員
+                        .n-l-bgw-lg.n-reg__body
+                            .n-process.n-l-colmb20.n-process--three-steps.n-process--member.n-process--start
+                                .n-process__box
+                                    .n-process--dot
+                                    p 電視跨轉會員
+                                .n-process__box
+                                    .n-process--dot
+                                    p 輸入驗證密碼
+                                .n-process__box
+                                    .n-process--dot
+                                    p 會員帳號轉換完成
+                            .n-l-bgw-sm.n-l-colmb30.n-text--center
+                                p 若您曾在東森電視購物或東森型錄購買過商品，您已經是東森購物網會員，但因您從未登入過東森購物網站， <br /> 基於個人資料安全，請先完成身分確認流程，即可啟動您在東森購物網站的權益。
+                            .n-left.col-7.n-reg__left
+                                ul.n-reg__fields.n-reg__login.n-form-aligned
+                                    li.n-form__box
+                                        label.n-form--title(for="userID") 輸入身分證號碼
+                                        input.n-form--control#userID(type="text", name="userID")
+                                    li.n-form__box
+                                        label.n-form--title(for="userMail") 輸入Email信箱
+                                        input.n-form--control#userMail(type="text", name="userMail")
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary(type="submit") 確認
+                                
+                            .n-right.col-5.n-reg__right.n-text--center 
+                                a.n-reg__bn(href="https://goo.gl/dJ9XMK", title="bn word", target="_blank")
+                                    img(src="https://goo.gl/JQGtvz", width="350", height="183" alt="bn word")
+                                
+                        .n-reg__hints.note--box-lv3
+                            ul.n-list--disc
+                                li 小叮嚀
+                                    p 提醒您，當您填妥資料並點擊「確認」送出後，系統將自動傳送密碼的簡訊到您手機中。 <br />  若您的會員資料有誤，請撥打免費服務專線0800-057-999，將由專人為您服務，謝謝!
+                        include include/register/_ponta-terms-1
+                        include include/register/_ponta-terms-2
+                                    
+            include include/global/_footer
+            include include/global/_go-top
+        script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+        script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+        script(src = 'Resource/js201703/vendor/jquery.validate.js')
+        script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+        script(src = 'Resource/js201703/common/global.effect.js')
+        script(src = 'Resource/js201703/pages/registered.js')
+        script(src = 'Resource/js201703/prototyping.js')
+                

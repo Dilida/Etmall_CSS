@@ -1,0 +1,118 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+// ==========================================================================
+// import sprite 
+// ==========================================================================
+@import "_theme/_sprite.scss"
+
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.n-footer a 
+	color: $gr-medium
+.n-footer a:hover 
+	color: $pr-medium
+
+// Footer Head
+// ==========================================================================
+
+.n-footer
+	&__head
+		border-bottom: 2px solid $gr-medium
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, under)
+			background-color: $gr-medium
+			width: 1260px
+			height: 2px
+			left: 0
+			top: 34px
+		a 
+			background-color: rgba($gr-dp-dark, 0.4)
+			display: block
+			color: $gr2-dp-light
+			padding-top: 8px
+			padding-bottom: 8px
+			+layout-center(64)
+			text-align: center
+			border-top-left-radius: 2px
+			border-top-right-radius: 2px
+		a:hover 
+			color: $gr2-dp-light
+
+// Footer body
+// ==========================================================================
+.n-footer
+	&__body
+		background-color: $gr2-dp-light
+		padding-top: 15px
+		position: relative
+		&:after 
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, under)
+			background-color: $gr2-dp-light
+			width: 1260px
+			height: 299px
+			left: 0
+			top: 0
+		.n-layout--md 
+			+clearfix
+		.n-layout--md:first-child 
+			border-bottom: 1px solid $gr-lighter
+			margin-bottom: 20px
+			padding-bottom: 20px
+		.n-layout--md:last-child p 
+			color: $gr-medium
+			+font-size($fz-12)
+		.n-layout--md:last-child a:nth-child(1), 
+		.n-layout--md:last-child a:nth-child(2), 
+		.n-layout--md:last-child a:nth-child(3)
+			text-decoration: underline
+	&__helper
+		width: ((1004 - 20) - 260) + px
+	&__helper-box
+		width: (100 / 5) + %
+		li:first-child 
+			margin-bottom: 10px
+		li 
+			margin-bottom: 10px
+		li:last-child
+			margin-bottom: 0
+	&__fb
+		width: 260px
+	&__logo
+		padding-top: 10px
+	&__logo a 
+		+sprite($f-logo)
+		display: block
+		margin-right: 20px
+	&__auth
+		+clearfix
+		li 
+			float: right
+			margin-left: 15px
+			text-align: center
+		li:first-child 
+			width: 120px
+			p 
+				margin-top: 27px
+		a
+			display: inline-block
+		.n-footer--norton
+			+sprite($f-hitrust)
+			margin-top: 10px
+			display: none
+		.n-footer--mcafee
+			+sprite($f-mcafee)
+			margin-top: 16px
+			display: none
+		.n-footer--bsi
+			+sprite($f-bsi)
+		.n-footer--pci
+			+sprite($f-pcidss)

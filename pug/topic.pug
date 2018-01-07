@@ -1,0 +1,54 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-topic.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg
+				include include/topic/_banner
+				.n-topics__content.n-l-colmb30
+					.n-topics__main
+						include include/topic/_aside-menu
+						include include/topic/_main-4-banner
+						include include/topic/_main-8-list
+						include include/topic/_main-8-promo
+				include include/topic/_daily-discount
+				include include/index/_rank-list
+				include include/topic/_template-8-with-pic-l
+				include include/topic/_template-8-with-pic-r
+				include include/topic/_template-8-item
+				include include/topic/_photo-item
+				include include/topic/_image-item
+				include include/block/_topic-link
+			include include/global/_footer
+			include include/global/_go-top
+			ul#selectTemp(style="background-color: rgba(0, 0, 0, 0.9); padding: 8px; position: fixed; z-index: 999; width: 600px; margin: auto; left: 0; right: 0; bottom: 0;font-size: 15px; color: #fff;display: inline-block;")
+				li(style="display: inline-block; margin-right: 20px")
+					label(for="temp1") 版型 1
+					input#temp1(type="radio", name="template" value="1")
+				li(style="display: inline-block; margin-right: 20px")
+					label(for="temp2") 版型 2
+					input#temp2(type="radio", name="template" value="2")
+				li(style="display: inline-block; margin-right: 20px")
+					label(for="temp3") 版型 3
+					input#temp3(type="radio", name="template" value="3")
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/topic.js')
+		script(src = 'Resource/js201703/prototyping.js')

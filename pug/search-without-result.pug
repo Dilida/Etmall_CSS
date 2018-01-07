@@ -1,0 +1,60 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 符合 nike 的搜尋結果 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-search.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-l-colmt20
+				.n-breadcrumb__wrap.n-l-colmb15
+					p.n-left 您的位置：
+					ul.n-left
+						li
+							a(href="" title="首頁") 首頁
+						li
+							.n-breadcrumb__arrow
+								i.n-icon--path-arrow
+						li.n-breadcrumb--without-link
+							span 搜尋結果
+				.n-search-result
+					aside.n-left.n-l-230.n-search__nav
+						.n-aside__caption
+							.n-title--16 最近查詢的關鍵字
+						ul
+							li
+								a(href="", title="視聽家電") 視聽家電
+							li
+								a(href="", title="變頻冷暖") 變頻冷暖
+							li
+								a(href="", title="電腦桌") 電腦桌
+					form(action="")
+						h1.n-is--hide 這邊放關鍵字
+						.n-left.n-l-1015.n-l-colmb50.n-search-result__wrap
+							include include/search/_search-tool
+							.n-l-bgw-md.n-search-result__body
+								p.n-title--16.n-search__without-result 很抱歉，您輸入的關鍵字： 「 <span class="n-pr--medium"> 我開六盞燈 </span> 」或所設定的條件無法搜尋到任何相關的結果。請您試著輸入其他關鍵字或放寬搜尋範圍，謝謝！
+				include include/block/_ulike
+							
+
+
+			include include/global/_footer
+			include include/global/_go-top
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/search.js')
+		script(src = 'Resource/js201703/prototyping.js')

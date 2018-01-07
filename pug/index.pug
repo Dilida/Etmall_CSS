@@ -1,0 +1,204 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-index.css', rel='stylesheet')
+		link(href='Resource/css201703/n-crazy-ad_E.css', rel='stylesheet')
+		link(href='Resource/css201703/n-index-coupon.css', rel='stylesheet')
+		script(src = 'https://www.youtube.com/iframe_api')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			header.n-header
+				<div class="n-top__ad">
+					<div id="topFiveBanner" class="n-layout--lg n-top__ad-box">
+						<a href="#" title="東森嚴選－ET Mall東森購物網" target="_blank"><img src="https://goo.gl/Qfu8I6" alt="東森嚴選－ET Mall東森購物網"></a>
+						<a href="#" title="東森嚴選－ET Mall東森購物網" target="_blank"><img src="https://goo.gl/dDwEW8" alt="東森嚴選－ET Mall東森購物網"></a>
+						<a href="#" title="東森嚴選－ET Mall東森購物網" target="_blank"><img src="https://goo.gl/9K0ZpM" alt="東森嚴選－ET Mall東森購物網"></a>
+						<div id="topBannerNav" class="n-top--bn-nav"></div>	
+					</div>
+				</div>
+				include include/global/_top-nav
+				include include/global/_header
+				.n-nav__wrap
+					.n-layout--lg
+						include include/global/_nav
+						include include/global/_nav-feature
+			include include/index/_banner
+			.n-layout--lg
+				.n-l-1015.n-l-colmb30.n-daily-film
+					include include/index/_daily-clock
+					include include/index/_daily-film
+				//- include include/index/_rank-list
+				section.n-l-colmb30.n-rank__wrap.n-hover--img
+					.n-title__wrap
+						.n-title--18.n-left 排行榜推薦
+						ul.n-tab__nav.n-right#rankTab
+							li.current 
+								a(href='#rank1' title='全站') 全站
+							each tabTxt, index in [{ tabName: '電視電視'}, { tabName: '家電'}, { tabName: '服飾'}, { tabName: '鞋包'}, { tabName: '內衣'}, { tabName: '珠寶'}, { tabName: '手錶'}, { tabName: '美妝'}, { tabName: '保健'}, { tabName: '美食'}, { tabName: '3C'}, { tabName: '精品'}, { tabName: '寢具'}, { tabName: '日用'}, { tabName: '運動'}, { tabName: '旅遊'}]
+								li
+									a(href='#rank' + (index + 2)) #{tabTxt[Object.keys(tabTxt)[0]]}
+					.n-rank__box#rank1
+						.n-rank__body(style="position: relative; overflow: hidden")
+							ul.n-rank__list(style="width: 3400px; position: relative; overflow: hidden")
+								- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+								each pordItem, i in pordItems
+									li 
+										a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+											.n-pic
+												.n-flag__wrap
+													span.n-flag__num= (i + 1)
+												img(src= pordItem.imgSrc alt= pordItem.name)
+											p.n-name= pordItem.name 
+											p.n-price__wrap
+												span.n-price--normal= pordItem.normalPrice
+												span.n-price--16 
+													span $
+													span= pordItem.price
+						a.n-l-arrow__wrap(href="#" title="Prev")
+							span.n-arrow--top
+							span.n-arrow--bottom
+						a.n-r-arrow__wrap(href="#" title="Next")
+							span.n-arrow--top
+							span.n-arrow--bottom
+				include include/index/_promo-banner
+				.n-category__wrap.n-hover--img
+					include include/index/_tv-appliances
+					include include/index/_clothes-shoes
+					include include/index/_underwear-jewelry
+					include include/index/_watch-makeups
+					include include/index/_health-food
+					include include/index/_computer-fine
+					include include/index/_bed-use
+					include include/index/_sport-travel
+				include include/index/_banklist
+				//- include include/block/_history
+				section.n-l-colmb30
+					.n-title__wrap
+						.n-title--18 曾瀏覽的商品
+					.n-history
+						- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}]
+						.n-history__top
+							.n-history__body
+								ul.n-history__list(style="width: 9999em")
+									li.current
+											a(href="https://goo.gl/ATXrw3" title="【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L" target="_blank")
+												.n-pic 
+													img(src="https://goo.gl/4GOIeW" alt="【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L")
+												span.n-price--16 $
+													span 1,113,990
+									each pordItem in pordItems
+										li
+											a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+												.n-pic 
+													img(src= pordItem.imgSrc alt= pordItem.name width="120" height="120")
+												span.n-price--16 $
+													span= pordItem.price
+								a.n-l-arrow__wrap(href="#" title="Prev")
+									span.n-arrow--top
+									span.n-arrow--bottom
+								a.n-r-arrow__wrap(href="#" title="Next")
+									span.n-arrow--top
+									span.n-arrow--bottom
+						.n-history__bottom
+							.n-history__caption 買了
+								span.n-pr--medium 【特別促銷】南九州宮崎+鹿兒島溫泉休閒四日
+								| 的客戶也買了
+							.n-history__body
+								ul.n-history__list.n-hover--imgt(style="width: 9999em")
+									- for (var i = 1; i < pordItems.length; ++i)
+										li
+											a(href= pordItems[i].hotUrl title= pordItems[i].name target="_blank")
+												.n-pic 
+													img(src= pordItems[i].imgSrc alt= pordItems[i].name width="150" height="150")
+												p.n-name= pordItems[i].name
+												p.n-price--16 $
+													span= pordItems[i].price
+								a.n-l-arrow__wrap(href="#" title="Prev")
+									span.n-arrow--top
+									span.n-arrow--bottom
+								a.n-r-arrow__wrap(href="#" title="Next")
+									span.n-arrow--top
+									span.n-arrow--bottom
+
+
+				include include/block/_ulike
+				include include/block/_pord-list
+				include include/block/_topic-link
+			include include/global/_footer
+			include include/global/_go-top
+			.n-cover__wrap#coverBgWrap
+				a.n-cover--bg-l(href="#" title="supper ad" target="_blank")
+				a.n-cover--bg-r(href="#" title="supper ad" target="_blank")
+			include include/index/_crazy-catwalk
+			.n-overlay.n-overlay--coupon.mfp-hide#OvearlayCoupon
+				.n-overlay__box.n-coupon--box.n-coupon--box-2
+					<button title="關閉" type="button" class="mfp-close">&#215;</button>
+					.n-left.n-coupon__notice
+						.n-coupon__icon
+							i.n-icon-index--coupon
+							.n-title--18.n-pr--medium 重要通知
+					.n-right.n-bg--gr2-light.n-coupon__body
+						.n-coupon__title
+							.n-title--18.n-left 折價券已入帳
+							a.n-right.n-btn.n-btn--small.n-btn--primary(href="", title="更多折價券") 更多折價券
+						ul.n-coupon__list 
+							li 
+								span.n-left.n-labels
+								p.n-left.n-coupon__desc Timberland開館慶折價券
+								p.n-left.n-text--right.n-coupon__price 50元
+								p.n-left.n-text--right.n-coupon__date 07/29 到期
+							li 
+								span.n-left.n-labels
+								p.n-left.n-coupon__desc 家電最大牌折價券
+								p.n-left.n-text--right.n-coupon__price 3000元
+								p.n-left.n-text--right.n-coupon__date 08/10 到期
+							- for(let i = 0; i < 2; i++)
+								li 
+									span.n-left.n-labels.n-bg--pr-lighter new
+									p.n-left.n-coupon__desc ASUS/ACER年度強檔，指定筆電桌機滿額折
+									p.n-left.n-text--right.n-coupon__price 40000元
+									p.n-left.n-text--right.n-coupon__date 8/1 到期
+						.n-coupon__title
+							.n-title--18.n-left 折扣金已入帳
+							a.n-right.n-btn.n-btn--small.n-btn--primary(href="", title="更多折扣金") 更多折扣金
+						ul.n-coupon__list 
+							li 
+								span.n-left.n-labels
+								p.n-left.n-coupon__desc Timberland開館慶折價券
+								p.n-left.n-text--right.n-coupon__price 50元
+								p.n-left.n-text--right.n-coupon__date 07/29 到期
+							li 
+								span.n-left.n-labels
+								p.n-left.n-coupon__desc 家電最大牌折價券
+								p.n-left.n-text--right.n-coupon__price 3000元
+								p.n-left.n-text--right.n-coupon__date 08/10 到期
+							- for(let i = 0; i < 2; i++)
+								li 
+									span.n-left.n-labels.n-bg--pr-lighter new
+									p.n-left.n-coupon__desc ASUS/ACER年度強檔，指定筆電桌機滿額折
+									p.n-left.n-text--right.n-coupon__price 40000元
+									p.n-left.n-text--right.n-coupon__date 8/1 到期
+
+
+
+		#fb-root
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/social.media.api.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/index.js')
+		script(src = 'Resource/js201703/prototyping.js')

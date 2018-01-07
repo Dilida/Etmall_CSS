@@ -1,0 +1,37 @@
+aside.n-left.n-l--aside
+	.n-aside__caption.n-bg--gr-lighter.n-aside__title
+		.n-title--16 超值強檔
+	.n-aside__category.n-bg--ye-dp-light.n-aside--marketing
+		ul.n-aside__nav
+			each subNav in [ '超值強檔最多只能十三個字元', 'DINA珠寶滿千送珍珠項鍊', 'BRILLMOND好禮雙重送', '珠寶限時特賣', '最多人搶～TOP 100', '春日繽紛衣服大賞↘5折UP']
+				li
+					a(href="#", title=subNav )= subNav
+		a.n-right.n-aside__more(href="", title="更多") 
+			.n-icon--more-btn
+				span
+				span
+			span 更多
+
+	.n-aside__caption.n-aside__title.n-bg--pr-medium
+		h1.n-title--16 時尚女裝
+	.n-aside__caption.n-aside__title.n-bg--gr-lighter
+		h2.n-title--16 品牌主打好康活動
+	ul.n-bg--gr2-dp-light.n-aside__nav
+		each subNav in [ '最多人搶～TOP 100', '【SCL】牛仔時尚45折up', '【A3】人氣女裝 56折up', 'MONS 新品 198 UP', '【ST.MALO】破盤3折起', '【IFOREST】↘69折UP', '【lingling】花樣青春 142UP', '【Bubble coco】新品發表＄299 up', '【Moriya】春夏棉麻 399up', '【JISEN】雪紡x洋裝 83折', '超值任選', '【A1.Darin】夏激殺↘2件＄990', '【A3】熱搜款↘ 任2件 ＄998', '【MONS】夏到嫑嫑的↘＄528UP']
+			li
+				a(href="#", title=subNav )
+					h3.n-word--count= subNav
+	-for(var i = 0; i < 8; i++)
+		.n-aside__caption.n-bg--gr-lighter.n-aside__title
+			h2.n-title--16 中分類名稱
+		.n-aside__category.n-bg--gr2-dp-light
+			ul.n-aside__nav
+				each categoryNav in ['小分類六個字','新品上市','【A1 Darin】 春特賣8折','【HeHa】初夏NEW IN 72折up','春日繽紛衣服大賞↘5折UP','春日休閒系新品全館↘530UP','質感棉麻輕美學↘530元UP','【Bubble coco】新品發表＄299 up','【Moriya】春夏棉麻 399up','【SCL】牛仔時尚  45折up']
+					li 
+						a(href="#", title=categoryNav )
+							h3.n-word--count= categoryNav
+			a.n-right.n-aside__more(href="", title="更多") 
+				.n-icon--more-btn
+					span
+					span
+				span 更多

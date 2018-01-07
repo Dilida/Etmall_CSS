@@ -1,0 +1,47 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// Purchase list 
+// ==========================================================================
+
+// Purchase Common style
+// ==========================================================================
+.n-purchase
+	&__wrap
+		position: relative
+		z-index: map-get($zindex, zero)
+		overflow: hidden
+	&__list
+		+clearfix
+		> li
+			position: relative
+			z-index: map-get($zindex, zero)
+			float: left
+			margin-right: 15px
+		// a 
+		// 	color: $gr-dark
+		.n-pic,
+		.n-name
+			margin-bottom: 10px
+		.n-pic
+			+img-loading
+			+width-height(185)
+			overflow: hidden
+		.n-name
+			+text-fool(36)
+
+// Select specs style
+// ==========================================================================
+.n-select__spec
+	ul 
+		background-color: rgba($gr-dp-dark, 0.7)
+		padding: 15px
+	.n-caption
+		color: $gr2-dp-light
+	ul > li 
+		margin-bottom: 10px
+	ul > li:last-child
+		margin-bottom: 0

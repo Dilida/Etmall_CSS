@@ -1,0 +1,35 @@
+.n-l-colmb20.n-cart--deliver
+	.n-title__wrap
+		h2.n-title--18 希望送貨時間
+	.n-l-bgw-md.n-cart__second
+		ul.n-form__ctrlgroup
+			li
+				.n-form__box
+					input#deliverTime1(type="radio", name="deliverTime")
+					label(for="deliverTime1") 24小時到貨
+				p.n-form--subbox.n-is--hide 您已選擇24小時快速到貨，商品將於24小時內送達 <a class="n-blue--link " href="#" title="24Ｈ到貨服務範圍查詢"> 24Ｈ到貨服務範圍查詢 </a>
+			li
+				.n-form__box
+					input#deliverTime2(type="radio", name="deliverTime")
+					label(for="deliverTime2") 期望到貨時段 (將依您期望到貨時段進行配達，不適用24小時到貨規範)
+				.n-form__box.col-7.n-form--subbox.n-is--hide
+					select.n-form--control
+						option(value="") 09:00-12:00
+
+.n-l-colmb20
+	.n-title__wrap
+		h2.n-title--18 商品配送特殊服務
+	.n-l-bgw-md.n-cart__second
+		.n-left.col-9.n-cart--left
+			textarea.n-form--control#cartTypeFields(name="", maxlength="15")
+			.note--box-lv3#cartCountTxt
+		.n-left.col-3.n-cart--right
+			ul.n-desc__list
+				li
+					.n-left
+						i.n-icon--star
+					p.n-left.n-desc__txt 本人親簽，送貨前請先電聯
+				li
+					.n-left
+						i.n-icon--star
+					p.n-left.n-desc__txt 若您訂購旅遊類商品，票券將由郵局寄出，請勿填寫此欄位。

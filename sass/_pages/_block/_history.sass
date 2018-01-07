@@ -1,0 +1,104 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// Browsing History Style
+// ==========================================================================
+
+
+// Browsing History common style
+// ==========================================================================
+.n-history__top,
+.n-history__bottom
+	position: relative
+	z-index: map-get($zindex, base)
+.n-history__bottom
+	z-index: map-get($zindex, zero)
+.n-history__list
+	+clearfix
+	li 
+		float: left
+
+// Browsing History top Style
+// ==========================================================================
+.n-history
+	&__top
+		background-color: $gr2-light
+		padding-top: 15px
+		.n-history__body
+			+layout-center((160 * 7))
+			overflow: hidden
+		.n-history__list
+				+clearfix
+				li 
+					width: 160px
+					padding-top: 15px
+					padding-bottom: 11px
+					text-align: center
+				li img 
+					width: 120px
+					height: 120px
+				.n-pic 
+					+img-loading
+					+layout-center(120)
+					height: 120px
+					overflow: hidden
+					margin-bottom: 10px
+				.current
+					position: relative
+					z-index: map-get($zindex, third)
+					background-color: $gr2-dp-light
+					border-top: 1px solid $gr-lightest
+					border-left: 1px solid $gr-lightest
+					border-right: 1px solid $gr-lightest
+				.current:after
+					content: ''
+					background-color: $gr2-dp-light
+					position: absolute
+					z-index: map-get($zindex, fourth)
+					width: 100%
+					height: 2px
+					left: 0
+					bottom: -1px
+		.n-l-arrow__wrap,
+		.n-r-arrow__wrap
+			top: 40%
+			
+
+// Browsing History bottom Style
+// ==========================================================================
+.n-history
+	&__caption
+		padding: 20px 70px
+		font-weight: bold
+	&__bottom
+		background-color: $gr2-dp-light
+		border: 1px solid $gr-lightest
+		.n-history__body
+			+layout-center((220 * 5))
+			padding-bottom: 20px
+		.n-history__list
+			+clearfix
+			li 
+				width: 220px
+			.n-pic,
+			.n-name,
+			.n-price--16
+				+layout-center(150)
+				margin-bottom: 10px
+			.n-pic
+				+img-loading
+				height: 140px
+				overflow: hidden
+			.n-name
+				+text-fool(36)
+			a 
+				color: $gr-dark
+		.n-l-arrow__wrap,
+		.n-r-arrow__wrap
+			top: 40%
+
+
+

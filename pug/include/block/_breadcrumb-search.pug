@@ -1,0 +1,46 @@
+.n-breadcrumb__wrap.n-l-colmb15
+	p.n-left 您的位置：
+	ul.n-left
+		li
+			a(href="" title="首頁") 首頁
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb--without-link
+			span 搜尋結果
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb__drop.n-hover--drop 
+			a(href="" title="視聽家電") 
+				span 視聽家電
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['家電', '電視購物', '快速到貨', '美妝', '保健', '內塑衣', '服飾', '鞋包']
+					li
+						a(href="#", title= promoNavs )= promoNavs
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb__drop.n-hover--drop  
+			a(href="" title="冷暖空調") 
+				span 冷暖空調
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['廚房家電', '季節家電', '生活家電', '影音劇院', '液晶電視', '美容家電', '冷暖空調', '洗｜乾衣機']
+					li
+						a(href="#", title= promoNavs )= promoNavs
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb__drop.n-hover--drop 
+			a(href="" title="大金空調") 
+				span 大金空調
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['國際空調', '聲寶空調', '東元空調', '三洋空調', '禾聯空調']
+					li
+						a(href="#", title= promoNavs )= promoNavs

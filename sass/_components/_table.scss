@@ -1,0 +1,149 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+
+// table base
+// ==========================================================================
+
+.table {
+  background-color: transparent;
+  empty-cells: show;
+  width: 100%;
+  max-width: 100%;
+}
+.table th{
+	text-align: left;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 0.5em 1em; 
+  vertical-align: top;
+  border-top: 1px solid $gr-light; 
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid $gr-light; 
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid $gr-light; 
+}
+
+// Bordered table
+// ==========================================================================
+.table--bordered {
+  border: 1px solid $gr-light; 
+}
+.table--bordered > thead > tr > th,
+.table--bordered > tbody > tr > th,
+.table--bordered > tfoot > tr > th,
+.table--bordered > thead > tr > td,
+.table--bordered > tbody > tr > td,
+.table--bordered > tfoot > tr > td {
+  border: 1px solid $gr-light; 
+}
+.table--bordered > thead > tr > th,
+.table--bordered > thead > tr > td {
+  border-bottom-width: 2px; 
+} 
+
+// Striped rows
+// ==========================================================================
+.table--striped > tbody > tr:nth-of-type(odd) {
+  background-color: $gr2-lightest; 
+}
+
+//  Striped rows without border
+// ========================================================================== 
+
+.table--striped-without-border > thead > tr > th,
+.table--striped-without-border > tbody > tr > th,
+.table--striped-without-border > tfoot > tr > th,
+.table--striped-without-border > thead > tr > td,
+.table--striped-without-border > tbody > tr > td,
+.table--striped-without-border > tfoot > tr > td {
+  border-top: none;
+}
+
+// table theme
+// ==========================================================================
+.table--caption {
+  background-color: $gr-lightest;
+}
+.table--gr2-dp-light {
+  background-color: $gr2-dp-light;
+}
+.table--disabled {
+  background-color: $gr2-lightest;
+}
+
+
+// div table style
+// ==========================================================================
+.n-d-table,
+.n-d-table__wrap {
+  width: 100%;
+}
+.n-d-table__wrap {
+  display: table;
+  border-collapse: collapse;
+}
+
+.n-d-table__head,
+.n-d-table__body-row {
+  > li {
+    display: table-cell;
+    padding: 8px 16px;
+  }
+}
+.n-d-table__head {
+  display: table-header-group;
+  font-weight: bold;
+}
+
+.n-d-table__body {
+  display: table-row-group;
+}
+
+.n-d-table__body-row {
+  display: table-row;
+  > li {
+    vertical-align: top;
+    border-top: 1px solid $gr-light
+  }
+}
+
+.n-d-table__foot {
+  @include clearfix;
+  background-color: $gr2-dp-light;
+  padding: 8px 16px;
+}
+
+.n-d-table__foot-colspan {
+  border-left: 1px solid $gr-light;
+  border-right: 1px solid $gr-light;
+  border-bottom: 1px solid $gr-light;
+}
+
+// Div Bordered table
+// ==========================================================================
+.n-d-table--bordered {
+  border: 1px solid $gr-light;
+  .n-d-table__head > li,
+  .n-d-table__body > .n-d-table__body-row > li  {
+    border: 1px solid $gr-light;
+  }
+}

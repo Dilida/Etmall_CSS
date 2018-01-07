@@ -1,0 +1,68 @@
+.n-layout--500.n-left.n-hover--img
+	mixin dailyItems(name, imgSrc, nromalPrice, price)
+		li
+			a(href="#" title= name)
+				.n-pic.n-left
+					img(src= imgSrc alt= name width="125" height="125")
+				p.n-name= name
+				p.n-price__wrap
+					span.n-price--normal= nromalPrice
+					span.n-price--16 
+						span $
+						span= price
+	section.n-left.n-daily__wrap.n-daily__clock
+		.n-title__wrap
+			.n-title--22
+				i.n-icon--clock
+				|整點最便宜
+		.n-count__wrap
+			ul.n-count__clock.n-right
+				li 2
+				li 1
+				li.n-count__split :
+				li 4
+				li 9
+				li.n-count__split :
+				li 1
+				li 1
+			.n-count__txt.n-right 即將開賣
+		ul.n-daily__list
+			li
+				a(href="#" title="【SOLE】F63 電動跑步機")
+					.n-pic.n-left
+						img(src="https://goo.gl/Wnugsp" alt="【SOLE】F63 電動跑步機" width="125" height="125")
+					p.n-name 【SOLE】F63 電動跑步機
+					p.n-price__wrap
+						span.n-price--normal $ 1,113,000
+						span.n-price--16 
+							span $
+							span 1,111,780
+			li
+				a(href="#" title="《加贈4刷頭》飛利浦 美白音波震動充電式牙刷 HX6711")
+					.n-pic.n-left
+						img(src="https://goo.gl/RRiyLu" alt="《加贈4刷頭》飛利浦 美白音波震動充電式牙刷 HX6711" width="125" height="125")
+					p.n-name 《加贈4刷頭》飛利浦 美白音波震動充電式牙刷 HX6711
+					p.n-price__wrap
+						span.n-price--normal $ 1,113,000
+						span.n-price--16 
+							span $
+							span 1,111,780
+	section.n-left.n-daily__wrap.n-daily__day
+		.n-title__wrap
+			.n-title--22
+				i.n-icon--hot
+				|天天激殺價
+		.n-count__wrap
+			ul.n-count__clock.n-right
+				li 2
+				li 1
+				li.n-count__split :
+				li 4
+				li 9
+				li.n-count__split :
+				li 1
+				li 1
+			.n-count__txt.n-right 剩餘
+		ul.n-daily__list
+			+dailyItems('(4套) 軟鋼圈內衣_Madonna', 'https://goo.gl/oxCWFZ', '$ 1,113,000', '1,111,780')
+			+dailyItems('VICTORINOX 瑞士維氏33用冠軍瑞士刀-紅', 'https://goo.gl/HwEu96', '$ 1,113,000', '1,111,780')

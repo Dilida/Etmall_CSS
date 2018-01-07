@@ -1,0 +1,39 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// list
+// ==========================================================================
+
+.n-list--disc > li {
+	list-style-type: disc;
+}
+
+.n-list--circle > li {
+	list-style-type: circle;
+}
+
+.n-list--decimal > li {
+	list-style-type: decimal;
+}
+
+.n-list--leading-zero > li { 
+	list-style-type: decimal-leading-zero;
+}
+
+.n-list--lower-alpha > li { 
+	list-style-type: lower-alpha;
+}
+
+
+.n-list--cjk > li { 
+	list-style-type: cjk-ideographic;
+}
+
+// list layout
+// ==========================================================================
+.n-list--ml20 {
+	margin-left: 20px;
+}

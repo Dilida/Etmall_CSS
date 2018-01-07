@@ -1,0 +1,43 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// This is recommend block style
+// ==========================================================================
+
+// recommend style
+// ==========================================================================
+.n-recommend
+	background-color: $gr2-dp-light
+	position: relative
+	z-index: map-get($zindex, zero)
+	.n-l-arrow__wrap,
+	.n-r-arrow__wrap
+		position: absolute
+		z-index: map-get($zindex, second)
+		top: 45%
+	&__title
+		padding: 12px
+		text-align: center
+	&__body
+		padding: 15px
+		width: (1015 - 30) + px
+		overflow: hidden
+	&__list
+		+clearfix
+		a 
+			color: $gr-dark
+		li 
+			float: left
+			width: 180px
+			margin-right: 20px
+		.n-pic,
+		.n-name
+			margin-bottom: 10px
+		.n-pic
+			+img-loading
+			+width-height(180)
+		.n-name
+			+text-fool(36)

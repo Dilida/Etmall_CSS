@@ -1,0 +1,33 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// May you like style
+// ==========================================================================
+
+.n-ulike
+	&__list
+		+clearfix
+		background-color: $gr2-dp-light
+		a 
+			color: $gr-dark
+			display: block
+		li
+			float: left
+			width: (100 / 4) + %
+			padding: 10px
+			position: relative
+			z-index: map-get($zindex, base)
+		.n-pic 
+			+img-loading
+			+width-height(110)
+			margin-right: 10px
+		.n-name
+			+text-fool(52)
+		.n-price__wrap
+			position: absolute
+			z-index: map-get($zindex, second)
+			right: 10px
+			bottom: 10px

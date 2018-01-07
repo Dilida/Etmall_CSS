@@ -1,0 +1,193 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// category common style
+// ==========================================================================
+.n-category,
+.n-hall__body
+	+clearfix
+
+// hall and big category ad box style
+// ==========================================================================
+.n-hall__wrap,
+.n-big__wrap
+	.n-l-adbox
+		position: relative
+		z-index: map-get($zindex, zero)
+		display: block
+
+// hall category banner style
+// ==========================================================================
+.n-hall
+	&__box
+		position: relative
+		z-index: map-get($zindex, zero)
+		width: 800px
+		height: 629px
+		overflow: hidden
+		margin-right: 15px
+		.n-banner--logo
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 0
+			top: 0
+	&__pic
+		height: 300px
+		overflow: hidden
+	&__bn-list
+		+clearfix
+		border-left: 1px solid $gr-lightest
+		border-right: 1px solid $gr-lightest
+		border-bottom: 1px solid $gr-lightest
+		margin-top: 50px
+		a 
+			color: $gr-dark
+			display: block
+		li
+			float: left
+			padding: 15px
+			width: (100 / 4) + %	
+			border-right: 1px dotted $gr-lightest
+		li:last-child
+			border-right: none
+		.n-pic 
+			+img-loading
+			+width-height(168)
+		.n-pic,
+		.n-name 
+			margin-bottom: 10px
+		.n-name
+			+text-fool(36)
+	&__nav 
+		background-color: $gr2-dp-light
+		border-bottom: 2px solid $gr-lightest
+		+layout-center(800)
+		position: relative
+		z-index: map-get($zindex, bnElems)
+		top: -327px
+		display: table
+		table-layout: fixed
+		li
+			display: table-cell
+			text-align: center
+			position: relative
+			z-index: map-get($zindex, zero)
+		a 
+			color: $gr-dark
+			display: block
+			padding-top: 15px
+			padding-bottom: 15px
+			margin-left: auto
+			margin-right: auto
+			+txt-ellipsis(300)
+		.current
+			background-color: $gr-dark
+			border-bottom: 2px solid $gr-dark
+			a
+				color: $gr2-dp-light
+
+
+
+
+// hall, big, middle, small category rank product style
+// ==========================================================================
+.n-category
+	&--rank
+		.n-tab__nav
+			max-width: 868px
+			height: 41px
+			overflow: hidden
+		.n-tab__nav a
+			width: 160px
+			max-width: 160px
+		.n-tab__nav li
+			margin-left: 10px
+		.n-tab__nav li:nth-child(2) a
+			width: 160px
+			max-width: 160px
+		.n-rank__list 
+			li 
+				width: 150px
+			img 
+				width: 150px
+				height: 150px
+
+// hall category right aside style
+// ==========================================================================
+.n-hall
+	&__aside
+		height: 629px
+		overflow: hidden
+		a 
+			color: $gr-dark
+			display: block
+		.n-pic 
+			overflow: hidden
+		.n-name
+			margin-bottom: 5px
+		.n-title__wrap
+			padding: 10px
+			.n-title--16
+				+txt-ellipsis(180)
+	&__promo
+		padding: 10px 10px 8px
+		.n-pic
+			+img-loading
+			margin-bottom: 5px
+			+layout-center(170)
+			height: 170px
+		.n-name
+			+text-fool(36)
+	&__list 
+		border-top: 1px solid $gr-lightest
+		li
+			+clearfix
+			border-bottom: 1px solid $gr-lightest
+			padding: 10px 10px 8px
+		.n-pic 
+			+img-loading
+			+width-height(56)
+			margin-right: 6px
+		.n-desc
+			width: 118px 
+		.n-name
+			+txt-ellipsis(110)
+		.n-price__wrap
+			.n-price--normal 
+				display: block
+				margin-right: 0
+
+// big category product list style
+// ==========================================================================
+.n-shop--big-catalog
+	height: (260 + 43) + px
+	.n-shop__pic 
+		width: 260px
+		.n-pic img
+			width: 260px
+			height: 260px
+	.n-shop__txt
+		position: absolute
+		z-index: map-get($zindex, base)
+		bottom: 0
+		left: 0
+		width: 100%
+	.n-bg--pr-medium 
+		background-color: rgba($pr-lightest, .8)
+	.n-shop__list
+		padding-top: 10px
+		padding-bottom: 8px
+	.n-shop__body 
+		width: (1015 - 260) + px
+		li
+			width: 170px
+		.n-pic,
+		.n-name
+			margin-bottom: 5px
+		.n-name
+			+text-fool(36)

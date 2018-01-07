@@ -1,0 +1,80 @@
+.n-l-colmb20.n-cart--addressee-info
+	.n-title__wrap
+		h2.n-title--18 收件人資訊
+	.n-l-bgw-md.n-cart__second
+		.n-left.col-9.n-cart--left
+			.n-form__box.n-l-colmb15
+				input#sameOrderName(type="radio", name="sameOrderName")
+				label(for="sameOrderName") 同訂購人資訊
+			.n-l-colmb15
+				a.n-btn.n-btn--primary(href="#", title="新增收件人資訊") 新增收件人資訊
+				.n-add__wrap.n-cart--enter-field.n-is--hide
+					.n-l-colmb15.n-form__box
+						label.n-title--13(for="addReceiveName") 
+							span.n-pr--medium  &#42;
+							| 收件人
+						input.n-form--control#addReceiveName(type="text")
+						p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+					.n-l-colmb15.n-form__box
+						label.n-title--13(for="mobilePhone") 
+							span.n-pr--medium  &#42;
+							| 行動電話
+						input.n-form--control#mobilePhone(type="text")
+						p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+					.n-l-colmb15.n-form--inline.n-form--phone
+						.n-title--13(for="receivePhone") 市內電話
+						.n-form__box
+							input.n-form--control#receiveTel(type="text")
+						.n-form__box
+							input.n-form--control#receivePhone(type="text")
+						p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+					<div class="n-l-colmb15 n-form--inline n-form--address">
+						<div class="n-title--13"><span class="n-pr--medium">&#42;</span>地址</div>
+						<div class="n-form__box"> 
+							<select title="請選擇地區" id="country" name="" class="n-form--control">
+								<option value="" selected="selected">請選擇地區</option>
+								<option value="Taiwan,臺灣地區">臺灣地區</option>
+								<option value="China,中國大陸地區" disabled="">中國大陸地區</option>
+								<option value="HK,港澳地區" disabled="">港澳地區</option>
+							</select>
+						</div>
+						<div class="n-form__box">
+							<select title="請選擇縣／市" id="city" name="city" class="n-form--control">
+								<option value="" selected="selected">請選擇縣／市</option>
+								<option value="TW_10_000_00,基隆市">基隆市</option>
+								<option value="TW_11_000_00,台北市">台北市</option>
+								<option value="TW_12_000_00,新北市">新北市</option>
+							</select>
+						</div>
+						<div class="n-form__box">
+							<select title="請選擇鄉鎮市區" id="canton" name="canton" class="n-form--control">
+								<option value="" selected="selected">請選擇鄉鎮市區</option>
+								<option value="TW_12_207_00,萬里區 207">萬里區 207</option>
+								<option value="TW_12_208_00,金山區 208">金山區 208</option>
+								<option value="TW_12_220_00,板橋區 220">板橋區 220</option>
+							</select>
+						</div>
+						<div class="n-form__box">
+							<input class="n-form--control" type="text" name="" id="address">
+						</div>
+						p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+					</div>
+					.n-form__foot
+						input.n-btn.n-btn--normal(type="reset", value="取消")
+						input.n-btn.n-btn--primary(type="submit", value="確定")
+
+			table.table.table--bordered.n-l-colmb15.n-is--hide
+				tr.table--caption
+					each thTitle, i in ['選擇收件人', '姓名','郵遞區號','地址','聯絡電話','行動電話','編輯']
+						th(class="title-" + (i + 1))= thTitle
+			
+		.n-left.col-3.n-cart--right
+			ul.n-desc__list
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 已存在收件人資訊內之地址，如欲更改收件人姓名電話時，請點選該筆地址後方之「修改」進行異動
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 輸入地址時請勿使用 &#36; &#37; &#42; &#38; &#8230; 等特殊符號。

@@ -1,0 +1,66 @@
+doctype html
+html(lang='zh-Hant-TW')
+    head
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+        <![endif]-->
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=1260')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title 帳號轉換完成 -- 電視跨轉會員 -- 東森嚴選－ET Mall東森購物網
+        include include/global/_meta
+        link(href='Resource/css201703/n-base.css', rel='stylesheet')
+        link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+        link(href='Resource/css201703/n-common.css', rel='stylesheet')
+        link(href='Resource/css201703/n-reg.css', rel='stylesheet')
+    body.n-theme--gr2-lighter
+        main.n-wrapper
+            include include/global/_inside-head
+            .n-l-960.n-l-colmt20.n-l-colmb50
+                form#loginTvMember(action="login-tv-3.html")
+                    .n-l-bgw-lg.n-l-bgw-border.n-reg__wrap
+                        .n-title__wrap.n-text--center 
+                            .n-title--18 電視跨轉會員
+                        .n-l-bgw-lg.n-reg__body
+                            .n-process.n-l-colmb20.n-process--three-steps.n-process--member.n-process--second
+                                .n-process__box
+                                    .n-process--dot
+                                    p 電視跨轉會員
+                                .n-process__box
+                                    .n-process--dot
+                                    p 輸入驗證密碼
+                                .n-process__box
+                                    .n-process--dot
+                                    p 帳號轉換完成
+                            .n-l-bgw-sm.n-l-colmb30.n-text--center
+                                p 為確保帳戶安全，將進行手機驗證並發送驗證碼至您手機，<br /> 請 「務必確認」手機號碼是您本人持有，手機號碼一經驗證成功即為個人專屬。
+                            .n-left.col-7.n-reg__left
+                                ul.n-reg__fields.n-reg__login.n-form-aligned
+                                    li.n-form__box
+                                        label.n-form--title(for="Mobile") 請確認您的手機號碼
+                                        input.n-form--control#Mobile(type="text", name="Mobile", value="0988000999")
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary(type="submit") 確認發送
+                                
+                            .n-right.col-5.n-reg__right.n-text--center 
+                                a.n-reg__bn(href="https://goo.gl/dJ9XMK", title="bn word", target="_blank")
+                                    img(src="https://goo.gl/JQGtvz", width="350", height="183" alt="bn word")
+                                
+                        .n-reg__hints.note--box-lv3
+                            ul.n-list--disc
+                                li 24H免費服務專線：<span class="n-pr--medium">0800-057-999</span>
+                                    
+                                    
+            include include/global/_footer
+            include include/global/_go-top
+        script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+        script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+        script(src = 'Resource/js201703/vendor/jquery.validate.js')
+        script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+        script(src = 'Resource/js201703/common/global.effect.js')
+        script(src = 'Resource/js201703/pages/registered.js')
+        script(src = 'Resource/js201703/prototyping.js')
+                

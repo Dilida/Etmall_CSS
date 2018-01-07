@@ -1,0 +1,8 @@
+ul.n-nav__promo.n-left
+	li.n-nav--promo-caption 精選館別
+	each promoNavs in [{iconName: 'n-icon--fine', navName: '森森精品', iconSrc: 'Resource/img201703/index/icon-fine.png'}, {iconName: 'n-icon--ticket', navName: '住宿餐券', iconSrc: 'Resource/img201703/index/icon-ticket.png'}, {iconName: 'n-icon--movie', navName: '電影票', iconSrc: 'Resource/img201703/index/icon-movie.png'}, {iconName: 'n-icon--thsrc', navName: '高鐵 TEX', iconSrc: 'Resource/img201703/index/icon-thsrc.png'}, {iconName: 'n-icon--game', navName: '賽事藝文', iconSrc: 'Resource/img201703/index/icon-game.png'}, {iconName: 'n-icon--smart', navName: '智慧家庭', iconSrc: 'Resource/img201703/index/icon-smart.png'}, {iconName: 'n-icon--financial', navName: '網路金融', iconSrc: 'Resource/img201703/index/icon-financial.png'}, {iconName: 'n-icon--china', navName: '直配大陸', iconSrc: 'Resource/img201703/index/icon-china.png'}]
+		li 
+			a(href="#" title= promoNavs.navName target="_blank")
+				i(class= promoNavs.iconName)
+					img(src= promoNavs.iconSrc, alt= promoNavs.navName)
+				span= promoNavs.navName

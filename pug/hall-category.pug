@@ -1,0 +1,183 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 館首頁 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-hall-big-category.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			form(action="")#hallCategory
+				.n-layout--lg.n-l-colmt20.n-l-colmb50
+					include include/block/_breadcrumb-hall
+					article.n-l-colmb30.n-category
+						include include/category/_hall-left-aside
+		
+						section.n-left.n-l-1015.n-hall__wrap
+
+							.n-hall__body.n-l-colmb30
+								.n-left.n-hall__box#hallBanner
+									.n-hall__slider
+										.n-hall__pic
+											a(href="", title="外國網友改編WWE遊戲，LBJ vs KD", target="_blank")
+												img.n-banner--logo(src="Resource/img201703/index/promo-logo-150x110.png")
+												img(src="https://goo.gl/9a6db6", width="800", height="300", alt="外國網友改編WWE遊戲，LBJ vs KD", target="_blank")
+										ul.n-hall__bn-list.n-hover--img.n-bg--gr2-dp-light
+											- for (var k = 0; k < 4; ++k)
+												li
+													a(href="", title="外國網友改編WWE遊戲，LBJ vs KD", target="_blank")
+														.n-pic
+															img(src="https://goo.gl/GNXu7f", width="180", height="180", alt="外國網友改編WWE遊戲，LBJ vs KD")
+														p.n-name ST.MALO專業速乾除臭機能POLO衫-台灣製
+														p.n-price__wrap
+															span.n-price--normal $ 1,113,000
+															span.n-price--16 $
+																span 1,111,680
+									.n-hall__slider
+										.n-hall__pic
+											a(href="", title="外國網友改編WWE遊戲，LBJ vs KD", target="_blank")
+												img.n-banner--logo(src="Resource/img201703/index/promo-logo-150x110.png")
+												img(src="https://goo.gl/s6vxva", width="800", height="300", alt="夏季女神穿搭  269UP", target="_blank")
+										ul.n-hall__bn-list.n-hover--img.n-bg--gr2-dp-light
+											- for (var k = 0; k < 4; ++k)
+												li
+													a(href="", title="夏季女神穿搭  269UP", target="_blank")
+														.n-pic
+															img(src="https://goo.gl/hpCbPd", width="180", height="180", alt="夏季女神穿搭  269UP")
+														p.n-name ST.MALO專業速乾除臭機能POLO衫-台灣製
+														p.n-price__wrap
+															span.n-price--normal $ 1,113,000
+															span.n-price--16 $
+																span 1,111,680
+
+									ul.n-hall__nav#hallNav
+
+								aside.n-left.n-w-200.n-hall__aside.n-bg--gr2-dp-light 
+									.n-title__wrap
+										.n-title--16 館長推薦
+									.n-hall__promo.n-hover--img
+										a(href="", title="麗質達人中大碼", target="_blank")
+											.n-pic
+												img(src="https://goo.gl/xabhbr", width="170", height="170" alt="麗質達人中大碼")
+											p.n-name 【lingling】花紋蕾絲飾珠立領背心小禮服洋裝(甜美粉)A3002-02
+											p.n-price__wrap
+												span.n-price--normal $ 1,113,000
+												span.n-price--16 
+													span $
+													span 1,111,680
+									ul.n-hall__list.n-hover--img
+										-for (var i = 0; i < 4; i++)
+											li
+												a(href="", title="【Jisen】優美簡約修身洋裝", target="_blank")
+													.n-left.n-pic
+														img(src="https://goo.gl/3V3GWZ", width="56", height="56" alt="【lingling】花紋蕾絲飾珠立領背心小禮服洋裝(甜美粉)A3002-02")
+													.n-left.n-desc
+														p.n-name 【lingling】花紋蕾絲飾珠立領背心小禮服洋裝(甜美粉)A3002-02
+														p.n-price__wrap
+															span.n-price--normal $ 1,113,000
+															span.n-price--16 $
+																span 1,111,680
+
+
+							a.n-l-colmb20.n-l-adbox(href="#", title="banner words", target="_blank")
+								img(src="Resource/img201703/category/bn-1015x65.png", width="1015", height="65" alt="banner words")
+
+							//- include include/category/_big-category-rank
+
+							section.n-l-colmb30.n-rank__wrap.n-category--rank.n-hover--img
+								.n-title__wrap
+									.n-title--18.n-left 熱銷排行
+									ul.n-tab__nav.n-right#bigRankTab
+										li.current 
+											a(href='#bigRank1' title='全站全站') 全站全站全站全站全站
+										each tabTxt, index in [{ tabName: '電視電視電視電視電視'}, { tabName: '家電家電家電家電家電'}, { tabName: '服飾服飾服飾服飾服飾'}, { tabName: '鞋包鞋包鞋包鞋包鞋包'}]
+											li
+												a(href='#bigRank' + (index + 2)) #{tabTxt[Object.keys(tabTxt)[0]]}
+								.n-rank__box#bigRank1
+									.n-rank__body(style="position: relative; overflow: hidden")
+										ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+											- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+											each pordItem, i in pordItems
+												li 
+													a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+														.n-pic
+															.n-flag__wrap
+																span.n-flag__num= (i + 1)
+															img(src= pordItem.imgSrc alt= pordItem.name)
+														p.n-name= pordItem.name 
+														p.n-price__wrap
+															span.n-price--normal= pordItem.normalPrice
+															span.n-price--16 $
+																span= pordItem.price
+									a.n-l-arrow__wrap(href="#" title="Prev")
+										span.n-arrow--top
+										span.n-arrow--bottom
+									a.n-r-arrow__wrap(href="#" title="Next")
+										span.n-arrow--top
+										span.n-arrow--bottom
+							
+							mixin shopList(shopImg, shopTitle)
+								section.n-l-colmb30.n-shop
+									figure.n-left.n-shop__pic
+										a(href="", target="_blank")
+											.n-pic
+												img(src= shopImg, width="240", height="240", alt="四吋智慧手機四吋智慧")
+											figcaption.n-align-c.n-shop__txt.n-bg--pr-medium 
+												.n-title--22= shopTitle
+												p.n-name.n-title--15 四吋智慧手機四吋智慧
+												span.n-price-w--26 
+													span $
+													span 890
+									.n-left.n-shop__body
+										ul.n-shop__list.n-hover--img
+											- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}]
+											each pordItem in pordItems
+												li 
+													a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+														.n-pic
+															img(src= pordItem.imgSrc alt= pordItem.name)
+														p.n-name= pordItem.name
+														p.n-price__wrap
+															span.n-price--normal= pordItem.normalPrice
+															span.n-price--16 $
+																span= pordItem.price
+										ul.n-shop__brand
+											- var brandLogos = [{brandUrl: '#', brandName: 'logo1', brandImg: 'Resource/img201703/index/electric/90x50_2px_1.jpg'}, {brandUrl: '#', brandName: 'logo2', brandImg: 'Resource/img201703/index/electric/90x50_2px_2.jpg'}, {brandUrl: '#', brandName: 'logo3', brandImg: 'Resource/img201703/index/electric/90x50_2px_3.jpg'}, {brandUrl: '#', brandName: 'logo4', brandImg: 'Resource/img201703/index/electric/90x50_2px_4.jpg'}, {brandUrl: '#', brandName: 'logo5', brandImg: 'Resource/img201703/index/electric/90x50_2px_5.jpg'}, {brandUrl: '#', brandName: 'logo6', brandImg: 'Resource/img201703/index/logo-90x50-6.jpg'}]
+											each brandLogo in brandLogos
+												li
+													a(href= brandLogo.brandUrl title= brandLogo.brandName  target="_blank")
+														img(src= brandLogo.brandImg  alt= brandLogo.brandName width="90" height="50")
+
+							+shopList('https://goo.gl/0TGQoI', '牛仔單寧')
+							+shopList('https://goo.gl/j3CZZ8', '長洋裝')
+							+shopList('https://goo.gl/z8nr3Y', '上衣')
+							+shopList('https://goo.gl/aPUEzq', '外套/罩衫')
+							+shopList('https://goo.gl/jCQzDD', '裙裝')
+							+shopList('https://goo.gl/PQc6Z6', '長版上衣')
+							+shopList('https://goo.gl/tFX7w0', '百搭襯衫')
+							+shopList('https://goo.gl/TrgK8v', '蕾絲材質')
+							
+
+					include include/block/_history
+					include include/block/_ulike
+					include include/block/_topic-link
+
+			include include/global/_footer
+			include include/global/_go-top
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/hall.big.category.js')
+		script(src = 'Resource/js201703/prototyping.js')

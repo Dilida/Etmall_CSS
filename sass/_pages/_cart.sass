@@ -1,0 +1,754 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// Cart page style
+// ==========================================================================
+
+// Cart common style
+// ==========================================================================
+.n-cart--header
+	background-color: $gr2-lighter
+	border-bottom: 1px solid $gr-lightest
+	padding-top: 0
+	padding-bottom: 0
+	.n-layout--lg
+		padding-top: 0
+		padding-bottom: 0
+		height: 104px
+		&:after 
+			height: auto
+	.n-cart__discount
+		width: 378px
+		padding-top: 30px
+		li 
+			display: inline-block
+			margin-bottom: 5px
+		.n-pr--medium
+			padding-left: 15px
+			padding-right: 5px
+.n-cart--footer 
+	.n-footer__body .n-layout--md:first-child
+		border-bottom: none
+		margin-bottom: 0
+	.n-footer__body:after
+		height: auto
+
+.n-cart__body
+	line-height: 1.8
+
+
+// Cart step1, table style
+// ==========================================================================
+.n-cart
+	&__table
+		.title-1
+			width: 500px
+		.title-2
+			width: 220px
+		.title-3,
+		.title-5,
+		.title-6
+			width: 130px
+		.title-4
+			width: 150px
+		.n-pic
+			+img-loading
+			+width-height(120)
+			margin-right: 15px
+		.n-desc
+			width: 300px
+		.n-operating
+			margin-bottom: 15px
+			li
+				margin-bottom: 10px
+			.n-form--control
+				width: 90px
+			.n-active
+				color: $pr-medium
+			.n-cancel
+				color: $gr-dark
+				padding-left: 10px
+				text-decoration: underline
+			.n-cancel:hover
+				color: $pr-medium
+				text-decoration: none
+		.n-btn 
+			margin-top: 4px
+			margin-bottom: 4px
+		// .n-btn:first-child
+		// 	margin-right: 10px
+		.n-edit
+			a 
+				color: $gr-dark
+				text-decoration: underline
+			a:hover
+				color: $pr-medium
+				text-decoration: none
+		.n-table--hints,
+		.n-table--note,
+		.n-table--count
+			td
+				padding-top: 12px
+				padding-bottom: 12px
+		.n-table--hints,
+		.n-table--note
+			border-bottom: 4px solid $gr-light
+		.n-table--hints
+			background-color: $gr2-lighter
+		.n-table--note
+			background-color: rgba($pr-dp-light, 0.2)
+		.n-table--count
+			background-color: $gr-dp-light
+		.n-price__subtotal
+			margin-right: 128px
+			.n-price--normal-16-bold
+				margin-left: 22px
+		.n-green__wrap
+			+clearfix
+			background-color: $gr2-dp-light
+			padding: 10px
+			width: 260px
+			margin-left: 70px
+			img 
+				margin-right: 10px
+
+.n-cart
+	&__total
+		.n-cart--left
+			width: 1000px
+		.n-cart--right
+			width: 260px
+		.n-cart__discount
+			.n-operating,
+			.n-operating li
+				margin-bottom: 10px
+		.n-use-gift__caption
+			margin-bottom: 5px
+		.n-use-gift__body
+			.table,
+			.n-d-table
+				background-color: $ye-dp-light
+				border: 1px solid $gr-light
+				width: 370px
+				.n-title-1,
+				.n-title-2
+					width: 44%
+				.n-title-3
+					width: 12%
+			.table > tbody > tr > td
+				padding-left: 0.5em
+				padding-right: 0.5em
+				position: relative
+				z-index: map-get($zindex, zero)
+			.n-d-table > .n-d-table__wrap > .n-d-table__body-row > li 
+				padding-left: 8px
+				padding-right: 8px
+				position: relative
+				z-index: map-get($zindex, zero)
+			.n-icon--correct
+				display: none
+				position: absolute
+				z-index: map-get($zindex, base)
+				top: 17px
+				right: 10px
+			.n-form--control
+				// width: 132px
+			.fields--info
+				display: none
+			.n-edit .n-del
+				display: block
+				width: 18px
+				height: 18px
+				text-align: center
+			.n-edit .n-blue--link
+				display: block
+				padding-top: 8px
+		.n-use-gift__prices
+			margin-top: 40px
+		.n-cart__prices
+			margin-right: 128px
+			ul > li 
+				margin-bottom: 5px
+		.n-table--count
+			background-color: $gr-dp-light
+			position: relative
+			z-index: map-get($zindex, zero)
+			padding-top: 25px
+			padding-bottom: 15px
+			td 
+				padding-top: 25px
+				padding-bottom: 15px
+				position: relative
+				z-index: map-get($zindex, zero)
+			.n-btn--primary
+				position: absolute
+				z-index: map-get($zindex, base)
+				width: 104px
+				height: 44px
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				margin: auto
+			.n-price__subtotal
+				+clearfix
+				margin-right: 128px
+				.n-price--hints 
+					color: $gr-medium	
+					padding-right: 6px
+				.n-price__caption
+					padding-top: 2px
+					margin-right: 26px
+					.n-price__fare
+						margin-bottom: 14px
+
+// Cart step1, overlay select style
+// ==========================================================================
+.n-select
+	&__wrap
+		padding-top: 8%
+		.mfp-close
+			top: 2px
+	&__body
+		background-color: $gr2-dp-light
+		+layout-center(790)
+		.n-title__wrap
+			position: relative
+			z-index: map-get($zindex, zero)
+			padding-top: 4px
+			padding-bottom: 2px
+			border-bottom: 1px
+	&__box
+		padding: 15px 15px 0
+		.n-select--enter
+			.n-title--13
+				margin-right: 5px
+			.n-form--control
+				width: 30%
+	&__table
+		line-height: 1.8
+		.n-title-1
+			width: 10%
+		.n-title-2
+		.n-title-3,
+			width: 20%
+		.n-title-4
+			width: 50%
+	&__foot
+		position: relative
+		z-index: map-get($zindex, zero)
+		padding-top: 15px
+		padding-bottom: 15px
+	&__foot:after
+		background-color: $gr-dp-light
+		content: ""
+		position: absolute
+		z-index: map-get($zindex, under)
+		width: 790px
+		height: 73px
+		left: -15px
+		top: 0
+
+
+
+// Cart step1, purchase style
+// ==========================================================================
+.n-cart--purchase
+	.n-l-arrow__wrap,
+	.n-r-arrow__wrap
+		top: 35%
+	.n-price__wrap
+		margin-bottom: 10px
+	.n-purchase__list
+		> li 
+			position: relative
+			z-index: map-get($zindex, zero)
+			width: 193px
+			padding: 4px
+		.n-selected:after
+			content: ""
+			position: absolute
+			z-index: map-get($zindex, under)
+			border: 1px solid $pr-medium
+			top: 0
+			right: 0
+			width: 100%
+			height: 323px
+		.n-btn--black
+			width: 100%
+
+
+// Cart step1, Select specs style
+// ==========================================================================
+.n-cart--purchase
+	.n-select__spec
+		position: absolute
+		z-index: map-get($zindex, base)
+		left: 0
+		width: 100%
+		top: 324px
+		+transition(all 0.3s ease-in-out)
+		ul 
+			background-color: rgba($gr-dp-dark, 0.7)
+			padding: 15px
+		li 
+			width: 100%
+		.n-form--control
+			width: 118px
+		.n-caption
+			color: $gr2-dp-light
+		.n-btn--primary
+			width: 100%
+	.n-active
+		top: 102px
+
+// Cart step2 style
+// ==========================================================================
+.n-form__ctrlgroup,
+.n-cart--list
+	li 
+		margin-bottom: 10px
+	li:last-child
+		margin-bottom: 0
+.n-cart--list
+	margin-left: 20px
+.n-form--subbox
+	margin-left: 16px
+
+.n-cart--e-ticket,
+.n-cart--china-field
+	.n-form--control
+		width: 80%
+
+.n-cart--second-box
+	padding-top: 15px
+	position: relative
+	z-index: map-get($zindex, zero)
+	&:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, under)
+		background-color: $gr-lightest
+		width: 105%
+		height: 1px
+		top: 0
+		left: -15px
+.n-form__ctrlgroup
+	.current
+		label 
+			color: $pr-medium
+		.n-form--subbox label 
+			color: $gr-dark
+
+.n-cart--prod-detail
+	.n-title__wrap
+		border-bottom: none
+	.table,
+	.n-d-table
+		.title-1
+			width: 50%
+		.title-2,
+		.title-3,
+		.title-4,
+		.title-5
+			width: 12.5%
+	.n-cart--detail-total
+		padding-top: 18px
+		padding-bottom: 18px
+		.n-left
+			padding-top: 4px
+			color: $gr-dark
+		.n-icon--switch
+			vertical-align: top
+			margin-top: 2px
+			margin-right: 5px
+	.n-pic
+		+img-loading
+		+width-height(120)
+		margin-right: 15px
+	
+.n-cart--prod-detail
+	.n-d-table
+		.n-cart--detail-total
+			border-top: 1px solid $gr-light
+	.n-price__total
+		padding-top: 4px
+
+
+.n-cart--payway
+	.n-form__ctrlgroup
+		margin-bottom: 15px
+		label
+			display: inline-block
+			width: 120px
+	.n-cart--right
+		.n-pic
+			display: block
+			+layout-center(230)
+			margin-bottom: 10px
+	.n-title__wrap
+		border-bottom: none
+
+.n-card__list
+	+clearfix
+	li 
+		+border-radius(6px)
+		border: 1px solid $gr-lightest
+		float: left
+		width: 230px
+		height: 132px
+		margin-right: 20px
+		margin-bottom: 15px
+		text-align: center
+		position: relative
+		z-index: map-get($zindex, zero)
+		cursor: pointer
+	a 
+		
+		display: block
+		height: 130px
+	.n-icon--add-btn
+		margin-top: 26px
+	.current
+		+border-radius(6px)
+		border: 2px solid $pr-medium
+	.n-has--data
+		text-align: left
+		a 
+			height: auto
+			display: inline-block
+		.n-card__close,
+		.n-pr--medium
+			+transition(all 0.3s ease-in-out)
+			visibility: hidden
+			opacity: 0
+		&:hover
+			.n-card__close
+				background: none
+				visibility: visible
+				opacity: 1
+	.n-has--data.current
+		background-color: $ye-dp-light
+	.n-has--data.n-has--disable
+		background-color: $gr2-lighter
+		.n-card__body
+			text-decoration: line-through
+		.n-pr--medium
+			visibility: visible
+			opacity: 1
+
+.n-card
+	&__head,
+	&__foot
+		padding: 8px
+		img 
+			display: inline-block
+			vertical-align: top
+	&__head
+		.n-pic
+			margin-right: 20px
+	&__close
+		background-color: $gr2-lighter
+		width: 22px
+		height: 22px
+		text-align: center
+		.n-icon--close
+			vertical-align: top
+			margin-top: -10px
+	&__body
+		background-color: $gr-dp-light
+		padding: 10px 14px
+		+font-size($fz-18)
+		text-align: center
+		span 
+			padding-left: 5px
+			padding-right: 5px
+	&__foot
+		+clearfix
+		img 
+			padding-top: 4px
+
+
+.n-card__added
+	.n-card__num .n-form__box
+		margin-right: 12px
+	.n-card__date .n-form__box
+		width: 167px
+		margin-right: 10px
+	.n-card--auth
+		.n-form--control
+			width: 39%
+	.n-btn
+		margin-right: 10px
+
+.n-cart--invoice
+	.n-form__box
+		margin-bottom: 5px
+	.n-form__ctrlgroup
+		width: 80%
+		margin-bottom: 15px
+		li:nth-child(2) .n-form__box:nth-child(2)
+			margin-bottom: 5px
+	.n-form--address .col-3
+		margin-bottom: 5px
+		margin-right: 10px
+	.n-cart--second-box .n-form--control
+		width: 80%
+
+.n-cart--order-field
+	.n-form--phone .n-form__box
+		margin-right: 10px
+	.n-form--phone .n-form__box:nth-child(3)
+		width: 512px
+		margin-right: 0
+	.n-form--address .n-form__box
+		margin-right: 48px
+		margin-bottom: 10px
+	.n-form--address .n-form__box:nth-child(5)
+		margin-bottom: 0
+	.n-form__foot .n-btn
+		margin-right: 10px
+			
+.n-cart--order-info
+	ul li 
+		margin-bottom: 10px
+
+.n-cart--addressee-info
+	.title-1
+		width: 9%
+	.title-2
+		width: 12%
+	.title-3
+		width: 8%
+	.title-4
+		width: 30%
+	.title-5
+		width: 10%
+	.title-6
+		width: 10%
+	.title-7
+		width: 7%
+	.n-edit__text
+		color: $gr-dark
+		[class^="n-icon--"]
+			margin-right: 5px
+	.n-edit__text:hover
+		color: $pr-medium
+		.n-icon--edit
+			+sprite($icon-edit-red)
+	.n-d-table > .n-d-table__wrap > .n-d-table__head > li,
+	.n-d-table > .n-d-table__wrap > .n-d-table__body > .n-d-table__body-row > li
+		padding-left: 10px
+		padding-right: 10px
+	
+
+
+
+
+.n-cart--enter-field
+	width: 80%
+	.n-form--phone .n-form__box 
+		margin-right: 10px
+	.n-form--phone .n-form__box:nth-child(3)
+		width: 467px
+		margin-right: 0
+	.n-form--address .n-form__box 
+		width: 30%
+		margin-right: 24px
+		margin-bottom: 10px
+	.n-form--address .col-10
+		width: 98%
+	// .n-form--address .n-form__box:nth-child(4)
+	// 	margin-right: 0
+	// .n-form--address .n-form__box:nth-child(5)
+	// 	width: 98%
+	// 	margin-bottom: 0
+	.n-form__foot .n-btn
+		margin-right: 10px
+
+
+// .n-cart--addressee-info .n-cart--enter-field .n-form--address
+
+.n-cart--qary
+	.n-title--13
+		margin-bottom: 10px
+
+.n-cart--location
+	.n-cart--left
+		ul li 
+			margin-bottom: 10px
+			+clearfix
+		ul li:last-child
+			margin-bottom: 0
+		.n-btn
+			margin-bottom: 5px
+		.n-btn:first-child
+			margin-right: 10px
+		[class^="n-icon--"]
+			margin-top: 2px
+			margin-right: 5px
+			vertical-align: top
+.n-cart--deliver
+	.n-form__box
+		margin-bottom: 5px
+
+.n-cart
+	&__second
+		+clearfix
+		overflow: hidden
+		textarea.n-form--control
+			height: 100px
+		.n-cart--left
+			padding-right: 30px
+			position: relative
+			z-index: map-get($zindex, zero)
+			&:after
+				content: ''
+				background-color: $gr-lightest
+				position: absolute
+				z-index: map-get($zindex, under)
+				width: 1px
+				height: 2000px
+				right: 0
+				top: -15px
+		.note--box-lv3
+			position: absolute
+			z-index: map-get($zindex, base)
+			right: 31px
+			top: 56px
+		.n-cart--right
+			padding-left: 15px
+		.n-desc__list
+			[class^="n-icon--"]
+				margin-top: 2px
+			li 
+				+clearfix
+				margin-bottom: 5px
+			li .n-left:first-child
+				width: 18px
+				margin-right: 6px
+			.n-desc__txt
+				width: 90%
+
+.n-cart
+	&__btn-box
+		background-color: $gr-dp-light
+		padding: 15px
+		a.n-left
+			padding-top: 5px
+			color: $gr-dark
+			display: inline-block
+			margin-right: 506px
+		[class^="n-icon--"]
+			margin-top: 10px
+			margin-right: 5px
+
+// Cart step3 style
+// ==========================================================================
+
+// Cart step3, banner AD Common 
+// ==========================================================================
+.n-banner__body
+	+text-fool(282)
+.n-bannerad
+	&__wrap
+		+clearfix
+	&__box
+		background-color: $gr2-dp-light
+		padding: 10px
+		height: 282px
+		overflow: hidden
+// Cart step3, finish box 
+// ==========================================================================
+.n-cart
+	&__info
+		+font-size($fz-15)
+		li 
+			margin-bottom: 5px
+			+clearfix
+			span:first-child
+				width: 80px
+			span:last-child
+				width: 200px
+			[class^="n-icon--"]
+				vertical-align: top
+				margin-top: 4px
+			b 
+				font-weight: normal
+	&__finish
+		overflow: hidden
+		+clearfix
+		.col-4
+			padding-left: 100px
+		.col-8
+			padding-left: 20px
+		.n-cart--left
+			position: relative
+			z-index: map-get($zindex, zero)
+			padding-right: 20px
+			&:after
+				content: ''
+				position: absolute
+				z-index: map-get($zindex, base)
+				top: -15px
+				right: 0
+				border-right: 1px solid $gr-lightest
+				height: 300px
+		.n-btn
+			margin-right: 15px
+		.n-cart--single
+			padding-left: 430px
+			.n-btn
+				margin-top: 20px
+
+.n-cart--hints
+	background-color: $ye-dp-light
+	.n-btn
+		margin-top: 20px
+.n-cart--deliver-info
+	.n-btn
+		margin-top: 112px
+
+.n-cart--dialy-discount
+	+clearfix
+	background-color: $gr2-dp-light
+	border: 1px solid $gr-lightest
+	.n-sp-time__head
+		padding: 10px 10px 0
+	.n-title--clock .n-title--22
+		color: $se-lighter
+	.n-title--daily .n-title--22
+		color: $pr-dark
+	.n-count__txt
+		padding-top: 8px
+		margin-right: 10px
+	.n-sp-time__box
+		border-color: $gr-lightest
+	.n-sp-time__left,
+	.n-sp-time__right
+		width: 620px
+	.n-sp-time__left
+		margin-right: 18px
+	.n-sp-time__list li 
+		width: 300px
+	.n-sp-time__list .n-pic,
+	.n-sp-time__list li img
+		width: 280px
+		height: 280px
+	.n-sp-time__list .n-pic
+		+img-loading
+		overflow: hidden
+	.n-sp-btn--disable
+		background-color: $gr2-lighter
+		border: 1px solid $gr-lighter
+		cursor: not-allowed
+		.n-sp-btn__txt 
+			color: $gr-medium
+		.n-sp-btn__price
+			background-color: $gr2-dp-light

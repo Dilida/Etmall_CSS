@@ -1,0 +1,54 @@
+.n-breadcrumb__wrap.n-l-colmb15
+	p.n-left 您的位置：
+	ul.n-left
+		li
+			a(href="" title="首頁") 首頁
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb__drop.n-hover--drop 
+			a(href="" title="服飾") 
+				span 視聽家電
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['家電', '電視購物', '快速到貨', '美妝', '保健', '內塑衣', '視聽家電', '鞋包']
+					li
+						a(href="#", title= promoNavs )= promoNavs
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb__drop.n-hover--drop  
+			a(href="" title="冷暖空調") 
+				span 冷暖空調
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['本月超值推薦專區', '機能運動服', '時尚女裝', '中大尺碼', '日韓歐美', '百貨專櫃服飾']
+					li
+						a(href="#", title= promoNavs )= promoNavs
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+		li.n-breadcrumb__drop.n-hover--drop  
+			a(href="" title="春夏上衣") 
+				span 春夏上衣
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['春夏外套', '春夏洋裝∣連衣裙', '丹寧牛仔', '秋冬上衣', '秋冬下著', '秋冬洋裝', '秋冬外套']
+					li
+						a(href="#", title= promoNavs )= promoNavs
+		li
+			.n-breadcrumb__arrow
+				i.n-icon--path-arrow
+
+		li.n-breadcrumb__drop.n-hover--drop 
+			a(href="" title="短褲∣褲裙") 
+				span 短褲∣褲裙
+				span
+					i.n-icon--path-arrow-down 
+			ul
+				each promoNavs in ['長褲', '內搭褲', '裙子', '牛仔褲', '中長∣連身褲']
+					li
+						a(href="#", title= promoNavs )= promoNavs

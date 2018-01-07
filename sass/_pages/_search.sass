@@ -1,0 +1,235 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// Search results page style
+// ==========================================================================
+
+// Search common style
+// ==========================================================================
+.n-search-result
+	+clearfix
+
+
+// Search left nav
+// ==========================================================================
+.n-search
+	&__nav
+		margin-right: 15px
+		a 
+			color: $gr-dark 
+			display: block
+			+txt-ellipsis(196)
+		.n-word--count
+			+txt-ellipsis(196)
+		.n-aside__caption
+			background-color: $gr-lighter
+			padding: 10px 16px
+		.n-title--18
+			+txt-ellipsis(190)
+		> ul
+			background-color: $gr2-dp-light
+			padding: 8px 16px
+			border: 1px solid $gr-lightest
+			+font-size($fz-15)
+			span
+				margin-left: 6px
+			a 
+				padding-top: 8px
+				padding-bottom: 8px
+			a:hover,
+			.current > a
+				color: $pr-medium
+		.n-previous
+			i 
+				margin-right: 6px
+.n-search__nav
+	> .current
+	ul > li > ul 
+		margin-left: 4px
+	ul > li > ul > li 
+		position: relative
+		z-index: map-get($zindex, zero)
+		padding-left: 12px
+		&:after 
+			content: '‧'
+			position: absolute
+			z-index: map-get($zindex, under)
+			left: 0
+			top: 8px
+	ul > li > ul > li > ul > li > ul > li > a
+		max-height: 52px
+		overflow: hidden
+		white-space: normal
+
+
+// Search tool style
+// ==========================================================================
+.n-search-result
+	&__tool
+		+font-size($fz-15)
+		+clearfix
+		padding: 10px
+		ul
+			+clearfix
+			padding-top: 10px
+		li 
+			float: left
+		.n-operating
+			padding-top: 10px
+	&__sort
+		a 
+			color: $gr-dark
+		li 
+			float: left
+			margin-right: 15px
+		.current a,
+		a:hover
+			color: $pr-medium
+		[class^="n-icon--"]
+			vertical-align: top
+	&__filter
+		position: relative
+		z-index: map-get($zindex, zero)
+		margin-right: 15px
+		padding-right: 15px
+		&:after
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, base)
+			background-color: $gr-lightest
+			width: 1px
+			height: 16px
+			top: 12px
+			right: 0
+		li 
+			margin-left: 15px
+		li:last-child
+			// padding-right: 15px
+			// border-right: 1px solid $gr-lightest
+
+.n-search-result__range
+	.n-form--control
+		width: 116px
+		padding-top: 9px
+		padding-bottom: 9px
+
+// Search list style
+// ==========================================================================
+.n-search-result__body
+	.n-card--list
+		> li
+			width: 100%
+			margin-right: 0
+		> li:nth-last-child(-n+5)
+			margin-bottom: 15px
+		> li:last-child
+			margin-bottom: 0	
+		> li:last-child .n-card__box
+			border-bottom: none
+		> li .n-soldout
+			width: 120px
+			top: 80px
+			padding: 10px
+		> li .n-icon--play 
+			top: 87px
+			left: 75px
+		.n-card__box
+			+clearfix
+			border: none
+			border-bottom: 1px solid $gr-lightest
+			padding-bottom: 15px
+		.n-pic
+			float: left
+			width: 120px
+			height: 120px
+			margin-right: 15px
+		.n-name
+			padding: 0
+			margin-bottom: 10px
+		.n-name a 
+			+txt-ellipsis(840)
+			height: auto
+			font-weight: bold
+		.n-desc__list
+			display: block
+			li 
+				position: relative
+				z-index: map-get($zindex, zero)
+				margin-bottom: 5px
+				padding-left: 16px
+				+txt-ellipsis(900)
+			li:before
+				content: ''
+				background-color: $gr-dark
+				position: absolute
+				z-index: map-get($zindex, base)
+				width: 8px
+				height: 8px
+				left: 0
+				top: 4px
+				margin-right: 5px
+		.n-labels__wrap
+			position: absolute
+			z-index: map-get($zindex, base)
+			top: 0
+			right: 0
+		.n-sale--subtitle
+			padding-left: 0
+			padding-right: 0
+			padding-bottom: 10px
+			height: auto
+			max-width: 300px
+		.n-price__wrap,
+		.n-card__btn
+			position: absolute
+			z-index: map-get($zindex, base)
+			right: 0
+		.n-price__wrap
+			padding: 0
+			top: 46px
+		.n-card__btn .n-btn--card-icon span 
+			display: inline-block
+		.n-card__btn
+			border: none
+			bottom: 15px
+			.n-btn
+				border: none
+				+border-radius(2px)
+				padding: 10px 20px
+			.n-btn--card-icon,
+			.n-btn--card-red,
+			.n-btn--normal
+				padding: 9px 12px
+				width: auto
+			.n-btn--card-icon .n-icon--collect,
+			.n-btn--card-red .n-icon--cart,
+			.n-btn--normal .n-icon--mail
+				vertical-align: top
+				margin-right: 5px
+				margin-top: 2px
+			.n-btn--card-icon,
+			.n-btn--card-red
+				border: 1px solid $gr-lightest
+				color: $gr-dark
+			.n-btn--card-icon
+				margin-right: 15px
+			.n-btn--card-red:hover
+				background-color: $pr-dark
+				border: 1px solid $pr-dark
+				color: $gr2-dp-light
+			.n-btn--active .n-icon--collect
+				+sprite($icon-collect-active)
+			.n-btn--normal
+				background-color: $gr2-lighter
+				border: 1px solid $gr-lightest
+				color: $gr-dark
+			.n-btn--normal:hover
+				background-color: rgba($pr-dp-light, 0.2)
+
+

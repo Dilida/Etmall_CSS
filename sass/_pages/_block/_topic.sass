@@ -1,0 +1,42 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// Topic list
+// ==========================================================================
+.n-topic
+	&__title
+		background-color: $pr-light
+		background-image: linear-gradient(to left, $pr-light, $pr-lightest)
+		.n-title--18
+			color: $gr2-dp-light
+	&__wrap
+		background-color: $gr2-dp-light
+		+clearfix
+		padding: 20px 45px
+		a 
+			color: $gr-dark
+		a:hover
+			color: $pr-medium
+	&__box
+		width: (100 / 3) + %
+		margin-bottom: 25px
+		.n-title--18
+			margin-bottom: 10px
+	&__box:nth-last-child(-n+3)
+		margin-bottom: 0
+	&__body
+		+clearfix
+		.n-pic
+			margin-right: 20px
+		.n-pic,
+		.n-pic img 
+			width: 150px
+	&__item
+		width: 210px
+		+clearfix
+		li 
+			float: left
+			margin-right: 10px
+			margin-bottom: 20px

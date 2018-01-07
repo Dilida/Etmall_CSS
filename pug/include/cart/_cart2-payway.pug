@@ -1,0 +1,131 @@
+.n-l-colmb20.n-cart--payway
+	.n-title__wrap
+		h2.n-title--18 請選擇付款方式
+	ul.n-tab.n-tab--lv2#payTab
+		li.current
+			a(href="#payItem1", title="信用卡") 信用卡
+		li
+			a(href="#payItem2", title="ATM/WebATM/中信網銀") ATM/WebATM/中信網銀
+		li
+			a(href="#payItem3", title="超商取貨付款") 超商取貨付款
+		li
+			a(href="#payItem4", title="貨到付款") 貨到付款
+	.n-l-bgw-md.n-cart__second#payItem1
+		.n-left.col-9.n-cart--left
+			ul.n-form__ctrlgroup
+				-var payWays = [ {payName: '一次付清', price: '3,566'}, {payName: '紅利折抵', price: '3,566'},{payName: '3期付款，每期', price: '3,566'},{payName: '6期付款，每期', price: '3,566'},{payName: '12期付款，每期', price: '3,566'}]
+				each payWay, i in payWays
+					li
+						input(id="payWay" + (i + 1), type="radio", name="payWay")
+						label(for="payWay" + (i + 1))= payWay.payName
+						span.n-price--16 $
+							span= payWay.price
+			.n-cart--second-box
+				p.n-l-colmb15 輸入 / 選擇 信用卡
+				ul.n-l-colmb15.n-card__list
+					li.n-has--data
+						.n-card__head
+							img.n-pic(src="Resource/img201703/cart/bank_logo@1x_ctbc.png", alt="玉山銀行")
+							span 玉山銀行
+							a.n-right.n-card__close(href="", title="關閉")
+								i.n-icon--close
+						.n-card__body
+							span 1111
+							span 2222
+							span 4444
+							span 5555
+						.n-card__foot
+							span.n-pr--medium 有效期期限已過 
+							img.n-right(src="Resource/img201703/cart/visa.png", alt="visa")
+					li.n-has--data.n-has--disable
+						.n-card__head
+							img.n-pic(src="Resource/img201703/cart/bank_logo@1x_ctbc.png", alt="玉山銀行")
+							span 玉山銀行
+							a.n-right.n-card__close(href="", title="關閉")
+								i.n-icon--close
+						.n-card__body
+							span 1111
+							span 2222
+							span 4444
+							span 5555
+						.n-card__foot
+							span.n-pr--medium 有效期期限已過 
+							img.n-right(src="Resource/img201703/cart/visa.png", alt="visa")
+					li.current
+						a(href="#", title="新增信用卡")
+							.n-icon--add-btn
+								span
+								span
+				.n-card__added
+					.n-l-colmb15.n-form--inline.n-card__num
+						.n-card__caption
+							span.n-title--13 信用卡卡號
+							span  -- 限台灣核發之信用卡
+						each cardInput, cardIndex in ['欄位資訊錯誤', '欄位資訊錯誤', '欄位資訊錯誤', '欄位資訊錯誤']
+							.n-form__box
+								input.n-form--control(type="text", id="cardNumber" + (cardIndex + 1), maxlength="4")
+								p.n-form--error= cardInput
+					.n-l-colmb15.n-form--inline.n-card__date
+						.n-title--13 有效期限
+						.n-form__box
+							<select name="" id="deadlineMobth" class="n-form--control">
+								<option value="請選擇月份" selected="selected">請選擇月份</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+							<p class="n-form--error">欄位資訊錯誤</p>
+						.n-form__box
+							<select name="" id="deadlineYear" class="n-form--control">
+								<option value="請選擇西元年" selected="selected">請選擇西元年</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+							</select>
+							<p class="n-form--error">欄位資訊錯誤</p>
+					.n-form__box.n-form--stacked.n-card--auth
+						label.n-title--13(for="authCode") 驗證碼
+						input.n-form--control(type="text", id="authCode", maxlength="2")
+						p.n-form--error 欄位資訊錯誤
+		.n-left.col-3.n-cart--right
+			a.n-pic(href="", title="信用卡持卡人", target="_blank")
+				img(src="Resource/img201703/cart/bn-230x190.png", alt="信用卡持卡人")
+			ul.n-desc__list
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 親愛的東森購物客戶為保護您的權益，【信用卡持卡人】需與【會員帳戶】相同。
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 美國運通卡請依序輸入卡號。
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 為確保網路交易安全，您同意本公司得就上述資料向發卡銀行及持卡人照會是否屬實。 提醒您，如有冒用他人信用卡或其他個人資料而為交易者,經查獲必移送法辦。
+	.n-l-bgw-md.n-cart__second.n-is--hide#payItem2
+		p 您已選擇ATM / WebATM / 中信網銀結帳，請點選『確認結帳』完成購買。
+	.n-l-bgw-md.n-cart__second.n-is--hide#payItem3
+		p 您已選擇超商取貨付款結帳，請點選『確認結帳』完成購買。
+	.n-l-bgw-md.n-cart__second.n-is--hide#payItem4
+		p 您已選擇貨到付款，請點選『確認結帳』完成購買。

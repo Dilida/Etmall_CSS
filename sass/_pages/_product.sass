@@ -1,0 +1,609 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// Product page style
+// ==========================================================================
+
+// Product common style
+// ==========================================================================
+.n-prod 
+	+clearfix
+.n-prod__box
+	padding: 0
+
+// Product price box, pay way method  style
+// ==========================================================================
+.n-prod__name
+	+clearfix
+	position: relative
+	z-index: map-get($zindex, zero)
+	.n-title--18
+		margin-bottom: 10px
+		max-height: 50px
+		overflow: hidden
+	p.n-left
+		+txt-ellipsis(300)
+
+.n-prod__pop
+	position: absolute
+	z-index: map-get($zindex, fifth)
+	background-color: $gr2-dp-light
+	border: 1px solid $gr-lightest
+	box-shadow: 0 2px 4px 0 rgba($gr-dp-dark, 0.8)
+	padding: 10px
+	&:before,
+	&:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, base)
+		top: 0
+		left: 0
+	&:before
+		+arrow-top(11, 11, 10, $gr-lightest, 1)
+		top: -1px
+	&:after
+		+arrow-top(10, 10, 10, $gr2-dp-light, 1)
+		left: 1px
+	.table 
+		ul 
+			+clearfix
+		li 
+			float: left
+			width: 100%
+			margin-bottom: 5px
+		img 
+			display: inline-block
+			margin-right: 4px
+.n-pay-method__wrap
+	position: relative
+	z-index: map-get($zindex, second)
+	.n-installment 
+		top: 58px
+.n-pay-method
+	> li 
+		+clearfix
+		position: relative
+		z-index: map-get($zindex, second)
+		margin-bottom: 10px
+
+.n-installment
+	clear: both
+	width: 390px
+	top: 10px
+	&:before
+		top: -12px
+		left: 340px
+	&:after
+		top: -10px
+		left: 341px
+	&__list
+		+clearfix
+		a 
+			color: $gr-dark
+		li
+
+			float: left
+			border-top: 1px solid $gr-lightest
+			border-bottom: 1px solid $gr-lightest
+			border-left: 1px solid $gr-lightest
+			background-color: $gr2-light
+			padding: 2px 4px
+		li:last-child
+			border-right: 1px solid $gr-lightest
+		[class^="n-icon--"]
+			vertical-align: top
+	&__head
+		+clearfix
+		background-color: $gr2-light
+		padding: 10px
+.n-prod__note
+	li 
+		margin-bottom: 10px		
+
+// Product price box, price and select specs  style
+// ==========================================================================
+
+.n-price
+	&__block
+		background-color: $gr2-light
+		padding: 10px 15px
+		margin-bottom: 10px
+	&__top
+		+clearfix
+		margin-bottom: 10px
+		.n-left span:nth-child(2)
+			margin-right: 20px
+		.n-right a 
+			color: $gr-dark
+		.n-right span 
+			margin-left: 5px
+		[class^="n-icon--"]
+			vertical-align: top
+		.n-prod__collect.n-prod--add
+			.n-icon--collect
+				+sprite($icon-collect-active)
+		.n-btn
+			background: none
+			border: none
+			padding: 0
+			+font-size($fz-13)
+		.n-btn.n-btn--active
+			.n-icon--collect
+				+sprite($icon-collect-active)
+	&__bottom
+		.n-price__exlarge
+			margin-right: 10px
+		.n-blue--link
+			margin-right: 36px
+
+.n-coupon
+	width: 390px
+	&:before
+		top: -12px
+		left: 258px
+	&:after
+		top: -10px
+		left: 259px
+	&__head
+		+clearfix
+		background-color: $gr2-light
+		padding: 10px
+
+.n-choose
+	&__wrap
+		> li 
+			margin-bottom: 15px
+		.n-choose__btn 
+			margin-bottom: 20px
+	&__radio,
+	&__spec
+		li 
+			display: inline-block
+	&__radio .n-form--radio input[type="radio"]
+		margin-right: 6px
+	&__spec
+		li 
+			width: auto
+			margin-right: 12px
+		.n-form--control
+			width: 80px
+	&__btn
+		+clearfix
+		.n-btn 
+			margin-right: 10px
+		.n-icon--cart
+			+sprite($icon-cart-hover)
+		[class^="n-icon--"]
+			vertical-align: top
+			margin-top: 2px
+		ul 
+			margin-left: 20px
+		li:first-child
+			margin-bottom: 5px
+		.n-btn--normal 
+			.n-icon--mail 
+				margin-right: 5px
+			&:hover
+				background-color: rgba($pr-dp-light, 0.2)
+	&--kit
+		padding-top: 5px
+		ul 
+			margin-bottom: 10px
+		li 
+			+clearfix
+	&--caption
+		+txt-ellipsis(300) 
+		margin-bottom: 6px
+
+.n-increase
+	&__result
+		border: 2px dashed $gr-lightest
+		padding: 15px
+		.n-title--13 
+			border-bottom: 1px solid $gr-lightest
+			padding-bottom: 10px
+	&__box
+		+clearfix
+		padding-top: 10px
+		padding-bottom: 5px
+		border-bottom: 1px dotted $gr-lightest
+		.n-icon--close
+			margin-top: 6px
+		&:last-child 
+			border-bottom: none
+			padding-bottom: 0
+	&__caption 
+		margin-bottom: 5px
+	&__name 
+		display: inline-block
+		margin-right: 20px
+		+txt-ellipsis(330) 
+		width: 330px
+	&__spec 
+		color: $gr-medium
+		span 
+			margin-right: 10px
+
+// Product price box, bank list
+// ==========================================================================
+.n-prod__bank
+	top: -60px
+	left: -30px
+	width: 260px
+	padding: 10px
+	+clearfix
+	&:before,
+	&:after
+		border: none
+	li
+		float: left
+		width: 118px
+		padding: 6px 8px
+		border-bottom: 1px solid $gr-lightest
+	li:nth-child(odd)
+		border-left: 4px solid $gr-lightest
+		border-right: 1px solid $gr-lightest
+	li:nth-child(even)
+		border-right: 4px solid $gr-lightest
+	li:first-child,
+	li:nth-child(2)
+		border-top: 4px solid $gr-lightest
+	li:nth-last-child(-n+2)
+		border-bottom: 4px solid $gr-lightest
+
+// Product top left block style
+// ==========================================================================
+.n-prod
+	&__wrap
+		+clearfix
+	&__left
+		width: 640px
+		margin-right: 20px
+		position: relative
+		z-index: map-get($zindex, zero)
+	&__content
+		+img-loading
+		text-align: center
+		img 
+			display: inline-block
+		video 
+			width: 640px
+	&__slider
+		margin-bottom: 20px
+	&__control
+		position: relative
+		z-index: map-get($zindex, zero)
+	&__pager
+		// +layout-center(540)
+		margin-bottom: 30px
+		position: relative
+		z-index: map-get($zindex, ten)
+		ul 
+			+clearfix
+		li
+			float: left
+			margin-right: 4px
+			margin-left: 4px
+			position: relative
+			z-index: map-get($zindex, zero)
+		li img 
+			width: 63px
+			height: 63px
+		a 
+			display: block
+			opacity: 0.6
+		a:hover
+			opacity: 1
+		li.activeSlide a, li.cycle-slide-active a
+			opacity: 1
+			position: relative
+			z-index: map-get($zindex, second)
+		li.activeSlide a:after, li.cycle-slide-active a:after
+			content: ""
+			border: 1px solid $gr-lightest
+			position: absolute
+			z-index: map-get($zindex, third)
+			width: 64px
+			height: 64px
+			left: 0
+			top: 0
+		li .n-icon--play
+			position: absolute
+			z-index: map-get($zindex, second)
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			margin: auto
+		li.activeSlide, li.cycle-slide-active
+			.n-icon--play
+				opacity: 1
+
+
+.n-prod__row
+	+clearfix
+	.n-prod__green
+		+clearfix
+		width: 160px
+		.n-right 
+			padding-top: 6px
+			width: (160 - 74) + px
+	.n-green--ponta
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+.n-prod__info
+	padding-top: 14px
+	margin-right: 20px
+	span:first-child
+		margin-right: 20px
+.n-prod__social
+	padding-top: 10px
+	li 
+		display: inline-block
+		margin-right: 4px
+	[class^="n-icon--"]
+		vertical-align: top
+	a 
+		display: block
+
+// Product top right block style
+// ==========================================================================
+.n-prod
+	&__right
+		width: 570px
+		.n-prod__name,
+		.n-choose__wrap,
+		.n-price__block,
+		.n-pay-method__wrap,
+		.n-gifts__wrap
+			margin-bottom: 15px
+		.n-sold__report
+			position: absolute
+			z-index: map-get($zindex, third)
+			right: 0
+			top: 60px
+	&__intro
+		margin-bottom: 15px
+		margin-left: 5px
+		li 
+			padding-left: 10px
+			margin-bottom: 5px
+			+txt-ellipsis(540)
+			position: relative
+			z-index: map-get($zindex, zero)
+		li:after
+			content: '\2022'
+			position: absolute
+			z-index: map-get($zindex, base)
+			display: inline-block
+			width: 10px
+			height: 10px
+			left: 0
+			top: 0
+		.n-word--count
+			+txt-ellipsis(540)
+.n-gifts__wrap
+	line-height: 1.8
+	padding: 10px
+
+.n-prod
+	&__report
+		width: 490px
+		padding: 10px 10px 0
+		position: absolute
+		z-index: map-get($zindex, fifth)
+		right: 0
+		&:before
+			left: 450px
+			top: -11px
+		&:after
+			left: 451px
+			top: -10px
+
+
+	&__report-head
+		background-color: $gr2-light
+		padding: 10px
+		+clearfix
+		a 
+			display: block
+			width: 24px
+			height: 24px
+			text-align: center
+			padding-top: 2px
+	&__report-body
+		padding: 15px 10px 20px
+		.n-l-colmb15
+			border-bottom: 1px solid $gr-lightest
+			padding-bottom: 10px
+		.n-prod__form-report
+			li 
+				+clearfix
+				margin-bottom: 15px
+			li .n-left
+				width: 50%
+			li select 
+				width: 176px
+				margin-bottom: 5px
+			li .n-left:last-child .n-form--control
+				display: inline-block
+				margin-right: 5px
+				width: 200px
+		.n-prod__terms
+			margin-left: 20px
+			li 
+				margin-bottom: 5px
+	&__report-foot 
+		li 
+			+clearfix
+			padding-left: 10px
+			margin-bottom: 10px
+		li .n-left
+			margin-right: 10px
+		li .n-left:nth-child(2) 
+			margin-top: 23px
+		li .n-left:last-child
+			margin-top: 30px
+		li:last-child
+			margin-top: 20px
+			padding-top: 20px
+			margin-bottom: 0
+			position: relative
+			z-index: map-get($zindex, zero)
+			text-align: center
+			height: 82px
+			&:after
+				content: ''
+				background-color: $gr2-lighter
+				position: absolute
+				z-index: map-get($zindex, under)
+				width: 488px
+				height: inherit
+				left: -10px
+				top: 0
+
+
+// Product checkout style
+// ==========================================================================
+.n-checkout
+	&__wrap
+		+clearfix
+		position: relative
+		z-index: map-get($zindex, base)
+		.n-installment
+			top: 146px
+
+// Product increase style
+// ==========================================================================
+.n-increase__list
+	padding: 10px 0
+	+clearfix
+	a 
+		color: $gr-dark
+		display: block
+	> li 
+		float: left
+		width: (100 / 5) + %
+		position: relative
+		z-index: map-get($zindex, zero)
+		overflow: hidden
+		padding-top: 8px
+		padding-bottom: 8px
+	> li a 
+		margin-left: 20px
+		margin-right: 20px
+	.n-selected:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, under)
+		border: 1px solid $pr-medium
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		width: 168px
+		height: 298px
+		margin: auto
+	.n-price__wrap
+		margin-left: 20px
+		margin-right: 20px
+		margin-bottom: 10px
+	.n-pic,
+	.n-pd_name
+		margin-bottom: 10px
+	.n-pic
+		+img-loading
+		+layout-center(160)
+		height: 160px
+		overflow: hidden
+		margin-bottom: 10px
+	.n-pd_name
+		+text-fool(36)
+	.n-btn--black
+		color: $gr2-dp-light
+	.n-select__spec
+		position: absolute
+		z-index: map-get($zindex, base)
+		width: 164px
+		left: 0
+		right: 0
+		top: 308px
+		margin: auto
+		+transition(all 0.3s ease-in-out);
+		ul 
+			background-color: rgba($gr-dp-dark, 0.7)
+			padding: 10px
+		li 
+			margin-bottom: 10px
+		.n-caption
+			color: $gr2-dp-light
+		.n-form--control
+			width: 96px
+		.n-btn--primary
+			width: 100%
+	.n-active
+		top: 80px
+
+// Product promo banner style
+// ==========================================================================
+.n-prod__box.n-bn__canvas
+	background: url('../../Resource/img201703/prod/bn_bg.jpg') center 0 no-repeat
+	height: auto
+	overflow: hidden
+	img 
+		display: block
+.n-prod
+	&__box
+		.n-bn__box
+			+layout-center(800)
+			position: relative
+			z-index: map-get($zindex, zero)
+		.n-bn__nav
+			position: absolute
+			z-index: map-get($zindex, bnElems)
+			+layout-center(150)
+			left: 0
+			right: 0
+			bottom: 10px
+			text-align: center
+			a 
+				background-color: rgba($gr-dp-dark,0.8)
+				+border-radius(100%)
+				display: inline-block
+				width: 20px
+				height: 20px
+				margin-left: 5px
+				margin-right: 5px
+			.current
+				background: none
+				border: 4px solid $gr2-dp-light
+
+
+
+// Product detail style
+// ==========================================================================
+.n-prod
+	&__box
+		padding: 0
+		img 
+			display: inline-block
+	&__part-title
+		padding: 12px
+		background-color: $gr2-lighter	
+	&__part-box
+		padding: 15px 20px
+		line-height: 1.8
+		ul,
+		ol
+			margin-left: 20px
+		p
+			margin-top: 10px
+			margin-bottom: 10px
+			

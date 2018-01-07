@@ -1,0 +1,58 @@
+.n-l-colmb20.n-cart--china-field
+	.n-title__wrap
+		h2.n-title--18 收件人資訊
+	.n-l-bgw-md.n-cart__second
+		.n-left.col-9.n-cart--left.n-form--stacked
+			.n-l-colmb15.n-form__box
+				label.n-title--13(for="receiveName") 
+					span.n-pr--medium  &#42;
+					| 收件人姓名
+				input.n-form--control#receiveName(type="text")
+				p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+			.n-l-colmb15.n-form__box
+				label.n-title--13(for="receiveId") 
+					span.n-pr--medium  &#42;
+					| 收件人身分證字號 
+				input.n-form--control#receiveId(type="text")
+				p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+		.n-left.col-3.n-cart--right
+			ul.n-desc__list
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 因大陸海關規定，收件人限大陸人士，且商品出貨前須提供正反面身分證影本，請填寫姓名及身分證字號，不接受台胞證或護照。
+
+.n-l-colmb20.n-cart--qary
+	.n-title__wrap
+		h2.n-title--18 海外直配問卷
+	.n-l-bgw-md.n-cart__second
+		h3.n-title--13 為了提供您更好的購物服務及合適的商品，請撥冗填寫以下問題，謝謝！
+		ol.n-list--decimal.n-cart--list
+			li 
+				p 請問您如何得知此商品訊息
+				.n-form--radio.n-label--inline
+					input#qary1(type="radio", name="qary1")
+					label(for="qary1") 電視廣告
+				.n-form--radio.n-label--inline
+					input#qary2(type="radio", name="qary1")
+					label(for="qary2") 電視跑馬
+				.n-form--radio.n-label--inline
+					input#qary3(type="radio", name="qary1")
+					label(for="qary3") 上網搜尋
+				
+			li 
+				p 請問您希望在直配大陸館購買哪些商品?
+				-var filterItems = [ {filterName: '文創商品'}, {filterName: '名牌服飾、鞋包'},{filterName: '台灣名產、伴手禮'},{filterName: '茶葉'},{filterName: '日用品'},{filterName: '母嬰商品'},{filterName: '3C產品'},{filterName: '保健食品、醫療用具'},{filterName: '面膜保養、化妝品'},{filterName: '娛樂、旅遊'}]
+				each filterItem, i in filterItems
+					.n-form--radio.n-label--inline
+						input(type="checkbox", id="qary2-" + (i + 1), name="qary2-" + (i + 1) )
+						label(for="qary2-" + (i + 1))= filterItem.filterName
+
+.n-l-colmb20
+	.n-title__wrap
+		h2.n-title--18 海外直配注意事項
+	.n-l-bgw-md.n-cart__second
+		ol.n-list--decimal.n-cart--list
+			each val in ['商品寄送至您所指定的收貨地址，須先通過收貨之國家(地區)的海關檢核，才能再進行配送。', '收貨之國家(地區)的海關會依商品種類及價值核定關稅與附加費用，一旦海關核定需支付進口關稅，則需由收貨人自行支付。', '如收貨人無法依規範繳納稅金，則原商品訂單金額將回數退回，但不包含運費。', '收貨人需遵守收貨之國家(地區)的進口規範與限制(違禁品..等)，否則相關法律問題將由收貨人自行負責。']
+				li= val
+			li 更多詳細內容請參閱 <a class="n-blue--link" href="#" title="海外購物說明" target="_blank">「海外購物說明」</a>

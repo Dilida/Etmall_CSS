@@ -1,0 +1,261 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// middle category page style
+// ==========================================================================
+
+// middle category common style
+// ==========================================================================
+.n-category
+	+clearfix
+
+// middle and small category ad box style
+// ==========================================================================
+.n-middle__wrap,
+.n-small__wrap
+	.n-l-adbox
+		position: relative
+		z-index: map-get($zindex, zero)
+		display: block
+	.n-banner--logo
+		position: absolute
+		z-index: map-get($zindex, base)
+		left: 0
+		top: 0
+
+// middle and small category rank product style
+// ==========================================================================
+.n-category
+	&--rank
+		.n-tab__nav
+			max-width: 868px
+			height: 41px
+			overflow: hidden
+		.n-tab__nav a
+			width: 160px
+			max-width: 160px
+		.n-tab__nav li
+			margin-left: 10px
+		.n-tab__nav li:nth-child(2) a
+			width: 160px
+			max-width: 160px
+		.n-rank__list 
+			li 
+				width: 150px
+			img 
+				width: 150px
+				height: 150px
+
+// middle and small category top product style
+// ==========================================================================
+.n-category
+	&__top
+		.n-card__list
+			li 
+				background-color: $gr2-dp-light
+				float: left
+				margin-right: 12px
+				width: 330px
+			li:last-child
+				margin-right: 0
+			.n-pic
+				+width-height(328)
+				position: relative
+				z-index: map-get($zindex, base)
+			.n-flag__wrap
+				position: absolute
+				z-index: map-get($zindex, second)
+				top: 0
+				left: 0
+				width: 40px
+				padding-top: 6px
+				&:before
+					border-bottom: 16px solid transparent
+					border-right: 40px solid $pr-darker
+					bottom: -16px
+				&:after
+					border-bottom: 16px solid transparent
+					border-left: 40px solid $pr-light
+					bottom: -16px
+			.n-sale--subtitle
+				max-width: 328px
+			.n-soldout 
+				top: 266px
+			.n-icon--play
+				top: 292px
+			.n-btn--card-red,
+			.n-btn--normal
+				width: 294px
+			
+
+
+// middle and small category tool box style
+// ==========================================================================
+.n-category
+	&__tool
+		ul 
+			padding-top: 12px
+		+clearfix
+		+font-size($fz-15)
+		padding: 0 10px 15px
+		a 
+			color: $gr-dark
+		.current a 
+			color: $pr-medium
+	&__sort
+		+clearfix
+		li 
+			float: left
+			margin-right: 15px
+		[class^="n-icon--"] 
+			vertical-align: top
+	&__range
+		.n-form--control
+			width: 116px
+			padding-top: 9px
+			padding-bottom: 9px
+	&__filter
+		+clearfix
+		position: relative
+		z-index: map-get($zindex, zero)
+		margin-right: 15px
+		padding-right: 15px
+		&:after
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, base)
+			background-color: $gr-lightest
+			width: 1px
+			height: 16px
+			top: 13px
+			right: 0
+		li 
+			float: left
+			margin-left: 15px
+	.n-operating
+		padding-top: 13px
+
+// middle and small category list style
+// ==========================================================================
+.n-category__body
+	.n-card--list
+		> li
+			width: 100%
+			margin-right: 0
+		> li:nth-last-child(-n+5)
+			margin-bottom: 15px
+		> li:last-child
+			margin-bottom: 0	
+		> li:last-child .n-card__box
+			border-bottom: none
+		> li .n-soldout
+			width: 120px
+			top: 80px
+			padding: 10px
+		> li .n-icon--play 
+			top: 87px
+			left: 75px
+		.n-card__box
+			+clearfix
+			border: none
+			border-bottom: 1px solid $gr-lightest
+			padding-bottom: 15px
+		.n-labels__wrap
+			position: absolute
+			z-index: map-get($zindex, base)
+			top: 0
+			right: 0
+		.n-sale--subtitle
+			padding-left: 0
+			padding-right: 0
+			padding-bottom: 10px
+			height: auto
+			max-width: 300px
+		.n-pic
+			float: left
+			width: 120px
+			height: 120px
+			margin-right: 15px
+		.n-name
+			padding: 0
+			margin-bottom: 10px
+		.n-name a 
+			+txt-ellipsis(840)
+			height: auto
+			font-weight: bold
+		.n-desc__list
+			display: block
+			li 
+				position: relative
+				z-index: map-get($zindex, zero)
+				margin-bottom: 5px
+				padding-left: 16px
+				+txt-ellipsis(900)
+			li:before
+				content: ''
+				background-color: $gr-dark
+				position: absolute
+				z-index: map-get($zindex, base)
+				width: 8px
+				height: 8px
+				left: 0
+				top: 4px
+				margin-right: 5px
+		.n-price__wrap,
+		.n-card__btn
+			position: absolute
+			z-index: map-get($zindex, base)
+			right: 0
+			.n-btn--card-icon,
+			.n-btn--card-red,
+			.n-btn--normal
+				padding: 9px 12px
+				width: auto
+		.n-price__wrap
+			padding: 0
+			top: 46px
+		.n-card__btn .n-btn--card-icon span 
+			display: inline-block
+		.n-card__btn
+			border: none
+			bottom: 15px
+			.n-btn
+				border: none
+				+border-radius(2px)
+				padding: 10px 20px
+			.n-btn--card-icon,
+			.n-btn--card-red,
+			.n-btn--normal
+				padding: 9px 12px
+				width: auto
+			.n-btn--card-icon .n-icon--collect,
+			.n-btn--card-red .n-icon--cart,
+			.n-btn--normal .n-icon--mail
+				vertical-align: top
+				margin-right: 5px
+				margin-top: 2px
+			.n-btn--card-icon,
+			.n-btn--card-red
+				border: 1px solid $gr-lightest
+				color: $gr-dark
+			.n-btn--card-icon
+				margin-right: 15px
+			.n-btn--card-red:hover
+				background-color: $pr-dark
+				border: 1px solid $pr-dark
+				color: $gr2-dp-light
+			.n-btn--active .n-icon--collect
+				+sprite($icon-collect-active)
+			.n-btn--normal
+				background-color: $gr2-lighter
+				border: 1px solid $gr-lightest
+				color: $gr-dark
+			.n-btn--normal:hover
+				background-color: rgba($pr-dp-light, 0.2)
+

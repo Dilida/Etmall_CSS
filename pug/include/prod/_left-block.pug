@@ -1,0 +1,23 @@
+aside.n-left.n-l--aside
+	.n-aside__caption.n-bg--pr-medium.n-aside__title
+		h2.n-title--16 褲｜裙
+	ul.n-bg--gr2-dp-light.n-aside__nav
+		li.current
+			a(href="#", title="雪紡" ) 
+				h1.n-word--count 雪紡
+		each subNav in [ '棉／麻', '蠶絲', '蕾絲', 'T恤', '短袖', '長版', '襯衫', '褲｜裙套裝', '無袖∣背心', '罩衫', 'POLO衫', '五分｜七分袖∣長袖', '假2件∣2件式', '露肩∣造型款', '針織', '防曬∣防風', '造型', '連帽', '西裝', '短版', '長版', '運動', '針織']
+			li
+				a(href="#", title=subNav )= subNav
+	.n-aside__caption.n-bg--gr-lighter.n-aside__title
+		h2.n-title--16 你可能感興趣的商品
+	ul.n-aside__list.n-bg--gr2-dp-light.n-hover--img
+		-for(var i = 0; i < 10; i++)
+			li
+				a(href="#", title="【得意】超值抽取式衛生紙(100+50抽X84包/箱)", target="_blank")
+					.n-left.n-pic
+						img(src="http://www.u-mall.com.tw/ProductImage/06054/06054594/6054594_M.jpg", alt="【得意】超值抽取式衛生紙(100+50抽X84包/箱)", width="80", height="80")
+					p.n-name 【得意】超值抽取式衛生紙(100+50抽X84包/箱)
+					.n-price__wrap
+						span.n-price--normal $ 1,113,000
+						span.n-price--16 $ 
+							span 1,111,680

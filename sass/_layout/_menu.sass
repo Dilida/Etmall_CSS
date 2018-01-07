@@ -1,0 +1,332 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+// ==========================================================================
+// import sprite 
+// ==========================================================================
+@import "_theme/_sprite.scss"
+
+// ==========================================================================
+// Main navigation
+// ==========================================================================
+.n-nav__wrap
+	+transition(0.2s ease-in-out)
+	position: relative
+	z-index: map-get($zindex, fifteen)
+	&:before
+		content: ""
+		background-color: $gr-darker
+		position: absolute
+		z-index: map-get($zindex, under)
+		width: 100%
+		height: 40px
+		top: 0
+		left: 0
+	.n-layout--lg
+		+clearfix
+		height: 40px
+		&:after
+			background-color: $gr-darker
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, under)
+			height: 40px
+			width: 1260px
+			left: 0
+			top: 0
+
+// Nav list, Main nav of navigation
+// ==========================================================================
+.n-nav
+	&__list
+		background-color: $gr2-dp-light
+		width: 230px
+		height: (18 * 42) + px
+		// overflow: hidden
+		position: absolute
+		z-index: map-get($zindex, sixteen)
+		top: 40px
+		left: 0
+		border-left: 1px solid $gr-lightest
+		border-right: 1px solid $gr-lightest
+		border-bottom: 4px solid $gr-medium
+		+transition(all 0.3s ease-in-out)
+
+
+// Main navigation
+// ==========================================================================
+
+// lv1 of Main navigation
+// ==========================================================================
+.n-nav__list
+	// padding-left: 15px
+	// padding-right: 15px
+	a 
+		color: $gr-dark
+		display: block
+	> li > a 
+		+font-size($fz-15)
+		padding: 8px 15px
+		border-bottom: 1px solid $gr-light
+		position: relative
+		z-index: map-get($zindex, zero)
+		height: 42px
+		line-height: 1.54
+		+txt-ellipsis(228)
+		.n-word--count,
+		.n-woird--count
+			+txt-ellipsis(228)
+			+font-size(15)
+		> h2 
+			+font-size(15)
+	> li:last-child > a
+		border-bottom: none
+	> li:hover,
+	> li > a:hover
+		color: $gr2-dp-light
+		background-color: $pr-medium
+		width: 228px
+		height: 42px
+	> li:hover:after,
+	> li > a:hover:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, base)
+		top: 0
+		right: 0
+	> li:hover > a 
+		color: $gr2-dp-light
+
+
+
+// Common Style Sub menu,  of Main navigation
+// ==========================================================================
+.n-nav-sub
+	display: none
+
+.n-nav-sub
+	+clearfix
+	background-color: $gr2-dp-light
+	position: absolute
+	z-index: map-get($zindex, base)
+	width: 1030px
+	// height: auto
+	left: 228px
+	top: 0
+	border: 1px solid $pr-light
+	padding: 15px	
+
+// First Sub menu,  of Main navigation
+// ==========================================================================
+.n-nav__list > li:first-child .n-nav-sub 
+	// display: block
+	width: 590px
+	height: 560px
+.n-nav__list > li:first-child .n-nav-sub__box
+	width: 100%
+
+.n-nav
+	&__flagship
+		width: 20%
+		border-right: 2px solid $gr-lightest
+		padding-top: 10px
+		padding-bottom: 5px
+		> li > a 
+			font-weight: bold
+			padding: 10px
+			cursor: text
+			.n-woird--count 
+				+txt-ellipsis(90)
+		> li > a:hover:after,
+		> li > .current:after
+			content: ''
+			position: absolute
+			z-index: map-get($zindex, base)
+			width: 100%
+			height: 100%
+			left: 2px
+			top: 0
+			border-left: 2px solid $pr-light
+			border-right: 4px solid $gr2-dp-light
+			border-top: 1px solid $gr-lightest
+			border-bottom: 1px solid $gr-lightest
+		li 
+			position: relative
+			z-index: map-get($zindex, zero)
+			margin-bottom: 5px
+		li a 
+			color: $gr-dark
+			display: block
+		li a:hover
+			color: $pr-light
+	&__flagship-box
+		width: 80%
+		position: relative
+		z-index: map-get($zindex, zero)
+	&__flagship-category
+		padding: 20px
+		position: absolute
+		z-index: map-get($zindex, base)
+		width: 100%
+		left: 0
+		top: 0
+		+clearfix
+		li
+			width: 190px
+			margin-right: 10px
+			margin-bottom: 15px
+			float: left
+		a 
+			+txt-ellipsis(203)
+			.n-woird--count 
+				+txt-ellipsis(203)
+		a:hover
+			color: $pr-light
+
+// Other Sub menu,  of Main navigation
+// ==========================================================================
+
+
+.n-nav-sub
+	&__box
+		width: 742px
+		margin-right: 10px
+	&__list
+		margin-top: 5px
+		li
+			+clearfix
+		>li	
+			border-bottom: 1px solid $gr-dp-light
+			padding-bottom: 10px
+			margin-bottom: 15px
+		>li:last-child
+			border-bottom: none
+	&__catalog
+		+clearfix
+		width: 618px
+		max-height: 50px
+		overflow: hidden
+		li 
+			float: left
+			padding-left: 15px
+			margin-bottom: 5px
+		li > a
+			+txt-ellipsis(160)
+			+border-radius(2px)
+			padding: 2px 4px
+			.n-woird--count
+				+txt-ellipsis(160)
+		// a:hover
+		// 	color: $pr-light
+	&__catalog .n-pr--medium
+		color: $pr-medium
+	&__catalog a:hover,
+	&__catalog .current
+		background-color: $se-lighter
+		color: $gr2-dp-light
+		&:hover
+			color: $gr2-dp-light
+	&__caption
+		font-weight: bold
+		border-right: 2px solid $gr-light
+		+txt-ellipsis(120)
+		width: 120px
+		padding-right: 30px
+		padding-left: 0
+		.n-woird--count
+			+txt-ellipsis(120)
+		> a
+			+txt-ellipsis(90)
+
+.n-nav-sub
+	&__logo
+		width: 246px
+	&__logo-list
+		width: 66px
+		margin-left: 24px
+		+clearfix
+		li
+			float: left
+			// margin-left: 15px
+			margin-bottom: 15px
+			width: 66px
+		li:last-child
+			margin-bottom: 0
+	// &__logo-list:nth-child(2)
+	// 	margin-top: 5px
+	// 	margin-bottom: 5px
+	&__logo-list:first-child
+		margin-left: 0
+	&__logo-list img 
+		width: 66px
+		height: 37px
+
+// Promo nav of navigation
+// ==========================================================================
+.n-nav__promo,
+.n-nav__promo a
+	color: $gr2-dp-light
+.n-nav__promo
+	+font-size(15)
+	width: 960px
+	overflow: hidden
+	+clearfix
+	li 
+		position: relative
+		z-index: map-get($zindex, base)
+		float: left
+		padding-left: 5px
+		padding-right: 10px
+		[class^="n-icon--"]
+			background: none
+			vertical-align: top
+			margin-right: 5px
+			margin-top: -5px
+	li:before,
+	li:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, second)
+		top: 10px
+		width: 1px
+		height: 20px
+	li:before
+		background-color: $gr-dark
+		left: 0
+	li:after
+		background-color: $gr-darkest
+		right: 0
+	a 
+		display: block
+		position: relative
+		z-index: map-get($zindex, base)
+		padding-top: 10px
+		+txt-ellipsis(100)
+	a:hover
+		color: $pr-lighter
+	.n-nav--promo-caption
+		background-color: $pr-lighter
+		+sprite($nav-caption)
+		padding-top: 10px
+		padding-left: 10px
+	li:nth-child(2):before,
+	li:last-child:before,
+	li:last-child:after,
+	.n-nav--promo-caption:before,
+	.n-nav--promo-caption:after
+		background: none
+
+// Tilte, Main nav of navigation
+// ==========================================================================
+.n-nav__box
+	background-color: $gr-darkest
+	width: 230px
+	padding: 4px 15px
+	position: relative
+	z-index: map-get($zindex, fifteen)
+	.n-title--16
+		color: $gr2-dp-light
+		line-height: 2
+	.n-icon--menu
+		margin-top: 2px

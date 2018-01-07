@@ -1,0 +1,363 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+
+// ==========================================================================
+// Process Style
+// ==========================================================================
+
+// Process core
+// ==========================================================================
+
+.n-process {
+	@include clearfix;
+	position: relative;
+	z-index: map-get($zindex, zero);
+	height: 60px;
+	padding-top: 10px;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, zero);
+		background-color: $gr-lightest;
+		width: 760px;
+		height: 6px;
+		top: 18px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.n-process__box {
+		position: relative;
+		z-index: map-get($zindex, third);
+		text-align: center;
+		float: left;
+		p {
+			margin-top: 8px;
+		}
+	}
+	.n-process--dot {
+		@include border-radius(100%);
+		background-color: $gr2-dp-light;
+		border: 5px solid $gr-lightest;
+		@include layout-center(20);
+		height: 20px;
+	}
+	.n-process__box:first-child {
+		left: 0;
+	}
+	.n-process__box:nth-child(2) {
+		left: 170px;
+	}
+	.n-process__box:nth-child(3) {
+		left: 310px;
+	}
+	.n-process__box:nth-child(4) {
+		left: 460px;
+	}
+	.n-process__box:last-child {
+		left: 600px;
+	}
+}
+
+// Process start
+// ==========================================================================
+.n-process--start {
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		background-color: $se-medium;
+		width: 140px;
+		height: 12px;
+		left: 20px;
+		top: 14px;
+	}
+	.n-process__box:first-child .n-process--dot {
+		border: 5px solid $se-medium;
+		position: relative;
+		z-index: map-get($zindex, base);
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: map-get($zindex, base);
+			@include arrow-right(6, 6, 6, $se-medium, 1);
+			right: -135px;
+			top: -1px;
+		}
+	}
+	
+}
+
+// Process second
+// ==========================================================================
+.n-process--second {
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		background-color: $se-medium;
+		width: 300px;
+		height: 12px;
+		left: 20px;
+		top: 14px;
+	}
+	.n-process__box:first-child .n-process--dot,
+	.n-process__box:nth-child(2) .n-process--dot {
+		border: 5px solid $se-medium;
+		position: relative;
+		z-index: map-get($zindex, base);
+	}
+	.n-process__box:nth-child(2) .n-process--dot:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		@include arrow-right(6, 6, 6, $se-medium, 1);
+		right: -73px;
+		top: -1px;
+	}
+}
+
+// Process third
+// ==========================================================================
+.n-process--third {
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		background-color: $se-medium;
+		width: 490px;
+		height: 12px;
+		left: 20px;
+		top: 14px;
+	}
+	.n-process__box:first-child .n-process--dot,
+	.n-process__box:nth-child(2) .n-process--dot,
+	.n-process__box:nth-child(3) .n-process--dot {
+		border: 5px solid $se-medium;
+		position: relative;
+		z-index: map-get($zindex, base);
+	}
+	.n-process__box:nth-child(3) .n-process--dot:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		@include arrow-right(6, 6, 6, $se-medium, 1);
+		right: -77px;
+		top: -1px;
+	}
+}
+
+// Process fourth
+// ==========================================================================
+.n-process--fourth {
+	&:after {
+		content: "";
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		background-color: $se-medium;
+		width: 680px;
+		height: 12px;
+		left: 20px;
+		top: 14px;
+	}
+	.n-process__box:first-child .n-process--dot,
+	.n-process__box:nth-child(2) .n-process--dot,
+	.n-process__box:nth-child(3) .n-process--dot,
+	.n-process__box:nth-child(4) .n-process--dot {
+		border: 5px solid $se-medium;
+		position: relative;
+		z-index: map-get($zindex, base);
+	}
+	.n-process__box:nth-child(4) .n-process--dot:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		@include arrow-right(6, 6, 6, $se-medium, 1);
+		right: -78px;
+		top: -1px;
+	}
+}
+// Process finish
+// ==========================================================================
+.n-process--finish {
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: map-get($zindex, base);
+		background-color: $se-medium;
+		width: 780px;
+		height: 12px;
+		left: 20px;
+		top: 14px;
+	}
+	.n-process--dot {
+		border: 5px solid $se-medium;
+		position: relative;
+		z-index: map-get($zindex, base);
+	}
+}
+
+// Process start four steps
+// ==========================================================================
+
+.n-process--start.n-process--four-steps {
+	.n-process__box:first-child {
+		left: 0;
+	}
+	.n-process__box:nth-child(2) {
+		left: 240px;
+	}
+	.n-process__box:nth-child(3) {
+		left: 440px;
+	}
+	.n-process__box:last-child {
+		left: 650px;
+	}
+}
+
+.n-process.n-process--second.n-process--four-steps.n-process--four-steps--second {
+	&:after {
+		width: 423px;
+	}
+	.n-process__box:first-child {
+		left: 0;
+	}
+	.n-process__box:nth-child(2) {
+		left: 240px;
+		.n-process--dot:after {
+			right: -133px;
+		}
+	}
+	.n-process__box:nth-child(3) {
+		left: 440px;
+	}
+	.n-process__box:last-child {
+		left: 650px;
+	}
+}
+
+.n-process.n-process--third.n-process--four-steps.n-process--four-steps--third {
+	&:after {
+		width: 646px;
+	}
+	.n-process__box:first-child {
+		left: 0;
+	}
+	.n-process__box:nth-child(2) {
+		left: 240px;
+	}
+	.n-process__box:nth-child(3) {
+		left: 440px;
+		.n-process--dot:after {
+			right: -116px;
+		}
+	}
+	.n-process__box:last-child {
+		left: 650px;
+	} 
+}
+
+.n-process.n-process--finish.n-process--four-steps.n-process--four-steps--finish {
+	&:after {
+		width: 786px;
+	}
+	.n-process__box:first-child {
+		left: 0;
+	}
+	.n-process__box:nth-child(2) {
+		left: 240px;
+	}
+	.n-process__box:nth-child(3) {
+		left: 440px;
+		.n-process--dot:after {
+			right: -117px;
+		}
+	}
+	.n-process__box:last-child {
+		left: 650px;
+	} 
+}
+
+// Cart's page, Process core
+// Three steps
+// ==========================================================================
+.n-process--cart,
+.n-process--three-steps {
+	@include layout-center(526);
+	&:before {
+		width: 526px;
+	}
+	.n-process__box:first-child {
+		left: -30px;
+	}
+	.n-process__box:nth-child(2) {
+		left: 30%;
+	}
+	.n-process__box:last-child {
+		left: 70%;
+	}
+}
+
+// Cart's page, Process start
+// Three steps
+// ==========================================================================
+.n-process--cart.n-process--start,
+.n-process--three-steps.n-process--start {
+	&:after {
+		left: 10px;
+	}
+	.n-process__box:first-child .n-process--dot {
+		&:after {
+			right: -142px;
+		}
+	}
+}
+
+// Cart's page, Process second
+// Three steps
+// ==========================================================================
+.n-process--cart.n-process--second,
+.n-process--three-steps.n-process--second {
+	&:after {
+		left: 10px;
+	}
+	.n-process__box:nth-child(2) .n-process--dot:after {
+		right: -49px;
+	}
+}
+
+// Cart's page,  Process finish
+// Three steps
+// ==========================================================================
+.n-process--cart.n-process--finish,
+.n-process--three-steps.n-process--finish {
+	&:after {
+		width: 512px;
+		left: 10px;
+	}
+}
+
+// tv login page,  Three steps 
+// steps1
+// ==========================================================================
+.n-process--member {
+	.n-process__box:last-child {
+		left: 60%;
+	}
+}
+
+// tv login page,  Three steps 
+// steps2
+// ==========================================================================
+.n-process--member.n-process--second {
+	.n-process__box:last-child {
+		left: 62%;
+	}
+	.n-process__box:nth-child(2) .n-process--dot:after {
+		right: -36px;
+	}
+}

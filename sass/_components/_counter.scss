@@ -1,0 +1,38 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Counter
+// ==========================================================================
+
+// Index counter
+// ==========================================================================
+.n-count__wrap,
+.n-count__clock {
+	@include clearfix;
+}
+.n-count__txt {
+	font-weight: bold;
+	color: $gr-darkest;
+}
+.n-count__clock {
+	li {
+		background-color: $gr-darkest;
+		border-radius: 2px;
+		float: left;
+		@include font-size(20);
+		font-weight: bold;
+		color: $gr2-dp-light;
+		padding: 1px 5px;
+		margin-right: 2px;
+	}
+	.n-count__split {
+		background: none;
+		color: $gr-medium;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+}
+

@@ -1,0 +1,184 @@
+.n-overlay__box.n-prod__body.n-prod--overlay.mfp-hide#quickViewLayout
+	<button title="關閉" type="button" class="mfp-close">&#215;</button>
+	section.n-l-bgw-md.n-prod__wrap
+		.n-left.n-prod__left
+			.n-prod__slider.overlaySlider
+				.n-prod__content
+					video(controls muted )
+						source(src="https://etmallvod.blob.core.windows.net/asset-54055b9e-805f-4562-8544-a16b3c3e7152/SB__2016_1230_121000.0.mp4?sv=2012-02-12&sr=c&si=148c6a01-70a3-4e54-8778-cad0c9ce3bc7&sig=WBZKUDclrldHRIxqw3ouokUWoIts9UgRGtSiZZlgXAs%3D&st=2016-12-30T04:15:20Z&se=9999-12-31T16:00:00Z" type="video/mp4")
+				-var prodImgs = [ {imgSrc: 'http://img1.u-mall.com.tw/ProductImage/05491/05491606/5491606-2.jpg', alt: 'DHC睫毛修護液6.5ml'}, {imgSrc: 'http://img2.u-mall.com.tw/ProductImage/05987/05987500/5987500-1.jpg' , alt: 'SUPERFEATURING 專業跑步' }, {imgSrc: 'http://img2.u-mall.com.tw/ProductImage/06170/06170970/6170970-1.jpg', alt: '中層衣' }, {imgSrc: 'http://img2.u-mall.com.tw/ProductImage/06179/06179601/6179601-1.jpg', alt: 'SANTO 星空輕暖衫一入' }, {imgSrc: 'http://img2.u-mall.com.tw/ProductImage/05902/05902455/5902455-1.jpg', alt: 'SANTO 星空輕暖衫一入' }, {imgSrc: 'http://img1.u-mall.com.tw/ProductImage/05902/05902455/5902455-2.jpg', alt: 'SANTO 星空輕暖衫一入' }, {imgSrc: 'http://img3.u-mall.com.tw/ProductImage/05902/05902455/5902455-3.jpg', alt: 'SANTO 星空輕暖衫一入' }, {imgSrc: 'http://img2.u-mall.com.tw/ProductImage/05902/05902455/5902455-4.jpg', alt: 'SANTO 星空輕暖衫一入' } ]
+					each prodImg in prodImgs
+						.n-prod__content
+							img( src=prodImg.imgSrc alt=prodImg.alt )
+			.n-prod__control
+				.n-prod__pager
+					ul.overlayPager
+						li
+							a( href="#" title='prod words')
+								.n-icon--play
+									span.n-icon--arrow-left
+								img(src='Resource/img201703/prod/thumbs01.jpg' alt='prod words')
+							-var pagerImgs = [{ imgSrc: 'Resource/img201703/prod/thumbs02.jpg', alt: 'prod words' },{ imgSrc: 'Resource/img201703/prod/thumbs03.jpg', alt: 'prod words' },{ imgSrc: 'Resource/img201703/prod/thumbs04.jpg', alt: 'prod words' },{ imgSrc: 'Resource/img201703/prod/thumbs05.jpg', alt: 'prod words' },{ imgSrc: 'http://www.u-mall.com.tw/ProductImage/05902/05902455/5902455-2_XS.jpg', alt: 'prod words' },{ imgSrc: 'http://www.u-mall.com.tw/ProductImage/05902/05902455/5902455-3_XS.jpg', alt: 'prod words' },{ imgSrc: 'http://www.u-mall.com.tw/ProductImage/05902/05902455/5902455-5_XS.jpg', alt: 'prod words' },{ imgSrc: 'http://www.u-mall.com.tw/ProductImage/05902/05902455/5902455-6_XS.jpg', alt: 'prod words' }]
+								each pagerImg in pagerImgs
+									li
+										a( href="#" title=pagerImg.alt)
+											img(src=pagerImg.imgSrc alt=pagerImg.alt)
+			.n-prod__row
+				.n-left.n-prod__info
+					span 品號：901533747
+					span 語音訂購專線：0800-66-55-99
+				ul.n-left.n-prod__social
+					li
+						a(href="", title="Facebook")
+							i.n-icon--fb
+					li
+						a(href="", title="Gmail")
+							i.n-icon--gmail
+					li
+						a(href="", title="Skype")
+							i.n-icon--skype
+					li
+						a(href="", title="Line")
+							i.n-icon--line
+				.n-right.n-prod__green
+					i.n-left.n-green--ponta
+					.n-right
+						span 綠色點數集點
+						span.n-pr--medium 20,0000
+						| 點
+		section.n-left.n-prod__right
+			.n-prod__name
+				.n-title--18 PS4 菲莉絲的鍊金工房~不可思議之旅的鍊金術士-中文水晶珍藏盒版
+			-var values = ['全天候保濕+緊緻◎蘊含硫辛酸因子 具抗氧化提升肌膚鎖水', '鎖定眼周肌膚進行修護◎保持肌膚彈力,緊緻肌膚', '鎖住眼周肌膚水分◎改善眼周黯沉,細紋紋']
+						ul.n-prod__intro
+							each val in values
+								li
+									h4.n-word--count=val
+
+			.n-price__block
+				.n-price__top
+					.n-left
+						span 原價：
+						span $1,998,500  
+						span 員工價：
+						span $1,998,500											
+				.n-price__bottom
+					span.n-price__exlarge
+						span.n-price__name 優惠價：
+						span.n-price__sign $
+						span.n-price__num 1,998,500
+					a.n-blue--link.overlayCouponsBtn(href="", title="折價券小幫手") 折價券小幫手
+					a.n-blue--link(href="", title="此商品最高適用30%折扣金", target="_blank") 此商品最高適用30%折扣金
+					.n-prod__pop.n-coupon.n-is--hide
+						.n-coupon__head
+							.n-left.n-title--13 適用此商品的折價券
+							a(class="n-right" href="#" title="關閉")
+								i.n-icon--close
+						table.table
+							tr
+								th(colspan="3") 
+									span(claee="n-title--13") 商品原價：$14,800
+							tr
+								td 折價券面額
+								td 折價後金額
+								td 省最大
+							tr.n-pr--medium 
+								td 85折
+								td $13,006
+								td -1184
+							tr
+								td(colspan="3") 
+									ul
+										li 使用折價券須用東森價計算。
+										li 折價後金額僅供參考，是否適用以結帳頁面(購物車)為準。 
+			ul.n-choose__wrap
+				li.n-choose__radio
+					ul
+						li 配送：
+						li.n-form--radio 
+							input( type="radio" name="delivery" id="d1") 
+							label( for="d1") 一般宅配
+						li.n-form--radio 
+							input( type="radio" name="delivery" id="d2") 
+							label( for="d2") 海外配送
+						li.n-form--radio 
+							input( type="radio" name="delivery" id="d3") 
+							label( for="d3") 快速到貨
+						li.n-form--radio 
+							input( type="radio" name="delivery" id="d4") 
+							label( for="d4") 超商取貨
+				li.n-choose__spec
+					ul
+						li
+							label( for="s1") 顏色：
+							select( id="s1" class="n-form--control" )
+								option(value="1435_0") 黑色
+								option(value="1503_0") 灰色
+						li
+							label( for="s2") 樣式：
+							select( id="s2" class="n-form--control")
+								option(value="1306_0") M
+								option(value="1307_0") L
+						li
+							label( for="s3") 數量：
+							select( id="s3" class="n-form--control")
+								option(value="1") 1
+				
+				li.n-choose__btn
+					.n-left
+						button(type="button" class="n-btn n-btn--primary") 立即結帳
+						button(type="button" class="n-btn n-btn--lv2") 
+							i.n-icon--cart
+							| 加入購物車
+					ul.n-left.n-list--disc
+						li
+							a.n-blue--link(href="", title="任選兩件350 搶購") 任選兩件350 搶購
+						li
+							a.n-blue--link(href="", title="滿千現折＄100 ") 滿千現折＄100 
+			.n-pay-method__wrap
+				ul.n-pay-method
+					li 付款方式：信用卡 / ATM / 超取/禮物卡/霸王金
+					li 
+						.n-left 分期方式：
+						ul.n-left.n-installment__list
+							li 12 期0利率
+							li 每期 <span class="n-pr--medium"> 4,975 </span> 元 ( 永豐等銀行 )
+							li 
+								a(href="", title="更多分期")
+									i.n-icon--inverted-triangle
+									| 更多分期
+					li 點數查詢：最高累積點數 <span class="n-pr--medium"> 7,800 </span> 點
+				.n-prod__pop.n-installment.n-is--hide
+					.n-installment__head
+						.n-left.n-title--13 更多分期方式
+						.n-right 
+							a(class="n-right" href="#" title="關閉")
+								i.n-icon--close
+					table.table
+						tr
+							td <span class="n-pr--medium"> 3 </span>期 0 利率
+							td 每期 <span class="n-pr--medium">400,975</span> 元
+							td <a class="n-blue--link" href="#" title="接受永豐等30家銀行">接受永豐等30家銀行</a>
+						tr
+							td <span class="n-pr--medium"> 6 </span>期 0 利率
+							td 每期 <span class="n-pr--medium">400,975</span> 元
+							td <a class="n-blue--link" href="#" title="接受永豐等30家銀行">接受永豐等30家銀行</a>
+						tr
+							td <span class="n-pr--medium"> 9 </span>期 0 利率
+							td 每期 <span class="n-pr--medium">400,975</span> 元
+							td <a class="n-blue--link" href="#" title="接受永豐等30家銀行">接受永豐等30家銀行</a>
+						tr
+							td(colspan="3")
+								ul
+									li 除不盡餘數，將於第一期收取。
+									li 接受 <img src="Resource/img201703/prod/bank_visa.png" alt="VISA" /><img src="Resource/img201703/prod/bank_mastercard.png" alt="MasterCard" /><img src="Resource/img201703/prod/bank_jcb.png" alt="JCB" /><img src="Resource/img201703/prod/bank_unionPay.png" alt="UnionPay" /><img src="Resource/img201703/prod/bank_ae.png" alt="AE" /> 信用卡。
+					ul.n-prod__pop.n-prod__bank.n-is--hide
+						each bankList in [ '中國信託', '合作金庫', '永豐銀行', '永旺信用卡', '台新銀行','陽信商銀', ' 花旗銀行', '凱基銀行', '聯邦銀行', '大眾銀行','澳盛銀行', '匯豐銀行', '國泰世華', '第一銀行', '台北富邦銀行','台灣企銀', '玉山銀行', '土地銀行', '兆豐銀行', '華南商行','日盛銀行', '安泰銀行', ' 遠東銀行', '三信商銀', '上海銀行','元大銀行', '渣打銀行', '華泰銀行', '新光銀行', '台中商銀' ]
+							li(class="n-left")=bankList
+				
+			.n-gifts__wrap.note--box-lv2
+				p 贈品：※買就送澎湖單人三日遊(市值$3,099) <br />
+					| 本活動贈送之旅遊兌換券預計於106/6/30起陸續寄出(寄送地址同手機商品寄送地址，恕無法更改)。 <br />
+			ul.n-prod__note
+				li 此為預購商品，預定訂單成立後 14 日出貨
+				li 訂購專線：本商品不支援客服與語音訂購

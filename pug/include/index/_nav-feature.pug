@@ -1,0 +1,7 @@
+ul.n-nav__promo.n-left
+	li.n-nav--promo-caption 精選館別
+	each promoNavs in [{iconName: 'n-icon--fine', navName: '森森精品'}, {iconName: 'n-icon--ticket', navName: '住宿餐券'}, {iconName: 'n-icon--movie', navName: '電影票'}, {iconName: 'n-icon--thsrc', navName: '高鐵 TEX'}, {iconName: 'n-icon--game', navName: '賽事藝文'}, {iconName: 'n-icon--smart', navName: '智慧家庭'}, {iconName: 'n-icon--financial', navName: '網路金融'}, {iconName: 'n-icon--china', navName: '直配大陸'}]
+		li 
+			a(href="#" title= promoNavs.navName target="_blank")
+				i(class= promoNavs.iconName)
+				= promoNavs.navName

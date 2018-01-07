@@ -1,0 +1,16 @@
+.n-header__body
+	.n-layout--lg.n-newyaer--visual
+		.n-left
+			a.n-ehs--logo(href="index.html" title="東森嚴選－ET Mall東森購物網") 東森嚴選－ET Mall東森購物網
+		.n-left.n-search
+			.n-search__wrap#globalSearch
+				form(action="")
+					input(class="n-form--control" type="text" placeholder="請輸入商品關鍵字")
+					button(class="n-btn n-btn--search" type="submit") 搜尋
+					button(class="n-btn n-btn--search24" type="submit") 搜 24H
+			ul.n-search__hotkey
+				li 熱搜：
+				- var hotKeys = [{hotUrl:'#', hotTxt: '曾拌麵'}, {hotUrl:'#', hotTxt: '行李'}, {hotUrl:'#', hotTxt: '好神拖'}, {hotUrl:'#', hotTxt: '家而適'}, {hotUrl:'#', hotTxt: '鍋寶'}, {hotUrl:'#', hotTxt: '滿意寶寶'}, {hotUrl:'#', hotTxt: '葉黃素'}, {hotUrl:'#', hotTxt: '雨靴'}, {hotUrl:'#', hotTxt: '連衣裙'}, {hotUrl:'#', hotTxt: 'iphone6'}]
+				each hotKey in hotKeys
+					li
+						a(href= hotKey.hotUrl title= hotKey.hotTxt  target="_blank")= hotKey.hotTxt

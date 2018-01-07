@@ -1,0 +1,34 @@
+section.n-l-colmb20
+	.n-title__wrap
+		h2.n-title--18 加價購專區
+	-var increaseData = [{ name: '法國JA超模限定極致修身女全能外套', img: 'https://goo.gl/jD7clj', normalPrice: '$ 1,113,000', price: '1,111,680'}, { name: 'MISS GRACE45%高規羊毛修身外套', img: 'https://goo.gl/U00LA0', normalPrice: '$ 1,113,000', price: '1,111,680'}, { name: 'SG國際櫃旗艦FP820長版羽絨外套', img: 'https://goo.gl/oXHw0Y', normalPrice: '$ 1,113,000', price: '1,111,680'}, { name: 'MISS GRACE45%高規羊毛修身外套', img: 'https://goo.gl/Nk88Cu', normalPrice: '$ 1,113,000', price: '1,111,680'}, { name: '【NEW FORCE】型男彈性鈕扣素色長袖T恤 激殺兩入組 4色選', img: 'https://goo.gl/CJOF8d', normalPrice: '$ 1,113,000', price: '1,111,680'}]
+
+	ul.n-l-bgw-md.n-increase__list.n-hover--img#increaseList
+		each increase in increaseData
+			li
+				a(href="#" title=increase.name)
+					.n-pic
+						img(src= increase.img alt= increase.name width="160" height="160")
+				a(href="#" title= increase.name)
+					.n-pd_name= increase.name
+				.n-price__wrap
+					span.n-price--normal= increase.normalPrice
+					span.n-price--16 $
+						span=increase.price
+				a.n-btn.n-btn--black(href="#", title="選購") 選購
+				.n-select__spec
+					ul.n-form-aligned
+						li
+							label.n-caption 顏色：
+							select.n-form--control(name="")
+								option(value="1") 共同
+								option(value="2") 共同1
+						li
+							label.n-caption 樣式：
+							select.n-form--control(name="")
+								option(value="1") 64G
+						li
+							label.n-caption 數量：
+							select.n-form--control(name="")
+								option(value="1") 1
+					button.n-btn.n-btn--primary(type="submit") 確定

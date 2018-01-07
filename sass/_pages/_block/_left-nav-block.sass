@@ -1,0 +1,127 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// This style contain common left anv, left title, left list
+// ==========================================================================
+
+// left title style
+// ==========================================================================
+.n-aside__title
+	padding: 12px 15px
+	text-align: center
+	.n-title--16,
+	.n-title--18
+		+txt-ellipsis(200)
+	.n-title--16 a,
+	.n-title--18 a
+		color: $gr-dark
+
+// left nav style
+// ==========================================================================
+.n-aside__nav
+	padding-top: 10px
+	padding-bottom: 10px
+	+font-size($fz-15)
+	+clearfix
+	a
+		display: block
+		color: $gr-dark
+		padding: 6px 12px
+		+font-size(15)
+		+txt-ellipsis(230)
+		.n-woird--count,
+		.n-word--count
+			+txt-ellipsis(230)
+			+font-size(15)
+	a:hover,
+	.current a 
+		background-color: $se-lighter
+		color: $gr2-dp-light
+	li 
+		width: 100%
+
+// left category list
+// ==========================================================================
+.n-aside
+	&__category
+		padding-bottom: 10px
+		+clearfix
+		.n-aside__nav 
+			li:nth-child(n+7)
+				display: none
+			li.n-is--show 
+				display: block
+	&__more
+		border: 1px solid $gr-lightest
+		padding: 4px 6px 2px
+		display: block
+		color: $gr-medium
+		margin-right: 12px
+		+font-size($fz-13)
+		.n-icon--more-btn
+			vertical-align: top
+			margin-top: 2px
+
+
+// left nav marketing box style
+// ==========================================================================
+.n-aside--marketing 
+	.n-aside__nav
+		> li 
+			width: auto
+		> li:nth-child(-n+6) 
+			display: none
+		> li:nth-child(-n+3) 
+			display: block
+		> li.n-is--show
+			display: block
+		a
+			max-width: 230px
+			width: 230px
+			position: relative
+			z-index: map-get($zindex, zero)
+			padding-left: 24px
+		a:after
+			content: '\2022'
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 12px
+			top: 5px
+
+// left product promo list
+// ==========================================================================
+.n-aside__list
+	border-bottom: 1px solid $gr-lightest
+	padding: 15px 10px
+	a
+		display: block
+		color: $gr-dark
+	li 
+		+clearfix
+		margin-bottom: 10px
+		border-bottom: 1px dotted $gr-lightest
+		padding-bottom: 5px
+	li:last-child
+		margin-bottom: 0
+		padding-bottom: 0
+		border-bottom: none
+	.n-pic
+		+img-loading
+		+width-height(80)
+		margin-right: 10px
+	.n-name
+		+text-fool(34)
+		margin-bottom: 6px
+	.n-price__wrap span 
+		display: inline-block
+		margin: 0
+	.n-price__wrap .n-price--normal
+		display: block
+
+// left title for flagship
+// ==========================================================================
+.n-aside--flagship 
+	color: $gr2-dp-light

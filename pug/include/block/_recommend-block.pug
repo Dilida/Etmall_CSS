@@ -1,0 +1,38 @@
+section.n-recommend
+	- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}]
+	.n-recommend__top
+		.n-recommend__title.n-bg--gr-lighter
+			h2.n-title--18 看看其他人買了甚麼
+		.n-recommend__body.n-hover--img
+			ul.n-recommend__list(style="width: 1900px; posotion: relative; overflow: hidden")
+				- for (var i = 0; i < pordItems.length; ++i)
+					li
+						a(href= pordItems[i].hotUrl title= pordItems[i].name target="_blank")
+							.n-pic 
+								img(src= pordItems[i].imgSrc alt= pordItems[i].name width="180" height="180")
+							p.n-name= pordItems[i].name
+							p.n-price__wrap
+								span.n-price--normal= pordItems[i].normalPrice
+								span.n-price--16 $
+									span= pordItems[i].price
+	.n-recommend__bottom
+		.n-recommend__title.n-bg--gr-lighter
+			h2.n-title--18 其他人也看了這些商品
+		.n-recommend__body.n-hover--img
+			ul.n-recommend__list(style="width: 1900px; posotion: relative; overflow: hidden")
+				- for (var i = 0; i < pordItems.length; ++i)
+					li
+						a(href= pordItems[i].hotUrl title= pordItems[i].name target="_blank")
+							.n-pic 
+								img(src= pordItems[i].imgSrc alt= pordItems[i].name width="180" height="180")
+							p.n-name= pordItems[i].name
+							p.n-price__wrap
+								span.n-price--normal= pordItems[i].normalPrice
+								span.n-price--16 $
+									span= pordItems[i].price
+	a.n-l-arrow__wrap(href="#" title="Prev")
+		span.n-arrow--top
+		span.n-arrow--bottom
+	a.n-r-arrow__wrap(href="#" title="Next")
+		span.n-arrow--top
+		span.n-arrow--bottom

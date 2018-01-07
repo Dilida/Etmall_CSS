@@ -1,0 +1,16 @@
+//- section.n-l-colmb30
+//- 	.n-title__wrap
+//- 		h2.n-title--18 銀行活動
+//- 	ul.n-bank__list
+//- 		- var bankLists = [{imgSrc: 'img201703/logo/bank-logo7.png', bankUrl: 'https://goo.gl/Rr4dFR', bankName: '花旗銀行'}, {imgSrc: 'img201703/logo/bank-logo2.png', bankUrl: 'https://goo.gl/Rr4dFR', bankName: '凱基銀行'}, {imgSrc: 'img201703/logo/bank-logo3.png', bankUrl: 'https://goo.gl/Rr4dFR', bankName: '中國信託銀行'}, {imgSrc: 'img201703/logo/bank-logo4.png', bankUrl: 'https://goo.gl/Rr4dFR', bankName: 'JCB'}, {imgSrc: 'img201703/logo/bank-logo5.png', bankUrl: 'https://goo.gl/Rr4dFR', bankName: '聯邦銀行'}, {imgSrc: 'img201703/logo/bank-logo6.png', bankUrl: 'https://goo.gl/Rr4dFR', bankName: '玉山銀行'}]
+//- 		each bankList in bankLists
+//- 			li
+//- 				a(href= bankList.bankUrl  title= bankList.bankName target="_blank")
+//- 					img(src=bankList.imgSrc alt= bankList.bankName width="198" height="88" )
+section.n-l-colmb30
+	.n-title__wrap
+		.n-title--18 銀行活動
+	ul.n-bank__list
+		li 
+			a(href="https://goo.gl/Rr4dFR" title="花旗銀行")
+				img(src="Resource/img201703/logo/bank-logo7.png", alt="花旗銀行" target="_blank")

@@ -1,0 +1,65 @@
+.n-l-colmb30.n-hover--img.n-cart--dialy-discount
+	mixin timeHead(titleClass, iconName, title1, timeTxt)
+		.n-left.n-sp-time__title(class= titleClass)
+			h2.n-title--22
+				i(class= iconName)
+				= title1
+		.n-right.n-count__wrap
+			ul.n-count__clock.n-right
+				li 2
+				li 1
+				li.n-count__split :
+				li 4
+				li 9
+				li.n-count__split :
+				li 1
+				li 1
+			.n-right.n-count__txt= timeTxt
+	mixin timeItems(soldOut, numSale, timeName, timeImg, timeClass, timePrice1, timePrice2, timeBtnTxt)
+		li(class= soldOut)
+			a(href="#" title= timeName)
+				.n-pic
+					.n-sp-sold__out
+						.n-sp-sold__txt
+							span 搶購一空
+					img(src= timeImg alt= timeName)
+				h4.title--lv3.n-name= timeName
+				.n-sp--hints-box 最後
+					span= numSale
+					| 組 
+				.n-sp-btn__wrap(class= timeClass)
+					.n-sp-btn__price.n-left
+						span= timePrice1
+						span= timePrice2
+					.n-sp-btn__txt.n-left
+						span= timeBtnTxt 
+	mixin timeItems2(numSale, timeName, timeImg, timeClass, timePrice1, timePrice2, timeBtnTxt)
+		li
+			a(href="#" title= timeName)
+				.n-pic
+					img(src= timeImg alt= timeName)
+				h4.title--lv3.n-name= timeName
+				.n-sp--hints-box 最後
+					span= numSale
+					| 組 
+				.n-sp-btn__wrap(class= timeClass)
+					.n-sp-btn__price.n-left
+						span= timePrice1
+						span= timePrice2
+					.n-sp-btn__txt.n-left
+						span= timeBtnTxt 
+	.n-sp-time__left.n-left
+		.n-sp-time__head
+			+timeHead('n-title--clock', 'n-icon--clock', '整點最便宜', '即將開賣')
+		.n-sp-time__box
+			ul.n-sp-time__list
+				+timeItems('','122', '【Jisen】氣質拼色顯瘦長洋裝', 'https://goo.gl/RdhqPx', '', '市價：1,111,590', '$ 1,111,590', '立即結帳')
+				+timeItems('n-sp--soldout', '0', '預購【伊凡莎時尚】歐式宫廷刺繡公主洋裝(S-XXL)', 'https://goo.gl/07JI33', 'n-sp-btn--disable', '市價：1,111,590', '$ 1,111,590', '搶購一空')
+
+	.n-sp-time__right.n-left
+		.n-sp-time__head
+			+timeHead('n-title--daily', 'n-icon--hot', '天天激殺價', '剩餘' )
+		.n-sp-time__box
+			ul.n-sp-time__list
+				+timeItems2('99','MONS貴族系鏤空蕾絲古典小洋裝', 'https://goo.gl/uIyC4a', 'n-sp-btn--disable', '市價：2,780', '$ 1,590', '即將開賣')
+				+timeItems2('99','【OMUSES】宮廷蕾絲刺繡婚紗伴娘禮服18-1548(S-2L)', 'https://goo.gl/4iFE3B', 'n-sp-btn--disable', '市價：4,960', '$ 1,590', '即將開賣')

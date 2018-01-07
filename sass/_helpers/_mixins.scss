@@ -1,0 +1,166 @@
+// ==========================================================================
+// mixins 
+// ==========================================================================
+
+// ==========================================================================
+// Mixins for Layout 
+// ==========================================================================
+
+// Clear Float
+// ==========================================================================
+
+@mixin clearfix {
+  &:after, &:before {
+    content: "";
+    display: block;
+  }
+  &:after{
+    clear:both;
+  }
+  *zoom:1;
+}
+
+// base layout align center
+// ==========================================================================
+
+@mixin layout-center($width) {
+  width: $width + px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// breakpoint
+// ==========================================================================
+
+@mixin breakpoint($point) {
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+// ==========================================================================
+// Mixins for Text layout
+// ==========================================================================
+
+// hide text
+// ==========================================================================
+@mixin text-hide {
+  white-space: nowrap;
+  text-indent: 1000%;
+  overflow: hidden;
+}
+
+@mixin text-fool($num) {
+  height: $num + px;
+  overflow: hidden;
+}
+
+// setting img width height
+// ==========================================================================
+@mixin width-height($value) {
+  width: $value + px;
+  height: $value + px;
+  overflow: hidden;
+}
+
+// img loading 
+// ==========================================================================
+@mixin img-loading {
+  background: url('../../Resource/img201703/1x1.png') no-repeat center center;
+  background-size: cover;
+}
+// ellipsis text
+// ==========================================================================
+
+@mixin txt-ellipsis($maxWidth) {
+  max-width: $maxWidth + px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// font size
+// ==========================================================================
+ @mixin font-size($value) {
+  font-size: $value + px;
+  font-size: ($value / 10) + rem;
+}
+
+// Border Radius
+// ==========================================================================
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// ==========================================================================
+// Css triangle
+// ==========================================================================
+
+%arrow-common {
+  width: 0;
+  height: 0;
+}
+
+@mixin arrow-top($left, $right, $bottom, $color, $vaule) {
+  @extend %arrow-common;
+  border-left: $left + px solid transparent;
+  border-right: $right + px solid transparent;
+  border-bottom: $bottom + px solid rgba($color, $vaule);
+}
+
+@mixin arrow-down($left, $right, $top, $color, $vaule) {
+  @extend %arrow-common;
+  border-left: $left + px solid transparent;
+  border-right: $right + px solid transparent;
+  border-top: $top + px solid rgba($color, $vaule);
+}
+
+@mixin arrow-right($top, $bottom, $left, $color, $vaule) {
+  @extend %arrow-common;
+  border-top: $top + px solid transparent;
+  border-bottom: $bottom + px solid transparent;
+  border-left: $left + px solid rgba($color, $vaule);
+}
+
+// ==========================================================================
+// Mixins for Transitions
+// ==========================================================================
+
+
+// Transitions Browser Prefixes
+// ==========================================================================
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Transforms Browser Prefixes
+// ==========================================================================
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+// Scale
+// ==========================================================================
+
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// Rotate
+// ==========================================================================
+
+@mixin rotate($rotate) {
+  @include transform(rotate($rotate + deg) );
+}

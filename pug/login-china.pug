@@ -1,0 +1,75 @@
+doctype html
+html(lang='zh-Hant-TW')
+    head
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+        <![endif]-->
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=1260')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title 大陸人士登入 -- 東森嚴選－ET Mall東森購物網
+        include include/global/_meta
+        link(href='Resource/css201703/n-base.css', rel='stylesheet')
+        link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+        link(href='Resource/css201703/n-common.css', rel='stylesheet')
+        link(href='Resource/css201703/n-reg.css', rel='stylesheet')
+    body.n-theme--gr2-lighter
+        main.n-wrapper
+            include include/global/_inside-head
+            .n-l-960.n-l-colmt20.n-l-colmb50
+                form#chinaLoginMember(action="")
+                    .n-l-bgw-lg.n-l-bgw-border.n-reg__wrap
+                        .n-title__wrap.n-text--center 
+                            .n-title--18 大陸地區會員登入
+                        .n-l-bgw-lg.n-reg__body
+                            .n-left.col-7.n-reg__left
+                                ul.n-reg__fields.n-reg__login.n-form-aligned
+                                    li.n-title--13 請輸入設定登入帳號
+                                    li.n-form__box
+                                        label.n-form--title(for="chinaLoginID") 帳號
+                                        input.n-form--control#chinaLoginID(type="text", name="chinaLoginID")
+                                    li.n-form__box
+                                        label.n-form--title(for="chinaPassword") 密碼
+                                        input.n-form--control#chinaPassword(type="text", name="chinaPassword")
+                                    li.n-form__multiple.n-form__box
+                                        label.n-form--title(for="CheckPwd") 驗證碼
+                                        input.n-form--control#CheckPwd(type="text", name="CheckPwd")
+                                        img#CheckPWDIMG(src="Resource/img201703/member/reg/VCode.jpg", alt="驗證碼")
+                                        a.n-normal--link#changeCodeImg(href="", title="更新驗證碼") 更新驗證碼
+                                    li.n-form__keep-account
+                                        input#checkID(type="checkbox", name="checkID")
+                                        label(for="checkID") 記住我的帳號密碼
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary(type="submit") 登入
+                                        a.n-normal--link#changeCodeImg(href="login-forget-all.html", title="忘記帳號/密碼") 忘記帳號/密碼
+                                
+                            .n-right.col-5.n-reg__right.n-text--center 
+                                ul.n-reg__login-btns
+                                    li
+                                        a.n-btn.n-btn--lv2(href="", title="註冊") 註冊
+                                    li 以其他方式登入
+                                    li
+                                        a.n-btn.n-btn--fb(href="", title="Facebook") Facebook
+                                    li
+                                        a.n-btn.n-btn--lv2(href="login.html", title="台灣地區會員登入") 台灣地區會員登入
+                                    li 您是電視購物或型錄會員，但未曾在網站消費，請點選下方
+                                    li
+                                        a.n-btn.n-btn--lv2(href="", title="電視會員登入") 電視會員登入
+                                
+                        .n-reg__hints.note--box-lv3.n-reg--china-hints
+                            ul.n-list--disc
+                                li 24H免費服務專線：<span class="n-pr--medium">0800-057-999</span>
+                                li <span class="n-pr--medium">大陸地區會員登入，將以海外配送方式進行！</span> 
+            include include/global/_footer
+            include include/global/_go-top
+        script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+        script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+        script(src = 'Resource/js201703/vendor/jquery.validate.js')
+        script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+        script(src = 'Resource/js201703/common/global.effect.js')
+        script(src = 'Resource/js201703/pages/registered.js')
+        script(src = 'Resource/js201703/prototyping.js')
+                

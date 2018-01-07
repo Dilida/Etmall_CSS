@@ -1,0 +1,65 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 聯絡我們 -- 會員服務 -- 會員中心 -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_help-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="幫助中心">幫助中心</a>&gt;</li>
+						<li><a href="#" title="會員服務">會員服務</a>&gt;</li>
+						<li class="current"><a href="#" title="聯絡我們">聯絡我們</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						include include/member/_help-service-page-nav
+					
+						<h2 class="n-title--18 n-mem--title">聯絡我們</h2>
+						form#writeMsg(action="")
+							.n-l-colmb20
+								h3.n-title--16 貼心小叮嚀
+								p.n-l-colmb20 親愛的會員您好， <br />
+									| 如果您使用 Yahoo / Msn / Google / PChome 個人信箱來接收客服郵件或是訂單資料時，很有可能會被歸類到垃圾郵件資料夾中，建議您可至會員中心/基本資料/個人資料進行修改。
+								h3.n-title--16 填寫問題留言
+								<p class="note--txt-lv2">請您正確點選問題種類，以加速問題判斷與處理時效</p>
+								.n-comment__field
+									<label class="n-title--13" for="userTypeFields"><span class="n-pr--medium">*</span> 問題留言描述</label>
+									.col-2.n-form__box
+										<select class="n-form--control" name="selectIssue" id="selectIssue" required>
+											<option value="" selected="">請選擇問題的種類</option>
+											<option value="產品相關查詢">產品相關查詢</option>
+										</select>
+									<textarea class="n-form--control" name="userTypeFields" id="userTypeFields" maxlength="15"></textarea>
+									<div id="countTxt" class="note--box-lv3"></div>
+									.n-form__foot
+										<input type="reset" class="n-btn n-btn--normal" value="重新填寫">
+										<input type="submit" class="n-btn n-btn--primary" value="確定送出">
+										
+							include include/member/_help-common-link
+									
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/jquery.validate.js')
+		script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

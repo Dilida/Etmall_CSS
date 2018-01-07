@@ -1,0 +1,221 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Form core
+// ==========================================================================
+.n-form--control {
+	background-color: $gr2-dp-light;
+	background-image: none;
+	display: inline-block;
+  padding: 10px; 
+  width: 100%;
+  border: 1px solid $gr-lightest; 
+  color: $gr-dark;
+  line-height: 1.6;
+}
+
+.n-form--control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.n-form--control:focus {
+  color: $gr-dark;
+  background-color: $gr2-dp-light;
+  border-color: $gr-lightest;
+  outline: none;
+}
+
+.n-form--control::-webkit-input-placeholder {
+  color: $gr-medium;
+  opacity: 1;
+}
+
+.n-form--control::-moz-placeholder {
+  color: $gr-medium;
+  opacity: 1;
+}
+
+.n-form--control:-ms-input-placeholder {
+  color: $gr-medium;
+  opacity: 1;
+}
+
+.n-form--control::placeholder {
+  color: $gr-medium;
+  opacity: 1;
+}
+
+// Select 
+// ==========================================================================
+select.n-form--control {
+  background-color: $gr2-dp-light;
+  height: 42px;
+}
+
+// Focus style
+// ==========================================================================
+.n-form--control:focus {
+  outline: 0;
+  border-color: $fo-light; 
+}
+
+.n-form input[type="file"]:focus,
+.n-form input[type="radio"]:focus,
+.n-form input[type="checkbox"]:focus {
+  outline: thin solid $fo-light; 
+  outline: 1px auto $fo-light; 
+}
+
+// Disable style
+// ==========================================================================
+.n-form--disabled,
+select.n-form--disabled {
+  cursor: not-allowed;
+  background-color: $gr-dp-light;
+  color: $gr-dark;
+  &:focus{
+    background-color: $gr-dp-light;
+    border-color: $gr-lightest; 
+  }
+}
+
+// Form edit
+// ==========================================================================
+.n-form--edit,
+select.n-form--edit {
+  background-color: $gr2-lightest;
+}
+
+.fields--info,
+.n-form--error {
+  line-height: 2.2;
+}
+// Form error style
+// ==========================================================================
+.n-form--error-msg,
+.n-form--error {
+  color: $pr-medium;
+  display: none;
+}
+
+.n-form--error-msg {
+  display: block;
+}
+
+.n-form--error-field {
+  border-color: $pr-medium; 
+  box-shadow: 0 0 4px $pr-lighter;
+  &:focus{
+    border-color: $pr-dark; 
+    box-shadow: 0 0 4px $pr-darker;
+  }
+}
+
+.n-has--error {
+  .n-form--control {
+    border-color: $pr-medium; 
+    box-shadow: 0 0 4px $pr-lighter;
+    &:focus{
+      border-color: $pr-dark; 
+      box-shadow: 0 0 4px $pr-darker;
+    }
+  }
+}
+
+.n-has-success {
+  .n-form--control {
+    border-color: $th-darker; 
+    box-shadow: 0 0 4px $th-darkest;
+  }
+}
+
+// form label
+// ==========================================================================
+.n-form--label {
+  cursor: pointer;
+}
+
+
+// Stacked layout style
+// ==========================================================================
+.n-form--stacked input[type="text"],
+.n-form--stacked input[type="password"],
+.n-form--stacked input[type="email"],
+.n-form--stacked input[type="url"],
+.n-form--stacked input[type="date"],
+.n-form--stacked input[type="month"],
+.n-form--stacked input[type="time"],
+.n-form--stacked input[type="datetime"],
+.n-form--stacked input[type="datetime-local"],
+.n-form--stacked input[type="week"],
+.n-form--stacked input[type="number"],
+.n-form--stacked input[type="search"],
+.n-form--stacked input[type="tel"],
+.n-form--stacked input[type="color"],
+.n-form--stacked input[type="file"],
+.n-form--stacked select,
+.n-form--stacked label,
+.n-form--stacked textarea{
+  display: block;
+}
+
+// Aligned layout style
+// ==========================================================================
+.n-form-aligned input,
+.n-form-aligned textarea,
+.n-form-aligned select,
+.n-form-aligned label,
+.n-form-aligned .n-help-inline,
+.n-form-message-inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+.n-form-aligned textarea {
+    vertical-align: top;
+}
+
+// Form inline layout style
+// ==========================================================================
+
+.n-label--inline {
+  display: inline-block;
+}
+
+.n-form--inline .n-form__box {
+  display: inline-block;
+}
+
+// Form layout
+// ==========================================================================
+
+.n-form__box {
+  vertical-align: top
+}
+
+.n-form--radio {
+  margin-right: 20px;
+}
+
+.n-form--verification {
+  .n-form__box {
+    vertical-align: bottom;
+  }
+}
+
+// .n-form--address,
+// .n-form--birth {
+//   .n-form__box  {
+//     margin-right: 37px;
+//   }
+//   .n-form__box:last-child {
+//     margin-top: 10px;
+//   }
+// }
+
+

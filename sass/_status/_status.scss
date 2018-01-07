@@ -1,0 +1,67 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Status
+// ==========================================================================
+
+
+// Hide and show
+// ========================================================================== 
+.n-is--hide {
+  display: none;
+}
+
+.n-is--show {
+  display: block;
+}
+
+
+// Main nav hover
+// ========================================================================== 
+
+.n-nav--hover {
+  cursor: pointer;
+}
+
+.n-nav--hide,
+.n-effect--hide {
+  @include transition(all 0.3s ease-in-out);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.n-nav--hover:hover .n-nav--hide,
+.n-effect--show:hover .n-effect--hide  {
+  visibility: visible;
+  opacity: 1;
+}
+
+// Ul hover effect
+// ========================================================================== 
+.n-hover--drop > ul {
+	@include transition(all 0.3s ease-in-out);
+	visibility: hidden;
+	opacity: 0;
+}
+
+.n-hover--drop:hover > ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+// Img hover effect
+// ========================================================================== 
+
+.n-hover--img a img {
+  @include scale(1);
+  @include transition(0.2s ease-in-out);
+}
+.n-hover--img a:hover {
+  img{
+    @include scale(1.03);
+    @include transition(0.6s ease-in-out);
+  }
+}

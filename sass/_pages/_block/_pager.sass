@@ -1,0 +1,61 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+
+// Page Number
+// ==========================================================================
+.n-pager
+	+clearfix
+	&__total
+		padding-top: 12px
+		margin-right: 10px
+	&__num
+		+clearfix
+		a 
+			float: left
+			color: $gr-dark
+			display: block
+			padding: 5px 15px
+			height: 36px
+			border: 1px solid $gr-lightest
+			border-right: none
+			line-height: 2
+		a:hover,
+		.current
+			color: $pr-medium
+		.current
+			border-bottom: 2px solid $pr-medium
+			font-weight: bold
+		[class^="n-icon--"]
+			margin-top: 5px
+		.n-pager--first,
+		.n-pager--last
+			padding-left: 12px
+			padding-right: 12px
+		.n-pager--last
+			border: 1px solid $gr-lightest
+		.n-pager--disable 
+			cursor: not-allowed
+			.n-icon--first
+				+sprite($icon-double-arrow-left01)
+			.n-icon--prev
+				+sprite($icon-arrow-left01)
+			.n-icon--next
+				+sprite($icon-arrow-right01)
+			.n-icon--last
+				+sprite($icon-double-arrow-right01)
+		.n-pager--active:hover
+			.n-icon--first
+				+sprite($icon-double-arrow-left03)
+			.n-icon--prev
+				+sprite($icon-arrow-left03)
+			.n-icon--next
+				+sprite($icon-arrow-right03)
+			.n-icon--last
+				+sprite($icon-double-arrow-right03)
+

@@ -1,0 +1,189 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// registered page style
+// ==========================================================================
+
+// registered common style
+// ==========================================================================
+.n-reg__wrap
+   +border-radius(4px)
+   .n-title__wrap 
+        margin-bottom: 10px
+
+.n-reg__left
+    border-right: 1px solid $gr-lightest
+    padding-right: 20px
+
+.n-reg__fields
+    li 
+        margin-bottom: 15px
+    .n-form__multiple
+        position: relative
+        z-index: map-get($zindex, zreo)
+    .n-form__multiple 
+        .n-form--title
+            width: 100%
+        .n-form--control
+            width: 280px
+        img 
+            display: inline-block
+            vertical-align: top
+    .n-btn__box
+        margin-top: 30px
+        margin-bottom: 0
+        .n-btn
+            width: 100%
+            margin-bottom: 10px
+        a:nth-child(3)
+            border-left: 1px solid $gr-lightest
+            padding-left: 10px
+            margin-left: 10px     
+
+.n-reg__hints
+    padding: 15px
+    .n-list--disc
+        padding-left: 20px
+        li 
+            margin-bottom: 5px 
+        li:last-child 
+            margin-bottom: 0  
+
+// login page style
+// ==========================================================================
+.n-reg
+    &__body
+        +clearfix
+        padding-bottom: 30px
+
+.n-reg
+    &__desc
+        li 
+            margin-bottom: 5px
+
+.n-reg
+    &__login
+        .n-form__multiple
+            .n-form--control,
+            img
+                margin-right: 8px
+        .n-form__multiple.n-has--error
+            margin-bottom: 40px
+        .n-form__multiple .n-form--error 
+            position: absolute
+            z-index: map-get($zindex, base)
+            top: 60px
+            left: 0
+
+.n-reg
+    &__login-btns
+        +layout-center(200)
+        .n-btn
+            width: 140px
+            padding: 12px 10px
+        li 
+            margin-bottom: 10px
+            &:first-child,
+            &:nth-child(4)
+                margin-bottom: 20px
+            &:nth-child(2),
+            &:nth-child(5)
+                margin-bottom: 5px
+
+// forget all style
+// ==========================================================================
+.n-reg
+    &__forget-body
+        +layout-center(680)
+    &__forget-box
+        padding-left: 30px
+        padding-right: 30px
+        .n-btn--primary
+            width: 100% 
+
+// register page style
+// ==========================================================================
+.n-reg__other-way
+    li 
+        margin-bottom: 10px
+    li:last-child 
+        margin-bottom: 0
+    .n-labels
+        display: inline-block
+        width: 96px
+        margin-right: 4px
+.n-reg__bn 
+    +layout-center(350)
+    display: block
+
+// register page terms style
+// ==========================================================================
+.n-reg
+    &__terms
+        .n-title--13 
+            margin-bottom: 10px
+    &__terms-box
+        margin-top: 5px
+        height: 80px
+        overflow-x: hidden
+        p 
+            margin-bottom: 10px
+        ol,
+        ul 
+            margin-left: 20px
+            li 
+                margin-bottom: 10px
+            li:last-child
+                margin-bottom: 20px
+
+// fb login page style
+// ==========================================================================
+.n-reg--fb-login
+.n-login__fb-desc
+    +clearfix
+    padding-top: 15px
+    padding-bottom: 0
+    li 
+        float: left
+        padding: 15px 35px 10px
+        border: 4px solid $gr2-dp-light
+        .n-btn
+            margin-top: 20px
+    .n-is--active
+        border: 4px solid $gr-darkest
+        position: relative;
+        z-index: map-get($zindex, zero)
+        &:after
+            content: ''
+            position: absolute
+            z-index: map-get($zindex, under)
+            left: 0
+            right: 0
+            bottom: -12px
+            margin: auto
+            +arrow-down(12, 12, 12, $gr-darkest, 1)
+    .n-title--16
+        margin-bottom: 10px
+    .n-btn--black 
+        +layout-center(162)
+
+.n-reg__login-fb
+    background-color: $gr2-lightest
+    border: 1px solid $gr-lightest
+    padding: 20px 30px 10px
+    .n-form__multiple
+        .n-form--title,
+        .n-form--control,
+        img 
+            margin-right: 10px
+
+.n-reg__login-box2
+    .n-list--disc
+        margin-left: 20px
+

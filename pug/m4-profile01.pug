@@ -1,0 +1,190 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 基本資料 -- 帳戶管理 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_account-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="帳戶管理">帳戶管理</a>&gt;</li>
+						<li class="current"><a href="#" title="基本資料">基本資料</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">基本資料</h2>
+						form(action="")#memProfile
+							.n-l-colmb20.n-mem__profile
+								<div class="n-l-colmb15 n-form__box">
+									<div class="n-title--13">性別</div>
+									<div class="n-form--radio n-label--inline">
+										<input type="radio" name="gender" id="male" value="option1"> 
+										<label class="" for="male">男</label>
+									</div>
+									<div class="n-form--radio n-label--inline">
+										<input type="radio" name="gender" id="female" value="option1"> 
+										<label class="" for="female">女</label>
+									</div>
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="userName"><span class="n-pr--medium">&#42;</span> 姓名</label>
+									<input class="n-form--control" type="text" name="userName" id="userName" placeholder="請輸入完整姓名" required>
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="loginID">登入帳號</label>
+									<input class="n-form--control n-form--disabled" type="text" name="loginID" id="loginID" value="pneumonoultramicroscopicsilicovol">
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="nickName">暱稱</label><span>（非必填）</span>
+									<input class="n-form--control" type="text" name="nickName" id="nickName">
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="userMail"><span class="n-pr--medium">&#42;</span> 電子信箱</label>
+									<input class="n-form--control n-form--edit" type="email" name="userMail" id="userMail" value="abc@gmail.com" required>
+								</div>
+								<div class="n-l-colmb15 n-form__box n-form--inline n-form--verification">
+									.n-form__box
+										<label class="n-title--13" for="mobile"><span class="n-pr--medium">&#42;</span> 行動電話</label>
+										<input class="n-form--control n-form--edit" type="text" name="mobile" id="mobile" value="0958234567" maxlength="10" required>
+									.n-form__box
+										<input class="n-btn n-btn--lv2" type="submit" value="手機驗證">	
+									<p class="fields--info col-10">如欲修改行動電話，請編輯電話號碼號後按下手機驗證，將再次進行手機號碼驗證流程，確保會員權益。東森購物網將發送驗證碼置您的手機，此服務完全免費</p>
+								</div>
+								<div class="n-l-colmb15 n-form--inline n-form--phone">
+									<div class="n-title--13">室內電話</div>
+									<div class="n-form__box">
+										<input class="n-form--control" type="text" name="areaCode" id="areaCode" placeholder="區碼" maxlength="4">
+									</div>
+									<div class="n-form__box">
+										<input class="n-form--control" type="text" name="phone" id="phone" placeholder="請輸入完整電話號碼" maxlength="8">
+									</div>
+								</div>
+								<div id="userBirth" class="n-l-colmb15 n-form--inline n-form--birth">
+									<div class="n-title--13">生日</div>
+									<div class="n-form__box col-3">
+										<input class="n-form--control" type="text" name="birthYear" id="birthYear" maxlength="4" placeholder="西元">
+									</div>
+									<div class="n-form__box col-3">
+										<select name="birthMonth" id="birthMonth" class="n-form--control">
+											<option value="01" selected="">請選擇月份</option>
+											<option value="01">1</option>
+											<option value="02">2</option>
+											<option value="03">3</option>
+											<option value="04">4</option>
+											<option value="05">5</option>
+											<option value="06">6</option>
+											<option value="07">7</option>
+											<option value="08">8</option>
+											<option value="09">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+									</div>
+									<div class="n-form__box col-3">
+										<select name="birthdate" id="birthdate" class="n-form--control">
+											<option value="0" selected="selected">請選擇日期</option>										    
+											<option value="01">1</option>
+											<option value="02">2</option>
+											<option value="03">3</option>
+											<option value="04">4</option>
+											<option value="05">5</option>
+											<option value="06">6</option>
+											<option value="07">7</option>
+											<option value="08">8</option>
+											<option value="09">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+									</div>
+								</div>
+								<div class="n-l-colmb15 n-form--inline n-form--address">
+									<div class="n-title--13"><span class="n-pr--medium">&#42;</span> 地址</div>
+									<div class="n-form__box col-3"> 
+										<select title="請選擇地區" id="country" name="country" class="n-form--control" required>
+											<option value="" selected="selected">請選擇地區</option>
+											<option value="Taiwan,臺灣地區">臺灣地區</option>
+											<option value="China,中國大陸地區">中國大陸地區</option>
+											<option value="HK,港澳地區">港澳地區</option>
+										</select>
+									</div>
+									<div class="n-form__box col-3">
+										<select title="請選擇縣／市" id="city" name="city" class="n-form--control" required>
+											<option value="" selected="selected">請選擇縣／市</option>
+										</select>
+									</div>
+									<div class="n-form__box col-3">
+										<select title="請選擇鄉鎮市區" id="district" name="district" class="n-form--control">
+											<option value="" selected="selected" required>請選擇鄉鎮市區</option>
+										</select>
+									</div>
+									<div class="n-form__box col-10">
+										<input class="n-form--control" type="text" name="address" id="address" required>
+										<p class="note--box-lv2">不定期舉辦活動，請填寫正確地址，方便日後寄送贈品</p>
+									</div>
+									<div class="n-form__box col-10 n-form--china n-is--hide">
+										.n-form__box.col-3
+											<select title="請選擇鄉鎮市區" id="ChinaDistrict" name="ChinaDistrict" class="n-form--control">
+												<option value="" selected="selected">請選擇區</option>
+											</select>
+										.n-form__box.col-7
+											<input class="n-form--control" type="text" name="ChinaAddress" id="ChinaAddress" >
+										<p class="note--box-lv2">不定期舉辦活動，請填寫正確地址，方便日後寄送贈品</p>
+									</div>
+								</div>
+								ul.n-l-colmb15
+									li
+										span.n-title--13 電子報：
+										<a class="n-blue--link" href="http://www.etmall.com.tw/PAGES/EDMSubscribe.aspx" title="查詢/更新訂閱電子報" target="_blank">查詢/更新訂閱電子報</a>
+									li 
+										span.n-title--13 發票歸戶：
+										<a class="n-blue--link" href="https://www.einvoice.nat.gov.tw/APMEMBERVAN/membercardlogin" title="使用電子發票載具歸戶" target="_blank">使用電子發票載具歸戶</a>
+								.n-l-colmb15.n-form__foot
+									<input type="reset" class="n-btn n-btn--normal" value="取消">
+									<input id="btnConfirm" type="submit" class="n-btn n-btn--primary" value="儲存">
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/jquery.validate.js')
+		script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

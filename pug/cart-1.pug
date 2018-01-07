@@ -1,0 +1,149 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 我的購物車 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-cart.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			form(action="cart-2.html")#cartStep1
+				include include/cart/_cart-header
+				.n-layout--lg.n-l-colmb30
+					include include/cart/_cart-process
+					.n-cart__body
+						ul.n-tab.n-tab--lv2#deliverTab
+							li.current
+								a(href="#cartTable1") 一般宅配 (
+									span.n-pr--medium 2
+									| )
+							li
+								a(href="#cartTable2") 24H 快配 (
+									span.n-pr--medium 2
+									| )
+							li
+								a(href="#cartTable3") 超商取貨 (
+									span.n-pr--medium 2
+									| )
+							li
+								a(href="#cartTable4") 快倉超取 (
+									span.n-pr--medium 2
+									| )
+						.n-l-colmb20.n-cart__box#cartTable1
+							include include/cart/_cart-deliver-1
+						.n-l-colmb20.n-cart__box.n-is--hide#cartTable2
+							include include/cart/_cart-deliver-2
+						.n-l-colmb20.n-cart__box.n-is--hide#cartTable3
+							include include/cart/_cart-deliver-3
+						.n-l-colmb20.n-cart__box.n-is--hide#cartTable4
+							include include/cart/_cart-deliver-3
+
+					//- include include/cart/_cart-total
+
+					.n-l-colmb20.n-cart__foot
+						.n-d-table.n-cart__total
+							.n-d-table__wrap.table--gr2-dp-light.n-d-table--bordered
+								.n-d-table__body
+									ul.n-d-table__body-row
+										li.n-cart--left
+											.n-right.n-cart__discount
+												ul.n-operating
+													li
+														input#totalDiscount1(type="checkbox", name="totalDiscount")
+														label.n-form--label(for="totalDiscount1") 使用折扣金
+													li
+														input#totalDiscount2(type="checkbox", name="totalDiscount", checked)
+														label.n-form--label(for="totalDiscount2") 使用得易Ponta卡兌換 <span>25000</span> 點
+													li
+														input#totalDiscount3(type="checkbox", name="totalDiscount", checked)
+														label.n-form--label(for="totalDiscount3") 使用環保綠點兌換 <span>25000</span> 點
+													li
+														input#totalDiscount4(type="checkbox", name="totalDiscount", checked)
+														label.n-form--label(for="totalDiscount4") 全站活動優惠 88折
+													li
+														input#totalDiscount5(type="checkbox", name="totalDiscount", checked)
+														label.n-form--label(for="totalDiscount5") 使用禮卷 /霸王A金
+												.n-use-gift#useGift
+													.n-use-gift__caption 使用禮物卡
+													.n-use-gift__body
+														.n-d-table
+															.n-d-table__wrap
+																ul.n-d-table__body-row
+																	li.n-title-1 序號
+																	li.n-title-2 金額
+																	li.n-title-3
+																ul.n-d-table__body-row
+																	li.n-title-1
+																		input.n-form--control(type="text", name="giftNum", placeholder="輸入禮物卡序號")
+																		i.n-icon--correct
+																		<p class="n-form--error"></p>
+																		<p class="fields--info">此禮物卡可用金額＄1,000</p>
+																	li.n-title-2
+																		input.n-form--control(type="text", name="giftPrice", placeholder="輸入禮物卡金額")
+																	li.n-title-3.n-edit
+																		a.n-blue--link(href="#", title="使用") 使用
+
+										li.n-cart--right 
+											.n-align-r.n-cart__prices
+												ul
+													li
+														span.n-price--16-regular 
+															span - $
+															span 100
+													li
+														span.n-price--16-regular 
+															span - $
+															span 250
+													li
+														span.n-price--16-regular 
+															span - $
+															span 250
+													li
+														span.n-price--16-regular 
+															span - $
+															span 6,671
+													li
+														span.n-price--16-regular 
+															span - $
+															span 1,000
+												.n-use-gift__prices
+													span.n-price--16-regular 
+														span - $
+														span 16,500
+							.n-d-table__foot.n-d-table__foot-colspan.n-table--count
+								button.n-btn.n-btn--primary(type="submit") 我要結帳
+								.n-right.n-align-r.n-price__subtotal 
+									.n-left.n-price__caption
+										.n-price__fare
+											span.n-price--hints (消費滿490元免運費)
+											| 運費
+										.n-price__regular 應付金額
+									.n-left.n-price__box
+										.n-price__fare
+											span.n-price--16 
+												span $
+												span 80
+										.n-price__regular
+											span.n-price--22 
+												span $
+												span 31,413
+
+					include include/cart/_cart-purchase
+				include include/cart/_cart-select-discount-overlay
+
+
+				include include/cart/_cart-footer
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/cart.js')
+		script(src = 'Resource/js201703/prototyping.js')

@@ -1,0 +1,172 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// Global position property
+// ==========================================================================
+
+.n-left {
+	float: left;
+}
+
+.n-right {
+	float: right;
+}
+
+.n-align-r,
+.n-text--right {
+	text-align: right
+}
+
+.n-align-c,
+.n-text--center {
+	text-align: center
+}
+
+// Global margin property
+// ==========================================================================
+
+.n-l-colmt20 {
+	margin-top: 20px;
+}
+.n-l-colmb10 {
+	margin-bottom: 10px;
+}
+
+.n-l-colmb15 {
+	margin-bottom: 15px;
+}
+
+.n-l-colmb20 {
+	margin-bottom: 20px;
+}
+
+.n-l-colmb30 {
+	margin-bottom: 30px;
+}
+
+.n-l-colmb50 {
+	margin-bottom: 50px;
+}
+
+.n-l--aside {
+	margin-right: 15px;
+}
+
+// Global theme
+// ==========================================================================
+
+.n-l-bgw-sm,
+.n-l-bgw-md,
+.n-l-bgw-border,
+.n-l-bgw-lg {
+	background-color: $gr2-dp-light;
+}
+.n-l-bgw-sm {
+	padding: 10px;
+}
+
+.n-l-bgw-md,
+.n-l-bgw-border {
+	padding: 15px;
+}
+
+.n-l-bgw-lg {
+	padding: 20px;
+}
+
+.n-l-bgw-border {
+	border: 1px solid $gr-lightest
+}
+
+// Global width
+// ==========================================================================
+
+.n-layout--aside,
+.n-l-230,
+.n-l--aside {
+	width: 230px;
+}
+
+.n-layout--md {
+	@include layout-center(1004);
+}
+
+.n-layout--lg {
+	@include layout-center(1260);
+	// @include breakpoint($pad) {
+	// 	@include layout-center(1004);
+	// }
+}
+
+.n-layout--half {
+	width: ((1260 - 20) / 2) + px;
+}
+
+.n-layout--full {
+	width: 100%;
+}
+
+.n-l-960 {
+	@include layout-center(960);
+}
+
+.n-l-1015 {
+	width: 1015px;
+}
+
+.n-w-1010 {
+	width: 1010px;
+}
+
+.n-layout--500 {
+	width: 500px;
+}
+
+.n-w-200 {
+	width: 200px;
+}
+
+
+
+.n-gotop {
+	@include border-radius(4px);
+	opacity: 0;
+	display: block;	
+	position: fixed;
+	z-index: map-get($zindex, backTop);
+	background-color: rgba($gr-dp-dark, .4);
+	width: 50px;
+	height: 50px;
+	bottom: 20%;
+	right: 0;
+	text-align: center;
+	padding-top: 5px;
+	span {
+		background-color: $gr-dp-light;
+		display: inline-block;
+		width: 22px;
+		height: 4px;
+	}
+	span:nth-child(2),
+	span:nth-child(3) {
+		position: absolute;
+		z-index: map-get($zindex, base);
+		width: 20px;
+	}
+	span:nth-child(2) {
+		@include rotate(-45);
+		left: 9px;
+		top: 30px;
+	}
+	span:nth-child(3) {
+		@include rotate(45);
+		right: 9px;
+		top: 30px;
+	}
+}
+
+
+
+

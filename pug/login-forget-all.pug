@@ -1,0 +1,69 @@
+doctype html
+html(lang='zh-Hant-TW')
+    head
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+        <![endif]-->
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=1260')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title 無法登入 -- 東森嚴選－ET Mall東森購物網
+        include include/global/_meta
+        link(href='Resource/css201703/n-base.css', rel='stylesheet')
+        link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+        link(href='Resource/css201703/n-common.css', rel='stylesheet')
+        link(href='Resource/css201703/n-reg.css', rel='stylesheet')
+    body.n-theme--gr2-lighter
+        main.n-wrapper
+            include include/global/_inside-head
+            .n-l-960.n-l-colmt20.n-l-colmb50
+                form#loginForgetAll(action="")
+                    .n-l-bgw-lg.n-l-bgw-border.n-reg__wrap
+                        .n-title__wrap.n-text--center 
+                            .n-title--18 無法登入
+                        .n-l-bgw-lg.n-reg__body
+                            p.n-text--center.n-l-colmb30 若您忘記密碼或帳號，請填入以下審核資料，將於資料比對無誤後， 發送至您註冊的電子郵件信箱或手機。
+                            .n-reg__forget-body
+                                ul.n-tab.n-tab--lv2#forgetTab
+                                    li.current
+                                        a(href="#forgetBox1", title="忘記密碼") 忘記密碼
+                                    li
+                                        a(href="#forgetBox2", title="忘記帳號") 忘記帳號
+                                .n-l-bgw-border.n-reg__forget-box#forgetBox1
+                                    .n-l-colmb15.n-form__box
+                                        .n-form--radio.n-label--inline
+                                            input#loginAccount(type="radio", name="Mode", value="0")
+                                            label(for="loginAccount") 登入帳號
+                                        .n-form--radio.n-label--inline
+                                            input#userId(type="radio", name="Mode", value="1")
+                                            label(for="userId") 身分證字號
+                                    .n-l-colmb15.n-form__box
+                                        label.n-title--13(for="acct") 帳號/身分證字號
+                                        input.n-form--control#acct(type="text", name="acct", placeholder="帳號/身分證字號")
+                                    .n-l-colmb15.n-form__foot
+                                        button.n-btn.n-btn--primary#forgetSubmit(type="submit") 送出
+                                .n-l-bgw-border.n-reg__forget-box.n-is--hide#forgetBox2
+                                    .n-l-colmb15.n-form__box
+                                        label.n-title--13(for="acctemail") 電子郵件信箱
+                                        input.n-form--control#acctemail(type="text", name="acctemail", placeholder="帳號/身分證字號")
+                                    .n-l-colmb15.n-form__foot
+                                        button.n-btn.n-btn--primary#forgeteMailSubmit(type="submit") 送出
+
+
+                        .n-reg__hints.note--box-lv3
+                             ul.n-list--disc
+                                li 如果您忘記您的個人資料，請撥打24H免費服務專線：<span class="n-pr--medium">0800-057-999</span>
+
+            include include/global/_footer
+            include include/global/_go-top
+        script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+        script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+        script(src = 'Resource/js201703/vendor/jquery.validate.js')
+        script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+        script(src = 'Resource/js201703/common/global.effect.js')
+        script(src = 'Resource/js201703/pages/registered.js')
+        script(src = 'Resource/js201703/prototyping.js')
+                

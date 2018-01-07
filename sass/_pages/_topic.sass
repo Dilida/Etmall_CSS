@@ -1,0 +1,458 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Topic page Style
+// ==========================================================================
+
+// topics main block and banner 
+// ==========================================================================
+.n-topics
+	&__main
+		+clearfix
+	&__block
+		margin-bottom: 30px
+	&__bn
+		position: relative
+		z-index: map-get($zindex, base)
+	&__bn-nav 
+		position: absolute
+		z-index: map-get($zindex, bnElems)
+		text-align: center
+		width: 100%
+		bottom: 10px
+		a
+			display: inline-block
+			background-color: $gr2-dp-light
+			width: 12px
+			height: 12px
+			margin-right: 5px
+			margin-left: 5px
+			+border-radius(100px)
+		.current
+			border: 2px solid $gr-medium
+			box-shadow: 0 0 0 2px $gr-medium
+
+// topics main block list style
+// ==========================================================================
+.n-topics
+	&__main-list
+		+clearfix
+		border-right: 1px solid $gr-lightest
+		a 
+			color: $gr-dark
+		li 
+			background-color: $gr2-dp-light
+			float: left
+			width: (100 / 4) + %
+			padding: 15px
+			border-top: 1px solid $gr-lightest
+			border-left: 1px solid $gr-lightest
+		li:nth-last-child(-n+4)
+			border-bottom: 1px solid $gr-lightest
+		.n-pic
+			overflow: hidden		
+		.n-pic,
+		.n-name
+			margin-bottom: 10px
+
+
+// topics main block promo list style
+// ==========================================================================
+.n-topics
+	&__promo-list
+		background-color: $gr-dp-light
+		padding: 15px 20px
+		+clearfix
+		a 
+			color: $gr-dark
+		.n-pic
+			position: relative
+			z-index: map-get($zindex, zero)
+			overflow: hidden
+		.n-promo-name
+			background-color: rgba($gr2-dp-light, .8)
+			border: 1px solid $gr-dark
+			+font-size($fz-15)
+			width: 140px
+			+txt-ellipsis(140)
+			padding: 10px
+			position: absolute
+			z-index: map-get($zindex, base)
+			color: $pr-lighter
+			text-align: center
+			margin: auto
+			left: 0
+			right: 0
+			bottom: 10px
+		.n-sub-name
+			color: $se-medium
+			margin-bottom: 10px
+			+font-size($fz-15)
+		.n-name,
+		.n-sub-name
+			+txt-ellipsis(212)
+		.n-desc
+			background-color: $gr2-dp-light
+			padding: 10px 15px 15px
+		li 
+			float: left
+			width: 227px
+			margin-right: 20px
+			margin-bottom: 20px
+		li:nth-child(4n)
+			margin-right: 0
+		li:nth-last-child(-n+4)
+			margin-bottom: 0 
+
+// aside block include topics nav and keywords
+// ==========================================================================
+.n-topics
+	&__aside
+		width: 230px
+		margin-right: 20px
+	&__aside-title
+		background-color: $gr-darkest
+		color: $gr2-dp-light
+		h2
+			+font-size($fz-18)
+			padding: 8px 20px
+			+txt-ellipsis(220)
+.n-topics
+	&__nav
+		background-color: $gr2-dp-light
+		border-left: 5px solid $gr-darkest
+		border-right: 1px solid $gr-lightest
+		margin-bottom: 10px	
+	&__menu
+		height: 480px
+		overflow: hidden
+		a 
+			display: block
+			padding: 12px 20px
+			border-bottom: 1px solid $gr-lightest
+			color: $gr-dark
+		a:hover
+			color: $pr-medium
+		span
+			display: inline-block
+			+txt-ellipsis(180)
+
+.n-topics
+	&__keyword
+		border-left: 5px solid $gr-darkest
+		background-color: $gr2-dp-light
+	&__keys
+		border-right: 1px solid $gr-lightest
+		border-bottom: 1px solid $gr-lightest
+		padding: 10px 10px 0
+		height: 119px
+		overflow: hidden
+		li 
+			display: inline-block
+			margin-bottom: 10px
+			margin-left: 5px
+		a
+			background-color: $pr-medium
+			color: $gr2-dp-light
+			display: block
+			padding: 4px
+			+border-radius(4px)
+
+
+// four banner block
+// ==========================================================================
+.n-topics
+	&__model 
+		// width: 1010px
+		margin-top: 15px
+		.n-topics__title
+			margin-bottom: 10px
+	&__bn-4
+		+clearfix
+		a 
+			color: $gr-dark
+		li 
+			float: left
+			width: 495px
+			position: relative
+			z-index: map-get($zindex, base)
+			a:hover
+				color: $gr-dark
+		li:nth-child(1),
+		li:nth-child(2)
+			margin-bottom: 20px
+		li:nth-child(odd) 
+			margin-right: 20px
+		.n-pic
+			overflow: hidden
+	&__caption 
+		position: absolute
+		z-index: map-get($zindex, second)
+		+font-size($fz-18)
+		width: 310px
+		left: 0
+		right: 0
+		bottom: 20px
+		margin: auto	
+		.n-left
+			padding-top: 20px
+			padding-bottom: 20px
+			p 
+				margin-left: auto
+				margin-right: auto
+		.n-left:first-child
+			background-color: rgba($gr2-dp-light, .8)
+			width: (310 - 204) + px
+			text-align: center
+			p 
+				+txt-ellipsis(80)
+		.n-left:last-child
+			width: 204px
+			text-align: center
+			color: $gr2-dp-light
+			p 
+				+txt-ellipsis(180)
+	&__caption:after
+		content: ""
+		position: absolute
+		z-index: map-get($zindex, under)
+		border: 1px solid $gr2-dp-light
+		width: (310 - 16) + px
+		height: (65 - 16) + px
+		left: 8px
+		top: 8px
+
+// eight item with left photo  and right photo 
+// ==========================================================================
+.n-topics
+	&__pic 
+		position: relative
+		z-index: map-get($zindex, base)
+		overflow: hidden
+		img
+			width: 252px
+	&__pic-title
+		background-color: rgba($se-dark, .5)
+		position: absolute
+		z-index: map-get($zindex, second)
+		width: 252px
+		height: 130px
+		padding-top: 20px
+		left: 0
+		bottom: 0
+		text-align: center
+	&__pic-sub,
+	&__pic-main
+		margin-left: auto
+		margin-right: auto
+	&__pic-sub
+		color: $gr2-dp-light
+		+font-size($fz-22)
+		+txt-ellipsis(160)
+		margin-bottom: 5px
+	&__pic-main
+		color: $se-lightest	
+		+font-size($fz-32)
+		+txt-ellipsis(180)
+	&__box
+		+clearfix
+		margin-top: 10px
+	&__seven-box
+		.n-topics__eight-list
+			background-color: $gr2-dp-light
+			+clearfix
+			width: (252 * 4) + px
+			a 
+				color: $gr-dark
+			li 
+				width: (1260 / 5) + px
+				float: left
+				border-top: 1px solid $gr-lightest
+				border-right: 1px solid $gr-lightest
+				padding: 12px 20px
+			li:nth-child(n+5)
+				border-bottom: 1px solid $gr-lightest
+			.n-pic,
+			img
+				width: 140px
+			.n-pic
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 10px
+			.n-pic,
+			.n-name
+				margin-bottom: 10px
+			.n-name,
+			.n-prc--lv1
+				+layout-center(180)
+			.n-pic
+				overflow: hidden
+			.n-name
+				height: 36px
+				overflow: hidden
+		.n-topics--pic-left,
+		.n-topics--pic-right
+			li:first-child,
+			li:nth-child(5)
+				border-left: 1px solid $gr-lightest
+
+// eight blocks 
+// ==========================================================================
+.n-topics
+	&__title 
+		.n-up-down--title
+			padding-top: 5px
+			margin-right: 16px
+		span
+			display: inline-block
+			vertical-align: top
+	&__eight-box
+		background-color: $gr2-dp-light
+		border: 1px solid $gr-lightest
+		border-top: 2px solid $gr-lightest
+		padding: 20px
+		height: 806px
+		overflow: hidden
+		position: relative
+		z-index: map-get($zindex, base)
+		&:after
+			content: ""
+			position: absolute
+			z-index: map-get($zindex, second)
+			width: 100%
+			height: 1px
+			background-color: $gr-lightest
+			left: 0
+			top: (806/2) + px
+		.n-topics__eight-list 
+			+clearfix
+			a 
+				color: $gr-dark
+			li
+				float: left
+				width: 290px
+				margin-right: 19px
+			li:nth-child(4n)
+				margin-right: 0
+			li:nth-child(-n+4)
+				// border-bottom: 1px solid $gr-lightest
+				margin-bottom: 15px
+			li:nth-child(n+4)
+				margin-top: 15px
+			li:nth-child(4)
+				margin-top: 0
+			.n-pic,
+			.n-name
+				margin-bottom: 10px
+			img 
+				width: 290px
+				height: 290px
+			.n-pic
+				overflow: hidden
+			.n-name
+				height: 36px
+				overflow: hidden
+
+// Photo with sixth items and Images with six item common style
+// ==========================================================================
+.n-topics__pic-with-six-item,
+.n-topics__images-with-six-item
+	padding: 20px
+	a 
+		color: $gr-dark
+	ul li 
+		float: left
+		margin-right: 19px
+		margin-bottom: 15px
+	ul li img 
+		width: 290px
+		height: 290px
+	.n-pic,
+	.n-name
+		margin-bottom: 10px
+	.n-pic
+		overflow: hidden
+	.n-name
+		+txt-ellipsis(290)
+	.n-topics__top,
+	.n-topics__bottom
+		+clearfix
+	.n-topics__bottom 
+		li 
+			margin-bottom: 0
+		li:nth-child(4)
+			margin-right: 0
+
+// Photo with sixth items
+// ==========================================================================
+.n-topics__pic-with-six-item
+	position: relative
+	z-index: map-get($zindex, zero)
+	background-color: $gr2-dp-light
+	border: 1px solid $gr-lightest
+	border-top: 2px solid $gr-lightest
+	&:after
+		background-color: $gr-lightest
+		position: absolute
+		z-index: map-get($zindex, base)
+		content: ""
+		width: 100%
+		height: 1px
+		left: 0
+		top: 395px
+	.n-topics__top
+		.n-left:first-child
+			width: 618px
+		margin-bottom: 25px
+	.n-topics__photo
+		background-color: $fo-darkest
+		width: 600px
+		height: 360px
+	.n-topics__photo-title
+		padding-top: 10px
+		color: $gr2-dp-light
+		span 
+			+font-size($fz-32)
+			margin-right: 10px
+		span:last-child
+			color: $fo-lightest
+
+// Images with six item
+// ==========================================================================
+.n-topics__images-with-six-item
+	background-color: $se-lighter
+	.n-topics__image
+		margin-right: 22px
+	ul li
+		background-color: $gr2-dp-light
+		width: 290px
+		padding: 15px
+		text-align: center
+	ul li img 
+		width: 260px
+		height: 260px
+	.n-sub-name,
+	.n-name
+		margin-bottom: 10px
+	.n-sub-name
+		position: relative
+		z-index: map-get($zindex, zero)
+		color: $gr2-dp-light
+		padding-top: 10px
+		padding-bottom: 10px
+	.n-sub-name:after
+		background-color: $gr-dp-dark
+		content: ""
+		position: absolute
+		z-index: map-get($zindex, under)
+		left: -15px
+		top: 0
+		width: 290px
+		height: 38px
+	.n-topics__top
+		margin-bottom: 20px
+		ul li:last-child
+			margin-right: 0 

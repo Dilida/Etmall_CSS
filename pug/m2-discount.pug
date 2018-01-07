@@ -1,0 +1,143 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 折扣金 -- 我的優惠 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_discount-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="我的優惠">我的優惠</a>&gt;</li>
+						<li class="current"><a href="#" title="折扣金">折扣金</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						include include/member/_discount-page-nav
+						.n-mem__caption
+							<h2 class="n-left n-title--18 n-mem--title">折扣金</h2>
+							<a class="n-right n-blue--link" href="" title="折扣金使用說明" target="_blank">折扣金使用說明</a>
+						.n-l-colmb20
+							p.note--box-lv3
+								span.n-pr--medium 貼心小提醒：
+								| 今日到期折扣金額 
+								span.n-pr--medium.n-font--bold 300
+								|  元
+						form(action="")
+							.n-l-colmb20
+								<div class="n-mem--field">
+									<input class="n-form--control" type="text" placeholder="請輸入折扣金兌換序號">
+									<input class="n-btn n-btn--primary " type="submit" value="確認送出">
+								</div>
+							.n-l-colmb20.n-mem__tool-bar
+								<ul id="ticketListNav" class=" n-tab__sub-lv3">
+									<li class="current"><a href="#discountList1" title="可使用折扣金">可使用折扣金</a></li>
+									<li><a href="#discountList2" title="已使用折扣金">已使用折扣金</a></li>
+								</ul>
+							<div id="discountList1" class="n-l-colmb20 n-discount__box">
+								<div class="n-title--13">以下是您期效內的明細</div>
+								<table class="table table--bordered">
+									<tr class="table--caption">
+										<th class="col-2">明細</th>
+										<th class="col-1">生效日</th>
+										<th class="col-1">到期日</th>
+										<th class="col-1">加給金額</th>
+										<th class="col-1">已使用金額</th>
+										<th class="col-1">可使用金額</th>
+									</tr>
+									<tr>
+										<td>
+											<p>2015/06/26 13:26:47 </p>
+											<p>7月生日會員送300折扣金</p>
+										</td>
+										<td>
+											<p>2015/07/01</p>
+											<p>00:00:00 </p>
+										</td>
+										<td>
+											<p>2015/07/31 </p>
+											<p>23:59:00</p>
+										</td>
+										<td>
+											<p class="n-pr--medium n-font--bold">+ 300</p>
+										</td>
+										<td>
+											<p class="n-font--bold">- 300</p>
+										</td>
+										<td>
+											<p class="n-pr--medium n-font--bold">300</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="6" class="n-align-r">
+											<p>有效期間內可用餘額總計 <span class="n-price--26">$<span>22,138,900</span></span></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div id="discountList2" class="n-l-colmb20 n-discount__box n-is--hide">
+								<div class="n-title--13">以下是您已使用過的明細</div>
+								<table class="table table--bordered">
+									<tr class="table--caption">
+										<th class="col-2">交易日期</th>
+										<th class="col-6">折抵商品</th>
+										<th class="col-2">折扣金額</th>
+									</tr>
+									<tr>
+										<td>
+											<p>2015/06/26 13:26:47 </p>
+										</td>
+										<td>
+											<p>折扣金折抵 [6181062] ST.MALO經典名品限量羊駝男外套</p>
+										</td>
+										<td>
+											<p class="n-font--bold">-149</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2015/06/28 13:26:47 </p>
+										</td>
+										<td>
+											<p>折扣金折抵 [6181840] SUPER.S 2017旗艦限定機能飛行夾克</p>
+										</td>
+										<td>
+											<p class="n-font--bold">-36</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2015/06/29 13:26:47 </p>
+										</td>
+										<td>
+											<p>折扣金折抵 [6031840] 【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+										</td>
+										<td>
+											<p class="n-font--bold">-493</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						
+			include include/global/_footer
+			include include/global/_go-top
+
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

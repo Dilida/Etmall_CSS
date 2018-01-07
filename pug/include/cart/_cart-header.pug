@@ -1,0 +1,11 @@
+.n-header__body.n-cart--header.n-l-colmb30
+	.n-layout--lg
+		h1.n-left
+			a.n-ehs--logo(href="" title="東森嚴選－ET Mall東森購物網") 東森嚴選－ET Mall東森購物網
+		ul.n-right.n-cart__discount
+			- var discountKeys = [{discountTxt:'禮券', discountNum: '10,000'}, {discountTxt:'折扣金', discountNum: '10,000'}, {discountTxt:'得易Ponta點數', discountNum: '10,000'}, {discountTxt:'禮券', discountNum: '10,000'}, {discountTxt:'折扣金', discountNum: '10,000'}]
+			each discountKey in discountKeys
+				li
+					span= discountKey.discountTxt
+					span.n-pr--medium= discountKey.discountNum
+					| 點

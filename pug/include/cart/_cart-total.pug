@@ -1,0 +1,76 @@
+.n-l-colmb20.n-cart__foot
+	table.table.table--bordered.table--gr2-dp-light.n-cart__total
+		tr
+			td.n-cart--left
+				.n-right.n-cart__discount
+					ul.n-operating
+						li
+							input#totalDiscount1(type="checkbox", name="totalDiscount", checked)
+							label.n-form--label(for="totalDiscount1") 使用折扣金
+						li
+							input#totalDiscount2(type="checkbox", name="totalDiscount", checked)
+							label.n-form--label(for="totalDiscount2") 使用得易Ponta卡兌換 <span>25000</span> 點
+						li
+							input#totalDiscount3(type="checkbox", name="totalDiscount", checked)
+							label.n-form--label(for="totalDiscount3") 使用環保綠點兌換 <span>25000</span> 點
+						li
+							input#totalDiscount4(type="checkbox", name="totalDiscount", checked)
+							label.n-form--label(for="totalDiscount4") 全站活動優惠 88折
+						li
+							input#totalDiscount5(type="checkbox", name="totalDiscount", checked)
+							label.n-form--label(for="totalDiscount5") 使用禮卷 /霸王A金
+					.n-use-gift#useGift
+						.n-use-gift__caption 使用禮物卡
+						.n-use-gift__body
+							table.table
+								tr
+									td.n-title-1 序號
+									td.n-title-2 金額
+									td.n-title-3
+								tr
+									td
+										input.n-form--control(type="text", name="giftNum", placeholder="輸入禮物卡序號")
+										i.n-icon--correct
+										<p class="n-form--error"></p>
+										<p class="fields--info">此禮物卡可用金額＄1,000</p>
+									td
+										input.n-form--control(type="text", name="giftPrice", placeholder="輸入禮物卡金額")
+									td.n-edit
+										a.n-blue--link(href="#", title="使用") 使用
+			td.n-cart--right
+				.n-align-r.n-cart__prices
+					ul
+						li
+							span.n-price--16-regular - $
+								span 100
+						li
+							span.n-price--16-regular - $
+								span 250
+						li
+							span.n-price--16-regular - $
+								span 250
+						li
+							span.n-price--16-regular - $
+								span 6,671
+						li
+							span.n-price--16-regular - $
+								span 1,000
+					.n-use-gift__prices
+						span.n-price--16-regular - $
+							span 16,500
+		tr.n-table--count
+			td(colspan="2")
+				button.n-btn.n-btn--primary(type="submit") 我要結帳
+				.n-right.n-align-r.n-price__subtotal 
+					.n-left.n-price__caption
+						.n-price__fare
+							span.n-price--hints (消費滿490元免運費)
+							| 運費
+						.n-price__regular 應付金額
+					.n-left.n-price__box
+						.n-price__fare
+							span.n-price--16 $
+								span 80
+						.n-price__regular
+							span.n-price--22 $
+								span 31,413

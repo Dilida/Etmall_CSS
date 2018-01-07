@@ -1,0 +1,89 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 編輯收件人 -- 帳戶管理 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_account-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="帳戶管理">帳戶管理</a>&gt;</li>
+						<li><a href="#" title="收件人管理">收件人管理</a>&gt;</li>
+						<li class="current"><a href="#" title="編輯收件人">編輯收件人</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">編輯收件人</h2>
+						form(action="")
+							.n-l-colmb20.n-mem__profile
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="userName"><span class="n-pr--medium">&#42;</span> 姓名</label>
+									<input class="n-form--control n-form--edit" type="text" name="" id="userName" value="王小明">
+									<p class="n-form--error">欄位資訊錯誤 ，請輸入正確資訊</p>
+								</div>
+								<div class="n-l-colmb15 n-form--inline n-form--address">
+									<div class="n-title--13">地址</div>
+									<div class="n-form__box col-3"> 
+										<select title="請選擇地區" id="country" name="" class="n-form--control n-form--edit">
+											<option value="" selected="selected">請選擇地區</option>
+											<option value="Taiwan,臺灣地區">臺灣地區</option>
+											<option value="China,中國大陸地區" disabled="">中國大陸地區</option>
+											<option value="HK,港澳地區" disabled="">港澳地區</option>
+										</select>
+									</div>
+									<div class="n-form__box col-3">
+										<select title="請選擇縣／市" id="city" name="city" class="n-form--control n-form--edit">
+											<option value="" selected="selected">請選擇縣／市</option>
+										</select>
+									</div>
+									<div class="n-form__box col-3">
+										<select title="請選擇鄉鎮市區" id="canton" name="canton" class="n-form--control n-form--edit">
+											<option value="" selected="selected">請選擇鄉鎮市區</option>
+										</select>
+									</div>
+									<div class="n-form__box col-10">
+										<input class="n-form--control n-form--edit" type="text" name="" id="address" value="大鵬路陳平里12之3巷5之1弄3之2鄰58號6樓之3">
+									</div>
+								</div>
+								<div class="n-l-colmb15 n-form__box col-10">
+									<label class="n-title--13" for="mobile">行動電話</label>
+									<input class="n-form--control n-form--edit" type="text" name="" id="mobile" value="0911234567">
+									<p class="n-form--error">欄位資訊錯誤 ，請輸入正確資訊</p>
+								</div>
+								<div class="n-l-colmb15 n-form--inline n-form--phone">
+									<div class="n-title--13">室內電話</div>
+									<div class="n-form__box">
+										<input class="n-form--control n-form--edit" type="text" name="" id="tel" value="0836">
+									</div>
+									<div class="n-form__box">
+										<input class="n-form--control n-form--edit" type="text" name="" id="phone" value="23719865">
+									</div>
+									<p class="n-form--error">欄位資訊錯誤 ，請輸入正確資訊</p>
+								</div>
+								.n-form__foot
+									<input type="reset" class="n-btn n-btn--normal" value="取消">
+									<input type="submit" class="n-btn n-btn--primary" value="確定">
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

@@ -1,0 +1,57 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// rating style
+// ==========================================================================
+
+// Member rating style
+// ==========================================================================
+
+.n-rating__wrap li,
+.n-rating__star {
+    @include clearfix
+}
+    
+.n-rating {
+    &__wrap {
+        > li .n-left:first-child {
+            padding-top: 4px;
+            margin-right: 20px
+        }  
+        > li {
+            @include clearfix;
+            margin-bottom: 10px;
+        }
+    }
+    &__star {
+        cursor: pointer
+    }
+    &--input {
+        float: right;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        margin-left: -24px;
+        margin-right: 8px;
+        opacity: 0;
+    }
+}
+.n-rating--star,
+.n-rating__star:hover .n-rating--star {
+    float: right;
+    cursor: pointer;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    @include sprite($icon-star-gray);
+}
+
+.n-rating__star:hover .n-rating--star:hover,
+.n-rating__star:hover .n-rating--star:hover ~ .n-rating--star,
+.n-rating--input:checked ~ .n-rating--star {
+    @include sprite($icon-star-yellow);
+}

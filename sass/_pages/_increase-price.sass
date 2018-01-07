@@ -1,0 +1,294 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// increase price style
+// ==========================================================================
+.n-increase
+	&__promo
+		position: relative
+		z-index: map-get($zindex, zero)
+	&__intro
+		background-color: rgba($gr-dp-dark, 0.7)
+		color: $gr2-dp-light
+		width: 590px
+		
+		position: absolute
+		z-index: map-get($zindex, base)
+		left: 0
+		bottom: 20px
+		padding: 20px
+		.n-title--36
+			margin-bottom: 20px
+			+txt-ellipsis(550)
+	&__intro-text
+		max-height: 180px
+		overflow: hidden
+		p 
+			+txt-ellipsis(550)
+			+font-size($fz-18)
+			margin-bottom: 10px
+	&__intro-hints
+		margin-right: 4px
+		margin-left: 4px
+		+font-size($fz-24)
+		color: $ye-medium
+
+
+// increase promo
+// ==========================================================================
+
+// increase select item, left part
+// ==========================================================================
+.n-increase
+	&__item
+		background-color: $gr2-dp-light
+		.n-increase__prod-head,
+		.n-increase__total-head
+			+font-size($fz-18)
+			padding: 10px 15px
+.n-increase
+	&__item
+		+clearfix
+	&__pord
+		position: relative
+		z-index: map-get($zindex, zero)
+	&__prod-head
+		
+		span 
+			margin-right: 4px
+			margin-left: 4px
+	&__pord-body
+		position: relative
+		z-index: map-get($zindex, zero)
+		overflow: hidden
+		.n-l-arrow__wrap,
+		.n-r-arrow__wrap
+			top: 35%
+		ul 
+			+clearfix
+		> ul 
+			padding: 15px
+		> ul > li 
+			float: left
+			margin-right: 30px
+			width: 180px
+			overflow: hidden
+			> a 
+				height: 180px
+				display: block
+	&__pord-add-more,
+	&__pord-add-item
+		background-color: $gr-lightest
+		text-align: center
+		+font-size($fz-22)
+		a 
+			color: $gr-dark
+			padding-top: 40%
+	&__pord-add-more
+		background-color: $gr-light
+		a 
+			color: $gr2-dp-light
+			padding-top: 35%
+	&__pord-item
+		position: relative
+		z-index: map-get($zindex, zero)
+		.n-increase__pord-tool
+			background-color: rgba($gr-dp-dark, 0.7)
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 0
+			top: 142px
+			width: 180px
+			text-align: center
+			&:after
+				content: ''
+				position: absolute
+				z-index: map-get($zindex, under)
+				background-color: $gr2-dp-light
+				width: 1px
+				height: 50%
+				margin: auto
+				top: 10px
+				left: 0
+				right: 0
+			a 
+				width: 49%
+				color: $gr2-dp-light
+				display: inline-block
+				padding: 10px
+		.n-select__spec
+			+transition(all 0.3s ease-in-out)
+			width: 180px
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 0
+			top: 180px
+			ul 
+				padding-bottom: 8px
+			li 
+				margin-bottom: 6px
+				
+			.n-form--control
+				width: 100px
+				height: 34px
+			.n-btn--primary
+				width: 100%
+		.n-active
+			top: 0
+	&__pord--modify
+		.n-select__spec
+			top: 0
+		
+
+// increase select item, right part
+// ==========================================================================
+.n-increase
+	&__total
+		position: relative
+		z-index: map-get($zindex, zero)
+		height: (245 - 30) + px
+		&:after 
+			content: ''
+			position: absolute
+			background-color: $gr-lightest
+			z-index: map-get($zindex, under)
+			width: 1px
+			height: 255px
+			top: 0
+			left: 0
+	&__total-body
+		text-align: center
+		padding-top: 30px
+		.n-price__exlarge
+			margin-bottom: 10px	
+		.n-btn--primary
+			width: 170px
+// increase tool block style
+// ==========================================================================
+.n-increase
+	&__tool
+		+clearfix
+		+font-size($fz-15)
+		padding: 0 10px 15px
+		a 
+			color: $gr-dark
+	&__sort
+		+clearfix
+		.current a 
+			color: $pr-medium
+		li 
+			float: left
+			margin-right: 15px
+		 [class^="n-icon--"]
+		 	vertical-align: top
+	&__social
+		+clearfix
+		li 
+			float: left
+			margin-left: 6px
+
+
+
+// increase purchase style
+// ==========================================================================
+.n-increase__box
+	padding-top: 0
+	.n-purchase__list
+		> li
+			width: 234px
+			padding: 4px
+			position: relative
+			z-index: map-get($zindex, zero)
+			margin-top: 15px
+			overflow: hidden
+		> li:last-child
+			margin-right: 0,
+		> li:nth-child(5n + 0) 
+			margin-right: 0
+		.n-sale--subtitle
+			+txt-ellipsis(226)
+			height: 18px
+			margin-bottom: 5px
+		.n-pic
+			width: 226px
+			height: 226px
+		.n-price__wrap
+			margin-bottom: 10px
+		.n-btn
+			width: 100%
+		.n-select__spec
+			+transition(all 0.3s ease-in-out)
+			position: absolute
+			z-index: map-get($zindex, base)
+			width: 234px
+			left: 0
+			top: 390px
+			.n-form--control
+				width: 160px
+		.n-active
+			top: 166px
+		.n-selected:after
+			content: ""
+			position: absolute
+			z-index: map-get($zindex, under)
+			border: 1px solid $pr-medium
+			top: 0
+			right: 0
+			width: 100%
+			height: 388px
+
+
+
+// increase price notice
+// ==========================================================================
+.n-increase
+	&__notice
+		.n-title--15
+			margin-bottom: 10px
+		.n-list--disc
+			margin-left: 20px
+			li 
+				margin-bottom: 6px
+
+
+// increase fixed tool
+// ==========================================================================
+.n-increase
+	&__fixed
+		border: 1px solid $pr-medium
+		background-color: $ye-dp-light
+		position: fixed
+		z-index: map-get($zindex, fourteen)
+		left: 0
+		right: 0
+		bottom: 0
+	&__fixed-head
+		+clearfix
+		height: 43px
+		overflow: hidden
+	&__fixed-left
+		padding: 7px 20px
+		a 
+			color: $gr-dark
+		> .n-left 
+			margin-top: 6px
+		.n-icon--switch
+			vertical-align: top
+			margin-right: 5px
+	&__fixed-right
+		background-color: $pr-medium
+		text-align: center
+	&__fixed-body
+		border-top: 1px solid $pr-medium
+		.n-increase__pord-body
+			> ul > li 
+				margin-left: 0
+				margin-right: 28px
+		.n-r-arrow__wrap
+			right: 0

@@ -1,0 +1,149 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 符合 nike 的搜尋結果 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-search.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-l-colmt20
+				include include/block/_breadcrumb-search
+				.n-search-result
+					aside.n-left.n-l-230.n-search__nav
+						.n-aside__caption
+							.n-title--16 分類選擇
+						ul
+							li.current
+								a(href="search-result-lv2.html", title="視聽家電") 視聽家電
+									span ( 123 )
+							each searchNav in [{navName: '家具寢室', navNameNum:'(77)' }, {navName: '民生日用', navNameNum:'(16)' }, {navName: '3C 資訊', navNameNum:'(6)' }, {navName: '服飾', navNameNum:'(49)' }, {navName: '電視購物', navNameNum:'(10)' }, {navName: '精品', navNameNum:'(25)' }, {navName: '休閒育樂', navNameNum:'(3)' }]
+								li
+									a(href="", title= searchNav.navName)= searchNav.navName
+										span= searchNav.navNameNum
+					form(action="")
+						h1.n-is--hide 這邊放關鍵字
+						.n-left.n-l-1015.n-l-colmb50.n-search-result__wrap
+							include include/search/_search-tool  
+							.n-l-bgw-md.n-l-colmb50.n-search-result__body#searchResult
+								ul.n-hover--img.n-l-colmb30.n-card__list
+									li
+										.n-card__box
+											a.n-pic(href="product.html", title="鍋寶304不銹鋼電鍋超值熱銷組")
+												.n-soldout
+													p.n-title--15 銷售一空
+												img(src="https://goo.gl/RLvNVt", alt="鍋寶304不銹鋼電鍋超值熱銷組")
+											.n-labels__wrap
+											p.n-sale--subtitle
+											p.n-name
+												a(href="product.html", title="鍋寶304不銹鋼電鍋超值熱銷組") 鍋寶304不銹鋼電鍋超值
+											ul.n-desc__list
+												li 搭配專用真皮鑰匙圈，經典時尚配件
+												li Microban葉語傾城抗菌兩用被床罩組
+												li 磁吸式帽蓋設計，避免掉蓋問題
+											p.n-price__wrap
+												span.n-price--normal $ 113,000
+												span.n-price--16 $ 
+													span 113,000
+											.n-card__btn
+												a.n-btn.n-btn--card-icon
+													i.n-icon--collect
+													span 加入蒐藏
+												a.n-btn.n-btn--normal
+													i.n-icon--mail
+													span 貨到通知我
+									li
+										.n-card__box
+											a.n-pic(href="product.html", title="Microban葉語傾城抗菌兩用被床罩組-雙")
+												.n-icon--play
+													.n-icon--arrow-left
+												img(src="https://goo.gl/QVMjuc", alt="Microban葉語傾城抗菌兩用被床罩組-雙")
+											.n-labels__wrap
+											p.n-sale--subtitle
+											p.n-name
+												a(href="product.html", title="Microban葉語傾城抗菌兩用被床罩組-雙") 鍋寶304不銹鋼電鍋超值
+											ul.n-desc__list
+												li 搭配專用真皮鑰匙圈，經典時尚配件
+												li Microban葉語傾城抗菌兩用被床罩組
+												li 磁吸式帽蓋設計，避免掉蓋問題
+											p.n-price__wrap
+												span.n-price--normal $ 113,000
+												span.n-price--16 $ 
+													span 113,000
+											.n-card__btn
+												a.n-btn.n-btn--card-icon
+													i.n-icon--collect
+													span 加入蒐藏
+												a.n-btn.n-btn--normal
+													i.n-icon--mail
+													span 貨到通知我
+									- var pordItems = [ {hotUrl: 'product.html', name: '[漁季]頂級挪威鯖魚', imgSrc: 'https://goo.gl/lhucKm', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 113,000', price: '113,000'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/PgBSo8', name: '【lingling】鑲珍珠扭結肩帶配色洋裝(夢幻藍綠)A714-01', imgSrc: 'https://goo.gl/Gd8UOd', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/C4ca65', name: 'lingling】蕾絲紗裙飾蝶結平口小禮服洋裝(浪漫白)A2029-01', imgSrc: 'https://goo.gl/0DrBNi', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/3ZXbLe', name: 'CANDY小舖 大圓領雙層蕾絲襯內裡圓裙洋裝', imgSrc: 'https://goo.gl/2fMmVf', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/ycVtF8', name: '【Jisen】淑女條紋七分袖收腰洋裝', imgSrc: 'https://goo.gl/77Sh0Y', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/guXRD9', name: '連身裙 條紋拼接開叉吊帶洋裝LZ6836-創翊韓都', imgSrc: 'https://goo.gl/H8UFwW', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/gtoA6Q', name: '【A1 Darin】韓版時尚修身顯瘦短袖棉麻洋裝', imgSrc: 'https://goo.gl/F5FQ1M', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/QB7fPR', name: 'Candy小舖 貼身中腰合成皮革短裙 - 灰色', imgSrc: 'https://goo.gl/wTYjDQ', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/Ca6qsP', name: 'Candy小舖 復古鄉村小碎花收臀窄裙-灰色', imgSrc: 'https://goo.gl/npKOik', desc1: '簡練優雅呈現英倫品味', desc2: '磁吸式帽蓋設計，避免掉蓋問題', desc3: '搭配專用真皮鑰匙圈，經典時尚配件', normalPrice: '$ 1,113,000', price: '1,113,000'}]
+									each pordItem, index in pordItems
+										li
+											.n-card__box
+												a.n-pic(href= pordItem.hotUrl, title= pordItem.name)
+													img(src= pordItem.imgSrc, alt= pordItem.name)
+												if index === 3
+													.n-labels__wrap
+														span.n-labels.n-bg--se-lighter 24H
+												else if index === 2
+													.n-labels__wrap
+														span.n-labels.n-bg--se-lighter 折價券
+														span.n-labels.n-bg--se-lighter 超取
+												else if index === 8
+													.n-labels__wrap
+												else if index === 12
+													.n-labels__wrap
+														span.n-labels.n-bg--se-lighter 海外配
+												else if index === 14
+													.n-labels__wrap
+														span.n-labels.n-bg--se-lighter 折價券
+														span.n-labels.n-bg--se-lighter 超取
+												else
+													.n-labels__wrap
+														span.n-labels.n-bg--se-lighter 折價券
+														span.n-labels.n-bg--se-lighter 任選
+														span.n-labels.n-bg--se-lighter 超取
+												p.n-sale--subtitle 台灣設計品牌／人氣推薦／必入手單品
+												p.n-name
+													a(href= pordItem.hotUrl, title= pordItem.name)= pordItem.name
+												ul.n-desc__list
+													li=pordItem.desc1
+													li=pordItem.desc2
+													li=pordItem.desc3
+												p.n-price__wrap
+													span.n-price--normal= pordItem.normalPrice
+													span.n-price--16 $ 
+														span= pordItem.price	
+												.n-card__btn
+													a.n-btn.n-btn--card-icon
+														i.n-icon--collect
+														span 加入蒐藏
+													a.n-btn.n-btn--card-red 
+														i.n-icon--cart
+														span 加入購物車
+								include include/block/_pager
+
+
+			include include/global/_footer
+			include include/global/_go-top
+			include include/block/_product-quick-view
+			include include/block/_product-notice-me
+
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/search.js')
+		script(src = 'Resource/js201703/prototyping.js')

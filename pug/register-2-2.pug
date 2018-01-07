@@ -1,0 +1,70 @@
+doctype html
+html(lang='zh-Hant-TW')
+    head
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+        <![endif]-->
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=1260')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title 手機驗證 -- 會員註冊 -- 東森嚴選－ET Mall東森購物網
+        include include/global/_meta
+        link(href='Resource/css201703/n-base.css', rel='stylesheet')
+        link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+        link(href='Resource/css201703/n-common.css', rel='stylesheet')
+        link(href='Resource/css201703/n-reg.css', rel='stylesheet')
+    body.n-theme--gr2-lighter
+        main.n-wrapper
+            include include/global/_inside-head
+            .n-l-960.n-l-colmt20.n-l-colmb50
+                form#registerSMSValidate(action="register-3.html")
+                    .n-l-bgw-lg.n-l-bgw-border.n-reg__wrap
+                        .n-title__wrap.n-text--center 
+                            .n-title--18 會員註冊
+                        .n-l-bgw-lg.n-reg__body
+                            .n-process.n-l-colmb15.n-process--three-steps.n-process--second
+                                .n-process__box
+                                    .n-process--dot
+                                    p 填寫註冊資料
+                                .n-process__box
+                                    .n-process--dot
+                                    p 手機驗證
+                                .n-process__box
+                                    .n-process--dot
+                                    p 註冊完成
+                            .n-l-bgw-sm.n-l-colmb30.n-text--center
+                                p 驗證碼已發送至您的手機，驗證碼有效時間 <span class="n-title--16">04 : 28</span> <br /> 若逾期未登入，請點選「重新索取驗證碼」再次取得驗證碼。
+                            .n-left.col-7.n-reg__left
+                                ul.n-reg__fields.n-reg__login.n-form-aligned
+                                    li.n-form__box
+                                        label.n-form--title(for="SMSCheckPwd") 請輸入簡訊驗證碼
+                                        input.n-form--control#SMSCheckPwd(type="text", name="SMSCheckPwd")
+                                    li.n-btn__box.n-text--center 
+                                        button.n-btn.n-btn--primary(type="submit") 確認
+                                        a.n-normal--link(href="", title="修改手機號碼") 修改手機號碼
+                                        a.n-normal--link(href="register-2.html", title="重新索取驗證碼") 重新索取驗證碼
+                                        
+                                
+                            .n-right.col-5.n-reg__right.n-text--center 
+                                a.n-reg__bn(href="https://goo.gl/dJ9XMK", title="bn word", target="_blank")
+                                    img(src="https://goo.gl/JQGtvz", width="350", height="183" alt="bn word")
+                                
+                        .n-reg__hints.note--box-lv3
+                            ul.n-list--disc
+                                li 24H免費服務專線：<span class="n-pr--medium">0800-057-999</span>
+                        
+
+
+            include include/global/_footer
+            include include/global/_go-top
+        script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+        script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+        script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+        script(src = 'Resource/js201703/vendor/jquery.validate.js')
+        script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+        script(src = 'Resource/js201703/common/global.effect.js')
+        script(src = 'Resource/js201703/pages/registered.js')
+        script(src = 'Resource/js201703/prototyping.js')
+                

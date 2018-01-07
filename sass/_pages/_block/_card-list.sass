@@ -1,0 +1,128 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+
+// ==========================================================================
+// This style use for track list of member and search result page
+// ==========================================================================
+
+.n-card
+	&__wrap
+	&__list
+		+clearfix
+		> li 
+			float: left
+			.n-icon--play
+				+border-radius(2px);
+				position: absolute
+				z-index: map-get($zindex, base)
+				top: 154px
+				right: 6px	
+		.n-card__box
+			border: 1px solid $gr-lightest
+			position: relative
+			z-index: map-get($zindex, zero)
+			.n-edit__box
+				+transition(all 0.3s ease-in-out)
+				visibility: hidden
+				opacity: 0
+		.n-card__box:hover
+			.n-edit__box
+				visibility: visible
+				opacity: 1
+		.n-pic
+			+img-loading
+			overflow: hidden
+			display: block
+		.n-soldout
+			background-color: rgba($gr-dp-dark, 0.7)
+			position: absolute
+			z-index: map-get($zindex, base)
+			width: 100%
+			padding: 20px
+			text-align: center
+			left: 0
+			p 
+				color: $gr2-dp-light
+		.n-name a
+			+text-fool(34)
+			display: block
+		.n-name,
+		.n-price__wrap
+			padding: 10px
+		.n-price__wrap .n-price--16 span 
+			margin-right: 0
+			
+		a 
+			color: $gr-dark
+		.n-edit__box
+			top: 10px
+			right: 10px
+
+.n-edit__box
+	display: block
+	position: absolute
+	z-index: map-get($zindex, base)
+	width: 38px
+	height: 38px
+	text-align: center
+	[class^="n-icon--"]
+		margin-top: 10px
+
+.n-edit__box.n-edit--black
+	background-color: rgba($gr-darkest, .8)
+.n-edit__box.n-edit--black:hover
+	background-color: rgba($gr-darkest, 1)
+.n-edit__box.n-edit--gray
+	background-color: $gr2-lighter
+.n-edit__box.n-edit--gray:hover
+	background-color: $gr-lightest
+
+.n-card
+	&__btn
+		+clearfix
+		border-top: 1px solid $gr-lightest
+		.n-btn
+			background: none
+			float: left
+			height: 41px
+			padding: 6px
+			border-right: 1px solid $gr-lightest
+		.n-btn:hover
+			background-color: $gr2-light
+		.n-btn:last-child
+			border-right: none
+		.n-btn [class^="n-icon--"]
+			vertical-align: top
+		.n-btn--card-icon
+			padding-top: 11px
+		.n-btn--normal
+			+border-radius(0)
+			border: none
+			background-color: $gr2-lighter
+		.n-btn--normal:hover
+			background-color: rgba($pr-dp-light, 0.2)
+		.n-btn--card-gray,
+		.n-btn--card-red
+			color: $gr-dark
+		.n-btn--normal,
+		.n-btn--card-red
+			padding: 10px 26px
+		.n-btn--normal [class^="n-icon--"],
+		.n-btn--card-red [class^="n-icon--"]
+			margin-right: 5px
+			margin-top: 2px
+		.n-btn--card-red .n-icon--cart
+			+sprite($icon-cart)
+		.n-btn--card-red:hover
+			background-color: $pr-medium
+			color: $gr2-dp-light
+		.n-btn--card-red:hover .n-icon--cart
+			+sprite($icon-cart-white)
+		.n-btn--active .n-icon--collect
+			+sprite($icon-collect-active)

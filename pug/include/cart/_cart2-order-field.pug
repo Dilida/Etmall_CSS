@@ -1,0 +1,51 @@
+.n-l-colmb20.n-cart--order-field
+	.n-title__wrap
+		h2.n-title--18 訂購人資訊
+	.n-l-bgw-md.n-cart__second
+		.n-l-colmb15.col-7.n-form__box
+			label.n-title--13(for="orderName") 
+				span.n-pr--medium  &#42;
+				| 收件人
+			input.n-form--control#orderName(type="text")
+			p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+		.n-l-colmb15.col-7.n-form__box
+			label.n-title--13(for="orderMobilePhone") 
+				span.n-pr--medium  &#42;
+				| 行動電話
+			input.n-form--control#orderMobilePhone(type="text")
+			p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+		.n-l-colmb15.col-7.n-form--inline.n-form--phone
+			.n-title--13(for="orderReceivePhone") 市內電話
+			.n-form__box
+				input.n-form--control#orderReceiveTel(type="text")
+			.n-form__box
+				input.n-form--control#orderReceivePhone(type="text")
+			p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+		<div class="n-l-colmb15 n-form--inline n-form--address">
+			<div class="n-title--13"><span class="n-pr--medium">&#42;</span>地址</div>
+			<div class="n-form__box col-2"> 
+				<select title="請選擇地區" id="orderCountry" name="" class="n-form--control">
+					<option value="" selected="selected">請選擇地區</option>
+					<option value="Taiwan,臺灣地區">臺灣地區</option>
+					<option value="China,中國大陸地區" disabled="">中國大陸地區</option>
+					<option value="HK,港澳地區" disabled="">港澳地區</option>
+				</select>
+			</div>
+			<div class="n-form__box col-2">
+				<select title="請選擇縣／市" id="orderCity" name="city" class="n-form--control">
+					<option value="" selected="selected">請選擇縣／市</option>
+				</select>
+			</div>
+			<div class="n-form__box col-2">
+				<select title="請選擇鄉鎮市區" id="orderCanton" name="canton" class="n-form--control">
+					<option value="" selected="selected">請選擇鄉鎮市區</option>
+				</select>
+			</div>
+			<div class="n-form__box col-7">
+				<input class="n-form--control" type="text" name="" id="orderAddress">
+			</div>
+			p.n-form--error 欄位資訊錯誤 ，請輸入正確資訊
+		</div>
+		.n-form__foot
+			input.n-btn.n-btn--normal(type="reset", value="取消")
+			input.n-btn.n-btn--primary(type="submit", value="確定")

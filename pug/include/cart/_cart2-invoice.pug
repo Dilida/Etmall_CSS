@@ -1,0 +1,60 @@
+.n-l-colmb20.n-cart--invoice
+	.n-title__wrap
+		h2.n-title--18 發票資訊
+	.n-l-bgw-md.n-cart__second
+		.n-left.col-9.n-cart--left
+			ul.n-form__ctrlgroup
+				li
+					.n-form__box
+						input#invoice1(type="radio", name="invoice")
+						label(for="invoice1") 我要捐贈發票做公益
+					.n-form__box.n-form--subbox.n-is--hide
+						select.n-form--control
+							option(value="") 東森慈善基金會
+						p.fields--info 感謝您的愛心，捐贈提醒『發票一旦捐贈後無法再更改發票類型』，捐贈發票不影響商品售服權益。
+				li
+					.n-form__box
+						input#invoice2(type="radio", name="invoice")
+						label(for="invoice2") 開立二聯式電子發票
+					.n-form__box.n-form--subbox.n-is--hide
+						select.n-form--control
+							option(value="") 手機條碼
+					.n-form__box.n-form--subbox.n-is--hide
+						input.n-form--control(type="text", placeholder="手機條碼")
+						p.fields--info 請輸入大寫英數字，載具資料一旦確定無法修改。 <a class="n-blue--link" href="#" title="如何申請手機載具" target="_blank">如何申請手機載具</a>
+						p.n-pr--medium 請注意：東森購物員工，選擇『東森價（員購回饋紅利金）』結帳，無法開立三聯式發票。
+				li
+					.n-form__box
+						input#invoice3(type="radio", name="invoice")
+						label(for="invoice3") 開三聯式紙本發票
+					.n-form__box.n-l-colmb15.n-form--subbox.n-is--hide
+						label.n-title--13(for="invoiceNum") 請輸入統一編號
+						input.n-form--control#invoiceNum(type="text")
+					<div class="n-form--subbox n-form--inline n-form--address n-is--hide">
+						<div class="n-title--13">請輸入公司地址</div>
+						<div class="n-form__box col-3">
+							<select title="請選擇縣／市" id="orderCity" name="city" class="n-form--control">
+								<option value="" selected="selected">請選擇縣／市</option>
+							</select>
+						</div>
+						<div class="n-form__box col-3">
+							<select title="請選擇鄉鎮市區" id="orderCanton" name="canton" class="n-form--control">
+								<option value="" selected="selected">請選擇鄉鎮市區</option>
+							</select>
+						</div>
+						<div class="n-form__box col-12">
+							<input class="n-form--control" type="text" name="" id="orderAddress">
+						</div>
+						p.fields--info 請輸入完整公司名稱，以利發票開立。「錯誤」-東森得易購(股)公司   「正確」-東森得易購股份有限公司 <br /> 另提醒！若商品辦理退貨，需填寫發票銷貨折讓單並蓋公司大小章或統一發票章
+						p.n-pr--medium 請注意：東森購物員工，選擇『東森價（員購回饋紅利金）』結帳，無法開立三聯式發票。
+					</div>
+			.n-form__box.n-cart--second-box.n-is--hide
+				label.n-title--13(for="invoiceTitle") 收據抬頭  
+				span -- 資料一經確認發送，無法異動
+				input.n-form--control#invoiceTitle(type="text")
+		.n-left.col-3.n-cart--right
+			ul.n-desc__list
+				li
+					.n-left
+						i.n-icon--error
+					p.n-left.n-desc__txt 依政府憑證管理中心規定，本公司將於開立發票後24小時內上傳至整合服務平台「相關資訊」

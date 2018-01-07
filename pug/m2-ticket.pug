@@ -1,0 +1,117 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 折價券 -- 我的優惠 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_discount-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="我的優惠">我的優惠</a>&gt;</li>
+						<li class="current"><a href="#" title="折價券">折價券</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						include include/member/_discount-page-nav
+						<h2 class="n-title--18 n-mem--title">折價券</h2>
+						.n-l-colmb20
+							p.note--box-lv3
+								span.n-pr--medium 貼心小提醒：
+								| 今日到期折價券共 
+								span.n-pr--medium.n-font--bold 3
+								|  張
+						form(action="")
+							.n-l-colmb20
+								<div class="n-mem--field">
+									<input class="n-form--control" type="text" placeholder="請輸入折價券序號/通關密碼">
+									<input class="n-btn n-btn--primary " type="submit" value="確認送出">
+								</div>
+							.n-l-colmb20.n-mem__tool-bar
+								<ul id="ticketListNav" class="n-left n-tab__sub-lv3">
+									<li class="current"><a href="#ticketList1" title="有效期限近到遠">有效期限近到遠</a></li>
+								</ul>
+								<ul id="ticketSwitch" class="n-right n-tab__swtich">
+									<li class="current">
+										<a href="#" title="棋盤式"><i class="n-icon--square"></i>棋盤式</a>
+									</li>
+									<li>
+										<a href="#" title="條列式"><i class="n-icon--list"></i>條列式</a>
+									</li>
+								</ul>
+							<div id="ticketList1" class="n-l-colmb20">
+								<ul class="n-ticket__wrap n-ticket--square">
+									<li>
+										<div class="n-ticket__box">
+											<i class="n-icon--coupontag"></i>
+											<div class="n-ticket__num">
+												<p class="n-title--13">折價優惠數：<span class="n-pr--medium n-title--22">15 %</span></p>
+											</div>
+											<div class="n-ticket__txt">
+												<p>有效期限：2015/09/25 23:59:59</p>
+												<p>說明：網-會員專屬85折價券（限手錶館-瑞士錶）</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="n-ticket__box">
+											<i class="n-icon--coupontag"></i>
+											<div class="n-ticket__num">
+												<p class="n-title--13">折價優惠數：<span class="n-pr--medium n-title--22">2,000 元</span></p>
+											</div>
+											<div class="n-ticket__txt">
+												<p>有效期限：2015/09/25 23:59:59</p>
+												<p>網-會員專屬1500元折價券(家電館-液晶電視/影音劇院/洗衣機/電冰箱/冷暖空調適用)</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="n-ticket__box">
+											<i class="n-icon--coupontag"></i>
+											<div class="n-ticket__num">
+												<p class="n-title--13">折價優惠數：<span class="n-pr--medium n-title--22">15 %</span></p>
+											</div>
+											<div class="n-ticket__txt">
+												<p>有效期限：2015/09/25 23:59:59</p>
+												<p>說明：網-會員專屬85折價券（限手錶館-瑞士錶）</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="n-ticket__box">
+											<i class="n-icon--coupontag"></i>
+											<div class="n-ticket__num">
+												<p class="n-title--13">折價優惠數：<span class="n-pr--medium n-title--22">200 元</span></p>
+											</div>
+											<div class="n-ticket__txt">
+												<p>有效期限：2015/09/25 23:59:59</p>
+												<p>網-會員專屬1500元折價券(家電館-液晶電視/影音劇院/洗衣機/電冰箱/冷暖空調適用)</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

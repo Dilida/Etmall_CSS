@@ -1,0 +1,186 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Button
+// ==========================================================================
+
+
+// Button core
+// ==========================================================================
+
+.n-btn {
+	display: inline-block;
+	zoom: 1;
+	line-height: normal;
+	white-space: nowrap;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-drag: none;
+  user-select: none;
+}
+
+.n-btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+// Button Style 
+// ==========================================================================
+
+.n-btn {
+	border: 1px solid transparent; 
+	padding: 10px 20px; 
+	color: $gr2-dp-light; 
+	background-color: $pr-medium; 
+	@include font-size($fz-15); 
+}
+
+.n-btn:focus {
+  outline: 0
+}
+
+.n-btn--hidden {
+  display: none;
+}
+
+.n-btn--primary, .n-btn--primary-active{
+	color: $gr2-dp-light; 
+	background-color: $pr-medium;
+	@include border-radius(2px); 
+	&:hover, &:focus {
+		color: $gr2-dp-light; 
+	}
+}
+
+
+.n-btn--lv2{
+	background-color: $gr2-dp-light; 
+	border: 1px solid $pr-medium;
+	color: $pr-medium;
+	@include border-radius(2px);
+}
+
+.n-btn--lv2 {
+	&:hover, &:focus {
+		background-color: rgba($pr-medium, 0.1); 
+		color: $pr-medium;
+  	}
+}
+
+.n-btn--lv3{
+	background-color: $gr2-dp-light;
+	border: 1px solid $gr-dark;
+	color: $gr-dark;
+	@include border-radius(2px);
+}
+
+.n-btn--lv3 {
+	&:hover, &:focus {
+		background-color: rgba($gr-darkest, 0.1); 
+		color: $gr-dark;
+  	}
+}
+
+.n-btn--black {
+	background-color: rgba($gr-dp-dark, 0.7);
+	color: $gr2-dp-light;
+	@include border-radius(2px);
+	&:hover, &:focus {
+		background-color: rgba($gr-dp-dark, 0.8);
+	}
+}
+
+// .n-btn--black {
+// 	&:hover, &:focus {
+// 		background-color: rgba($pr-medium, 1); 
+//   	}
+// }
+
+.n-btn--normal {
+	background-color: $gr-dp-light; 
+	border: 1px solid $gr-lightest;
+	color: $gr-dark;
+	@include border-radius(2px);
+}
+
+.n-btn--normal {
+	&:hover, &:focus {
+		color: $gr-dark;
+		background-color: $gr-lighter;
+		border: 1px solid $gr-light;
+  	}
+}
+
+.n-btn--primary, .n-btn--primary-active{
+	&:hover, &:focus {
+		background-color: $pr-dark;
+	}
+}
+
+.n-btn--disabled {
+	background-color: $gr2-lighter; 
+	border: 1px solid $gr-lightest;
+	cursor: not-allowed;
+	color: $gr-medium;
+	@include border-radius(2px);
+	&:hover, &:focus, &:active {
+		cursor: not-allowed;
+		color: $gr-medium;
+		background-color: $gr2-lighter; 
+		border: 1px solid $gr-lightest;
+  }
+}
+
+.n-btn--fb {
+	color: $gr2-dp-light; 
+	background-color: $th-darker;
+	@include border-radius(2px); 
+	&:hover, &:focus {
+		color: $gr2-dp-light; 
+		background-color: $th-darkest; 
+		border: 1px solid $th-darkest;
+	}
+}
+
+// Button Size
+// ==========================================================================
+
+.n-btn--small{
+	@include font-size($fz-13); 
+	padding: 5px 10px;
+}
+
+.n-btn--large{
+	@include font-size($fz-18); 
+}
+
+
+// .n-btns-center{
+// 	text-align: center;
+// 	.n-btn{
+// 		margin: 0 5px;
+// 	}
+// }
+
+// Button theme of search 
+// ==========================================================================
+.n-btn--search {
+	background-color: $pr-darker;
+	@include border-radius(2px);
+	&:hover, &:focus {
+		background-color: $pr-darkest;
+	}
+}
+
+.n-btn--search24 {
+	background-color: $pr-lighter;
+	@include border-radius(2px);
+	&:hover, &:focus {
+		background-color: $pr-light;
+	}
+}

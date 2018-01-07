@@ -1,0 +1,169 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// flagship-normal style
+// ==========================================================================
+.n-flagship,
+.n-flagship__wrap
+	+clearfix
+
+
+// flagship brand block style
+// ==========================================================================
+.n-flagship
+	&__intro
+		position: absolute
+		z-index: map-get($zindex, bnElems)
+		left: 0
+		top: -10px
+	&__intro-box
+		margin-bottom: 20px
+		.n-operating
+			text-align: center
+			[class^="n-icon--"] 
+				vertical-align: top
+			a 
+				color: $gr-dark
+				display: block
+			li 
+				display: inline-block
+			li:first-child a
+				padding-right: 25px
+				border-right: 1px solid $gr-lightest
+			li:last-child a
+				padding-left: 25px
+	&__intro-text
+		p 
+			height: 110px
+			overflow: hidden
+			margin-bottom: 10px
+		
+// flagship main banner
+// ==========================================================================
+.n-flagship__visual,
+.n-flagship__visual-body,
+	position: relative
+	z-index: map-get($zindex, zero)
+.n-flagship__visual
+	> .n-layout--lg
+		position: absolute
+		z-index: map-get($zindex, bnElems)
+		left: 0
+		right: 0
+		top: 50px
+.flag__bn-nav
+	position: absolute
+	z-index: map-get($zindex, bnElems)
+	top: 480px
+	left: 50%
+	transform: translate(-50%, -50%)
+	> a 
+		background-color: $gr-medium
+		border-radius: 100%
+		display: inline-block
+		width: 20px
+		height: 20px
+		margin-left: 6px
+		margin-right: 6px
+	> a.current,
+	> a:hover 
+		background-color: $gr2-dp-light
+		border: 2px solid $gr-medium
+
+
+
+// flagship banner style
+// ==========================================================================
+.n-flagship
+	&__bn-col-1,
+	&__bn-col-2 a,
+	&__bn-col-3 a,
+	&__bn-triple a
+		display: block
+	&__bn-col-2,
+	&__bn-col-3,
+	&__bn-triple
+		+clearfix
+	&__bn-col-2
+		height: 300px
+		.n-left:first-child
+			margin-right: 15px
+	&__bn-col-3
+		.n-left:nth-child(2)
+			margin-left: 13px
+			margin-right: 12px
+		.n-desc
+			background-color: $gr2-dp-light
+			padding: 15px
+			.n-title--16
+				margin-bottom: 5px
+				+txt-ellipsis(220)
+				margin-left: auto
+				margin-right: auto
+			p 
+				+txt-ellipsis(300)
+	&__bn-triple
+		background-color: $gr-darkest
+		padding: 10px
+		.n-left:first-child
+			margin-right: 10px
+			a:first-child
+				margin-bottom: 10px
+
+
+// flagship rank list 
+// ==========================================================================
+.n-flagship--rank 
+	.n-title__wrap
+		background-color: $gr2-dp-light
+		border-width: 1px
+	.n-rank__list
+		> li 
+			width: 151px
+
+// flagship product group
+// ==========================================================================
+.n-flagship__product
+	+clearfix
+	.n-flagship__product-nav
+		width: 195px
+		height: 742px
+		overflow: hidden
+		color: $gr2-dp-light
+		text-align: center
+	.n-flagship__product-caption
+		padding: 20px
+		.n-title--22
+			margin-bottom: 10px
+		img 
+			display: inline-block
+	.n-flagship__product-nav 
+		li  
+			+font-size(15)
+		a
+			color: $gr2-dp-light
+			display: block
+			padding-top: 20px
+			padding-bottom: 20px
+			border-top: $gr2-dp-light 2px dotted
+			&:hover
+				background-color: $se-medium
+		li:last-child a 
+			border-bottom: $gr2-dp-light 2px dotted
+	.n-flagship--product-list
+		width: 820px
+		height: 742px
+		overflow: hidden
+		li
+			&:nth-child(4n)
+				margin-right: 0
+			&:nth-child(5n)
+				margin-right: 10px
+	
+		

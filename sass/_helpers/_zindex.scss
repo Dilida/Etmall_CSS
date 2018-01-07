@@ -1,0 +1,51 @@
+// ==========================================================================
+// Management z-index setting
+// ==========================================================================
+
+// Common z-index setting
+//   ========================================================================
+// 
+// Usage
+// 
+// parent selectors
+// 	z-index: map-get($zindex, base)
+// 	child selectors
+// 		z-index: map-get($zindex, dropdown)
+//
+
+$zindex: (
+	9k-30: 9030,
+	modal: 9000,
+	overlay-2: 8002,
+	overlay-1: 8001,
+	overlay: 8000,
+	dropdown: 7000,
+	7k1 : 7001,
+	7k: 7000,
+	backTop: 6000,
+	6k: 6000,
+	5k: 5000,
+	bnElems: 500,
+	twenty: 20,
+	nineteen: 19,
+	eighteen: 18,
+	seventeen: 17,
+	sixteen: 16,
+	fifteen: 15,
+	fourteen: 14,
+	thirteen: 13,
+	twelve: 12,
+	eleven: 11,
+	ten: 10,
+	ninth: 9,
+	eighth: 8,
+	seventh: 7,
+	sixth: 6,
+	fifth: 5,
+	fourth: 4,
+	third: 3,
+	second: 2,
+	base: 1,
+	zero: 0,
+	under: -1
+);

@@ -1,0 +1,24 @@
+aside.n-left.n-l--aside 
+    .n-aside__caption.n-bg--pr-medium.n-aside__title
+        h2.n-title--16 春夏上衣
+    ul.n-bg--gr2-dp-light.n-aside__nav
+        li.current
+            a(href="", title="雪紡") 
+                h1.n-word--count 雪紡
+        each subNav in [ '棉／麻', '蠶絲', '蕾絲', 'T恤', '短袖', '長版', '襯衫', '褲｜裙套裝', '無袖∣背心', '罩衫', 'POLO衫', '五分｜七分袖∣長袖', '假2件∣2件式', '露肩∣造型款', '針織', '防曬∣防風', '造型', '連帽', '西裝', '短版', '長版', '運動', '針織']
+            li
+                a(href="#", title=subNav )= subNav
+    -for(let i = 0; i < 8; i++) 
+        .n-aside__caption.n-bg--gr-lighter.n-aside__title
+            .n-title--16 館長推薦
+        .n-aside__category.n-bg--gr2-dp-light
+            ul.n-aside__nav
+                each categoryNav in ['最多人搶～TOP 100','新品上市','【A1 Darin】 春特賣8折','【HeHa】初夏NEW IN 72折up','春日繽紛衣服大賞↘5折UP','春日休閒系新品全館↘530UP','質感棉麻輕美學↘530元UP','【Bubble coco】新品發表＄299 up','【Moriya】春夏棉麻 399up','【SCL】牛仔時尚  45折up']
+                    li 
+                        a(href="#", title=categoryNav )
+                            h3.n-word--count= categoryNav
+            a.n-right.n-aside__more(href="", title="更多")
+                .n-icon--more-btn
+                    span 
+                    span 
+                span 更多

@@ -1,0 +1,377 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// import sprite 
+// ==========================================================================
+@import "_theme/_sprite.scss"
+
+// ==========================================================================
+// Header
+// ==========================================================================
+
+// Top Ad
+// ==========================================================================
+.n-top__ad
+	background-color: $gr-dp-light
+	.n-top__ad-box
+		position: relative
+		z-index: map-get($zindex, zero)
+		height: 65px
+		overflow: hidden
+		> a,
+		> a > img
+			height: 65px
+	.n-top--bn-nav 
+		position: absolute
+		z-index: map-get($zindex, bnElems)
+		width: 76px
+		height: 14px
+		right: 0
+		bottom: 5px
+		> a
+			+border-radius(100%)
+			background-color: rgba($gr-darkest, .8)
+			display: inline-block
+			width: 14px
+			height: 14px
+			margin-right: 4px
+			margin-left: 4px
+		> a.current
+			background-color: $gr2-dp-light
+
+// Top nav of header, Common style
+// ==========================================================================
+.n-header__top
+	background-color: $gr2-lighter
+	border-top: 1px solid $gr-lightest
+	border-bottom: 1px solid $gr-lightest
+	padding-top: 8px
+	padding-bottom: 8px
+	height: 39px
+	position: relative
+	+transition(0.2s ease-in-out)
+	+font-size(15)
+	a
+		color: $gr-dark
+	a:hover
+		color: $pr-medium
+	.n-layout--lg:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, under)
+		height: 39px
+		width: 1260px
+		top: -1px
+		left: 0
+		background-color: $gr2-lighter
+		border-top: 1px solid $gr-lightest
+		border-bottom: 1px solid $gr-lightest
+	.n-layout--lg,
+	ul
+		+clearfix
+	li 
+		float: left
+		position: relative
+		z-index: map-get($zindex, sixteen)
+
+// Top nav of header, left nav
+// ==========================================================================
+.n-header__top
+	.n-left >li
+		margin-right: 20px
+
+// Top nav of header, right nav
+// ==========================================================================
+.n-header__top
+	.n-right
+		> li > a
+			padding-left: 10px
+			padding-right: 10px
+		li > ul 
+			background-color: $gr2-dp-light
+			border-left: 1px solid $gr-lightest
+			border-right: 1px solid $gr-lightest
+			border-bottom: 1px solid $gr-lightest
+			border-bottom-left-radius: 2px
+			border-bottom-right-radius: 2px
+			position: absolute
+			z-index: map-get($zindex, seventeen)
+			width: 140px
+			left: 0
+			top: 29px
+			+transition(all 0.3s ease-in-out)
+			visibility: hidden
+			opacity: 0
+		li > ul > li 
+			width: 100%
+		li > ul > li > a
+			display: block
+			padding: 8px 10px
+		li > ul > li:last-child 
+			margin-bottom: 0
+		.n-has--drop:hover:after
+			content: "" 
+			background-color: $gr2-dp-light
+			border-left: 1px solid $gr-lightest
+			border-right: 1px solid $gr-lightest
+			position: absolute
+			z-index: map-get($zindex, under)
+			width: 100%
+			height: 39px
+			top: -9px
+			left: 0
+		.n-has--drop:hover ul 
+			visibility: visible
+			opacity: 1
+		li [class^="n-icon--"]
+			vertical-align: top
+			margin-top: 2px
+		li .n-icon--collect
+			margin-right: 5px
+		li .n-icon--cart
+			margin-right: 10px
+		.count--round
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 18px
+			top: -3px
+			+border-radius(100%)
+			background-color: $pr-medium
+			display: inline-block
+			width: 20px
+			height: 20px
+			text-align: center
+			padding: 2px
+			+font-size(10)
+			color: $gr2-dp-light
+
+.n-header__top .n-right
+	.n-header__cart
+		ul 
+			width: 220px
+			padding: 10px
+			left: -102px
+		ul a 
+			color: $gr2-dp-light
+		li 
+			margin-bottom: 10px
+			+clearfix
+		li:last-child
+			margin-top: 5px
+	.n-header__cart:hover
+		.n-icon--cart
+			+sprite($icon-cart-hover)
+	.n-header__name
+		width: 60%
+	.n-header__price
+		width: 40%
+		text-align: right
+		
+// body of header, 
+// ==========================================================================
+.n-header
+	&__body
+		background-color: $gr2-dp-light
+		+transition(0.2s ease-in-out)
+		position: relative
+		z-index: map-get($zindex, zero)
+		.n-layout--lg
+			+clearfix
+			padding-top: 15px
+			padding-bottom: 15px
+			height: 132px
+			position: relative
+			z-index: map-get($zindex, zero)
+			&:after
+				background-color: $gr2-dp-light
+				content: ''
+				position: absolute
+				z-index: map-get($zindex, under)
+				height: 132px
+				width: 1260px
+				left: 0
+				top: 0
+		.n-ehs--logo,
+		.n-ehs--logo-newyear
+			+text-hide
+			display: block
+			margin-right: 70px
+			transform: scale(1)
+  			+transition(0.4s ease-in-out)
+		.n-ehs--logo
+			+sprite($ehs-logo)
+		.n-ehs--logo-newyear
+			+sprite($logo-newyear)
+
+
+
+// When scroll over main nav height, search fix 
+// ==========================================================================
+.n-header__body.n-is--fixed 
+	position: fixed
+	z-index: map-get($zindex, backTop) 
+	width: 100%
+	top: 0
+	left: 0
+	margin: auto
+	padding-top: 0px
+	padding-bottom: 0px
+	border-bottom: 2px solid $pr-medium
+	box-shadow: 0 2px 3px 0 $gr-dark
+	.n-layout--lg
+		padding-top: 0
+		padding-bottom: 0
+		height: 76px
+		&:after
+			height: 76px
+	.n-newyaer--visual 
+		background: none
+	h1.n-left
+		height: 90px
+		margin-top: -16px
+		overflow: hidden
+	.n-ehs--logo,
+	.n-ehs--logo-newyear
+		transform: scale(0.9)
+	.n-search__hotkey
+		display: none
+.n-header__top.n-fixed--elems
+	margin-bottom: 131px
+
+// search of header, 
+// ==========================================================================
+.n-search
+	width: 800px
+.n-search
+	&__wrap
+		padding-top: 15px
+		margin-bottom: 10px
+		.n-form--control
+			width: 620px
+			border: 2px solid $pr-medium
+			padding-top: 8px
+			padding-bottom: 8px
+			margin-right: 6px
+		.n-form--control:focus
+			border-color: $pr-medium
+		.n-btn--search
+			margin-right: 6px
+
+// hotkey of header, 
+// ==========================================================================
+.n-search
+	&__hotkey
+		width: 620px
+		height: 18px
+		overflow: hidden
+		+clearfix
+		li 
+			float: left
+			margin-right: 10px
+		a 
+			color: $gr-dark
+		a:hover 
+			color: $pr-medium
+
+
+// When scroll over main nav height, change top nav, header, nav style
+// ==========================================================================
+.n-inside--has-fixed
+	padding-top: 79px
+	.n-inside--head
+		height: 79px
+		overflow: hidden
+.n-inside--head
+	.n-nav__box
+		cursor: pointer
+	.n-inside--fixed
+		position: fixed
+		width: 100%
+		top: 0
+		left: 0
+	.n-header__top.n-inside--fixed
+		z-index: map-get($zindex, 6k)
+		top: 0
+		> .n-layout--lg > div > .n-left
+			display: none
+	.n-header__body.n-inside--fixed
+		background: none
+		top: 39px
+		z-index: map-get($zindex, 6k)
+		height: 0
+		> .n-layout--lg
+			height: 0
+			padding-top: 0
+			padding-bottom: 0
+			&:after
+				background: none
+				height: auto
+		> .n-layout--lg > .n-left > .n-ehs--logo
+			transform: scale(0.5)
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: -40px
+			top: -72px
+			margin-right: 0
+		> .n-layout--lg > div > .n-search > .n-search__wrap .n-btn--search24,
+		> .n-layout--lg > div > .n-search > .n-search__hotkey
+			display: none
+		> .n-layout--lg > div > .n-search > .n-search__wrap
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 82px
+			top: -51px
+			margin-bottom: 0
+			.n-form--control
+				width: 400px
+				height: 32px
+			.n-btn--search
+				position: absolute
+				z-index: map-get($zindex, base)
+				left: 346px
+				top: 15px
+				background-color: $pr-medium
+				padding: 0 10px
+				height: 32px
+				&:hover,
+				&:focus
+					background-color: $pr-dark
+
+	.n-nav__wrap.n-inside--fixed
+		top: 39px
+		z-index: map-get($zindex, 5k)
+
+
+// When scroll over main nav height, change main nav height
+// ==========================================================================
+.n-inside--fixed
+	.n-nav__list 
+		height: 580px
+	.n-nav__list > li:hover,
+	.n-nav__list > li > a,
+	.n-nav__list > li > a:hover
+		height: 32px
+	.n-nav__list > li > a,
+	.n-nav__list > li > a .n-word--count,
+	.n-nav__list > li > a > h2
+		+font-size(13)
+		line-height: 1.2
+	.n-nav-sub
+		padding: 10px
+		height: 580px
+		overflow: hidden
+	
+.n-inside--fixed
+	.n-nav-sub
+		padding: 10px
+	.n-nav-sub__list > li  
+		padding-bottom: 4px
+		margin-bottom: 4px
+	.n-nav-sub__list > li:last-child 
+		padding-bottom: 0
+		margin-bottom: 0
+	.n-nav-sub__catalog > li 
+		margin-bottom: 2px

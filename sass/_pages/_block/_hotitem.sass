@@ -1,0 +1,31 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// Hot item style
+// ==========================================================================
+
+.n-pord
+	&__list
+		+clearfix
+		a 
+			color: $gr-dark
+		li
+			background-color: $gr2-dp-light
+			float: left
+			width: (1220 / 5) + px
+			margin-right: 10px
+			margin-bottom: 10px
+			padding: 12px
+		li:nth-child(5n)
+			margin-right: 0
+		.n-pic
+			+img-loading
+			+width-height(220)
+		.n-name
+			+text-fool(36)
+		.n-pic,
+		.n-name
+			margin-bottom: 5px

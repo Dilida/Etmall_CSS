@@ -1,0 +1,79 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 大分類頁 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-hall-big-category.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			form(action="")#bigCategory
+				.n-layout--lg.n-l-colmt20.n-l-colmb50
+					include include/block/_breadcrumb-big
+					article.n-l-colmb30.n-category
+						include include/category/_big-left-aside
+						section.n-left.n-l-1015.n-big__wrap
+							a.n-l-colmb20.n-l-adbox(href="#", title="banner words", target="_blank")
+								img(src="Resource/img201703/category/bn-1015x65.png", width="1015", height="65" alt="banner words")
+
+							include include/category/_big-category-rank
+							
+							mixin shopList(shopImg)
+								section.n-l-colmb30.n-shop.n-shop--big-catalog
+									.n-title__wrap
+										.n-title--18 時尚女裝
+									figure.n-left.n-shop__pic
+										a(href="", target="_blank")
+											.n-pic
+												img(src= shopImg, width="280", height="280", alt="四吋智慧手機四吋智慧")
+											figcaption.n-align-c.n-shop__txt.n-bg--pr-medium 
+												p.n-name 四吋智慧手機四吋智慧
+												span.n-price-w--16 
+													span $
+													span 890
+									.n-left.n-shop__body
+										ul.n-shop__list.n-hover--img
+											- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}]
+											each pordItem in pordItems
+												li 
+													a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+														.n-pic
+															img(src= pordItem.imgSrc alt= pordItem.name)
+														p.n-name= pordItem.name
+														p.n-price__wrap
+															span.n-price--normal= pordItem.normalPrice
+															span.n-price--16 $
+																span= pordItem.price
+
+							+shopList('https://goo.gl/0TGQoI')
+							+shopList('https://goo.gl/j3CZZ8')
+							+shopList('https://goo.gl/z8nr3Y')
+							+shopList('https://goo.gl/aPUEzq')
+							+shopList('https://goo.gl/jCQzDD')
+							+shopList('https://goo.gl/PQc6Z6')
+							+shopList('https://goo.gl/tFX7w0')
+							+shopList('https://goo.gl/TrgK8v')
+							
+
+					include include/block/_history
+					include include/block/_ulike
+
+			include include/global/_footer
+			include include/global/_go-top
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/hall.big.category.js')
+		script(src = 'Resource/js201703/prototyping.js')

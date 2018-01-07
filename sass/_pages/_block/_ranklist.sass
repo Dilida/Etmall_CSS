@@ -1,0 +1,72 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+// Rank list 
+// ==========================================================================
+
+// Ranking title and tab nav
+// ==========================================================================
+.n-rank
+	&__wrap a 
+		color: $gr-dark
+	&__wrap
+		.n-title__wrap
+			+clearfix
+		.n-tab__nav
+			padding-top: 10px
+			+font-size($fz-15)
+			li 
+				margin-left: 18px
+		.n-tab__nav li:nth-child(2) a 
+			width: 60px
+		.n-tab__nav a 
+			width: 40px
+			text-overflow: inherit
+		.n-tab__nav li.current:after
+			bottom: -10px
+	&__box
+		background-color: $gr2-dp-light
+		position: relative
+		z-index: map-get($zindex, zero)
+		padding-left: 18px
+		padding-right: 18px
+		.n-l-arrow__wrap,
+		.n-r-arrow__wrap
+			top: 35%
+
+// Ranking list
+// ==========================================================================
+.n-rank
+	&__list
+		+clearfix
+		background-color: $gr2-dp-light
+		padding-top: 20px
+		padding-bottom: 20px
+		z-index: map-get($zindex, base) 
+		li
+			float: left
+			width: 140px
+			margin-right: 15px
+		li img 
+			width: 140px
+			height: 140px
+		.n-pic
+			+img-loading
+			margin-bottom: 5px
+			overflow: hidden
+			position: relative
+			z-index: map-get($zindex, base)
+		.n-name
+			+text-fool(36)
+			margin-bottom: 15px
+		.n-price__wrap .n-price--normal
+			display: block
+			margin-right: 0
+		.n-flag__wrap
+			position: absolute
+			z-index: map-get($zindex, second)
+			
+

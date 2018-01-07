@@ -1,0 +1,150 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 信用卡管理 -- 帳戶管理 -- 會員中心 --  -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_account-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="帳戶管理">帳戶管理</a>&gt;</li>
+						<li class="current"><a href="#" title="信用卡管理">信用卡管理</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">信用卡管理</h2>
+						.n-l-colmb20
+							p.note--box-lv3
+								span.n-pr--medium 貼心小提醒： <br>
+								| 我們承諾您所有資料將受到與銀行同級之SSL認證安全電子交易機制保護
+						form(action="")#addCreditCard
+							.n-l-colmb20
+								<a href="#" class="n-btn n-btn--primary" title="新增信用卡卡號">新增信用卡卡號</a>
+								<div id="addCardNum" class="n-add__wrap col-7 n-add__credit n-is--hide">
+									.n-l-colmb15.n-form--inline
+										.n-add__caption
+											span.n-title--13 信用卡卡號
+											span  -- 限台灣核發之信用卡
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="cardNumber1" id="cardNumber1" maxlength="4" required>
+										</div>
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="cardNumber2" id="cardNumber2" maxlength="4" required>
+										</div>
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="cardNumber3" id="cardNumber3" maxlength="4" required>
+										</div>
+										<div class="n-form__box">
+											<input class="n-form--control" type="text" name="cardNumber4" id="cardNumber4" maxlength="4" required>
+										</div>
+									.n-l-colmb15.n-form--inline.n-add__date
+										<div class="n-title--13">有效期限</div>
+										<div class="n-form__box">
+											<select name="deadlineMobth" id="deadlineMobth" class="n-form--control" required>
+												<option value="" selected="selected">請選擇月份</option>
+												<option value="01">01</option>
+												<option value="02">02</option>
+												<option value="03">03</option>
+												<option value="04">04</option>
+												<option value="05">05</option>
+												<option value="06">06</option>
+												<option value="07">07</option>
+												<option value="08">08</option>
+												<option value="09">09</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+										</div>
+										<div class="n-form__box">
+											<select name="deadlineYear" id="deadlineYear" class="n-form--control" required>
+												<option value="" selected="selected">請選擇西元年</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+											</select>
+										</div>
+									<div class="n-form__foot">
+										<input type="reset" class="n-btn n-btn--normal" value="取消">
+										<input type="submit" class="n-btn n-btn--primary" value="新增">
+									</div>
+								</div>	
+							.n-l-colmb20
+								<table class="table table--bordered">
+									<tr class="table--caption">
+										<th class="col-5">信用卡卡號</th>
+										<th class="col-3">有效期限</th>
+										<th class="col-2">編輯</th>
+									</tr>
+									<tr>
+										<td>
+											.n-card--num
+												span 4024
+												span 81**
+												span ****
+												span 7647
+										</td>
+										<td>10月/2017年</td>
+										<td><a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a></td>
+									</tr>
+									<tr>
+										<td>
+											.n-card--num
+												span 4024
+												span 81**
+												span ****
+												span 7647
+										</td>
+										<td>10月/2017年</td>
+										<td><a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a></td>
+									</tr>
+									<tr class="table--disabled">
+										<td>
+											.n-card--num
+												span 4024
+												span 81**
+												span ****
+												span 7647
+										</td>
+										<td>10月/2017年 <span class="n-pr--medium">( 已到期 )</span></td>
+										<td><a class="n-edit__text" href="" title="刪除"><i class="n-icon--del-gray"></i>刪除</a></td>
+									</tr>
+								</table>
+								
+						
+			include include/global/_footer
+			include include/global/_go-top
+			include include/member/_immediate-post
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/vendor/jquery.validate.js')
+		script(src = 'Resource/js201703/common/jquery.validate.set.defaults.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

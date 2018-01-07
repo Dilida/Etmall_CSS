@@ -1,0 +1,220 @@
+section.n-l-colmb30.n-rank__wrap.n-category--rank.n-hover--img
+	.n-title__wrap
+		.n-title--18.n-left 熱銷排行
+		ul.n-tab__nav.n-right#bigRankTab
+			li.current 
+				a(href='#bigRank1' title='全站全站') 全站全站全站全站全站
+			each tabTxt, index in [{ tabName: '電視電視電視電視電視'}, { tabName: '家電家電家電家電家電'}, { tabName: '服飾服飾服飾服飾服飾'}, { tabName: '鞋包鞋包鞋包鞋包鞋包'}]
+				li
+					a(href='#bigRank' + (index + 2)) #{tabTxt[Object.keys(tabTxt)[0]]}
+					
+	.n-rank__box#bigRank1(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank2(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank3(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank4(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank5(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank6(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank7(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank8(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank9(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom
+	.n-rank__box.n-is--hide#bigRank10(style="width: 1015px; position: relative; overflow: hidden")
+		ul.n-rank__list(style="width: 2050px; position: relative; overflow: hidden")
+			- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}, {hotUrl: 'https://goo.gl/GxSn7y', name: 'Jisen】優雅大方蕾絲中袖洋裝', imgSrc: 'https://goo.gl/sUUNVc', normalPrice: '$ 1,113,000', price: '1,111,590'}, {hotUrl: 'https://goo.gl/1HVpBo', name: '【Jisen】豔麗奪目網紗刺繡洋裝', imgSrc: 'https://goo.gl/jDqwzb', normalPrice: '$ 1,113,000', price: '1,113,,590'}, {hotUrl: 'https://goo.gl/8CfJXO', name: 'CANDY小舖 繞頸透膚蕾絲挖背網紗洋裝', imgSrc: 'https://goo.gl/o3cGCI', normalPrice: '$ 1,113,000', price: '1,113,884'}, {hotUrl: 'https://goo.gl/9NCg77', name: 'Candy小舖 新品特色款氣質甜美平口閃亮寶石燈籠造型洋裝(白/銀/黑/淺粉/杏)五色-0078490', imgSrc: 'https://goo.gl/7MBclW', normalPrice: '$ 1,113,000', price: '1,113,549'}, {hotUrl: 'https://goo.gl/d4CyaE', name: 'Candy 小舖 低胸設計 素色典雅 波西迷亞風格 縮腰長裙 ( 象牙色 / 黑 ) 2色選', imgSrc: 'https://goo.gl/oi2qEA', normalPrice: '$ 1,113,000', price: '1,113,599'}, {hotUrl: 'https://goo.gl/Sg9gnv', name: 'Candy小舖 新品特色款 氣質微甜細肩帶蝴蝶結小洋裝 (白/黑/淺粉/深粉)四個色-(0097825)', imgSrc: 'https://goo.gl/eMh4kj', normalPrice: '$ 1,113,000', price: '1,113,449'}]
+			each pordItem, i in pordItems
+				li 
+					a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+						.n-pic
+							.n-flag__wrap
+								span.n-flag__num= (i + 1)
+							img(src= pordItem.imgSrc alt= pordItem.name)
+						p.n-name= pordItem.name 
+						p.n-price__wrap
+							span.n-price--normal= pordItem.normalPrice
+							span.n-price--16 $
+								span= pordItem.price
+		a.n-l-arrow__wrap(href="#" title="Prev")
+			span.n-arrow--top
+			span.n-arrow--bottom
+		a.n-r-arrow__wrap(href="#" title="Next")
+			span.n-arrow--top
+			span.n-arrow--bottom

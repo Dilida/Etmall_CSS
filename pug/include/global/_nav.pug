@@ -1,0 +1,1463 @@
+nav.n-nav__box.n-left
+	.n-title--16 全站商品分類 
+		i.n-icon--menu.n-right
+	ul.n-nav__list#mainNav
+		li
+			a(href="#" title="品牌旗艦") 
+				h2.n-word--count 品牌旗艦
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-left.n-nav__flagship#navFlagship
+						li
+							a(href="#" title="十大名店") 
+								h3.n-font--bold.n-word--count 十大名店
+						each flagshipNavs in [{flagshipName: '故宮精品'}, {flagshipName: '服飾鞋包'}, {flagshipName: '內著塑衣'}, {flagshipName: '珠寶鑽石'}, {flagshipName: '國際精品'}, {flagshipName: '國際精品'}, {flagshipName: '手錶飾品'}, {flagshipName: '美妝保養'}, {flagshipName: '保健∣食品'}, {flagshipName: '日用傢寢'}, {flagshipName: '3C家電'}]
+							li 
+								a(href="#" title= flagshipNavs.flagshipName )
+									h3.n-font--bold.n-word--count= flagshipNavs.flagshipName
+					.n-left.n-nav__flagship-box#navFlagshipBox
+						ul.n-nav__flagship-category
+							each fc1 in [{fcName: 'David香水彩妝'}, {fcName: 'Derek 床墊'}, {fcName: 'Dr Irena Eris'}, {fcName: 'DV 笛絲薇夢'}, {fcName: 'JORDON'}, {fcName: 'IMPRESS 茵貝斯'}, {fcName: 'INSTYLER'}, {fcName: 'K.K.Yang 進口達人'}, {fcName: 'LooCa'}, {fcName: 'ROWANA 美式風格'}, {fcName: 'ST.MALO'},{fcName: 'VIONIC法歐尼'}, {fcName: 'Xantia 桑緹亞'}, {fcName: 'WE GO威購百貨館'}, {fcName: '凡思媚特│TJP'}, {fcName: '妙煮婦'}, {fcName: '宏醫'}, {fcName: '美帝亞'}, {fcName: '胡媽媽的灶腳'}, {fcName: '若曼莎'}, {fcName: '涵沛'}, {fcName: '華陀扶元堂'}, {fcName: '鍋寶'}, {fcName: '嚴總推薦'}, {fcName: '蘭陵'}, {fcName: '全家行動購'}, {fcName: '漁季'}]
+								li 
+									a(href="#" title= fc1.fcName target="_blank" )
+										h4.n-word--count= fc1.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc2 in [{fcName: '故宮精品'}]
+								li 
+									a(href="#" title= fc2.fcName target="_blank" )
+										h4.n-word--count= fc2.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc3 in [{fcName: 'MON’S'}, {fcName: 'IKON'}, {fcName: '蘭陵'}, {fcName: 'ST.MALO'}, {fcName: '山頂鳥 hilltop'}, {fcName: 'TOP Girl'}, {fcName: '金安德森 紳士'}, {fcName: 'ELLE'}, {fcName: 'M2nd'}, {fcName: 'VIONIC法歐尼'}, {fcName: 'JORDON'}, {fcName: 'IMPRESS 茵貝斯'}, {fcName: 'HOUSEWIVES'}]
+								li 
+									a(href="#" title= fc3.fcName target="_blank" )
+										h4.n-word--count= fc3.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc4 in [{fcName: '華歌爾'}, {fcName: 'Cherrybaby｜黛瑪'}, {fcName: '絕世好波 Nu Bra'}, {fcName: '凡思媚特｜TJP'}, {fcName: 'Private Structure'}, {fcName: '嚴總推薦'}, {fcName: '若曼莎'}]
+								li 
+									a(href="#" title= fc4.fcName target="_blank" )
+										h4.n-word--count= fc4.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc5 in [{fcName: 'Dolly'}, {fcName: '邦妮兒'}, {fcName: '美帝亞'}, {fcName: '亞帝芬奇'}, {fcName: '森茂珠寶'}]
+								li 
+									a(href="#" title= fc5.fcName target="_blank" )
+										h4.n-word--count= fc5.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc6 in [{fcName: 'agnes.b'}, {fcName: 'ARMANI'}, {fcName: 'CHANEL'}, {fcName: 'COACH'}, {fcName: 'GUCCI'}, {fcName: 'Louis Vuitton'}, {fcName: 'COACH'}, {fcName: 'BURBERRY'}]
+								li 
+									a(href="#" title= fc6.fcName target="_blank" )
+										h4.n-word--count= fc6.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc7 in [{fcName: 'CASIO 卡西歐'}, {fcName: 'CITIZEN星辰'}, {fcName: 'SEIKO'}, {fcName: 'LONGINES 浪琴'}]
+								li 
+									a(href="#" title= fc7.fcName target="_blank" )
+										h4.n-word--count= fc7.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc8 in [{fcName: 'Arenes'}, {fcName: 'BIONEO百妮'}, {fcName: 'SEIKO'}, {fcName: 'BORGHESE貝佳斯'},{fcName: 'CHIC CHOC'}, {fcName: 'Dr Irena Eris'}, {fcName: 'DR.WU達爾膚'}, {fcName: 'FORTE'},{fcName: 'Kanebo佳麗寶 東京櫃'}, {fcName: 'K.K.Yang 進口達人'}, {fcName: 'KOSE高絲'}, {fcName: 'LOREAL 巴黎萊雅'},{fcName: 'MAYBELLINE媚比琳'}, {fcName: 'Sesedior'}, {fcName: 'SHISEIDO資生堂'}, {fcName: 'SKII'}, {fcName: 'webner葦柏納'},{fcName: 'Xantia 桑緹亞'}, {fcName: '台糖∣LANAMI'}, {fcName: '涵沛'}, {fcName: 'David香水彩妝'}, {fcName: '黃禎憲藥妝館'}]
+								li 
+									a(href="#" title= fc8.fcName target="_blank" )
+										h4.n-word--count= fc8.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc9 in [{fcName: '船井生醫'}, {fcName: '美國NOW健而婷'}, {fcName: '華陀扶元堂'}, {fcName: '葡萄王'},{fcName: '東華堂生技'}, {fcName: '順天本草'}, {fcName: '日本森下仁丹'}, {fcName: '統一保健'},{fcName: '統欣生技'}, {fcName: 'DV 笛絲薇夢'}, {fcName: '宏醫'}, {fcName: '日本味王∣元氣堂'},{fcName: '亞尼克菓子工房'}, {fcName: '胡媽媽的灶腳'}, {fcName: '漁季'}]
+								li 
+									a(href="#" title= fc9.fcName target="_blank" )
+										h4.n-word--count= fc9.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc10 in [{fcName: 'LooCa'}, {fcName: '1／3 A Life'}, {fcName: 'HB'}, {fcName: 'H＆D'},{fcName: 'Cest Chic潮傢俬'}, {fcName: '契斯特'}, {fcName: 'Derek 床墊'}, {fcName: '鍋寶'},{fcName: '牛頭牌'}, {fcName: '小獅王辛巴Simba'}, {fcName: '妙煮婦'}, {fcName: 'Rowana 美式風格'},{fcName: 'TIGER虎牌'}]
+								li 
+									a(href="#" title= fc10.fcName target="_blank" )
+										h4.n-word--count= fc10.fcName
+						ul.n-nav__flagship-category.n-is--hide
+							each fc11 in [{fcName: 'ACER 宏碁'}, {fcName: '強生'}, {fcName: '輝葉'}, {fcName: 'H＆D'},{fcName: '車麗屋'}]
+								li 
+									a(href="#" title= fc11.fcName target="_blank" )
+										h4.n-word--count= fc11.fcName
+		li
+			a(href="TV_Home.aspx?StoreID=31771" title="電視購物") 
+				h2.n-word--count 電視購物
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption 
+								h3.n-font--bold.n-word--count 商品推薦
+							ul.n-left.n-nav-sub__catalog
+								li
+									a.n-pr--medium(href="#", title="好神拖") 
+										h4.n-word--count 好神拖
+								each subCatalogs in ['本日強檔熱播', '館長推薦','美妝保養', '保健專館','內著塑衣', '服飾鞋包','珠寶精品', '3Ｃ家電','人氣美食', '居傢俱寢飾','超商取貨', '品牌旗艦店']
+									li
+										a(href="#", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+
+						li
+							.n-left.n-nav-sub__caption 
+								h3.n-font--bold.n-word--count 推薦品牌
+							ul.n-left.n-nav-sub__catalog
+								li
+									a(href="#", title="全館出清outlet") 
+										h4.n-word--count 全館出清outlet
+				include ../index/_sub-menu-logo
+		li
+			a(href="Be_Home.aspx?StoreID=3" title="美妝 / 面膜保養") 
+				h2.n-word--count 美妝 / 面膜保養
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption 
+								a(href="#", title="東森嚴選") 東森嚴選
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Ashiya', 'DeMon','Himalaya', 'Alkmene','Nature Tree', 'LANAMI','webner', 'Dr.Eris','涵沛', '夢素肌']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+								li
+									a.n-pr--medium(href="#", title="DeMon") DeMon
+						li
+							.n-left.n-nav-sub__caption 
+								a(href="#", title="專櫃品牌") 專櫃品牌
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['SK-II', 'SHIESEIDO','KOSE', '蘭芝','倩碧', '蘭蔻','webner', '雅頓','皺效奇蹟', '瑪莉家族', '雅詩蘭黛']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="醫美保養|票券") 醫美保養|票券
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['保濕', '去角質','抗皺|拉提', '清潔|卸妝','控油|抗痘', '美白|淡斑','舒敏|修護', '防曬|隔離','SPA票券']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="開架保養") 開架保養
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['抗皺', '美白','清潔', '保濕','舒敏│修護', '日│晚霜', '去角質', '控油抗痘', '精華│安瓶', '去角質', '控油抗痘', '精華│安瓶']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="時尚彩妝") 時尚彩妝
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['氣墊霜', '遮瑕','BB|CC|DD', '粉底液|粉條','卸妝', '蜜粉|定妝','眼妝', '防曬∣隔離','韓流彩妝','指彩', '防曬∣隔離','韓流彩妝','指彩']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="面膜保養") 面膜保養
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['美白', '保濕','煥膚修護', '抗皺緊緻','控油抗痘', '深層清潔','黑面膜', '蠶絲面膜','生物纖維膜','眼膜', '蠶絲面膜','生物纖維膜','眼膜']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美材小物") 美材小物
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洗臉機', '美膚儀','吹風機', '捲髮器','足部保養', '美齒潔牙','T棒│Y棒', '美體專區','彩妝輔具','T棒│Y棒', '美體專區','彩妝輔具']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美髮造型") 美髮造型
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洗髮精', '髮膜','沙龍髮品', '養髮∣育髮','護髮', '染髮','控油抗屑', '造型','護色', '染髮','控油抗屑', '造型','護色']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美髮造型") 美髮造型
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['沐浴', '泡澡','纖體乳', '身體乳','去角質', '護手霜','護足霜', '孕婦親子','私密護理','護足霜', '孕婦親子','私密護理']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="香氛草本") 香氛草本
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['男香', '女香','小香', 'TESTER','精油', '蠟燭','費洛蒙', '體香膏','香氛機', '蠟燭','費洛蒙', '體香膏','香氛機']
+									li
+										a(href="#", title= subCatalogs)= subCatalogs
+		li
+			a(href="Be_Home.aspx?StoreID=3" title="女裝／男裝／機能服／百貨") 
+				h2.n-word--count 女裝／男裝／機能服／百貨
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption 
+								a(href="#", title="東森嚴選") 
+									h3.n-font--bold.n-word--count 東森嚴選
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Ashiya', 'DeMon','Himalaya', 'Alkmene','Nature Tree', 'LANAMI','webner', 'Dr.Eris','涵沛', '夢素肌']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+								li
+									a.n-pr--medium(href="#", title="DeMon") DeMon
+						li
+							.n-left.n-nav-sub__caption 
+								a(href="#", title="專櫃品牌") 
+									h3.n-font--bold.n-word--count 專櫃品牌
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['SK-II', 'SHIESEIDO','KOSE', '蘭芝','倩碧', '蘭蔻','webner', '雅頓','皺效奇蹟', '瑪莉家族', '雅詩蘭黛']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="醫美保養|票券") 
+									h3.n-font--bold.n-word--count 醫美保養|票券
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['保濕', '去角質','抗皺|拉提', '清潔|卸妝','控油|抗痘', '美白|淡斑','舒敏|修護', '防曬|隔離','SPA票券']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="開架保養") 
+									h3.n-font--bold.n-word--count 開架保養
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['抗皺', '美白','清潔', '保濕','舒敏│修護', '日│晚霜','去角質', '控油抗痘','精華│安瓶']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="時尚彩妝") 
+									h3.n-font--bold.n-word--count 時尚彩妝
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['氣墊霜', '遮瑕','BB|CC|DD', '粉底液|粉條','卸妝', '蜜粉|定妝','眼妝', '防曬∣隔離','韓流彩妝','指彩']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="面膜保養") 
+									h3.n-font--bold.n-word--count 面膜保養
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['美白', '保濕','煥膚修護', '抗皺緊緻','控油抗痘', '深層清潔','黑面膜', '蠶絲面膜','生物纖維膜','眼膜']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美材小物") 
+									h3.n-font--bold.n-word--count 美材小物
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洗臉機', '美膚儀','吹風機', '捲髮器','足部保養', '美齒潔牙','T棒│Y棒', '美體專區','彩妝輔具']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美髮造型") 
+									h3.n-font--bold.n-word--count 美髮造型
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洗髮精', '髮膜','沙龍髮品', '養髮∣育髮','護髮', '染髮','控油抗屑', '造型','護色']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美髮造型") 
+									h3.n-font--bold.n-word--count 美髮造型
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['沐浴', '泡澡','纖體乳', '身體乳','去角質', '護手霜','護足霜', '孕婦親子','私密護理']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="香氛草本") 
+									h3.n-font--bold.n-word--count 香氛草本
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['男香', '女香','小香', 'TESTER','精油', '蠟燭','費洛蒙', '體香膏','香氛機']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Sy_Home.aspx?StoreID=12" title="保健 / 銀髮保健") 
+				h2.n-word--count 保健 / 銀髮保健
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美肌美顏") 
+									h3.n-font--bold.n-word--count 美肌美顏
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['膠原粉', '蜂王乳','逆齡', '彈力美肌','私密保養', '蔓越莓','珍珠粉', '維他命C','Q10', '白黎蘆醇']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="窈窕美形") 
+									h3.n-font--bold.n-word--count 窈窕美形
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['益生菌', '諾麗果','代謝系', '薑黃','酵素', '機能咖啡','乳酸菌', '優青素','巴西酵素']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="機能保健") 
+									h3.n-font--bold.n-word--count 機能保健
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['葉黃素', 'B群','人蔘', '亮亮晶明','養生調理', '幫助入睡','精氣神十足', '維他命','大蒜精']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="男仕保健") 
+									h3.n-font--bold.n-word--count 男仕保健
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['雄風再現', '瑪卡','小便順暢', '鹿茸','養髮保健', '一氧化氮','虎威力', '快樂鳥','帝王瑪卡']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="銀髮保健") 
+									h3.n-font--bold.n-word--count 銀髮保健
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['龜鹿', '魚油','葡萄糖胺', '鈣','靈活好身手', '營養補給','亞培安素', '維他命D','銀髮維他命']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="保健用品") 
+									h3.n-font--bold.n-word--count 保健用品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['一條根', '保險套∣潤滑劑','冷熱敷墊', '口罩','包大人', '萬用膏','黑面膜', '養命酒','體脂器']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="婦幼保健") 
+									h3.n-font--bold.n-word--count 婦幼保健
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['燕窩', '滴雞精','轉大人配方', '兒童益生菌','鐵', '酵素奶粉','LP33']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美髮造型") 
+									h3.n-font--bold.n-word--count 美髮造型
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洗髮精', '髮膜','沙龍髮品', '養髮∣育髮','護髮', '染髮','控油抗屑', '造型','護色']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Br_Home.aspx?StoreID=6049" title="內衣 / 塑衣 / 男內褲") 
+				h2.n-word--count 內衣 / 塑衣 / 男內褲
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="流行內衣") 
+									h3.n-font--bold.n-word--count 流行內衣
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['甜心女孩系內衣', '無鋼圈胸罩','無痕內衣	', '優雅經典款內衣','美胸衣', '調整型內衣']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="女內褲") 
+									h3.n-font--bold.n-word--count 女內褲
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['丁字 | C字褲 ', '三角褲','平口褲', '無痕褲','蠶絲內褲',]
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="百貨專櫃") 
+									h3.n-font--bold.n-word--count 百貨專櫃
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['華歌爾', '莎薇','嬪婷', '摩奇X','內衣', '內褲','塑身衣褲']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="內衣材質") 
+									h3.n-font--bold.n-word--count 內衣材質
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['蠶絲內衣', '竹碳內衣','棉質內衣', '涼感內衣','保暖材質']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="塑身衣褲") 
+									h3.n-font--bold.n-word--count 塑身衣褲
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['280丹尼', '350丹尼','420丹尼', '塑腰背心款','托胸防駝款', '量身訂做款','局部雕塑', '塑身褲']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="睡衣 | 居家服") 
+									h3.n-font--bold.n-word--count 睡衣 | 居家服
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['內著背心', '蠶絲睡衣','棉質睡衣', '冰絲睡衣','衛生衣', '發熱衣']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="泳裝 | 比基尼") 
+									h3.n-font--bold.n-word--count 泳裝 | 比基尼
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['二截式', '比基尼','泳褲', '海灘褲','連身泳裝']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="情趣服飾") 
+									h3.n-font--bold.n-word--count 情趣服飾
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['角色扮演', '性感內衣','性感睡衣']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="男內衣") 
+									h3.n-font--bold.n-word--count 男內衣
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['背心', '短袖內衣','塑身衣褲', '保暖衣褲','BVD', 'Kuga男角力','LEADER', '三花', 'MORINO']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="男內褲") 
+									h3.n-font--bold.n-word--count 男內褲
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['三角褲', '貼身平口褲','居家平口褲', '囊袋內褲','3A-Alliance', 'BF','艾森豪', '梁衫伯', 'P.S', 'CK']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Fa_Home.aspx?StoreID=2" title="服飾 / 機能運動") 
+				h2.n-word--count 服飾 / 機能運動
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="時尚女裝") 
+									h3.n-font--bold.n-word--count 時尚女裝
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洋裝', '上衣','長褲	', '短褲','內搭褲', '長裙', '短裙','針織外套', '西裝外套', '風衣外套']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="中大尺碼") 
+									h3.n-font--bold.n-word--count 中大尺碼
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洋裝 ', '上衣','短裙', '短褲','長褲','內搭褲', '針織外套','西裝外套','風衣外套']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="百貨專櫃") 
+									h3.n-font--bold.n-word--count 百貨專櫃
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['女匠', '龐吉','海蒂山', 'CHENG DA','SHOWCASE']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="機能服") 
+									h3.n-font--bold.n-word--count 機能服
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['女外套', '男外套','鋪棉', '抗UV','防風','快速排汗', '涼感', '抗菌', '除臭']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="日韓平輸") 
+									h3.n-font--bold.n-word--count 日韓平輸
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['洋裝', 'T恤','上衣','長褲','短裙 | 長裙','短褲 | 五分褲','','針織外套','西裝外套', '風衣外套']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="男裝") 
+									h3.n-font--bold.n-word--count 男裝
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['POLO衫', 'T恤','短袖襯衫','POLO衫', '長袖襯衫','短褲','長褲', '外套']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="珠寶 / 亞蒂芬奇") 
+				h2.n-word--count 珠寶 / 亞蒂芬奇
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="鑽石") 
+									h3.n-font--bold.n-word--count 鑽石
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['戒指', '項鍊','耳環	', '裸鑽','彩色裸鑽', '手鍊', '套組']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="翡翠玉石") 
+									h3.n-font--bold.n-word--count 翡翠玉石
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['手鐲 ', '戒指','項鍊', '手鍊','裸石','套組', '吊飾│耳環','擺件│其他']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="彩寶") 
+									h3.n-font--bold.n-word--count 彩寶
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['戒指', '項鍊','耳環', '手鍊','套組', '色寶裸石','其他']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="黃金") 
+									h3.n-font--bold.n-word--count 黃金
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['金條│金幣│金元寶', '項鍊','戒指', '耳環','套組','彌月禮盒', '擺件│其它']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="鉑金│K金") 
+									h3.n-font--bold.n-word--count 鉑金│K金
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['項鍊', '戒指','手鍊']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="藝術品") 
+									h3.n-font--bold.n-word--count 藝術品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['字畫', '陶藝','擺件│其他']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="純銀") 
+									h3.n-font--bold.n-word--count 純銀
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['銀條│銀幣│銀元寶', '手鍊│手環','擺件│其他']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="鑽石依顏色選擇") 
+									h3.n-font--bold.n-word--count 鑽石依顏色選擇
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['D', 'E','F', 'G', 'H']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="依手圍選擇") 
+									h3.n-font--bold.n-word--count 依手圍選擇
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['16-16.9', '17-17.9','18-18.9', '19-19.9', '20-20.9', '隨機出貨']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="精品 / 開運皮夾") 
+				h2.n-word--count 精品 / 開運皮夾
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="歐系精品") 
+									h3.n-font--bold.n-word--count 歐系精品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['BALENCIAGA', 'PRADA','Longchamp', 'CHANEL','GUCCI', 'HERMES']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="精品配飾") 
+									h3.n-font--bold.n-word--count 精品配飾
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['GEORGE JENSEN', 'PANDORA款式','PANDORA主題', 'SWAROVSKI', 'Tiffany＆Co.']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="品味名筆") 
+									h3.n-font--bold.n-word--count 品味名筆
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['MONTBLANC', '鋼珠筆','原子筆']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="墨鏡/眼鏡") 
+									h3.n-font--bold.n-word--count 墨鏡/眼鏡
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['ANNA SUI', 'A／X－ARMANI','Dior', 'GUCCI','MONTBLANC','POLICE', 'Vivienne Westwood']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="COACH") 
+									h3.n-font--bold.n-word--count COACH
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['手拿包', '手提包','肩揹包','斜 / 後背包','男性包款','皮夾','化妝包/零錢包','圍巾/配件']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="LV") 
+									h3.n-font--bold.n-word--count LV
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['經典Damier棋盤格紋系列', '經典Monogram系列','EPI水波壓紋｜Vemis漆皮壓紋 ',' Multicolore彩色花紋｜限量款']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="手錶 / 專櫃錶") 
+				h2.n-word--count 手錶 / 專櫃錶
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="精品錶") 
+									h3.n-font--bold.n-word--count 精品錶
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['ARMANI', 'DIESEL','CK', 'DKNY','FOSSIL', 'GUCCI', 'Marc Jacobs']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="瑞士錶") 
+									h3.n-font--bold.n-word--count 瑞士錶
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['LONGINES浪琴', 'ORIS','TISSOT', 'Ogival愛其華', 'Olympia', 'epos愛寶時', 'MIDO美度']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="日系錶") 
+									h3.n-font--bold.n-word--count 日系錶
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['CASIO', 'CIZITEN','SEIKO','Olym Pianus奧柏錶','ORIENT東方','LICORNE']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="流行錶") 
+									h3.n-font--bold.n-word--count 流行錶
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Arseprince', 'Bossway','格黎詩丹', 'KATINO','Ingenuity','Lacoste', 'Relax Time', 'STAR']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="依機芯/需求挑選") 
+									h3.n-font--bold.n-word--count 依機芯/需求挑選
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['瑞士機芯', '石英','機械','太陽能','電波','自動上鍊','手動上鍊','其他配件']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="依價位挑選") 
+									h3.n-font--bold.n-word--count 依價位挑選
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['$1000以下', '$1000 - 2500','$2501 - 5000','$5001 - 10000','$10001 - 20000','$20001 - 30000','$30001 - 50000','$50001 - 100000','$100000以上']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="3C / 手機 / 相機") 
+				h2.n-word--count 3C / 手機 / 相機
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="APPLE") 
+									h3.n-font--bold.n-word--count APPLE
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['iMac', 'Macbook Air','Macbook Pro', 'iPad','iPod', '週邊配件']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="筆電NB") 
+									h3.n-font--bold.n-word--count 筆電NB
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['ASUS', 'Lenovo','MSI', 'GIGABYTE', 'Cjscope', '週邊配件']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="智慧型手機") 
+									h3.n-font--bold.n-word--count 智慧型手機
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['iPhone', 'SONY','SAMSUNG','ASUS','OPPO','HUAEWI','hTC','LG','穿戴','手機週邊']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="平板電腦") 
+									h3.n-font--bold.n-word--count 平板電腦
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['ASUS', 'acer','SONY', 'Samsung','Lenovo','週邊配件']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="單眼|微單") 
+									h3.n-font--bold.n-word--count 單眼|微單
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Canon', 'Nikon','SONY','Olympus','Fujifilm','鏡頭推薦','腳架','閃光燈','相機包','濾鏡']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="數位相機") 
+									h3.n-font--bold.n-word--count 數位相機
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Canon', 'Nikon','SONY','Fujifilm','Olympus','GoPro','拍立得']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="桌上型電腦") 
+									h3.n-font--bold.n-word--count 桌上型電腦
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['acer', 'ASUS','LCD','DIY主機','主機板','顯示卡','CPU']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="硬碟|卡碟") 
+									h3.n-font--bold.n-word--count 硬碟|卡碟
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['外接硬碟', '內接硬碟','SSD','隨身碟','記憶卡','讀卡機','Seagate','Buffalo','SanDisk']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="電腦週邊") 
+									h3.n-font--bold.n-word--count 電腦週邊
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['滑鼠', '鍵盤','耳機','喇叭','線材','手寫板','電視盒','電玩娛樂','PS4 專區']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="網路設備") 
+									h3.n-font--bold.n-word--count 網路設備
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['AC|雙頻機', '攜帶型分享器','網路儲存','網路監控','三天線分享器','無線網卡']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo																	
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="家電 / 美容家電") 
+				h2.n-word--count 家電 / 美容家電
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="廚房家電") 
+									h3.n-font--bold.n-word--count 廚房家電
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['果汁機', '豆漿機','電鍋', '熱水瓶','電子鍋', '麵包機', '氣炸鍋', '微波爐', '電磁爐', '調理機', '烘碗機']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="季節家電") 
+									h3.n-font--bold.n-word--count 季節家電
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['除濕機', '清淨機','電風扇', '循環扇', '水冷扇', '水氧機', '防潮箱', '泡腳機', 'dyson氣流倍增器']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="冷氣空調") 
+									h3.n-font--bold.n-word--count 冷氣空調
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['移動式冷氣', 'HITACHI 日立','DAIKIN 大金','Panasoinc 國際牌','SANLUX台灣三洋','SAMPO 聲寶']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="生活家電") 
+									h3.n-font--bold.n-word--count 生活家電
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['吸塵器', '掃地機器人','掛燙機', '除塵蹣機','驅蟲專家','照明燈泡','衛浴設備','通訊設備']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="美容家電") 
+									h3.n-font--bold.n-word--count 美容家電
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['臉部清潔', '造型美髮','除毛刀','刮鬍刀','電動牙刷','熱敷墊','按摩舒壓','體脂計','tokuyo','飛利浦']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="洗衣機") 
+									h3.n-font--bold.n-word--count 洗衣機
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['HITACHI 日立', 'SANLUX台灣三洋','TECO 東元','LG 樂金','TOSHIBA東芝','Panasonic 國際牌']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="冰箱") 
+									h3.n-font--bold.n-word--count 冰箱
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['HITACHI 日立', 'SANLUX台灣三洋','TECO 東元','LG 樂金','TOSHIBA東芝','Panasonic 國際牌']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="液晶電視") 
+									h3.n-font--bold.n-word--count 液晶電視
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['SONY', 'BenQ','LG','Samsung 三星','JVC','TOSHIBA','DECAMAX','Kolin','SAMPO聲寶']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="影音劇院") 
+									h3.n-font--bold.n-word--count 影音劇院
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['SONY', 'PHILIPS飛利浦','YAMAHA山葉','Dennys','PIONEER先鋒','SANSUI山水']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="卡拉OK") 
+									h3.n-font--bold.n-word--count 卡拉OK
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['大唐卡拉OK', '美華卡拉OK','音圓卡拉OK','BD藍光機','擴大機','5.1聲道劇院','組合音響']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="旅遊 / 春季旅展") 
+				h2.n-word--count 旅遊 / 春季旅展
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="東北亞") 
+									h3.n-font--bold.n-word--count 東北亞
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['東京', '北海道','京阪神', '北陸','南韓', '濟州島']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="中國大陸") 
+									h3.n-font--bold.n-word--count 中國大陸
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['華北', '華東','華中', '華南', '西南', '西北']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="港澳珠圳") 
+									h3.n-font--bold.n-word--count 港澳珠圳
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['港澳珠圳團體', '自由行','香港迪士尼','水舞間','住威尼斯人','五星住宿']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="東南亞") 
+									h3.n-font--bold.n-word--count 東南亞
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['泰國', '新加坡│馬來西亞','峇里島', '越南│吳哥窟','菲律賓│長灘島']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="長程線") 
+									h3.n-font--bold.n-word--count 長程線
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['歐洲', '美加','紐澳','中東│南亞│非洲']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="北台灣") 
+									h3.n-font--bold.n-word--count 北台灣
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['宜蘭', '大台北','桃竹苗','[東森海洋]','[東森山林]']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="中台灣") 
+									h3.n-font--bold.n-word--count 中台灣
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['台中│谷關│彰化', '清境│廬山','日月潭│埔里│南投','溪頭']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="南台灣") 
+									h3.n-font--bold.n-word--count 南台灣
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['雲林', '嘉義','台南','高雄','墾丁│屏東']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="東台灣│離島") 
+									h3.n-font--bold.n-word--count 東台灣│離島
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['花蓮', '台東│綠島│蘭嶼','澎湖│金門│馬祖']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="玩樂票券") 
+									h3.n-font--bold.n-word--count 玩樂票券
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['住宿券', '泡湯券','摩鐵休憩券','美食券','美容spa券','主題玩樂券']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="美食 / 進口零食") 
+				h2.n-word--count 美食 / 進口零食
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="票券專區") 
+									h3.n-font--bold.n-word--count 票券專區
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['王品集團', '五星級飯店','食玩約會餐券', '冰品禮券','電子餐券']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="零食果乾") 
+									h3.n-font--bold.n-word--count 零食果乾
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['嬰幼兒點心', '蛋捲｜麻花','海苔', '蔬果脆片', '堅果', '果乾','海苔', '豬肉乾', '牛肉乾', '蝦餅｜香絲', '糖果']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="米麵食材") 
+									h3.n-font--bold.n-word--count 米麵食材
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['料理用油', '醬油','南北雜貨','風味拌醬','食用米','泡麵','乾麵條','罐頭','果醬∣抹醬']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="咖啡沖泡") 
+									h3.n-font--bold.n-word--count 咖啡沖泡
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['咖啡豆', '即溶咖啡','穀物/沖調', '蜂蜜∣醋飲窟','可可｜奶粉','杏仁粉','即食湯']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="飲料∣水") 
+									h3.n-font--bold.n-word--count 飲料∣水
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['茶∣咖啡', '礦泉水','氣泡水','果汁','營養｜機能飲品']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="蛋糕甜點") 
+									h3.n-font--bold.n-word--count 蛋糕甜點
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['手工蛋糕', '西式茶點','布丁｜果凍','麵包∣三明治','冰烤番薯','冰烤番薯','中式糕餅','鳳梨酥','冰品｜甜湯']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="蔬菜水果") 
+									h3.n-font--bold.n-word--count 蔬菜水果
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['新鮮水果', '當令蔬菜','根莖','有機蔬菜','農會專區']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="茶葉") 
+									h3.n-font--bold.n-word--count 茶葉
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['花草∣機能', '普洱茶','台灣名山茶','綠茶∣四季春', '紅茶∣金萱','鐵觀音∣包種茶','茶葉｜茶包']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="日用 / 婦幼用品") 
+				h2.n-word--count 日用 / 婦幼用品
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="餐廚用品") 
+									h3.n-font--bold.n-word--count 餐廚用品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['鍋寶', '樂扣樂扣','保鮮盒', '廚房調理雜貨','刀具︱砧板','酒杯', '烘培器具','打蛋器']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="鍋具碗盤") 
+									h3.n-font--bold.n-word--count 鍋具碗盤
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['炒鍋', '平底鍋','湯鍋', '燜燒鍋', '鍋具配件', '小炒鍋30cm以下','鑄鐵鍋', '餐碗', '餐盤']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="杯瓶茶具") 
+									h3.n-font--bold.n-word--count 杯瓶茶具
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['保溫杯', '保溫瓶','隨行杯','檸檬瓶','咖啡壺','手沖濾杯','茶具用品','燜燒罐']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="萬用收納") 
+									h3.n-font--bold.n-word--count 萬用收納
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['布質收納箱', '組合式收納櫃','抽屜櫃', '收納壓縮袋','小物分隔收納','DIY收納架']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="衛生紙｜衛生棉") 
+									h3.n-font--bold.n-word--count 衛生紙｜衛生棉
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['衛生紙', '廚房紙巾','平版衛生紙','擦手巾','餐巾紙']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="衛生棉") 
+									h3.n-font--bold.n-word--count 衛生棉
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['日用型', '夜用型','護墊','漢方衛生棉']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="衣物清潔") 
+									h3.n-font--bold.n-word--count 衣物清潔
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['衣物清潔劑', '清潔劑品','洗曬衣架','旋轉拖把','廚房清潔','驅蟲滅蟑','除濕防潮']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="廚衛設備") 
+									h3.n-font--bold.n-word--count 廚衛設備
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['浴室用品', '淋浴設備','熱水器','瓦斯爐', '排油煙機','烘碗機｜洗碗機','濾水｜淨水設備']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="婦幼用品") 
+									h3.n-font--bold.n-word--count 婦幼用品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['手推車', '安全汽座','孕期｜產後用品','嬰幼清潔｜衛浴', '玩具','書包','木玩｜積木','故事機']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="銀髮｜醫療") 
+									h3 銀髮｜醫療
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['衛浴安全用品', '護具｜熱敷墊','行動輔具','口罩', '熱水袋','體脂計|體重計']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="傢俱 / 寢飾") 
+				h2.n-word--count 傢俱 / 寢飾
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="床包床罩") 
+									h3.n-font--bold.n-word--count 床包床罩
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['單人寢具', '雙人寢具','加大寢具', '特大寢具','防蹣寢具','卡通寢具']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="寢飾週邊") 
+									h3.n-font--bold.n-word--count 寢飾週邊
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['炒鍋', '平底鍋','湯鍋', '燜燒鍋', '鍋具配件', '小炒鍋30cm以下','鑄鐵鍋', '餐碗', '餐盤']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="羽絨被") 
+									h3.n-font--bold.n-word--count 羽絨被
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['羊毛被', '暖暖被','蠶絲｜天絲被','毛毯｜袖毯','枕頭','保潔墊','睡袋','枕頭套｜被套']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="萬用收納") 
+									h3.n-font--bold.n-word--count 萬用收納
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['布質收納箱', '組合式收納櫃','抽屜櫃', '收納壓縮袋','小物分隔收納','DIY收納架']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="床墊床組") 
+									h3.n-font--bold.n-word--count 床墊床組
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['獨立筒', '記憶','彈簧','乳膠','薄墊','涼墊','竹蓆','床組','掀床','床架','床頭片','床頭箱']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="沙發") 
+									h3.n-font--bold.n-word--count 沙發
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['頂級牛皮', '布質','沙發茶几組','沙發床　和室桌椅','休閒座椅']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="客廳家具") 
+									h3.n-font--bold.n-word--count 客廳家具
+							ul.n-left.n-nav-sub__catalog 
+								each subCatalogs in ['鞋櫃', '衣帽架','電視櫃','展示櫃　層架','茶几邊桌','屏風　隔間','超值客廳組']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="臥室家具") 
+									h3.n-font--bold.n-word--count 臥室家具
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['木製衣櫥櫃', '金屬衣櫥櫃','室內掛衣架','穿衣鏡', '化妝桌椅','斗櫃','套裝房間組']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="書房家具") 
+									h3.n-font--bold.n-word--count 書房家具
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['電腦椅　辦公椅', '書櫃　書架','電腦桌　工作桌','OA辦公傢俱', '兒童書房']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="家飾百貨") 
+									h3.n-font--bold.n-word--count 家飾百貨
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['拖鞋', '沙發罩','擺飾品','坐靠墊', '地毯｜地墊','門簾','蚊帳','時鐘', '壁貼','燈飾']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="運動 / 行李箱") 
+				h2.n-word--count 運動 / 行李箱
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="機車|部品") 
+									h3.n-font--bold.n-word--count 機車|部品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['山葉', '三陽','光陽', '宏佳騰','台鈴','電動車', '平衡車','機車機油', '安全帽','重機部品','改裝用品']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="行李箱|收納") 
+									h3.n-font--bold.n-word--count 行李箱|收納
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['鋁框', '輕硬殼','布面軟質', '超值三件組', '背包', '旅行袋','旅遊配件│收納小物', '防盜必需品', '福利品']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="導航|記錄器") 
+									h3.n-font--bold.n-word--count 導航|記錄器
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Mio', 'DOD','響尾蛇','全視線','路易視','飛樂','警示測速','胎壓偵測','車用擴充']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="車類百貨") 
+									h3.n-font--bold.n-word--count 車類百貨
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['車用美容', '輪胎專區','汽車音響', '機油保養','車用收納','車用精品','車麗屋']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="按摩舒壓") 
+									h3.n-font--bold.n-word--count 按摩舒壓
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['頭眼部', '肩頸','腿足','按摩枕','按摩椅','按摩椅墊 ','美體舒壓','按摩滾筒','瘦身小物','SPA泡腳機']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="戶外|防蚊") 
+									h3.n-font--bold.n-word--count 戶外|防蚊
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['登山', '帳篷|天幕','睡袋|充氣床','炊具|烤肉架','保冷保溫', '戶外桌椅','雨傘│雨具','園藝','防蚊']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="自行車|周邊") 
+									h3.n-font--bold.n-word--count 自行車|周邊
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['折疊|小徑車', '越野車','單速車','童車|親子車','專業車衣','改裝配件','人身用品','FUSIN','GEAR']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="體育|休閒") 
+									h3.n-font--bold.n-word--count 體育|休閒
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['慢跑用品|配件|服飾', '運動錶','出清任選','高爾夫', '水上用品','直排輪|蛇板','益智休閒|麻將']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="情趣(限)") 
+									h3.n-font--bold.n-word--count 情趣(限)
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['保險套', '自愛器','按摩棒','情趣跳蛋', '充氣娃娃', '調情用品','情趣內睡衣','24H快速到貨', '任選']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo
+		li
+			a(href="Je_Home.aspx?StoreID=1" title="我是新館") 
+				h2.n-word--count 我是新館
+			.n-nav-sub
+				.n-left.n-nav-sub__box
+					ul.n-nav-sub__list
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="機車|部品") 
+									h3.n-font--bold.n-word--count 機車|部品
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['山葉', '三陽','光陽', '宏佳騰','台鈴','電動車', '平衡車','機車機油', '安全帽','重機部品','改裝用品']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="行李箱|收納") 
+									h3.n-font--bold.n-word--count 行李箱|收納
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['鋁框', '輕硬殼','布面軟質', '超值三件組', '背包', '旅行袋','旅遊配件│收納小物', '防盜必需品', '福利品']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="導航|記錄器") 
+									h3.n-font--bold.n-word--count 導航|記錄器
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['Mio', 'DOD','響尾蛇','全視線','路易視','飛樂','警示測速','胎壓偵測','車用擴充']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="車類百貨") 
+									h3.n-font--bold.n-word--count 車類百貨
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['車用美容', '輪胎專區','汽車音響', '機油保養','車用收納','車用精品','車麗屋']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="按摩舒壓") 
+									h3.n-font--bold.n-word--count 按摩舒壓
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['頭眼部', '肩頸','腿足','按摩枕','按摩椅','按摩椅墊 ','美體舒壓','按摩滾筒','瘦身小物','SPA泡腳機']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="戶外|防蚊") 
+									h3.n-font--bold.n-word--count 戶外|防蚊
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['登山', '帳篷|天幕','睡袋|充氣床','炊具|烤肉架','保冷保溫', '戶外桌椅','雨傘│雨具','園藝','防蚊']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="自行車|周邊") 
+									h3.n-font--bold.n-word--count 自行車|周邊
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['折疊|小徑車', '越野車','單速車','童車|親子車','專業車衣','改裝配件','人身用品','FUSIN','GEAR']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="體育|休閒") 
+									h3.n-font--bold.n-word--count 體育|休閒
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['慢跑用品|配件|服飾', '運動錶','出清任選','高爾夫', '水上用品','直排輪|蛇板','益智休閒|麻將']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+						li
+							.n-left.n-nav-sub__caption
+								a(href="#", title="情趣(限)") 
+									h3.n-font--bold.n-word--count 情趣(限)
+							ul.n-left.n-nav-sub__catalog
+								each subCatalogs in ['保險套', '自愛器','按摩棒','情趣跳蛋', '充氣娃娃', '調情用品','情趣內睡衣','24H快速到貨', '任選']
+									li
+										a(href="middle-category.html", title= subCatalogs)
+											h4.n-word--count= subCatalogs
+				include ../index/_sub-menu-logo

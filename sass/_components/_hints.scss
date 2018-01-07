@@ -1,0 +1,72 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// import sprite 
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+// ==========================================================================
+// hints
+// ==========================================================================
+
+// Member page use
+// ==========================================================================
+
+.note--txt-lv2 {
+	color: $pr-lightest;
+}
+
+.note--box-lv2 {
+	background-color: $ye-dp-light;
+}
+
+.note--box-lv3,
+.n-hints--selected {
+	background-color: $gr2-lighter;
+	padding: 10px;
+}
+
+.n-hints--selected {
+	padding: 0;
+}
+
+
+.n-hints__wrap {
+	position: relative;
+	z-index: map-get($zindex, zero);
+	.n-pr--medium {
+		margin-bottom: 10px;
+	}
+	.n-list--decimal {
+		margin-left: 20px;
+	}
+	.n-list--decimal > li {
+		margin-bottom: 5px;
+	}
+	.n-note--close {
+		background-color: $gr2-lighter;
+		position: absolute;
+		z-index: map-get($zindex, base);
+		display: block;
+		width: 40px;
+		height: 40px;
+		top: 0;
+		right: 0;
+		text-align: center;
+		.n-icon--close {
+			line-height: 1.6;
+		}
+	}
+	.n-note--close:hover {
+		background-color: $gr-lightest;
+	}
+	.n-note--active {
+		.n-icon--close {
+			@include rotate(45)
+		}
+	}
+}
+

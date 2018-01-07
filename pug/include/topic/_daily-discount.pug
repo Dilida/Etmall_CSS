@@ -1,0 +1,105 @@
+.n-sp__full.n-sp--black
+	.n-layout.n-sp-daily__title-box 
+		.n-sp-arrow__box.n-left
+			.n-sp-arrow__first
+			.n-sp-arrow__second
+		.n-sp-daily__title.n-left
+			i.n-sp-icon--clock
+			h2 整點最便宜
+		.n-sp-arrow__box.n-left.n-arrow--first-part
+			.n-sp-arrow__first
+			.n-sp-arrow__second
+		ul.n-sp-daily__period.n-left
+			li.n-sp-daily__lunch
+				.n-sp-daily__period-txt.n-left
+					p.n-sp-daily__time 12：00
+					p.n-sp-daily__txt 午安破盤價
+				.n-sp-arrow__box.n-sp-arrow--last.n-left
+					.n-sp-arrow__first
+					.n-sp-arrow__second
+			li.n-sp-daily__dinner.current
+				.n-sp-arrow__box.n-sp-arrow--fast.n-left
+					.n-sp-arrow__first
+					.n-sp-arrow__second
+				.n-sp-daily__period-txt.n-left
+					p.n-sp-daily__time 18：00
+					p.n-sp-daily__txt 晚餐最低價
+				.n-sp-arrow__box.n-sp-arrow--last.n-left
+					.n-sp-arrow__first
+					.n-sp-arrow__second
+.n-sp__full.n-sp--yellow.n-l-colmb30
+	section.n-layout.n-hover--img
+		mixin timeHead(iconName, title1, title2, title3, title4, timeTxt )
+			.n-sp-time__title.n-left
+				i(class= iconName)
+				h3
+					each lunchTxt in [title1, title2, title3, title4, '價']
+						span= lunchTxt
+			.n-sp-count__box.n-right
+				span 本檔
+				span(class="n-sp--time")= timeTxt
+				span 開搶
+
+		mixin timeItems(soldOut, numSale, timeName, timeImg, timeClass, timePrice1, timePrice2, timeBtnTxt)
+			li(class= soldOut)
+				a(href="#" title= timeName)
+					.n-pic
+						.n-sp-sold__out
+							.n-sp-sold__txt
+								span 搶購一空
+						img(src= timeImg alt= timeName)
+					h4.title--lv3.n-name= timeName
+					.n-sp--hints-box 最後
+						span= numSale
+						| 組 
+					.n-sp-btn__wrap(class= timeClass)
+						.n-sp-btn__price.n-left
+							span= timePrice1
+							span= timePrice2
+						.n-sp-btn__txt.n-left
+							span= timeBtnTxt 
+		mixin timeItems2(numSale, timeName, timeImg, timeClass, timePrice1, timePrice2, timeBtnTxt)
+			li
+				a(href="#" title= timeName)
+					.n-pic
+						img(src= timeImg alt= timeName)
+					h4.title--lv3.n-name= timeName
+					.n-sp--hints-box 最後
+						span= numSale
+						| 組 
+					.n-sp-btn__wrap(class= timeClass)
+						.n-sp-btn__price.n-left
+							span= timePrice1
+							span= timePrice2
+						.n-sp-btn__txt.n-left
+							span= timeBtnTxt 
+		.n-sp-time__wrap
+			.n-sp-time__left.n-left
+				.n-sp-time__head
+					+timeHead('n-sp-icon--lunch', '午','安','破','盤', ' PM12:00 ')
+				.n-sp-time__box
+					ul.n-sp-time__list
+						+timeItems('','122', '【Jisen】氣質拼色顯瘦長洋裝', 'https://goo.gl/RdhqPx', '', '市價：1,111,590', '$ 1,111,590', '立即結帳')
+						+timeItems('n-sp--soldout', '0', '預購【伊凡莎時尚】歐式宫廷刺繡公主洋裝(S-XXL)', 'https://goo.gl/07JI33', 'n-sp-btn--disable', '市價：1,111,590', '$ 1,111,590', '搶購一空')
+
+			.n-sp-time__right.n-left
+				.n-sp-time__head
+					+timeHead('n-sp-icon--dinner', '晚','餐','最','低',' PM18:00 ')
+				.n-sp-time__box
+					ul.n-sp-time__list
+						+timeItems2('99','MONS貴族系鏤空蕾絲古典小洋裝', 'https://goo.gl/uIyC4a', 'n-sp-btn--disable', '市價：2,780', '$ 1,590', '即將開賣')
+						+timeItems2('99','【OMUSES】宮廷蕾絲刺繡婚紗伴娘禮服18-1548(S-2L)', 'https://goo.gl/4iFE3B', 'n-sp-btn--disable', '市價：4,960', '$ 1,590', '即將開賣')
+		mixin timeSubHead( title1, title2, title3, title4, title5, startTime)
+			.n-sp-time__title.n-left
+				h3
+					each lunchTxt in [title1, title2, title3, title4, title5]
+						span= lunchTxt
+			.n-sp-count__box.n-right
+					span= startTime 
+		mixin timeSubItems(imgSrc, subName, subPrice)
+			li
+				.n-pic.n-left
+					img(src= imgSrc alt= subName)
+				h4.n-name= subName
+				p= subPrice
+				a.btn.btn--disabled $ 驚喜價

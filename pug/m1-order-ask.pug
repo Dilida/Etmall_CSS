@@ -1,0 +1,202 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 我要詢問 -- 我的訂單 -- 會員中心 -- ETMall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-member.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			.n-layout--lg.n-mem
+				include include/member/_order-nav
+				.n-left.n-l-1015.n-l-colmb50
+					<ul class="n-mem-breadcrumb">
+						<li><a href="#" title="我的訂單">我的訂單</a>&gt;</li>
+						<li class="current"><a href="#" title="我要詢問">我要詢問</a></li>
+					</ul>
+					.n-l-bgw-md.n-mem__wrap
+						<h2 class="n-title--18 n-mem--title">我要詢問</h2>
+						a.n-l-colmb20.n-mem__ad(href="", title="banner words")
+							img(src="Resource/img201703/member/bn-1015x65.png", width="985", height="63" alt="banner words")
+						.n-l-colmb20
+							p.note--box-lv3
+								span.n-pr--medium 使用說明 ：
+								| 請說明您的問題，我們將盡速為您解答與處理。
+						.n-l-colmb20.n-mem-box
+							<table class="table table--bordered n-order__table">
+								<tr class="table--caption">
+									<th colspan="5" class="n-order__head">
+										<span>訂單日期：2015/06/04</span>
+										<span>訂單編號：8888888888</span>
+										<span>配送方式：快速到貨</span>
+										<span>付款方式：已付款 / 未付款</span>
+										<a href="m1-order.html" class="n-right" title="回我的訂單"><i class="n-icon--back"></i>回我的訂單</a>
+									</th>
+								</tr>
+								<tr class="table--caption">
+									<td class="col-1">圖片</td>
+									<td class="col-4">商品名稱</td>		
+									<td class="col-1">規格</td>						
+									<td class="col-1">數量</td>
+									<td class="col-1">價格</td>
+								</tr>
+								<tr>
+									<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/5718879-1_XXL.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+									<td>
+										<p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+									</td>	
+									<td>
+										ul.n-order__spec
+											li 
+												span 顏色： 
+												span 黑色
+											li
+												span 樣式： 
+												span 共同
+									</td>	
+									<td>1</td>
+									<td>
+										span.n-price--16 $
+											span 1,111,780
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/5791390-1_XXL.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+									<td>
+										<p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+									</td>	
+									<td>
+										ul.n-order__spec
+											li 
+												span 顏色： 
+												span 黑色
+											li
+												span 樣式： 
+												span 共同
+									</td>	
+									<td>1</td>
+									<td>
+										span.n-price--16 $
+											span 1,111,780
+									</td>
+								</tr>
+								<tr>
+									<td><a href="https://goo.gl/SUhbN0" target="_blank"><img src="Resource/img201703/member/1502041_LM.jpg" width="100" height="100" alt="絲蛋白晶凍面膜 （500ml）-網"></a></td>
+									<td>
+										<p>【CAYALE_卡亞利 德國 SympaTex】全天候鉑金級防護.機能外套/ 二件式 (恆溫舒適-超防水-超透氣-超強防風寒) </p>
+										p 加價購
+									</td>	
+									<td>
+										ul.n-order__spec
+											li 
+												span 顏色： 
+												span 黑色
+											li
+												span 樣式： 
+												span 共同
+									</td>	
+									<td>9</td>
+									<td>
+										span.n-price--16 $
+											span 1,111,780
+									</td>
+								</tr>
+								<tr>
+									<td colspan="5">
+										form(action="")
+											ul.n-order__list#orderAsk
+												li
+													<div class="n-title--15">問題種類</div>
+													<ul class="n-order__check-box">
+														<li>
+															<label for="askType1" class="n-btn n-btn--normal">
+																<input class="n-form--control" type="radio" name="askType1" id="askType1">收送貨相關
+															</label>
+
+														</li>
+														<li>
+															<label for="askType2" class="n-btn n-btn--normal">
+																<input class="n-form--control" type="radio" name="askType1" id="askType2">取消退換貨服務
+															</label>
+
+														</li>
+														<li>
+															<label for="askType3" class="n-btn n-btn--normal">
+																<input class="n-form--control" type="radio" name="askType1" id="askType3">商品相關查詢
+															</label>
+
+														</li>
+														<li>
+															<label for="askType4" class="n-btn n-btn--normal">
+																<input class="n-form--control" type="radio" name="askType1" id="askType4">訂單查詢
+															</label>
+
+														</li>
+														<li>
+															<label for="askType5" class="n-btn n-btn--normal">
+																<input class="n-form--control" type="radio" name="askType1" id="askType5">其他
+															</label>
+
+														</li>
+														<li class="n-order__other-txt col-10">
+															<textarea class="n-form--control n-textarea--other" name="" id="" placeholder="請簡述原因 400 字內（必填）"></textarea>
+														</li>
+													</ul>
+													p.n-form--error 尚未選擇問題類型
+													.n-order__confirm
+														<input type="reset" class="n-btn n-btn--normal" value="取消">
+														<input class="n-btn n-btn--primary" type="submit" value="送出">
+												li 
+													.n-title--15 問答紀錄列表
+													- for(var i = 0; i < 3; i++)
+														.n-comment__wrap.n-l-colmb30
+															.n-comment__user
+																.n-comment__head
+																	.n-comment__author.n-title--13.n-left 發文者：羅小琪
+																	.n-comment__info.n-right
+																		span.n-comment__number 客服單號：41508006
+																		span &#8226;
+																		span.n-comment__time 詢問時間：
+																			span 2017/06/06
+																			span 下午
+																			span 11:27:53
+																.n-comment__txt
+																	p.n-comment__question.n-title--13 問題種類：其他 
+																	p 可以送我iPhone 嗎？我一直都抽不到
+															.n-comment__replies
+																.n-comment__head
+																	.n-comment__author.n-title--13.n-left 回覆者：東森客服
+																	.n-comment__info.n-right
+																		span.n-comment__time 回覆時間：
+																			span 2017/06/07
+																			span 上午
+																			span 11:27:53
+																.n-comment__txt
+																	p 親愛的羅小姐您好：
+																	p 黃金飾品需要以重量來計算價格，但同款商品每一個實品重量都會略有不同，刊登上的重量是第一次現貨的重量，若是賣掉後再製作重量會略有差異，無法每次製作都精確修改，基本上重量差異都不會太大，大約5厘上下(0.05錢) 。
+																	p 【注意事項】如有特殊需求(戒圍、包裝、指定送貨日期等)請於「地址欄」後方加註，謝謝！商品圖檔顏色因電腦螢幕設定差異會略有不同，以實際商品顏色為準，請見諒。
+
+									</td>
+								</tr>
+							</table>
+
+			include include/global/_footer
+			include include/global/_go-top
+
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/member.js')
+		script(src = 'Resource/js201703/prototyping.js')

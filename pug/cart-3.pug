@@ -1,0 +1,34 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 我的購物車 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-cart.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			form(action="")#cartStep3
+				include include/cart/_cart-header
+				.n-layout--lg.n-l-colmb30
+					include include/cart/_cart-process-3
+					.n-cart__body
+						include include/cart/_cart-finish-info
+					include include/cart/_cart-daily-discount
+					include include/cart/_cart-banner-ad
+					include include/block/_ulike
+					include include/block/_pord-list
+				include include/cart/_cart-footer
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/cart.js')
+		script(src = 'Resource/js201703/prototyping.js')

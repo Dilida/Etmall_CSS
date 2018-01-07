@@ -1,0 +1,47 @@
+section.n-l-colmb30
+	.n-title__wrap
+		.n-title--18 曾瀏覽的商品
+	.n-history
+		- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,111,680'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,111,580'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,112,880'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,111,980'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,111,780'}, {hotUrl: 'https://goo.gl/vYUBLM', name: '【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L', imgSrc: 'https://goo.gl/4GOIeW', normalPrice: '$ 1,113,000', price: '1,113,990'}]
+		.n-history__top
+			.n-history__body
+				ul.n-history__list
+					li.current
+							a(href="https://goo.gl/ATXrw3" title="【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L" target="_blank")
+								.n-pic 
+									img(src="https://goo.gl/4GOIeW" alt="【Jisen】端莊之美 假二件拼接 立體顯瘦洋裝 ( 藍 / 藏青 ) 2色選 L~4L")
+								span.n-price--16 $
+									span 1,113,990
+					each pordItem in pordItems
+						li
+							a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+								.n-pic 
+									img(src= pordItem.imgSrc alt= pordItem.name width="120" height="120")
+								span.n-price--16 $
+									span= pordItem.price
+				a.n-l-arrow__wrap(href="#" title="Prev")
+					span.n-arrow--top
+					span.n-arrow--bottom
+				a.n-r-arrow__wrap(href="#" title="Next")
+					span.n-arrow--top
+					span.n-arrow--bottom
+		.n-history__bottom
+			.n-history__caption 買了
+				span.n-pr--medium 【特別促銷】南九州宮崎+鹿兒島溫泉休閒四日
+				| 的客戶也買了
+			.n-history__body
+				ul.n-history__list.n-hover--img
+					- for (var i = 1; i < pordItems.length; ++i)
+						li
+							a(href= pordItems[i].hotUrl title= pordItems[i].name target="_blank")
+								.n-pic 
+									img(src= pordItems[i].imgSrc alt= pordItems[i].name width="150" height="150")
+								p.n-name= pordItems[i].name
+								p.n-price--16 $
+									span= pordItems[i].price
+				a.n-l-arrow__wrap(href="#" title="Prev")
+					span.n-arrow--top
+					span.n-arrow--bottom
+				a.n-r-arrow__wrap(href="#" title="Next")
+					span.n-arrow--top
+					span.n-arrow--bottom

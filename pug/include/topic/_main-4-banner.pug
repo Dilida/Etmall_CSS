@@ -1,0 +1,20 @@
+.n-topics__model.n-w-1010.n-left#topicTempl1
+	h2.n-topics__title.n-title--18
+		i.n-up-down--title
+		span 限量優惠商品
+	ul.n-topics__bn-4.n-hover--img
+		mixin bnFours(link, name, imgSrc, colorClass, firsName, latsName)
+			li
+				a(href= link title= name target="_blank")
+					figure
+						.n-pic
+							img(src= imgSrc alt= name)
+						figcaption.n-topics__caption
+							.n-left
+								p= firsName
+							.n-left(class= colorClass)
+								p= latsName
+		+bnFours( 'https://goo.gl/SfazWz', 'SONY 買耳機送原廠配件包', 'Resource/img201703/topic/topics-bn01.jpg', 'pri-medium--50', 'SONY', '買耳機送原廠配件包' )
+		+bnFours( 'https://goo.gl/SfazWz', '玩石工訪 買千送百 送完為止', 'Resource/img201703/topic/topics-bn02.jpg', 'sec-medium--50', '玩石工訪', '買千送百 送完為止' )
+		+bnFours( 'https://goo.gl/SfazWz', '鑄鐵鍋團購 全館八折 多色任選 ', 'Resource/img201703/topic/topics-bn03.jpg', 'fou-medium--50', 'SONY', '買耳機送原廠配件包' )
+		+bnFours( 'https://goo.gl/SfazWz', 'Dyson 五年保固', 'Resource/img201703/topic/topics-bn04.jpg', 'yel-darket--50', 'Dyson', '五年保固' )

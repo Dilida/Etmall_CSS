@@ -1,0 +1,186 @@
+doctype html
+html(lang='zh-Hant-TW')
+	head
+		<!--[if lt IE 9]>	
+		<script type="text/javascript" src="Resource/js201703/vendor/html5shiv.js"></script>
+		<![endif]-->
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=1260')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title 加價購專區 -- 東森嚴選－ET Mall東森購物網
+		include include/global/_meta
+		link(href='Resource/css201703/n-base.css', rel='stylesheet')
+		link(href='Resource/css201703/vendor/magnific-popup.css', rel='stylesheet')
+		link(href='Resource/css201703/n-common.css', rel='stylesheet')
+		link(href='Resource/css201703/n-increase-price.css', rel='stylesheet')
+	body.n-theme--gr2-lighter
+		main.n-wrapper
+			include include/global/_inside-head
+			form(action="")#increasePrice
+				article.n-layout--lg.n-l-colmb50.n-increase
+					section.n-increase__promo
+						img(src="http://placehold.it/1260x500/FF836F/ffffff", alt="肌膚之鑰 Clé de Peau Beauté")
+						.n-increase__intro
+							h1.n-title--36 肌膚之鑰 Clé de Peau Beauté
+							.n-increase__intro-text
+								p 以下商品
+									span.n-increase__intro-hints 滿3件 打9折
+								p 活動時間：2017/06/10 10:00 ~ 2017/0615 23:59
+								p 肌膚之鑰初夏年中慶，系列組合商品滿兩件打9折，凡下單就送小禮物
+								p 買到賺到，數量有限售完為止！
+								p 買到賺到，數量有限售完為止！
+								p 買到賺到，數量有限售完為止！
+					.n-increase__item.n-l-colmb15
+						.n-left.col-10.n-increase__pord
+							.n-increase__prod-head
+								p 已選購
+									span.n-pr--medium 2
+									| 件，
+									span.n-pr--medium 870
+									| 元
+							.n-increase__pord-body
+								ul(style="width: 1900px; position: relative; overflow: hidden;")
+									li.n-increase__pord-add-item
+										a(href="", title="請選購商品") 請選購商品
+									li.n-increase__pord-add-more.n-is--hide
+										a(href="", title="即享優惠")
+											p 再選 
+												span 1
+												| 件
+											p 即享優惠
+								a.n-l-arrow__wrap(href="#" title="Prev")
+									span.n-arrow--top
+									span.n-arrow--bottom
+								a.n-r-arrow__wrap(href="#" title="Next")
+									span.n-arrow--top
+									span.n-arrow--bottom
+						.n-left.col-2.n-increase__total
+							.n-increase__total-head
+								p 金額
+							.n-increase__total-body
+								.n-price__exlarge
+									span.n-price__sign $
+									span.n-price__num 1,111,870
+								button.n-btn.n-btn--primary(value="立即結帳") 立即結帳
+				
+					.n-increase__tool
+						ul.n-left.n-increase__sort
+							li.current
+								a(href="" title="最熱銷") 最熱銷
+							li
+								a(href="" title="價格低到高") 價格低到高
+									i.n-icon--arrow-up
+							li
+								a(href="" title="價格高到低") 價格高到低
+									i.n-icon--arrow-down
+						ul.n-right.n-increase__social
+							li
+								a(href="", title="Facebook")
+									i.n-icon--fb
+							li
+								a(href="", title="Gmail")
+									i.n-icon--gmail
+							li
+								a(href="", title="Skype")
+									i.n-icon--skype
+							li
+								a(href="", title="Line")
+									i.n-icon--line
+					.n-increase__wrap
+
+						- for (let i = 0; i < 3; i++)
+							section.n-l-colmb15
+								.n-l-bgw-md.n-increase__box
+									ul.n-purchase__list.n-hover--img
+										- var pordItems = [{hotUrl: 'https://goo.gl/ATXrw3', name: '鍋寶304不銹鋼電鍋超值熱銷組', imgSrc: 'https://goo.gl/RLvNVt', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/iw4vYx', name: '[漁季]頂級挪威鯖魚限定組', imgSrc: 'https://goo.gl/lhucKm', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/UyIC5s', name: 'Microban葉語傾城抗菌兩用被床罩組-雙', imgSrc: 'https://goo.gl/QVMjuc', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/U7t2El', name: '德國ALKMENE】極效修護凍齡回春250ml(買五送一熱銷組)', imgSrc: 'https://goo.gl/ZrlDwv', normalPrice: '$ 1,113,000', price: '1,113,000'}, {hotUrl: 'https://goo.gl/D1wHW7', name: '【Jisen】修身格子針織假二件洋裝', imgSrc: 'https://goo.gl/0TGQoI', normalPrice: '$ 1,113,000', price: '1,113,000'}]
+										each pordItem in pordItems
+											li
+												a(href= pordItem.hotUrl title= pordItem.name target="_blank")
+													.n-pic
+														img(src= pordItem.imgSrc title= pordItem.name width="234" height="234")
+												p.n-sale--subtitle= pordItem.name
+												p.n-name= pordItem.name
+												p.n-price__wrap 
+													span.n-price--normal= pordItem.normalPrice
+													span.n-price--16 
+														span $ 
+														span= pordItem.price
+												a.n-btn.n-btn--black(href="" title="選購") 選購
+												.n-select__spec
+													ul.n-form-aligned
+														li
+															label.n-caption 顏色：
+															select.n-form--control(name="selectColor")
+																option(value="1") 共同
+																option(value="2") 共同2
+														li
+															label.n-caption 樣式：
+															select.n-form--control(name="selectCtyle")
+																option(value="1") 64G
+																option(value="1") 128G
+														li
+															label.n-caption 數量：
+															select.n-form--control(name="quantity")
+																option(value="1") 1
+																option(value="2") 2
+													button.n-btn.n-btn--primary(type="submit") 確定
+
+
+
+					.n-l-bgw-md.n-increase__notice
+						h3.n-title--15 注意事項
+						ol.n-list--disc
+							li 任選專區由於商品為不同供貨商提供寄送，作業程序的關係無法統一時段寄送，故無開放跨館、跨類和再選購服務，不便之處，敬請見諒！
+							li 須訂購同頁商品且達最低訂購金額才能結帳。
+							li 任選商品限以「ATM、提貨券、禮券」、「信用卡一次付清」方式付款且不適用信用卡紅利折抵及任何折價優惠。
+							li 商品將於訂單款項確認無誤後，一併出貨。
+							li 任選專區商品恕不接受單品項退貨及單獨訂購；如商品瑕疵則可進行換貨處理。
+							li 其他注意事項請參見商品頁說明。
+
+				.n-layout--lg.n-increase__fixed
+					.n-increase__fixed-head
+						.n-left.col-11.n-increase__fixed-left
+							a.n-left(href="#", title="展開明細")
+								.n-icon--switch
+									span
+									span
+								span 展開明細
+							p.n-right 已選購
+								span.n-pr--medium.n-font--bold 2
+								| 件，再選
+								span.n-pr--medium.n-font--bold 1
+								| 件即享優惠，金額
+								span.n-price--22 
+									span $
+									span 5,934
+						.n-right.col-1.n-increase__fixed-right
+							button.n-btn.n-btn--primary(value="立即結帳") 立即結帳
+					.n-increase__fixed-body.n-is--hide
+						.n-increase__pord-body
+							ul(style="width: 1900px; position: relative; overflow: hidden;")
+								li.n-increase__pord-add-item
+									a(href="", title="請選購商品") 請選購商品
+								li.n-increase__pord-add-more.n-is--hide
+									a(href="", title="即享優惠")
+										p 再選 
+											span 1
+											| 件
+										p 即享優惠
+							a.n-l-arrow__wrap(href="#" title="Prev")
+								span.n-arrow--top
+								span.n-arrow--bottom
+							a.n-r-arrow__wrap(href="#" title="Next")
+								span.n-arrow--top
+								span.n-arrow--bottom
+
+			include include/global/_footer
+			include include/global/_go-top
+			
+		script(src = 'Resource/js201703/vendor/jquery.1.11.1.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.ui.auto.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.cycle2.js')
+		script(src = 'Resource/js201703/vendor/jquery.magnific-popup.min.js')
+		script(src = 'Resource/js201703/vendor/jquery.menu-aim.js')
+		script(src = 'Resource/js201703/common/global.effect.js')
+		script(src = 'Resource/js201703/pages/increase.price.js')
+		script(src = 'Resource/js201703/prototyping.js')

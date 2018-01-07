@@ -1,0 +1,498 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection";
+
+// ==========================================================================
+// Index Style
+// ==========================================================================
+
+// Main banner
+// ==========================================================================
+.n-banner
+	position: relative
+	z-index: map-get($zindex, zero)
+	.n-banner--theme
+		position: absolute
+		z-index: map-get($zindex, under)
+		width: 100%
+		height: 342px
+		top: 0
+		left: 0
+	> .n-layout--lg
+		position: relative
+		z-index: map-get($zindex, bnElems)
+.n-banner
+	&__box
+		position: relative
+		z-index: map-get($zindex, zero)
+		margin-left: 230px
+		height: 300px
+		overflow: hidden
+		.n-banner--logo
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: 0
+			right: 0
+
+.n-banner
+	&__nav
+		background-color: $gr2-dp-light
+		+layout-center(800)
+		position: relative
+		z-index: map-get($zindex, bnElems)
+		display: table
+		table-layout: fixed
+		// margin-bottom: 21px
+		li 
+			display: table-cell
+			text-align: center
+			position: relative
+			z-index: map-get($zindex, zero)
+		a 
+			color: $gr-dark
+			display: block
+			+txt-ellipsis(160)
+			margin-left: auto
+			margin-right: auto
+			padding-top: 12px
+			padding-bottom: 12px
+		.current a
+			color: $pr-medium
+		.current:after
+			content: ''
+			background-color: $pr-medium
+			position: absolute
+			z-index: map-get($zindex, base)
+			width: 100%
+			height: 2px
+			left: 0
+			bottom: 0
+
+// Right aside login style
+// ==========================================================================
+.n-mem-info
+	background-color: $gr2-dp-light
+	border: 1px solid $gr-lightest
+	position: absolute
+	z-index: map-get($zindex, bnElems)
+	height: 342px
+	overflow: hidden
+	top: -342px
+	right: 0
+	padding: 10px 15px
+.n-mem-info
+	&__login 
+		margin-bottom: 10px
+		.n-btn--primary
+			margin-right: 28px
+	&__title
+		+font-size($fz-15)
+		margin-bottom: 5px
+	&__btns
+		margin-bottom: 30px
+		.n-btn
+			padding-left: 24px
+			padding-right: 24px
+	&__ad
+		a 
+			display: block
+			color: $gr-dark
+		position: relative
+		z-index: map-get($zindex, base)
+		// +layout-center(180)
+		// height: 180px
+		.n-caption,
+		.n-desc
+			position: absolute
+			z-index: map-get($zindex, second)
+			left: 10px
+			top: 0
+		.n-caption
+			+font-size($fz-15)
+			font-weight: bold
+			top: 10px
+			+txt-ellipsis(66)
+		.n-desc
+			top: 35px
+			+txt-ellipsis(106)
+		.n-pic 
+			+layout-center(180)
+		.n-pic img 
+			width: 180px
+			height: 180px
+	&__desc span 
+		margin-right: 8px
+	&__desc .n-pr--medium
+		font-weight: bold
+	&__desc [class^="n-icon--"]
+		margin-right: 5px
+		vertical-align: top
+	&__desc a 
+		color: $gr-medium
+		text-decoration: underline
+	&__desc a:hover
+		color: $pr-medium
+	&__desc li:last-child a:last-child
+		padding-left: 5px
+
+
+// Common for Daily and film style
+// ==========================================================================
+.n-daily-film
+	+clearfix
+	margin-left: 245px
+	padding-top: 32px
+	.n-title__wrap [class^="n-icon--"] 
+		vertical-align: top
+		margin-top: -2px
+		margin-right: 2px
+	.n-layout--500
+		border-bottom: 1px solid $gr-lightest
+.n-daily__wrap
+	width: (100 / 2) + %
+.n-count__wrap
+	background-color: $gr2-dp-light
+	padding: 10px
+.n-daily__list 
+	background-color: $gr2-dp-light
+	padding: 10px
+	height: 301px
+	li 
+		+clearfix
+		margin-bottom: 20px
+	li:last-child
+		margin-bottom: 0
+	a 
+		color: $gr-dark
+	.n-pic
+		background: url('../../Resource/img201703/1x1.png') no-repeat center center
+		background-size: cover
+		position: relative
+		z-index: map-get($zindex, zero)
+		margin-right: 10px
+		+width-height(125)
+	.n-name
+		+text-fool(56)
+		margin-bottom: 28px
+	.n-price__wrap
+		span 
+			margin-right: 0
+		.n-price--normal 
+			display: block
+
+// Clock for Daily and film style
+// ==========================================================================
+.n-daily__clock
+	position: relative
+	z-index: map-get($zindex, zero)
+	&:after
+		content: ''
+		position: absolute
+		z-index: map-get($zindex, base) 
+		background-color: $gr-lightest
+		width: 1px
+		height: 351px
+		right: 0
+		top: 32px
+	.n-title__wrap
+		border-color: $se-lighter
+	.n-title--22
+		color: $se-lighter
+	.n-count__txt
+		width: 26px
+		margin-right: 4px
+		line-height: 1.2
+	.n-flag2__wrap
+		display: none
+		position: absolute
+		z-index: map-get($zindex, base) 
+		text-align: center
+		padding-top: 5px
+		span
+			display: inline-block
+		span:first-child
+			+font-size($fz-12)
+		span:last-child
+			color: $ye-medium
+			+font-size($fz-15)
+			+txt-ellipsis(26)
+			font-weight: bold
+
+// Days for Daily and film style
+// ==========================================================================
+.n-daily__day
+	.n-title__wrap
+		border-color: $pr-dark
+	.n-title--22
+		color: $pr-dark
+	.n-count__txt
+		margin-right: 4px
+		width: 16px
+		line-height: 1.2
+
+// film for Daily and film style
+// ==========================================================================
+.n-film
+	margin-left: 15px
+.n-film__wrap
+	.n-title__wrap
+		+clearfix
+	.n-tab__nav
+		+font-size($fz-15)
+		padding-top: 5px
+		a 
+			width: 50px
+	.n-tab__nav li.current:after
+		bottom: -5px
+
+.n-film
+	&__link
+		padding-top: 5px
+		padding-left: 90px
+	&__link a
+		color: $gr-dark
+		+font-size($fz-15)
+	&__video
+		background-color: $gr-darkest
+		padding: 8px
+	&__product 
+		background-color: $gr2-dp-light
+		+clearfix
+		padding: 6px
+		a 
+			color: $gr-dark
+		.n-pic 
+			+img-loading
+			+width-height(45)
+			margin-right: 10px
+			
+		.n-pic img 
+			width: 45px
+			height: 45px
+		.n-name
+			width: 260px
+			+text-fool(38) 
+			margin-right: 10px
+		.n-price__wrap
+			padding-top: 20px
+
+// banner AD Common 
+// ==========================================================================
+.n-bannerad
+	&__wrap a 
+		color: $gr-dark
+	&__wrap
+		+clearfix
+		.n-title__wrap
+			+clearfix
+		.n-tab__nav
+			padding-top: 15px
+		.n-tab__nav li.current:after
+			bottom: -8px
+
+// banner AD box 
+// ==========================================================================
+.n-banner__body
+	+text-fool(282)
+	position: relative
+	z-index: map-get($zindex, zero)
+.n-bannerad
+	&__box
+		background-color: $gr2-dp-light
+		padding: 10px
+		+text-fool(282)
+
+// Category Common
+// ==========================================================================
+.n-category
+	&__wrap a 
+		color: $gr-dark
+	&__box
+		width: ((1260 - 20) / 2) + px
+	&__body
+		background-color: $gr2-dp-light
+		+clearfix
+
+// Category title and key word
+// ==========================================================================
+.n-category
+	&__wrap
+		+clearfix
+		.n-title__wrap
+			+clearfix
+			position: relative
+			z-index: map-get($zindex, zero)
+	&__keyword
+		padding-top: 15px
+		li 
+			display: inline-block
+			margin-left: 8px
+		a 
+			+txt-ellipsis(78)
+			display: block
+		a:hover 
+			color: $pr-medium
+
+// Category pic
+// ==========================================================================
+.n-category
+	&__pic
+		position: relative
+		z-index: map-get($zindex, base)
+		.n-pic
+			overflow: hidden
+		a:hover img
+			transform: scale(1)
+	&__text 
+		background-color: rgba($gr2-dp-light, .8)
+		position: absolute
+		z-index: map-get($zindex, second)
+		width: 144px
+		height: 78px
+		overflow: hidden
+		padding: 15px
+		bottom: 0
+		text-align: center
+	&__caption 
+		+font-size($fz-18)
+		+text-fool(22)
+		margin-bottom: 5px
+	&__desc
+		+font-size($fz-16)
+		+text-fool(20)
+
+// Category list
+// ==========================================================================
+.n-category
+	&__list
+		+clearfix
+	&__list 
+		width: (620 - 144) + px
+		// padding-top: 10px
+		height: 436px
+		overflow: hidden
+		li
+			float: left
+			width: 140px
+			margin: 10px 9px 0
+		// li:nth-last-child(-n+3)
+		// 	margin-bottom: 0
+		li img
+			width: 140px
+			height: 140px
+		.n-pic,
+		.n-name
+			margin-bottom: 5px
+		.n-pic 
+			+img-loading
+			+width-height(140)
+		.n-name
+			+text-fool(18)
+		.n-price__wrap 
+			span 
+				margin-right: 0
+			.n-price--normal
+				display: block
+
+// Category brand
+// ==========================================================================
+.n-category
+	&__brand
+		clear: both
+		+clearfix
+		padding-top: 15px
+		padding-bottom: 15px
+		padding-left: 4px
+		li
+			float: left
+			width: (((620 - 30) - 50) / 6 ) + px
+			margin: 0 16px
+			overflow: hidden
+		li a:hover img
+			transform: scale(1)
+		li:last-child 
+			display: none
+
+// Category title theme
+// ==========================================================================
+.n-category--tv .n-title__wrap h2:after,
+.n-category--appliances .n-title__wrap h2:after,
+.n-category--clothes .n-title__wrap h2:after,
+.n-category--shoes .n-title__wrap h2:after,
+.n-category--underwear .n-title__wrap h2:after,
+.n-category--jewelry .n-title__wrap h2:after,
+.n-category--watch .n-title__wrap h2:after,
+.n-category--makeups .n-title__wrap h2:after,
+.n-category--health .n-title__wrap h2:after,
+.n-category--food .n-title__wrap h2:after,
+.n-category--computer .n-title__wrap h2:after,
+.n-category--fine .n-title__wrap h2:after,
+.n-category--bed .n-title__wrap h2:after,
+.n-category--use .n-title__wrap h2:after,
+.n-category--sport .n-title__wrap h2:after,
+.n-category--travel .n-title__wrap h2:after
+	content: ''
+	position: absolute
+	z-index: map-get($zindex, base)
+	width: 144px
+	height: 3px
+	left: 0
+	bottom: -2px
+
+.n-category--tv .n-title__wrap h2:after,
+.n-category--clothes .n-title__wrap h2:after,
+.n-category--shoes .n-title__wrap h2:after,
+.n-category--underwear .n-title__wrap h2:after 
+	background-color: $pr-lightest
+
+.n-category--tv .n-category__caption,
+.n-category--clothes .n-category__caption,
+.n-category--shoes .n-category__caption,
+.n-category--underwear .n-category__caption
+	color: $pr-lightest
+
+.n-category--jewelry .n-title__wrap h2:after,
+.n-category--watch .n-title__wrap h2:after
+	background-color: $se-dark
+
+.n-category--jewelry .n-category__caption,
+.n-category--watch .n-category__caption
+	color: $se-dark
+
+.n-category--makeups .n-title__wrap h2:after,
+.n-category--health .n-title__wrap h2:after
+	background-color: $se-lighter
+
+.n-category--makeups .n-category__caption,
+.n-category--health .n-category__caption
+	color: $se-lighter
+	
+.n-category--appliances .n-title__wrap h2:after,
+.n-category--computer .n-title__wrap h2:after,
+.n-category--sport .n-title__wrap h2:after,
+.n-category--travel .n-title__wrap h2:after
+	background-color: $fo-medium
+
+.n-category--appliances .n-category__caption,
+.n-category--computer .n-category__caption,
+.n-category--sport .n-category__caption,
+.n-category--travel .n-category__caption
+	color: $fo-medium
+
+.n-category--fine .n-title__wrap h2:after
+	background-color: $se-dark
+
+.n-category--fine .n-category__caption
+	color: $se-dark
+
+.n-category--bed .n-title__wrap h2:after,
+.n-category--use .n-title__wrap h2:after,
+.n-category--food .n-title__wrap h2:after
+	background-color: $pr-lighter
+
+.n-category--bed .n-category__caption,
+.n-category--use .n-category__caption
+	color: $pr-lighter
+	
+

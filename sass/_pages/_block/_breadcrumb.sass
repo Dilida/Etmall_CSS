@@ -1,0 +1,64 @@
+// ==========================================================================
+// Collection Helpers 
+// ==========================================================================
+@import "_helpers/_collection"
+
+// ==========================================================================
+@import "_theme/_sprite.scss";
+
+
+// Breadcrumb style
+// ==========================================================================
+.n-breadcrumb
+	&__wrap
+		+clearfix
+		a 
+			color: $gr-dark 
+			display: block
+			&:hover
+				color: $pr-medium
+		> p:first-child
+			padding-top: 7px
+			padding-left: 16px
+			padding-right: 10px
+		> ul
+			+clearfix
+		> ul > li
+			float: left
+		> ul > li:first-child
+			padding-top: 7px
+		> ul > li:last-child > a
+		 	color: $pr-medium
+	&__arrow
+		padding: 7px 6px 2px
+	&__drop
+		background-color: $gr2-dp-light
+		border: 1px solid $gr-lightest
+		position: relative
+		z-index: map-get($zindex, fourteen)
+		a 
+			padding: 5px 30px 5px 10px
+			+txt-ellipsis(176)
+			width: 176px
+		span:last-child
+			position: absolute
+			z-index: map-get($zindex, base)
+			top: 0
+			right: 0
+			background-color: $gr-medium
+			display: inline-block
+			width: 28px
+			height: 28px
+			text-align: center
+			padding-top: 7px
+		> ul 
+			background-color: $gr2-dp-light
+			border: 1px solid $gr-lightest
+			position: absolute
+			z-index: map-get($zindex, base)
+			left: -1px
+			top: 28px
+		> ul > li > a
+			padding: 8px 10px
+	&--without-link
+		padding-top: 7px
